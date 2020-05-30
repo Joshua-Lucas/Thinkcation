@@ -21,12 +21,16 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+
+// Route::GET('/inns', function () {
+//     App\Inn::all();
+// }); 
 Route::POST('/inns', function () {
     //valdate
     //persist
     App\Inn::create(request(
         [
-            'host_id', 'state', 'capacity', 'catagory', 'type', 'guestspcae', 'bedrooms', 'beds', 'bathrooms', 'address', 'city', 'zip', 'emenities', 'photos', 'title', 'description', 'guest_instructions', 'start_avability', 'end_avability', 'price'
+            'user_id', 'photo', 'title', 'description', 'catagory', 'type', 'capacity',  'bedrooms', 'beds', 'bathrooms', 'address', 'city', 'state', 'zipcode', 'start_avability', 'end_avability', 'price'
         ]
     ));
     // redirect
