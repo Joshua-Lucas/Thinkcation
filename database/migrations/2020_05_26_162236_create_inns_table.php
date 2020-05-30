@@ -15,27 +15,30 @@ class CreateInnsTable extends Migration
     {
         Schema::create('inns', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('host_id');
-            $table->string('state');
-            $table->smallInteger('capacity');
+            $table->unsignedBigInteger('user_id');
+            $table->string('photo');
+            $table->string('title');
             $table->string('catagory');
             $table->string('type');
-            $table->boolean('guestspcae');
+            $table->longText('description');
+            $table->smallInteger('capacity');
             $table->smallInteger('bedrooms');
             $table->smallInteger('beds');
             $table->smallInteger('bathrooms');
             $table->longText('address');
             $table->string('city');
-            $table->integer('zip');
-            $table->longText('emenities');
-            $table->string('photos');
-            $table->string('title');
-            $table->longText('description');
-            $table->longText('guest_instructions');
+            $table->string('state');
+            $table->integer('zipcode');
             $table->date('start_avability');
             $table->date('end_avability');
             $table->double('price', 6, 2);
             $table->timestamps();
+
+
+            // $table->foreign('user_id')
+            //     ->references('id')
+            //     ->on('users')
+            //     ->onDelete('cascade');
         });
     }
 
