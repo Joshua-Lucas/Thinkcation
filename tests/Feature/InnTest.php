@@ -36,10 +36,10 @@ class InnTest extends TestCase
             'price' => $this->faker->randomFloat($nbMaxDecimals = 2, $min = 50, $max = 2000)
         ];
 
-        $this->post('/inns', $attributes);
+        $this->post('/api/inns', $attributes)->assertRedirect('/inns');
 
         $this->assertDatabaseHas('inns', $attributes);
 
-        // $this->get('/inns')->assertSee(['photo', 'title', 'description', 'state', 'price', 'user_id']);
+        $this->get('/api/inns')->assertSee($attributes['title']);
     }
 }
