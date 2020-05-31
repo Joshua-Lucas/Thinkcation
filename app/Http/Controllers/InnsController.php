@@ -17,6 +17,7 @@ class InnsController extends Controller
     public function store()
     {
         //valdate
+        request()->validate(['title' => 'required', 'description' => 'required']);
         //persist
         Inn::create(request(
             [

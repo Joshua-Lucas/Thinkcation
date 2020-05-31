@@ -18,22 +18,3 @@ Route::view('/{path?}', 'welcome');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-
-
-
-// Route::GET('/inns', function () {
-//     $inns = App\Inn::all();
-
-//     return $inns;
-// });
-// Route::POST('/inns', function () {
-//     //valdate
-//     //persist
-//     App\Inn::create(request(
-//         [
-//             'user_id', 'photo', 'title', 'description', 'catagory', 'type', 'capacity',  'bedrooms', 'beds', 'bathrooms', 'address', 'city', 'state', 'zipcode', 'start_avability', 'end_avability', 'price'
-//         ]
-//     ));
-//     // redirect
-// });

@@ -42,4 +42,18 @@ class InnTest extends TestCase
 
         $this->get('/api/inns')->assertSee($attributes['title']);
     }
+
+    /** @test */
+    public function an_inn_requires_a_title()
+    {
+        $attributes =  factory('App\Inn')->raw(['title' => '']);
+        $this->post('api/inns', $attributes)->assertSessionHasErrors('title');
+    }
+
+    /** @test */
+    public function an_inn_requires_a_description()
+    {
+        $attributes =  factory('App\Inn')->raw(['description' => '']);
+        $this->post('api/inns', $attributes)->assertSessionHasErrors('description');
+    }
 }
