@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import {Link} from 'react-router-dom';
 import Axios from 'axios';
 
 const BrowseInns = () => 
@@ -8,14 +9,15 @@ const BrowseInns = () =>
     useEffect(() => {  
         Axios
             .get('api/inns')
-            .then(res => {setInns = res.data});
-      });
+            .then(res => {setInns(res.data)});
+      }, [] );
+
 
     return (
         <div>
-            <h1>Test</h1>
+            <h1>Browse Inns </h1>
             <ul>
-    {inns.map(inn => <li>{inn.title}</li> )}
+                {inns.map(inn => <li><Link to={'/inns/'+ inn.id}>{inn.title} in {inn.state}</Link></li>)}
             </ul>
         </div>
     );
