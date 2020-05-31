@@ -14,10 +14,19 @@ class InnsController extends Controller
         return $inns;
     }
 
+    public function show(Inn $inn)
+    {
+
+        return compact('inn');
+    }
+
     public function store()
     {
         //valdate
-        request()->validate(['title' => 'required', 'description' => 'required']);
+        request()->validate([
+            'title' => 'required',
+            'description' => 'required'
+        ]);
         //persist
         Inn::create(request(
             [

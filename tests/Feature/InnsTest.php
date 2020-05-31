@@ -6,7 +6,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
-class InnTest extends TestCase
+class InnsTest extends TestCase
 {
     use WithFaker, RefreshDatabase;
 
@@ -41,6 +41,18 @@ class InnTest extends TestCase
         $this->assertDatabaseHas('inns', $attributes);
 
         $this->get('/api/inns')->assertSee($attributes['title']);
+    }
+
+    /** @test */
+    public function a_user_can_view_an_inn()
+    {
+        $this->withoutExceptionHandling();
+        $inns = factory('App\Inn')->create();
+
+        $this->get($inns->path())
+            ->assertSee($inns->title)
+            ->assertSee($inns->description)
+            ->assertSee($inns->price);
     }
 
     /** @test */
