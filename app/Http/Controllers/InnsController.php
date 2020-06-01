@@ -17,7 +17,7 @@ class InnsController extends Controller
     public function show(Inn $inn)
     {
 
-        return compact('inn');
+        return $inn;
     }
 
     public function store()

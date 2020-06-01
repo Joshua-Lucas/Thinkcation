@@ -69954,17 +69954,17 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 var ShowInn = function ShowInn() {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]),
       _useState2 = _slicedToArray(_useState, 2),
-      places = _useState2[0],
-      setInns = _useState2[1];
+      inn = _useState2[0],
+      setInn = _useState2[1];
 
   var apiUrl = '/api' + window.location.pathname;
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     var url = location.href;
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(apiUrl).then(function (res) {
-      setInns(res.data);
+      setInn(res.data);
     });
   }, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, places.title));
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, inn.title));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ShowInn);

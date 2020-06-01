@@ -4,7 +4,7 @@ import Axios from 'axios';
 const ShowInn = () => 
 {
 
-    const [places, setInns] = useState([]);
+    const [inn, setInn] = useState([]);
 
     const apiUrl = '/api' + window.location.pathname;
 
@@ -12,14 +12,14 @@ const ShowInn = () =>
         let url = location.href;
         Axios
             .get(apiUrl)
-            .then(res => {setInns(res.data)});
+            .then(res => {setInn(res.data)});
       }, [] );
 
 
     
     return (
         <div>
-            <h1>{places.title}</h1>
+            <h1>{inn.title}</h1>
             
 
         </div>
