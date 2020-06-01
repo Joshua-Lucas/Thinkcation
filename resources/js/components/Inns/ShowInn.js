@@ -4,26 +4,24 @@ import Axios from 'axios';
 const ShowInn = () => 
 {
 
-    // const [inn, setInn] = useState([]);
+    const [places, setInns] = useState([]);
 
+    const apiUrl = '/api' + window.location.pathname;
 
-    // useEffect(() => {  
-    //     let url = location.href;
-    //     Axios
-    //         .get('/',{
-    //         params: {
-    //             id: url
-    //         }
-    //          })
-    //         .then(res => {setInn(res.data)});
-    //   }, [] );
+    useEffect(() => {  
+        let url = location.href;
+        Axios
+            .get(apiUrl)
+            .then(res => {setInns(res.data)});
+      }, [] );
 
 
     
     return (
         <div>
-            <h1>This Inn</h1>
+            <h1>{places.title}</h1>
             
+
         </div>
     );
 }
