@@ -1,7 +1,6 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import BrowseInns from './Inns/BrowseInns.js';
-import ShowInn from './Inns/ShowInn.js';
+import DisplayInns from './Inns/DisplayInns.js';
 
 
 const App = () =>  {
@@ -10,11 +9,8 @@ const App = () =>  {
             <div className="">
                 <Switch>
                     <Route exact path="/"></Route>
-                    <Route  exact path="/inns"> 
-                        <BrowseInns/>
-                    </Route>
-                    <Route  path="/inns/:innid"> 
-                        <ShowInn/>
+                    <Route   path="/inns"> 
+                        <DisplayInns/>
                     </Route>
                 </Switch>
             </div>

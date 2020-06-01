@@ -6,6 +6,9 @@ const BrowseInns = () =>
 {
 
     const [inns, setInns] = useState([]);
+
+    
+
     useEffect(() => {  
         Axios
             .get('api/inns')
