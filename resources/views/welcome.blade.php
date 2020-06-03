@@ -16,6 +16,6 @@
 <body class="">
     <div id='root'></div>
 </body>
-<script type="text/javascript" src="js/app.js"></script>
+<script src="{{ asset('js/app.js') }}"></script>
 
 </html>

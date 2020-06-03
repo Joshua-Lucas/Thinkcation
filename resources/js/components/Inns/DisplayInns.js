@@ -4,13 +4,14 @@ import BrowseInns from './BrowseInns.js';
 import ShowInn from './ShowInn.js';
 
 
+
 const DisplayInns = () =>  {
     return(
     <Switch>
         <Route  exact path="/inns"> 
             <BrowseInns/>
         </Route>
-        <Route  path="/inns/:id"> 
+        <Route exact  path="/inns/:id"> 
             <ShowInn/>
         </Route>
     </Switch>
