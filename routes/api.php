@@ -21,4 +21,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 Route::GET('/inns', 'InnsController@index');
 Route::GET('/inns/{inn}', 'InnsController@show');
-Route::POST('/inns', 'InnsController@store');
+Route::POST('/inns', 'InnsController@store')->middleware('auth');

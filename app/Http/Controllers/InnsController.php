@@ -22,17 +22,32 @@ class InnsController extends Controller
 
     public function store()
     {
+
         //valdate
-        request()->validate([
+        $attributes = request()->validate([
+            'photo' => 'required',
             'title' => 'required',
-            'description' => 'required'
+            'description' => 'required',
+            'catagory' => 'required',
+            'type' => 'required',
+            'capacity' => 'required',
+            'bedrooms' => 'required',
+            'beds' => 'required',
+            'bathrooms' => 'required',
+            'address' => 'required',
+            'city' => 'required',
+            'state' => 'required',
+            'zipcode' => 'required',
+            'start_avability' => 'required',
+            'end_avability' => 'required',
+            'price' => 'required',
+            'rating'
         ]);
+
+        $attributes['user_id'] = auth()->id();
+
         //persist
-        Inn::create(request(
-            [
-                'user_id', 'photo', 'title', 'description', 'catagory', 'type', 'capacity',  'bedrooms', 'beds', 'bathrooms', 'address', 'city', 'state', 'zipcode', 'start_avability', 'end_avability', 'price', 'rating'
-            ]
-        ));
+        Inn::create($attributes);
         // redirect
         return redirect('/inns');
     }

@@ -7,7 +7,9 @@ use Faker\Generator as Faker;
 
 $factory->define(Inn::class, function (Faker $faker) {
     return [
-        'user_id' => $this->faker->randomDigit,
+        'user_id' => function () {
+            return factory(App\User::class)->create()->id;
+        },
         'photo' => $this->faker->imageUrl($width = 640, $height = 480),
         'title' => $this->faker->sentence($nbWords = 3, $variableNbWords = true),
         'description' => $this->faker->text($maxNbChars = 200),
