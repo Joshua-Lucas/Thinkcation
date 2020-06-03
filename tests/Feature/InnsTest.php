@@ -33,7 +33,8 @@ class InnsTest extends TestCase
             'zipcode' => $this->faker->postcode,
             'start_avability' => $this->faker->dateTimeBetween($startDate = 'now', $endDate = 'now', $timezone = null),
             'end_avability' => $this->faker->dateTimeBetween($startDate = 'now', $endDate = '1 year', $timezone = null),
-            'price' => $this->faker->randomFloat($nbMaxDecimals = 2, $min = 50, $max = 2000)
+            'price' => $this->faker->randomFloat($nbMaxDecimals = 2, $min = 50, $max = 2000),
+            'rating' => $this->faker->numberBetween($min = 0, $max = 5)
         ];
 
         $this->post('/api/inns', $attributes)->assertRedirect('/inns');

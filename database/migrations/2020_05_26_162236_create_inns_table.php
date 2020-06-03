@@ -32,6 +32,7 @@ class CreateInnsTable extends Migration
             $table->date('start_avability');
             $table->date('end_avability');
             $table->double('price', 6, 2);
+            $table->integer('rating')->nullable();
             $table->timestamps();
 
 
