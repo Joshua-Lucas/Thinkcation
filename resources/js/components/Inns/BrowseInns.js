@@ -21,6 +21,7 @@ const BrowseInns = () =>
             <h1>Browse Inns </h1>
             <ul>
                 {inns.map(inn => <li><Link to={'/inns/'+ inn.id}>{inn.title} in {inn.state}</Link></li>)}
+
             </ul>
         </div>
     );

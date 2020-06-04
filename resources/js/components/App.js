@@ -2,6 +2,7 @@ import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import DisplayInns from './Inns/DisplayInns.js';
 import PageNotFound from './PageNotFound.js';
+import Login from './Auth/Login.js';
 
 
 const App = () =>  {
@@ -10,6 +11,9 @@ const App = () =>  {
             <div className="">
                 <Switch>
                     <Route exact path="/"></Route>
+                    <Route exact path="/login">
+                        <Login />
+                    </Route>
                     <Route   path="/inns"> 
                         <DisplayInns/>
                     </Route>
