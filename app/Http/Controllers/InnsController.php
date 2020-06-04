@@ -41,13 +41,13 @@ class InnsController extends Controller
             'start_avability' => 'required',
             'end_avability' => 'required',
             'price' => 'required',
-            'rating'
+            'rating' => 'required'
         ]);
 
-        $attributes['user_id'] = auth()->id();
-
         //persist
-        Inn::create($attributes);
+        auth()->user()->inns()->create($attributes);
+
+
         // redirect
         return redirect('/inns');
     }
