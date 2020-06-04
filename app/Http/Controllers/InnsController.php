@@ -3,15 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Inn;
+use App\User;
 use Illuminate\Http\Request;
 
 class InnsController extends Controller
 {
     public function index()
     {
-        $inns = Inn::all();
+        $user = User::whereName('Cleve Kuhn PhD')->first();
 
-        return $inns;
+        return $user->inns;
     }
 
     public function show(Inn $inn)
