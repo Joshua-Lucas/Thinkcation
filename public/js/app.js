@@ -69996,14 +69996,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
-var Login = function Login() {
+var Register = function Register() {
   var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])(); // Form entry data
 
   var initialState = {
     name: "",
     email: "",
     password: "",
-    password_confirmation: ""
+    password_confirmation: "",
+    rating: 0
   };
 
   var reducer = function reducer(state, _ref) {
@@ -70027,20 +70028,23 @@ var Login = function Login() {
   var name = state.name,
       email = state.email,
       password = state.password,
-      password_confirmation = state.password_confirmation;
+      password_confirmation = state.password_confirmation,
+      rating = state.rating;
 
   var handleRegister = function handleRegister(e) {
     e.preventDefault();
-    axios__WEBPACK_IMPORTED_MODULE_2___default.a.post('/register', {
-      state: state
-    }).then(function () {
-      history.push('/dashboard');
+    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/sanctum/csrf-cookie').then(function (response) {
+      axios__WEBPACK_IMPORTED_MODULE_2___default.a.post('/register', {
+        state: state
+      }); // .then(() => {
+      //     history.push('/dashboard')
+      // })
     });
   };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex flex-col justify-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Login"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Register"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     onSubmit: handleRegister
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Name", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     type: "name",
@@ -70071,7 +70075,7 @@ var Login = function Login() {
   }, "Signup")));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Login);
+/* harmony default export */ __webpack_exports__["default"] = (Register);
 
 /***/ }),
 

@@ -2,7 +2,7 @@ import React, {useReducer} from 'react';
 import {useHistory} from 'react-router-dom';
 import axios from 'axios';
 
-const Login = () => 
+const Register = () => 
 {
     let history = useHistory();
     // Form entry data
@@ -10,7 +10,8 @@ const Login = () =>
         name: "",
         email: "",
         password: "",
-        password_confirmation:""
+        password_confirmation:"",
+        rating: 0
 };
 
     const  reducer = (state, {field, value}) =>  {
@@ -27,23 +28,25 @@ const Login = () =>
         dispatch({field :e.target.name, value: e.target.value})
     }
 
-    const { name,email, password,password_confirmation } = state
+    const {name, email, password,password_confirmation, rating } = state
 
     
     const handleRegister = (e) => 
     {
         e.preventDefault();
-        axios.post('/register', {
-            state
+        axios.get('/sanctum/csrf-cookie').then(response => {
+            axios.post('/register', {
+                state
             })
-        .then(() => {
-                history.push('/dashboard')
-            })
+            // .then(() => {
+            //     history.push('/dashboard')
+            // })
+        });
     }
 
     return (
         <div className="flex flex-col justify-center">
-            <h1>Login</h1>
+            <h1>Register</h1>
             <form onSubmit={handleRegister}>
             <label>Name
                     <input 
@@ -91,4 +94,4 @@ const Login = () =>
     );
 }
 
-export default Login;
+export default Register;
