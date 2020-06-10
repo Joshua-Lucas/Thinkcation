@@ -70000,7 +70000,9 @@ var Register = function Register() {
   var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])(); // Form entry data
 
   var initialState = {
-    name: "",
+    firstname: "",
+    lastname: "",
+    birthday: "",
     email: "",
     password: "",
     password_confirmation: "",
@@ -70025,11 +70027,13 @@ var Register = function Register() {
     });
   };
 
-  var name = state.name,
+  var firstname = state.firstname,
+      lastname = state.lastname,
+      birthday = state.birthday,
       email = state.email,
       password = state.password,
       password_confirmation = state.password_confirmation,
-      rating = state.rating;
+      rating = state.rating; // Event Handlers
 
   var handleRegister = function handleRegister(e) {
     e.preventDefault();
@@ -70040,47 +70044,62 @@ var Register = function Register() {
   };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col justify-center items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Register"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    className: "flex flex-col justify-center items-center w-1/3",
+    className: "flex flex-col justify-center items-center m-auto mt-40 rounded-lg shadow-xl w-1/5 bg-white"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "pt-8 pb-4 "
+  }, "Signup"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    className: "flex flex-col justify-center items-center w-full pb-8",
     onSubmit: handleRegister
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-    className: "flex flex-col w-full py-4 "
-  }, "Name", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "border-2 ",
-    type: "name",
-    placeholder: "name",
-    name: "name",
-    value: name,
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "auth-input auth-input:focus ",
+    type: "text",
+    placeholder: "First Name",
+    name: "firstname",
+    value: firstname,
     onChange: handleChange
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-    className: "flex flex-col w-full py-4 "
-  }, "Email", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "border-2 ",
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "border-2 p-2 w-5/6 ",
+    type: "text",
+    placeholder: "Last Name",
+    name: "lastname",
+    value: lastname,
+    onChange: handleChange
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "text-xs pt-1 w-5/6 font-thin text-lightaccent"
+  }, "Make sure it matches your goverment ID"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "border-2 p-2 mt-6 w-5/6",
+    type: "date",
+    placeholder: "Birthday",
+    name: "birthday",
+    value: birthday,
+    onChange: handleChange
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "text-xs pt-1 w-5/6 mb-8 font-thin text-lightaccent"
+  }, "To sign up, you need to be at least 18. Your birthday won\u2019t be shared with other people who use Thinkinn."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "border-2 p-2  w-5/6",
     type: "email",
     placeholder: "email",
     name: "email",
     value: email,
     onChange: handleChange
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-    className: "flex flex-col w-full py-4 "
-  }, "Password", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "border-2 ",
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "text-xs pt-1 w-5/6 mb-8 font-thin text-lightaccent"
+  }, "Make sure it matches your goverment ID"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "border-2 p-2 w-5/6",
     type: "password",
     placeholder: "password",
     name: "password",
     value: password,
     onChange: handleChange
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-    className: "flex flex-col w-full py-4 "
-  }, "Confirm Password", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "border-2 ",
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "border-2 p-2 w-5/6",
     type: "password",
     placeholder: "confirm password",
     name: "password_confirmation",
     value: password_confirmation,
     onChange: handleChange
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "w-1/3 p-2 mt-8 rounded borader-2 bg-brand hover:bg-darkshade hover:text-lightshade  ",
     type: "submit"
   }, "Signup")));
 };
@@ -70693,7 +70712,7 @@ var UserDashboard = function UserDashboard() {
 
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('api/user').then(function (res) {
-      setUser(res.data);
+      return setUser(res.data);
     });
   }, []);
 
@@ -70703,7 +70722,7 @@ var UserDashboard = function UserDashboard() {
     });
   };
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, user.name, "'s Dashboard"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, user.firstname, "'s Dashboard"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     onClick: handleLogout
   }, "Logout"));
 };

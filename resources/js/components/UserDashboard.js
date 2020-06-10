@@ -10,7 +10,7 @@ const UserDashboard = () =>
     useEffect(() => {  
         Axios
             .get('api/user')
-            .then(res => {setUser(res.data)});
+            .then(res => setUser(res.data));
       }, [] );
 
     const handleLogout = () => 
@@ -22,7 +22,7 @@ const UserDashboard = () =>
 
     return(
         <div>
-            <h1>{user.name}'s Dashboard</h1>
+            <h1>{user.firstname}'s Dashboard</h1>
             <button onClick={handleLogout}>Logout</button>
         </div>
     );
