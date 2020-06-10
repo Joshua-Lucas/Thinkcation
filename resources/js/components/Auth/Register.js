@@ -7,7 +7,9 @@ const Register = () =>
     let history = useHistory();
     // Form entry data
     const initialState = {
-        name: "",
+        firstname: "",
+        lastname: "",
+        birthday: "",
         email: "",
         password: "",
         password_confirmation:"",
@@ -28,9 +30,9 @@ const Register = () =>
         dispatch({field :e.target.name, value: e.target.value})
     }
 
-    const {name, email, password,password_confirmation, rating } = state
+    const {firstname, lastname, birthday, email, password,password_confirmation, rating } = state
 
-    
+    // Event Handlers
     const handleRegister = (e) => 
     {
         e.preventDefault();
@@ -44,55 +46,68 @@ const Register = () =>
             })
     }
 
+
     return (
-        <div className="flex flex-col justify-center items-center">
-            <h1>Register</h1>
-            <form  className="flex flex-col justify-center items-center w-1/3"onSubmit={handleRegister}>
-                <label className="flex flex-col w-full py-4 ">Name
+        <div className="flex flex-col justify-center items-center m-auto mt-40 rounded-lg shadow-xl w-1/5 bg-white">
+            <h1 className="pt-8 pb-4 " >Signup</h1>
+            <form  className="flex flex-col justify-center items-center w-full pb-8" onSubmit={handleRegister}>
                     <input 
-                        className="border-2 "
-                        type="name"
-                        placeholder="name"
-                        name="name" 
-                        value={name}  
+                        className="auth-input auth-input:focus "
+                        type="text"
+                        placeholder="First Name"
+                        name="firstname" 
+                        value={firstname}  
                         onChange={handleChange}
                      />
-                </label>
 
-                <label className="flex flex-col w-full py-4 ">Email
                     <input 
-                        className="border-2 "
+                        className="border-2 p-2 w-5/6 "
+                        type="text"
+                        placeholder="Last Name"
+                        name="lastname" 
+                        value={lastname}  
+                        onChange={handleChange}
+                     />                     
+                    <p className="text-xs pt-1 w-5/6 font-thin text-lightaccent">Make sure it matches your goverment ID</p>
+                    <input 
+                        className="border-2 p-2 mt-6 w-5/6"
+                        type="date"
+                        placeholder="Birthday"
+                        name="birthday" 
+                        value={birthday}  
+                        onChange={handleChange}
+                     /> 
+                    <p className="text-xs pt-1 w-5/6 mb-8 font-thin text-lightaccent">To sign up, you need to be at least 18. Your birthday won’t be shared with other people who use Thinkinn.</p>  
+
+                    <input 
+                        className="border-2 p-2  w-5/6"
                         type="email"
                         placeholder="email"
                         name="email" 
                         value={email}  
                         onChange={handleChange}
                      />
-                </label>
-
-                <label className="flex flex-col w-full py-4 ">Password
+                    <p className="text-xs pt-1 w-5/6 mb-8 font-thin text-lightaccent">Make sure it matches your goverment ID</p>
                     <input 
-                        className="border-2 "
+                        className="border-2 p-2 w-5/6"
                         type="password"
                         placeholder="password"
                         name="password" 
                         value={password}  
                         onChange={handleChange}
                     />
-                </label>
-
-                <label className="flex flex-col w-full py-4 ">Confirm Password
+        
                     <input 
-                        className="border-2 "
+                        className="border-2 p-2 w-5/6"
                         type="password"
                         placeholder="confirm password"
                         name="password_confirmation" 
                         value={password_confirmation}  
                         onChange={handleChange}
                     />
-                </label>
+        
 
-                <button type="submit">Signup</button>
+                <button className="w-1/3 p-2 mt-8 rounded borader-2 bg-brand hover:bg-darkshade hover:text-lightshade  " type="submit">Signup</button>
             </form>
         </div>
     );
