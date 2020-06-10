@@ -5,6 +5,7 @@ import PageNotFound from './PageNotFound.js';
 import Login from './Auth/Login.js';
 import Register from './Auth/Register.js';
 import Dashboard from './UserDashboard.js';
+import NavBar from './NavBar.js';
 
 
 const App = () =>  {
@@ -12,7 +13,10 @@ const App = () =>  {
         <BrowserRouter>
             <div className="">
                 <Switch>
-                    <Route exact path="/"></Route>
+                   
+                    <Route exact path="/">
+                        <NavBar/>
+                    </Route>
                     <Route exact path="/login">
                         <Login />
                     </Route>
