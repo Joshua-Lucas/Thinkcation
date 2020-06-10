@@ -69927,9 +69927,7 @@ var Login = function Login() {
   var handleLogin = function handleLogin(e) {
     e.preventDefault();
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/sanctum/csrf-cookie').then(function (response) {
-      axios__WEBPACK_IMPORTED_MODULE_2___default.a.post('/login', {
-        state: state
-      }).then(function () {
+      axios__WEBPACK_IMPORTED_MODULE_2___default.a.post('/login', state).then(function () {
         history.push('/dashboard');
       });
     });
@@ -70033,38 +70031,48 @@ var Register = function Register() {
 
   var handleRegister = function handleRegister(e) {
     e.preventDefault();
-    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/sanctum/csrf-cookie').then(function (response) {
-      axios__WEBPACK_IMPORTED_MODULE_2___default.a.post('/register', {
-        state: state
-      }); // .then(() => {
-      //     history.push('/dashboard')
-      // })
+    console.log(state);
+    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/sanctum/csrf-cookie').then(axios__WEBPACK_IMPORTED_MODULE_2___default.a.post('/register', state)).then(function () {
+      history.push('/login');
     });
   };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col justify-center"
+    className: "flex flex-col justify-center items-center"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Register"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    className: "flex flex-col justify-center items-center w-1/3",
     onSubmit: handleRegister
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Name", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    className: "flex flex-col w-full py-4 "
+  }, "Name", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "border-2 ",
     type: "name",
     placeholder: "name",
     name: "name",
     value: name,
     onChange: handleChange
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Email", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    className: "flex flex-col w-full py-4 "
+  }, "Email", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "border-2 ",
     type: "email",
     placeholder: "email",
     name: "email",
     value: email,
     onChange: handleChange
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Password", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    className: "flex flex-col w-full py-4 "
+  }, "Password", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "border-2 ",
     type: "password",
     placeholder: "password",
     name: "password",
     value: password,
     onChange: handleChange
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Confirm Password", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
+    className: "flex flex-col w-full py-4 "
+  }, "Confirm Password", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "border-2 ",
     type: "password",
     placeholder: "confirm password",
     name: "password_confirmation",

@@ -34,22 +34,23 @@ const Register = () =>
     const handleRegister = (e) => 
     {
         e.preventDefault();
-        axios.get('/sanctum/csrf-cookie').then(response => {
-            axios.post('/register', {
-                state
+        console.log(state)
+        axios.get('/sanctum/csrf-cookie')
+            .then(
+            axios.post('/register', state)
+            )  
+            .then(() => {
+                history.push('/login')
             })
-            // .then(() => {
-            //     history.push('/dashboard')
-            // })
-        });
     }
 
     return (
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center items-center">
             <h1>Register</h1>
-            <form onSubmit={handleRegister}>
-            <label>Name
+            <form  className="flex flex-col justify-center items-center w-1/3"onSubmit={handleRegister}>
+                <label className="flex flex-col w-full py-4 ">Name
                     <input 
+                        className="border-2 "
                         type="name"
                         placeholder="name"
                         name="name" 
@@ -58,8 +59,9 @@ const Register = () =>
                      />
                 </label>
 
-                <label>Email
+                <label className="flex flex-col w-full py-4 ">Email
                     <input 
+                        className="border-2 "
                         type="email"
                         placeholder="email"
                         name="email" 
@@ -68,8 +70,9 @@ const Register = () =>
                      />
                 </label>
 
-                <label>Password
+                <label className="flex flex-col w-full py-4 ">Password
                     <input 
+                        className="border-2 "
                         type="password"
                         placeholder="password"
                         name="password" 
@@ -78,8 +81,9 @@ const Register = () =>
                     />
                 </label>
 
-                <label>Confirm Password
+                <label className="flex flex-col w-full py-4 ">Confirm Password
                     <input 
+                        className="border-2 "
                         type="password"
                         placeholder="confirm password"
                         name="password_confirmation" 
