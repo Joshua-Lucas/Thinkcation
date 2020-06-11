@@ -7,7 +7,7 @@ const PageNotFound = () =>  {
     return(
         <div className="flex justify-center w-3/4 items-center m-auto mt-20">
             <div className='w-1/2 '>
-                <h1 className='text-6xl font-bold'>Opps!</h1>
+                <h1 className='text-6xl font-bold'>Oops!</h1>
                 <h2 className='text-2xl pt-4'>We can't seem to find the page you are looking for.</h2>
                 <div className='pt-8 flex flex-col space-y-1'>
                     <h3 className='text-lg font-semibold pb-2'>Here are some hepful links</h3>
