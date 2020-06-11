@@ -112,7 +112,7 @@ const Register = () =>
                     />
         
 
-                <button className="w-2/3 p-2 mt-8 rounded borader-2 bg-brand hover:bg-darkshade hover:text-lightshade lg:w-1/3 " type="submit">Signup</button>
+                <button className="w-2/3 p-2 mt-8 rounded borader-2 bg-brand hover:bg-darkshade hover:text-lightshade lg:w-5/6" type="submit">Signup</button>
             </form>
         </div>
     );
