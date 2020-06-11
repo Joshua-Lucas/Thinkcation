@@ -70702,6 +70702,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _searching_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../searching.svg */ "./resources/searching.svg");
+/* harmony import */ var _searching_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_searching_svg__WEBPACK_IMPORTED_MODULE_3__);
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -70718,6 +70720,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
 var UserDashboard = function UserDashboard() {
   var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
 
@@ -70726,10 +70729,15 @@ var UserDashboard = function UserDashboard() {
       user = _useState2[0],
       setUser = _useState2[1];
 
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState4 = _slicedToArray(_useState3, 2),
+      error = _useState4[0],
+      setError = _useState4[1];
+
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('api/user').then(function (res) {
       return setUser(res.data);
-    });
+    })["catch"](handleErrors);
   }, []);
 
   var handleLogout = function handleLogout() {
@@ -70738,9 +70746,37 @@ var UserDashboard = function UserDashboard() {
     });
   };
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, user.firstname, "'s Dashboard"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  var handleErrors = function handleErrors(err) {
+    if (err.response) {
+      setError(true);
+    }
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, error === false ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, user.firstname, "'s Dashboard"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     onClick: handleLogout
-  }, "Logout"));
+  }, "Logout")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex flex-col items-center mt-12 lg:mt-20 xl:flex-row xl:justify-center xl:my-20 "
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "w-11/12 xl:w-1/3",
+    src: _searching_svg__WEBPACK_IMPORTED_MODULE_3___default.a,
+    alt: "searching for user"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: " w-11/12 flex flex-col items-center xl:self-center xl:w-1/3 xl:pl-8"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "text-4xl text-center 2xl:text-5xl"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "block text-6xl xl:pr-1 "
+  }, "Opps!"), "Looks like you are not logged in. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "pt-4 "
+  }, "try one of these"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: " pt-8 space-x-4"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "py-3 px-4 rounded-full borader-2 bg-brand hover:bg-darkshade hover:text-lightshade ",
+    to: "/signup"
+  }, "Signup"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "py-3 px-4  rounded-full borader-2 bg-brand hover:bg-darkshade hover:text-lightshade",
+    to: "/login"
+  }, "Login"))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (UserDashboard);
@@ -70779,6 +70815,17 @@ if (document.getElementById('root')) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/searching.svg":
+/*!*********************************!*\
+  !*** ./resources/searching.svg ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/searching.svg?a506cc5bbbd46d77ae67f96988e85582";
 
 /***/ }),
 
