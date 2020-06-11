@@ -69936,24 +69936,35 @@ var Login = function Login() {
   };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col justify-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Login"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    className: "flex flex-col justify-center items-center m-auto my-20 rounded-lg shadow-xl w-11/12 bg-white md:w-3/4 lg:w-2/4 xl:w-2/6 2xl:w-1/5"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "pt-8 pb-4"
+  }, "Login"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    className: "flex flex-col justify-center items-center w-full pb-8",
     onSubmit: handleLogin
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Email", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "auth-input auth-input:focus",
     type: "email",
     placeholder: "email",
     name: "email",
     value: email,
     onChange: handleChange
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Password", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "auth-input auth-input:focus",
     type: "password",
     placeholder: "password",
     name: "password",
     value: password,
     onChange: handleChange
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "w-2/3 p-2 mt-4 rounded borader-2 bg-brand hover:bg-darkshade hover:text-lightshade lg:w-5/6 ",
     type: "submit"
-  }, "Login")));
+  }, "Login"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "text-sm pt-4 font-thin w-5/6 "
+  }, "Don't have an account?", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "font-medium text-darkaccent underline pl-1",
+    to: "/signup"
+  }, "Sign Up"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Login);
@@ -70104,7 +70115,7 @@ var Register = function Register() {
     onChange: handleChange,
     required: true
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    className: "w-2/3 p-2 mt-8 rounded borader-2 bg-brand hover:bg-darkshade hover:text-lightshade lg:w-1/3 ",
+    className: "w-2/3 p-2 mt-8 rounded borader-2 bg-brand hover:bg-darkshade hover:text-lightshade lg:w-5/6",
     type: "submit"
   }, "Signup")));
 };

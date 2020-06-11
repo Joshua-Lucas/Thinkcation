@@ -1,5 +1,5 @@
 import React, { useReducer} from 'react';
-import {Redirect, useHistory} from 'react-router-dom';
+import {Redirect, useHistory, Link} from 'react-router-dom';
 import axios from 'axios';
 
 
@@ -41,31 +41,40 @@ const Login = () =>
     }
 
     return (
-        <div className="flex flex-col justify-center">
-            <h1>Login</h1>
-            <form onSubmit={handleLogin}>
-                <label>Email
-                    <input 
-                        type="email"
-                        placeholder="email"
-                        name="email" 
-                        value={email}  
-                        onChange={handleChange}
-                     />
-                </label>
-
-                <label>Password
-                    <input 
-                        type="password"
-                        placeholder="password"
-                        name="password" 
-                        value={password}  
-                        onChange={handleChange}
+        <div className="flex flex-col justify-center items-center m-auto my-20 rounded-lg shadow-xl w-11/12 bg-white md:w-3/4 lg:w-2/4 xl:w-2/6 2xl:w-1/5">
+            <h1 className="pt-8 pb-4">Login</h1>
+            <form className="flex flex-col justify-center items-center w-full pb-8" onSubmit={handleLogin}>
+                <input 
+                    className="auth-input auth-input:focus"
+                    type="email"
+                    placeholder="email"
+                    name="email" 
+                    value={email}  
+                    onChange={handleChange}
                     />
-                </label>
 
-                <button type="submit">Login</button>
+                <input 
+                    className="auth-input auth-input:focus"
+                    type="password"
+                    placeholder="password"
+                    name="password" 
+                    value={password}  
+                    onChange={handleChange}
+                />
+
+                <button 
+                    className="w-2/3 p-2 mt-4 rounded borader-2 bg-brand hover:bg-darkshade hover:text-lightshade lg:w-5/6 " 
+                    type="submit">
+                    Login
+                </button>
+                <p className="text-sm pt-4 font-thin w-5/6 ">
+                    Don't have an account?  
+                    <Link className="font-medium text-darkaccent underline pl-1" to='/signup'>Sign Up</Link>    
+                </p>
+        
             </form>
+
+
         </div>
     );
 }
