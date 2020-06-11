@@ -99,6 +99,7 @@ const Register = () =>
                         value={password}  
                         onChange={handleChange}
                         required
+                        minLength="8"
                     />
         
                     <input 
