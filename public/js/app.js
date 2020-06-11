@@ -70037,69 +70037,74 @@ var Register = function Register() {
 
   var handleRegister = function handleRegister(e) {
     e.preventDefault();
-    console.log(state);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/sanctum/csrf-cookie').then(axios__WEBPACK_IMPORTED_MODULE_2___default.a.post('/register', state)).then(function () {
       history.push('/login');
     });
   };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col justify-center items-center m-auto mt-40 rounded-lg shadow-xl w-1/5 bg-white"
+    className: "flex flex-col justify-center items-center m-auto my-20 rounded-lg shadow-xl w-11/12 bg-white md:w-3/4 lg:w-2/4 xl:w-2/6 2xl:w-1/5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "pt-8 pb-4 "
   }, "Signup"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     className: "flex flex-col justify-center items-center w-full pb-8",
     onSubmit: handleRegister
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "auth-input auth-input:focus ",
+    className: "auth-input auth-input:focus",
     type: "text",
     placeholder: "First Name",
     name: "firstname",
     value: firstname,
-    onChange: handleChange
+    onChange: handleChange,
+    required: true
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "border-2 p-2 w-5/6 ",
+    className: "auth-input auth-input:focus",
     type: "text",
     placeholder: "Last Name",
     name: "lastname",
     value: lastname,
-    onChange: handleChange
+    onChange: handleChange,
+    required: true
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "text-xs pt-1 w-5/6 font-thin text-lightaccent"
   }, "Make sure it matches your goverment ID"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "border-2 p-2 mt-6 w-5/6",
+    className: "auth-input auth-input:focus mt-6 ",
     type: "date",
     placeholder: "Birthday",
     name: "birthday",
     value: birthday,
-    onChange: handleChange
+    onChange: handleChange,
+    required: true
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "text-xs pt-1 w-5/6 mb-8 font-thin text-lightaccent"
   }, "To sign up, you need to be at least 18. Your birthday won\u2019t be shared with other people who use Thinkinn."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "border-2 p-2  w-5/6",
+    className: "auth-input auth-input:focus ",
     type: "email",
     placeholder: "email",
     name: "email",
     value: email,
-    onChange: handleChange
+    onChange: handleChange,
+    required: true
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "text-xs pt-1 w-5/6 mb-8 font-thin text-lightaccent"
   }, "Make sure it matches your goverment ID"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "border-2 p-2 w-5/6",
+    className: "auth-input auth-input:focus ",
     type: "password",
     placeholder: "password",
     name: "password",
     value: password,
-    onChange: handleChange
+    onChange: handleChange,
+    required: true
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "border-2 p-2 w-5/6",
+    className: "auth-input auth-input:focus ",
     type: "password",
     placeholder: "confirm password",
     name: "password_confirmation",
     value: password_confirmation,
-    onChange: handleChange
+    onChange: handleChange,
+    required: true
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    className: "w-1/3 p-2 mt-8 rounded borader-2 bg-brand hover:bg-darkshade hover:text-lightshade  ",
+    className: "w-2/3 p-2 mt-8 rounded borader-2 bg-brand hover:bg-darkshade hover:text-lightshade lg:w-1/3 ",
     type: "submit"
   }, "Signup")));
 };
