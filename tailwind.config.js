@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        '2xl' : {'min': '1680px'},
+      },
       colors: 
       {
         'lightshade' : '#f7f4f1',
@@ -14,6 +17,10 @@ module.exports = {
         'darkaccent': '#a5454a',
         'darkshade': '#232c3f'
 
+      },
+      fontFamily:
+      {
+        'montserrat' : ['Montserrat', 'sans-serif']
       }
     },
   },
