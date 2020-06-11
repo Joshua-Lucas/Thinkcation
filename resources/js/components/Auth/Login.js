@@ -1,11 +1,13 @@
-import React, { useReducer} from 'react';
+import React, { useState,useReducer} from 'react';
 import {Redirect, useHistory, Link} from 'react-router-dom';
 import axios from 'axios';
+import NoAccountError from './errors/NoAccountError';
 
 
 const Login = () => 
 {
     let history = useHistory();
+    const [error,setError] = useState (false);
     // Form entry data
     const initialState = {
         email: "",
@@ -37,12 +39,25 @@ const Login = () =>
             .then(() => {
                 history.push('/dashboard')
             })
+            .catch(handleErrors)
         });
+    }
+
+    const handleErrors = (err) =>  
+    {
+        if(err.response)
+        {
+            console.log(err.response)
+            setError(true)
+        }
     }
 
     return (
         <div className="flex flex-col justify-center items-center m-auto my-20 rounded-lg shadow-xl w-11/12 bg-white md:w-3/4 lg:w-2/4 xl:w-2/6 2xl:w-1/5">
             <h1 className="pt-8 pb-4">Login</h1>
+            <div className={!error ? 'hidden' : 'block w-5/6 '}>
+                    <NoAccountError /> 
+            </div>
             <form className="flex flex-col justify-center items-center w-full pb-8" onSubmit={handleLogin}>
                 <input 
                     className="auth-input auth-input:focus"
@@ -51,6 +66,7 @@ const Login = () =>
                     name="email" 
                     value={email}  
                     onChange={handleChange}
+                    required
                     />
 
                 <input 
@@ -60,6 +76,7 @@ const Login = () =>
                     name="password" 
                     value={password}  
                     onChange={handleChange}
+                    required
                 />
 
                 <button 
@@ -69,13 +86,11 @@ const Login = () =>
                 </button>
                 <p className="text-sm pt-4 font-thin w-5/6 ">
                     Don't have an account?  
-                    <Link className="font-medium text-darkaccent underline pl-1" to='/signup'>Sign Up</Link>    
+                    <Link className="font-medium text-brand underline pl-1" to='/signup'>Sign Up</Link>    
                 </p>
-        
             </form>
-
-
         </div>
+
     );
 }
 
