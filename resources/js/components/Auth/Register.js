@@ -1,10 +1,12 @@
-import React, {useReducer} from 'react';
+import React, {useState, useReducer} from 'react';
 import {useHistory} from 'react-router-dom';
 import axios from 'axios';
+import Error from '../../../icon-exclamation.svg'
 
 const Register = () => 
 {
     let history = useHistory();
+    const [ofAge,setOfAge] = useState(true);
     // Form entry data
     const initialState = {
         firstname: "",
@@ -44,7 +46,27 @@ const Register = () =>
                 history.push('/login')
             })
     }
+    const handleBdayValdidation = () => 
+    {
+        let ageRestriction = 18;
+        // convert Bday to Date object
+        let year = parseInt(birthday.slice(0,4));
+        let month = parseInt(birthday.slice(6,8)) - 1;
+        let day = parseInt(birthday.slice(8,10));
+        let birthDate = new Date (year, month, day);
+        console.log(birthDate);
 
+        let currentDate = new Date();
+        currentDate.setFullYear(currentDate.getFullYear() - ageRestriction);
+        
+        if ((currentDate - birthDate) < 0 )
+        {
+            return setOfAge(false);
+        } 
+            return setOfAge(true);
+        
+    
+    }
 
     return (
         <div className="flex flex-col justify-center items-center m-auto my-20 rounded-lg shadow-xl w-11/12 bg-white md:w-3/4 lg:w-2/4 xl:w-2/6 2xl:w-1/5">
@@ -77,9 +99,17 @@ const Register = () =>
                         name="birthday" 
                         value={birthday}  
                         onChange={handleChange}
+                        onBlur={handleBdayValdidation}
                         required
                      /> 
-                    <p className="text-xs pt-1 w-5/6 mb-8 font-thin text-lightaccent">To sign up, you need to be at least 18. Your birthday won’t be shared with other people who use Thinkinn.</p>  
+                    { ofAge 
+                        ? <p className="text-xs pt-1 w-5/6 mb-8 font-thin text-lightaccent">To sign up, you need to be at least 18. Your birthday won’t be shared with other people who use Thinkinn.</p> 
+                        :  
+                            <div className="flex pt-1 w-5/6 mb-8">
+                                <img className="w-8 h-8 self-center"src={Error} alt='exclamation'></img>
+                                <p className="text-xs pl-1 font-thin text-darkaccent">You must be 18 or older to use Airbnb. Other people won’t see your birthday.</p> 
+                             </div>
+                    }
 
                     <input 
                         className="auth-input auth-input:focus "
