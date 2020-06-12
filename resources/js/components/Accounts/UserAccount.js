@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import {Link, useHistory} from 'react-router-dom';
+import {Link, useHistory, Switch, Route} from 'react-router-dom';
 import Axios from 'axios';
-import Searching from '../../searching.svg';
+import Searching from '../../../searching.svg';
 
-const UserDashboard = () => 
+const UserAccount = () => 
 {
     let history = useHistory();
     const [user,setUser] = useState ([]);
@@ -32,11 +32,12 @@ const UserDashboard = () =>
     }
 
     return(
+
         <div>
             {error === false 
             ? 
             <React.Fragment>
-                <h1>{user.firstname}'s Dashboard</h1>
+                <h1>{user.firstname}'s Account</h1>
                 <button onClick={handleLogout}>Logout</button>
             </React.Fragment>
             :
@@ -56,8 +57,12 @@ const UserDashboard = () =>
                 </div>
             </React.Fragment>
             }
+
+
+
+
         </div>
     );
 }
 
-export default UserDashboard;
+export default UserAccount;

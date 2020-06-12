@@ -4,8 +4,8 @@ import DisplayInns from './Inns/DisplayInns.js';
 import PageNotFound from './PageNotFound.js';
 import Login from './Auth/Login.js';
 import Register from './Auth/Register.js';
-import Dashboard from './UserDashboard.js';
 import NavBar from './NavBar.js';
+import AccountSettings from './Accounts/AccountSettings.js';
 
 
 const App = () =>  {
@@ -23,13 +23,13 @@ const App = () =>  {
                     <Route exact path="/signup">
                         <Register />
                     </Route>
-                    <Route exact path="/dashboard">
-                        <Dashboard />
+                    <Route exact path="/account">
+                        <AccountSettings />
                     </Route>
                     <Route   path="/inns"> 
                         <DisplayInns/>
                     </Route>
-                    <Route path='/*'>
+                    <Route >
                         <PageNotFound />
                     </Route>
                 </Switch>

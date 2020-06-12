@@ -37,7 +37,7 @@ const Login = () =>
         axios.get('/sanctum/csrf-cookie').then(response => {
             axios.post('/login', state)
             .then(() => {
-                history.push('/dashboard')
+                history.push('/account')
             })
             .catch(handleErrors)
         });
