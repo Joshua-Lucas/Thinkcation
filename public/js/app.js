@@ -70028,6 +70028,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _icon_exclamation_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../icon-exclamation.svg */ "./resources/icon-exclamation.svg");
 /* harmony import */ var _icon_exclamation_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_icon_exclamation_svg__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _errors_EmailAlreadyExists_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./errors/EmailAlreadyExists.js */ "./resources/js/components/Auth/errors/EmailAlreadyExists.js");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -70051,13 +70052,29 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
 var Register = function Register() {
   var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true),
       _useState2 = _slicedToArray(_useState, 2),
       ofAge = _useState2[0],
-      setOfAge = _useState2[1]; // Form entry data
+      setOfAge = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
+      _useState4 = _slicedToArray(_useState3, 2),
+      error = _useState4[0],
+      setError = _useState4[1];
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(''),
+      _useState6 = _slicedToArray(_useState5, 2),
+      errorEmail = _useState6[0],
+      setErrorEmail = _useState6[1];
+
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
+      _useState8 = _slicedToArray(_useState7, 2),
+      errorPassword = _useState8[0],
+      setErrorPassword = _useState8[1]; // Form entry data
 
 
   var initialState = {
@@ -70098,8 +70115,10 @@ var Register = function Register() {
 
   var handleRegister = function handleRegister(e) {
     e.preventDefault();
-    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/sanctum/csrf-cookie').then(axios__WEBPACK_IMPORTED_MODULE_2___default.a.post('/register', state)).then(function () {
-      history.push('/login');
+    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/sanctum/csrf-cookie').then(function (response) {
+      axios__WEBPACK_IMPORTED_MODULE_2___default.a.post('/register', state).then(function () {
+        history.push('/login');
+      })["catch"](handleErrors);
     });
   };
 
@@ -70110,7 +70129,6 @@ var Register = function Register() {
     var month = parseInt(birthday.slice(6, 8)) - 1;
     var day = parseInt(birthday.slice(8, 10));
     var birthDate = new Date(year, month, day);
-    console.log(birthDate);
     var currentDate = new Date();
     currentDate.setFullYear(currentDate.getFullYear() - ageRestriction);
 
@@ -70121,11 +70139,36 @@ var Register = function Register() {
     return setOfAge(true);
   };
 
+  var handleErrors = function handleErrors(err) {
+    if (err.response) {
+      // check for email error
+      if (err.response.data.errors.email !== undefined) {
+        setErrorEmail(err.response.data.errors.email[0]);
+      } else {
+        setErrorEmail('');
+      } // check for password error
+
+
+      if (err.response.data.errors.password !== undefined) {
+        setErrorPassword(err.response.data.errors.password[0]);
+      } else {
+        setErrorPassword('');
+      }
+
+      setError(true);
+    }
+  };
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex flex-col justify-center items-center m-auto my-20 rounded-lg shadow-xl w-11/12 bg-white md:w-3/4 lg:w-2/4 xl:w-2/6 2xl:w-1/5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "pt-8 pb-4 "
-  }, "Signup"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+  }, "Signup"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: !error ? 'hidden' : 'block w-5/6 '
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_errors_EmailAlreadyExists_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    emailError: errorEmail,
+    passwordError: errorPassword
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     className: "flex flex-col justify-center items-center w-full pb-8",
     onSubmit: handleRegister
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -70157,7 +70200,7 @@ var Register = function Register() {
     required: true
   }), ofAge ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "text-xs pt-1 w-5/6 mb-8 font-thin text-lightaccent"
-  }, "To sign up, you need to be at least 18. Your birthday won\u2019t be shared with other people who use Thinkinn.") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "To sign up, you need to be at least 18. Your birthday won\u2019t be shared with other people who use Thinkcation.") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "flex pt-1 w-5/6 mb-8"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     className: "w-8 h-8 self-center",
@@ -70165,7 +70208,7 @@ var Register = function Register() {
     alt: "exclamation"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "text-xs pl-1 font-thin text-darkaccent"
-  }, "You must be 18 or older to use Airbnb. Other people won\u2019t see your birthday.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  }, "You must be 18 or older to use Thinkcation. Other people won\u2019t see your birthday.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     className: "auth-input auth-input:focus ",
     type: "email",
     placeholder: "email",
@@ -70199,6 +70242,47 @@ var Register = function Register() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Register);
+
+/***/ }),
+
+/***/ "./resources/js/components/Auth/errors/EmailAlreadyExists.js":
+/*!*******************************************************************!*\
+  !*** ./resources/js/components/Auth/errors/EmailAlreadyExists.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+var NoAccountError = function NoAccountError(_ref) {
+  var emailError = _ref.emailError,
+      passwordError = _ref.passwordError;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: " flex items-center my-4 py-4 px-2 bg-red-100 border-t-4 border-darkaccent rounded-md w-full"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: " text-darkaccent items-center"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    className: " fill-current w-10 h-10 ",
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 24 24"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 9a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm0 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "flex flex-col pl-3"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+    className: "text-darkaccent"
+  }, " Let's try that again"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: emailError === '' || emailError === null ? 'hidden' : 'text-xs font-light pb-1'
+  }, emailError), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: passwordError === '' || passwordError === null ? 'hidden' : 'text-xs font-light'
+  }, passwordError)));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (NoAccountError);
 
 /***/ }),
 

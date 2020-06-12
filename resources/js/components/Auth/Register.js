@@ -1,12 +1,17 @@
 import React, {useState, useReducer} from 'react';
 import {useHistory} from 'react-router-dom';
 import axios from 'axios';
-import Error from '../../../icon-exclamation.svg'
+import Error from '../../../icon-exclamation.svg';
+import EmailAlreadyExists from './errors/EmailAlreadyExists.js';
 
 const Register = () => 
 {
     let history = useHistory();
     const [ofAge,setOfAge] = useState(true);
+    const [error,setError] = useState (false);
+    const [errorEmail,setErrorEmail] = useState('');
+    const [errorPassword,setErrorPassword] = useState("");
+  
     // Form entry data
     const initialState = {
         firstname: "",
@@ -38,13 +43,13 @@ const Register = () =>
     const handleRegister = (e) => 
     {
         e.preventDefault();
-        axios.get('/sanctum/csrf-cookie')
-            .then(
+        axios.get('/sanctum/csrf-cookie').then(response => {
             axios.post('/register', state)
-            )  
             .then(() => {
                 history.push('/login')
             })
+            .catch(handleErrors)
+        });
     }
     const handleBdayValdidation = () => 
     {
@@ -54,8 +59,7 @@ const Register = () =>
         let month = parseInt(birthday.slice(6,8)) - 1;
         let day = parseInt(birthday.slice(8,10));
         let birthDate = new Date (year, month, day);
-        console.log(birthDate);
-
+        
         let currentDate = new Date();
         currentDate.setFullYear(currentDate.getFullYear() - ageRestriction);
         
@@ -67,10 +71,38 @@ const Register = () =>
         
     
     }
-
+    const handleErrors = (err) =>  
+    {
+        if(err.response)
+        {
+            // check for email error
+            if(err.response.data.errors.email !== undefined)
+            {
+                setErrorEmail(err.response.data.errors.email[0])
+            } else
+            {
+                setErrorEmail('')
+            }    
+            // check for password error
+            if(err.response.data.errors.password !== undefined)
+            {
+                setErrorPassword(err.response.data.errors.password[0])
+            } else
+            {
+                setErrorPassword('')
+            }
+            setError(true)
+        }
+    }
     return (
         <div className="flex flex-col justify-center items-center m-auto my-20 rounded-lg shadow-xl w-11/12 bg-white md:w-3/4 lg:w-2/4 xl:w-2/6 2xl:w-1/5">
             <h1 className="pt-8 pb-4 " >Signup</h1>
+            <div className={!error ? 'hidden' : 'block w-5/6 '}>
+                    <EmailAlreadyExists 
+                        emailError={errorEmail} 
+                        passwordError={errorPassword}
+                    />
+            </div>
             <form  className="flex flex-col justify-center items-center w-full pb-8" onSubmit={handleRegister}>
                     <input 
                         className="auth-input auth-input:focus"
@@ -103,11 +135,11 @@ const Register = () =>
                         required
                      /> 
                     { ofAge 
-                        ? <p className="text-xs pt-1 w-5/6 mb-8 font-thin text-lightaccent">To sign up, you need to be at least 18. Your birthday won’t be shared with other people who use Thinkinn.</p> 
+                        ? <p className="text-xs pt-1 w-5/6 mb-8 font-thin text-lightaccent">To sign up, you need to be at least 18. Your birthday won’t be shared with other people who use Thinkcation.</p> 
                         :  
                             <div className="flex pt-1 w-5/6 mb-8">
                                 <img className="w-8 h-8 self-center"src={Error} alt='exclamation'></img>
-                                <p className="text-xs pl-1 font-thin text-darkaccent">You must be 18 or older to use Airbnb. Other people won’t see your birthday.</p> 
+                                <p className="text-xs pl-1 font-thin text-darkaccent">You must be 18 or older to use Thinkcation. Other people won’t see your birthday.</p> 
                              </div>
                     }
 
