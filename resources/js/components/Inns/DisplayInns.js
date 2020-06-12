@@ -11,7 +11,7 @@ const DisplayInns = () =>  {
         <Route  exact path="/inns"> 
             <BrowseInns/>
         </Route>
-        <Route exact  path="/inns/:id"> 
+        <Route exact path="/inns/:id"> 
             <ShowInn/>
         </Route>
     </Switch>
