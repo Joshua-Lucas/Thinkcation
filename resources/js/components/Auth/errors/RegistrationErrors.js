@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NoAccountError = ({emailError,passwordError}) => 
+const RegistrationErros = ({emailError,passwordError}) => 
 {
     return(
         <div className=" flex items-center my-4 py-4 px-2 bg-red-100 border-t-4 border-darkaccent rounded-md w-full">
@@ -19,4 +19,4 @@ const NoAccountError = ({emailError,passwordError}) =>
 
 }
 
-export default NoAccountError;
+export default RegistrationErros;

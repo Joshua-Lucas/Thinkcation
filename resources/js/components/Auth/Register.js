@@ -2,7 +2,7 @@ import React, {useState, useReducer} from 'react';
 import {useHistory} from 'react-router-dom';
 import axios from 'axios';
 import Error from '../../../icon-exclamation.svg';
-import EmailAlreadyExists from './errors/EmailAlreadyExists.js';
+import RegistrationErrors from './errors/RegistrationErrors.js';
 
 const Register = () => 
 {
@@ -98,7 +98,7 @@ const Register = () =>
         <div className="flex flex-col justify-center items-center m-auto my-20 rounded-lg shadow-xl w-11/12 bg-white md:w-3/4 lg:w-2/4 xl:w-2/6 2xl:w-1/5">
             <h1 className="pt-8 pb-4 " >Signup</h1>
             <div className={!error ? 'hidden' : 'block w-5/6 '}>
-                    <EmailAlreadyExists 
+                    <RegistrationErrors 
                         emailError={errorEmail} 
                         passwordError={errorPassword}
                     />
