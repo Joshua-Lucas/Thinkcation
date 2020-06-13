@@ -13,7 +13,6 @@ const App = () =>  {
         <BrowserRouter>
             <div className="">
                 <Switch>
-                   
                     <Route exact path="/">
                         <NavBar/>
                     </Route>
@@ -23,13 +22,13 @@ const App = () =>  {
                     <Route exact path="/signup">
                         <Register />
                     </Route>
-                    <Route exact path="/account">
+                    <Route  path="/account">
                         <AccountSettings />
                     </Route>
                     <Route   path="/inns"> 
                         <DisplayInns/>
                     </Route>
-                    <Route >
+                    <Route path='/*'>
                         <PageNotFound />
                     </Route>
                 </Switch>
