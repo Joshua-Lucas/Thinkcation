@@ -69738,6 +69738,17 @@ module.exports = function(module) {
 
 /***/ }),
 
+/***/ "./resources/Listings.svg":
+/*!********************************!*\
+  !*** ./resources/Listings.svg ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/Listings.svg?929737c87ed7f7e6f703c9cc94415fee";
+
+/***/ }),
+
 /***/ "./resources/Lost.svg":
 /*!****************************!*\
   !*** ./resources/Lost.svg ***!
@@ -69746,6 +69757,61 @@ module.exports = function(module) {
 /***/ (function(module, exports) {
 
 module.exports = "/images/Lost.svg?ed219fae1dc939622abcab7c6632dde1";
+
+/***/ }),
+
+/***/ "./resources/Notifications.svg":
+/*!*************************************!*\
+  !*** ./resources/Notifications.svg ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/Notifications.svg?3227b2b2f6b20f8850d337ba78ff6b14";
+
+/***/ }),
+
+/***/ "./resources/Payment.svg":
+/*!*******************************!*\
+  !*** ./resources/Payment.svg ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/Payment.svg?0ba475cab9f7ee672aee35fb33931698";
+
+/***/ }),
+
+/***/ "./resources/PersonalInfo.svg":
+/*!************************************!*\
+  !*** ./resources/PersonalInfo.svg ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/PersonalInfo.svg?973f89a8b124d65150c91d0eb2b7b557";
+
+/***/ }),
+
+/***/ "./resources/Security.svg":
+/*!********************************!*\
+  !*** ./resources/Security.svg ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/Security.svg?c2a900de98b4f440b9a6df01977386e7";
+
+/***/ }),
+
+/***/ "./resources/Trips.svg":
+/*!*****************************!*\
+  !*** ./resources/Trips.svg ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/Trips.svg?afc639ab0404bdc584591383afbd8dc4";
 
 /***/ }),
 
@@ -70024,6 +70090,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _PersonalInfo_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../PersonalInfo.svg */ "./resources/PersonalInfo.svg");
+/* harmony import */ var _PersonalInfo_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_PersonalInfo_svg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _Security_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../Security.svg */ "./resources/Security.svg");
+/* harmony import */ var _Security_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Security_svg__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _Payment_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../Payment.svg */ "./resources/Payment.svg");
+/* harmony import */ var _Payment_svg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_Payment_svg__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _Notifications_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../Notifications.svg */ "./resources/Notifications.svg");
+/* harmony import */ var _Notifications_svg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_Notifications_svg__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _Listings_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../Listings.svg */ "./resources/Listings.svg");
+/* harmony import */ var _Listings_svg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_Listings_svg__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _Trips_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../Trips.svg */ "./resources/Trips.svg");
+/* harmony import */ var _Trips_svg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_Trips_svg__WEBPACK_IMPORTED_MODULE_7__);
+
+
+
+
+
+
 
 
 
@@ -70032,7 +70116,7 @@ var UserAccount = function UserAccount(_ref) {
       handleLogout = _ref.handleLogout;
   var userName = "".concat(user.firstname, "  ").concat(user.lastname);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col mx-auto  w-3/5"
+    className: "flex flex-col mx-auto w-full px-6 md:w-5/6 md:px-0 xl:px-6  2xl:w-3/5"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "ml-4 my-16"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
@@ -70041,24 +70125,98 @@ var UserAccount = function UserAccount(_ref) {
     className: "text-darkaccent",
     to: "/account/profile"
   }, "Go to Profile"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: " w-full self-center grid grid-cols-3 gap-4 -mx-2 px-2 "
+    className: " w-full self-center grid grid-cols-2 lg:grid-cols-3 gap-4 -mx-2 px-2 "
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    className: "flex flex-col p-6 rounded-lg shadow-xl bg-white"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-    className: "mb-4 w-6 h-6 fill-current text-lightaccent",
-    viewBox: "0 0 20 20"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    d: "M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zM7 6v2a3 3 0 1 0 6 0V6a3 3 0 1 0-6 0zm-3.65 8.44a8 8 0 0 0 13.3 0 15.94 15.94 0 0 0-13.3 0z"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-    className: "mb-2 text-lg"
+    className: "flex flex-col items-center p-6 rounded-lg shadow-xl bg-white md:items-start"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "mb-4 w-24 h-24 ",
+    src: _PersonalInfo_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
+    alt: "Payment || Payouts"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+    className: "text-sm text-center md:mb-2 lg:text-lg  "
   }, "Personal Info", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-    className: "inline fill-current text-lightaccent w-6 h-6",
+    className: "hidden fill-current text-lightaccent w-6 h-6 md:inline",
     viewBox: "0 0 20 20"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
     d: "M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "font-light text-sm"
-  }, "Provide personal details and how we can reach you")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], null, "Login & security "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], null, "Payments & payouts"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], null, "Notifications"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], null, "Listings"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], null, "Trips")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "hidden font-light text-sm md:block "
+  }, "Provide personal details and how we can reach you")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "flex flex-col items-center p-6 rounded-lg shadow-xl bg-white md:items-start"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "mb-4 w-24 h-24 ",
+    src: _Security_svg__WEBPACK_IMPORTED_MODULE_3___default.a,
+    alt: "Payment || Payouts"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+    className: "text-sm text-center md:mb-2 lg:text-lg  "
+  }, "Login & security", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    className: "hidden fill-current text-lightaccent w-6 h-6 md:inline",
+    viewBox: "0 0 20 20"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "hidden font-light text-sm md:block "
+  }, "Update your password and secure your account")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "flex flex-col items-center p-6 rounded-lg shadow-xl bg-white md:items-start"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "mb-4 w-24 h-24 ",
+    src: _Payment_svg__WEBPACK_IMPORTED_MODULE_4___default.a,
+    alt: "Payment || Payouts"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+    className: "text-sm text-center md:mb-2 lg:text-lg  "
+  }, "Payment & payouts", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    className: "hidden fill-current text-lightaccent w-6 h-6 md:inline",
+    viewBox: "0 0 20 20"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "hidden font-light text-sm md:block "
+  }, "Update your password and secure your account")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "flex flex-col items-center p-6 rounded-lg shadow-xl bg-white md:items-start"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "mb-4 w-24 h-24 ",
+    src: _Notifications_svg__WEBPACK_IMPORTED_MODULE_5___default.a,
+    alt: ""
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+    className: "text-sm text-center md:mb-2 lg:text-lg  "
+  }, "Notifications", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    className: "hidden fill-current text-lightaccent w-6 h-6 md:inline",
+    viewBox: "0 0 20 20"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "hidden font-light text-sm md:block "
+  }, "Update your password and secure your account")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "flex flex-col items-center p-6 rounded-lg shadow-xl bg-white md:items-start"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "mb-4 w-24 h-24 ",
+    src: _Listings_svg__WEBPACK_IMPORTED_MODULE_6___default.a,
+    alt: "Payment || Payouts"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+    className: "text-sm text-center md:mb-2 lg:text-lg  "
+  }, "Listings", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    className: "hidden fill-current text-lightaccent w-6 h-6 md:inline",
+    viewBox: "0 0 20 20"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "hidden font-light text-sm md:block "
+  }, "Update your password and secure your account")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    className: "flex flex-col items-center p-6 rounded-lg shadow-xl bg-white md:items-start"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    className: "mb-4 w-24 h-24 ",
+    src: _Trips_svg__WEBPACK_IMPORTED_MODULE_7___default.a,
+    alt: ""
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+    className: "text-sm  text-center md:mb-2 lg:text-lg  "
+  }, "Notifications", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
+    className: "hidden fill-current text-lightaccent w-6 h-6 md:inline",
+    viewBox: "0 0 20 20"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
+    d: "M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    className: "hidden font-light text-sm md:block "
+  }, "Update your password and secure your account"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     onClick: handleLogout
   }, "Logout"));
 };
