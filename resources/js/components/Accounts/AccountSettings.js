@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { Switch, Route, useHistory} from 'react-router-dom';
 import Axios from 'axios';
+import NavBar from '../NavBar.js';
 import UserAccount from './Useraccount.js';
 import UserProfile from './UserProfile.js';
 import UserListings from './UserListings.js';
@@ -39,7 +40,7 @@ const AccountSettings = () =>  {
 
     return(
         <div>
-            <h1>This is the nav bar</h1>
+            <NavBar />
         <Switch>
             <Route exact path="/account">
                 { error
