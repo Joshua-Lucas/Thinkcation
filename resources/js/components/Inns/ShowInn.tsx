@@ -7,7 +7,6 @@ const ShowInn: FunctionComponent = () => {
     const apiUrl = "/api" + window.location.pathname;
 
     useEffect(() => {
-        let url = location.href;
         Axios.get(apiUrl).then((res) => {
             setInn(res.data);
         });
