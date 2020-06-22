@@ -1,5 +1,5 @@
 import React, { useState, useReducer } from "react";
-import { Redirect, useHistory, Link } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import axios from "axios";
 import NoAccountError from "./errors/NoAccountError";
 
@@ -29,7 +29,7 @@ const Login = () => {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        axios.get("/sanctum/csrf-cookie").then((response) => {
+        axios.get("/sanctum/csrf-cookie").then(() => {
             axios
                 .post("/login", state)
                 .then(() => {
@@ -83,7 +83,7 @@ const Login = () => {
                     Login
                 </button>
                 <p className="text-sm pt-4 font-thin w-5/6 ">
-                    Don't have an account?
+                    Don&#39;t have an account?
                     <Link
                         className="font-medium text-brand underline pl-1"
                         to="/signup"
