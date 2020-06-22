@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, FunctionComponent } from "react";
 import { Link } from "react-router-dom";
 import Axios from "axios";
 
-const BrowseInns = () => {
+const BrowseInns: FunctionComponent = () => {
     const [inns, setInns] = useState([]);
 
     useEffect(() => {
