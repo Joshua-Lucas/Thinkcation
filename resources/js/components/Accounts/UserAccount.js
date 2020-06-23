@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import PersonalInfo from "../../../PersonalInfo.svg";
 import Security from "../../../Security.svg";
 import Payments from "../../../Payment.svg";
@@ -17,7 +16,11 @@ const UserAccount = ({ user, handleLogout }) => {
                 <h3 className="font-bold">Account</h3>
                 <p>
                     {userName}, {user.email}{" "}
-                    <Link className="text-darkaccent" to="/account/profile">
+                    <Link
+                        to="/account/profile"
+                        className="text-darkaccent"
+                        to="/account/profile"
+                    >
                         Go to Profile
                     </Link>
                 </p>
