@@ -1,29 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
+import UserInfoContext from "../components/Context/UserInforContext.js";
 import Axios from "axios";
 
 const NavBar = () => {
-    const [user, setUser] = useState([]);
-
-    useEffect(() => {
-        Axios.get("api/user")
-            .then((res) => {
-                setUser(res.data);
-            })
-            .catch(function (error) {
-                console.log(error);
-            })
-            .then(setUser("Unathorized"));
-    }, []);
+    const [userInfo] = useContext(UserInfoContext);
 
     return (
         <div>
             <Link to="/HostHome">Host your home</Link>
 
-            {user === "Unathorized" ? (
+            {userInfo === "guest" ? (
                 <Link to="/login">Login</Link>
             ) : (
-                <Link to="/dashboard">{user.name}</Link>
+                <Link to="/dashboard">{userInfo.name}</Link>
             )}
         </div>
     );

@@ -70919,17 +70919,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 var NavBar = function NavBar() {
   var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_components_Context_UserInforContext_js__WEBPACK_IMPORTED_MODULE_2__["default"]),
       _useContext2 = _slicedToArray(_useContext, 1),
-      userInfo = _useContext2[0]; // useEffect(() => {
-  //     Axios.get("api/user")
-  //         .then((res) => {
-  //             setUser(res.data);
-  //         })
-  //         .catch(function (error) {
-  //             console.log(error);
-  //         })
-  //         .then(setUser("Unathorized"));
-  // }, []);
-
+      userInfo = _useContext2[0];
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/HostHome"
