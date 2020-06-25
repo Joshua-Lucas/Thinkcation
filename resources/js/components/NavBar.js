@@ -1,20 +1,28 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import UserInfoContext from "../components/Context/UserInforContext.js";
-import Axios from "axios";
+import UserInfoContext from "../components/Context/UserInforContext";
 
 const NavBar = () => {
-    const [userInfo] = useContext(UserInfoContext);
+    const { userInfo } = useContext(UserInfoContext);
+
+    console.log(userInfo);
 
     return (
-        <div>
-            <Link to="/HostHome">Host your home</Link>
+        <div className="flex justify-around py-6 shadow-md ">
+            <div>
+                <Link to="/">
+                    <img src="#" alt="thinkcation|Logo"></img>
+                </Link>
+            </div>
+            <div className="flex justify-center px-8 space-x-4">
+                <Link to="/HostHome">Host your home</Link>
 
-            {userInfo === "guest" ? (
-                <Link to="/login">Login</Link>
-            ) : (
-                <Link to="/dashboard">{userInfo.name}</Link>
-            )}
+                {userInfo === "guest" ? (
+                    <Link to="/login">Login</Link>
+                ) : (
+                    <Link to="/account">{userInfo.firstname}</Link>
+                )}
+            </div>
         </div>
     );
 };
