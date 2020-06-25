@@ -69967,46 +69967,9 @@ var AccountSettings = function AccountSettings() {
   !*** ./resources/js/components/Accounts/Errors/NotSignedIn.js ***!
   \****************************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _searching_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../searching.svg */ "./resources/searching.svg");
-/* harmony import */ var _searching_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_searching_svg__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-
-var NotSignedIn = function NotSignedIn() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col items-center mt-12 lg:mt-20 xl:flex-row xl:justify-center xl:my-20 "
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "w-11/12 xl:w-1/3",
-    src: _searching_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
-    alt: "searching for user"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: " w-11/12 flex flex-col items-center xl:self-center xl:w-1/3 xl:pl-8"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: "text-4xl text-center 2xl:text-5xl"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    className: "block text-6xl xl:pr-1 "
-  }, "Oops!"), "Looks like you are not logged in.", " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "pt-4 "
-  }, "try one of these"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: " pt-8 space-x-4"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    className: "py-3 px-4 rounded-full borader-2 bg-brand hover:bg-darkshade hover:text-lightshade ",
-    to: "/signup"
-  }, "Signup"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    className: "py-3 px-4  rounded-full borader-2 bg-brand hover:bg-darkshade hover:text-lightshade",
-    to: "/login"
-  }, "Login"))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (NotSignedIn);
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open '/Users/JoshuaLucas/codeTest/thinkCation/resources/js/components/Accounts/Errors/NotSignedIn.js'");
 
 /***/ }),
 
@@ -71028,17 +70991,6 @@ if (document.getElementById("root")) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-
-/***/ "./resources/searching.svg":
-/*!*********************************!*\
-  !*** ./resources/searching.svg ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/searching.svg?a506cc5bbbd46d77ae67f96988e85582";
 
 /***/ }),
 

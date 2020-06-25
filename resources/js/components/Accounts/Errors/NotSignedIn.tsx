@@ -1,15 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Searching from "../../../../searching.svg";
+import Searching from "../../../../searching.js";
 
 const NotSignedIn = () => {
     return (
         <div className="flex flex-col items-center mt-12 lg:mt-20 xl:flex-row xl:justify-center xl:my-20 ">
-            <img
-                className="w-11/12 xl:w-1/3"
-                src={Searching}
-                alt="searching for user"
-            ></img>
+            <Searching className="w-11/12 xl:w-1/3" />
             <div className=" w-11/12 flex flex-col items-center xl:self-center xl:w-1/3 xl:pl-8">
                 <h1 className="text-4xl text-center 2xl:text-5xl">
                     <span className="block text-6xl xl:pr-1 ">Oops!</span>
