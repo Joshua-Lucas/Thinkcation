@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import { Switch, Route, useHistory } from "react-router-dom";
 import Axios from "axios";
 import NavBar from "../NavBar.js";
@@ -11,14 +11,7 @@ import UserInfoContext from "../Context/UserInforContext.js";
 
 const AccountSettings = () => {
     let history = useHistory();
-    const [error, setError] = useState(false);
-    const [userInfo, setUserInfo] = useContext(UserInfoContext);
-
-    useEffect(() => {
-        Axios.get("api/user")
-            .then((res) => setUserInfo(res.data))
-            .catch(handleErrors);
-    }, []);
+    const { userInfo, setUserInfo } = useContext(UserInfoContext);
 
     const handleLogout = () => {
         Axios.post("/logout").then(() => {
@@ -27,27 +20,18 @@ const AccountSettings = () => {
         });
     };
 
-    const handleErrors = (err) => {
-        if (err.response) {
-            setError(true);
-        }
-    };
-
     return (
         <div>
             <NavBar />
             <Switch>
                 <Route exact path="/account">
-                    {error ? (
+                    {userInfo === "guest" ? (
                         <NotSignedIn />
                     ) : (
-                        <UserAccount
-                            user={userInfo}
-                            handleLogout={handleLogout}
-                        />
+                        <UserAccount handleLogout={handleLogout} />
                     )}
                 </Route>
-                <Route exact path="/account/profile">
+                <Route exact path="/account/:profile">
                     <UserProfile />
                 </Route>
                 <Route exact path="/account/listings">
