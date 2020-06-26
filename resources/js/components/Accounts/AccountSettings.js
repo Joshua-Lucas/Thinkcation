@@ -6,7 +6,7 @@ import UserAccount from "./UserAccount.js";
 import UserProfile from "./UserProfile.js";
 import UserListings from "./UserListings.js";
 import PageNotFound from "../PageNotFound.js";
-import NotSignedIn from "./Errors/NotSignedIn.js";
+import NotSignedIn from "./Errors/NotSignedIn.tsx";
 import UserInfoContext from "../Context/UserInforContext.js";
 
 const AccountSettings = () => {
