@@ -69738,17 +69738,6 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./resources/Listings.svg":
-/*!********************************!*\
-  !*** ./resources/Listings.svg ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/Listings.svg?929737c87ed7f7e6f703c9cc94415fee";
-
-/***/ }),
-
 /***/ "./resources/Lost.svg":
 /*!****************************!*\
   !*** ./resources/Lost.svg ***!
@@ -69757,61 +69746,6 @@ module.exports = "/images/Listings.svg?929737c87ed7f7e6f703c9cc94415fee";
 /***/ (function(module, exports) {
 
 module.exports = "/images/Lost.svg?ed219fae1dc939622abcab7c6632dde1";
-
-/***/ }),
-
-/***/ "./resources/Notifications.svg":
-/*!*************************************!*\
-  !*** ./resources/Notifications.svg ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/Notifications.svg?3227b2b2f6b20f8850d337ba78ff6b14";
-
-/***/ }),
-
-/***/ "./resources/Payment.svg":
-/*!*******************************!*\
-  !*** ./resources/Payment.svg ***!
-  \*******************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/Payment.svg?0ba475cab9f7ee672aee35fb33931698";
-
-/***/ }),
-
-/***/ "./resources/PersonalInfo.svg":
-/*!************************************!*\
-  !*** ./resources/PersonalInfo.svg ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/PersonalInfo.svg?973f89a8b124d65150c91d0eb2b7b557";
-
-/***/ }),
-
-/***/ "./resources/Security.svg":
-/*!********************************!*\
-  !*** ./resources/Security.svg ***!
-  \********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/Security.svg?c2a900de98b4f440b9a6df01977386e7";
-
-/***/ }),
-
-/***/ "./resources/Trips.svg":
-/*!*****************************!*\
-  !*** ./resources/Trips.svg ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/Trips.svg?afc639ab0404bdc584591383afbd8dc4";
 
 /***/ }),
 
@@ -69911,9 +69845,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _NavBar_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../NavBar.js */ "./resources/js/components/NavBar.js");
-/* harmony import */ var _UserAccount_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./UserAccount.js */ "./resources/js/components/Accounts/UserAccount.js");
-/* harmony import */ var _UserProfile_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./UserProfile.js */ "./resources/js/components/Accounts/UserProfile.js");
-/* harmony import */ var _UserListings_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./UserListings.js */ "./resources/js/components/Accounts/UserListings.js");
+/* harmony import */ var _UserAccount_UserAccount_tsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./UserAccount/UserAccount.tsx */ "./resources/js/components/Accounts/UserAccount/UserAccount.tsx");
+/* harmony import */ var _UserAccount_UserAccount_tsx__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_UserAccount_UserAccount_tsx__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _UserProfile_tsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./UserProfile.tsx */ "./resources/js/components/Accounts/UserProfile.tsx");
+/* harmony import */ var _UserProfile_tsx__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_UserProfile_tsx__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _UserListings_tsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./UserListings.tsx */ "./resources/js/components/Accounts/UserListings.tsx");
+/* harmony import */ var _UserListings_tsx__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_UserListings_tsx__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _PageNotFound_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../PageNotFound.js */ "./resources/js/components/PageNotFound.js");
 /* harmony import */ var _Errors_NotSignedIn_tsx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Errors/NotSignedIn.tsx */ "./resources/js/components/Accounts/Errors/NotSignedIn.tsx");
 /* harmony import */ var _Errors_NotSignedIn_tsx__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_Errors_NotSignedIn_tsx__WEBPACK_IMPORTED_MODULE_8__);
@@ -69946,15 +69883,15 @@ var AccountSettings = function AccountSettings() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NavBar_js__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
     path: "/account"
-  }, userInfo === "guest" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Errors_NotSignedIn_tsx__WEBPACK_IMPORTED_MODULE_8___default.a, null) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UserAccount_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, userInfo === "guest" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Errors_NotSignedIn_tsx__WEBPACK_IMPORTED_MODULE_8___default.a, null) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UserAccount_UserAccount_tsx__WEBPACK_IMPORTED_MODULE_4___default.a, {
     handleLogout: handleLogout
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
     path: "/account/:profile"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UserProfile_js__WEBPACK_IMPORTED_MODULE_5__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UserProfile_tsx__WEBPACK_IMPORTED_MODULE_5___default.a, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
     path: "/account/listings"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UserListings_js__WEBPACK_IMPORTED_MODULE_6__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UserListings_tsx__WEBPACK_IMPORTED_MODULE_6___default.a, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/account/*"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PageNotFound_js__WEBPACK_IMPORTED_MODULE_7__["default"], null))));
 };
@@ -70089,202 +70026,715 @@ exports.default = SearchingLogo;
 
 /***/ }),
 
-/***/ "./resources/js/components/Accounts/UserAccount.js":
-/*!*********************************************************!*\
-  !*** ./resources/js/components/Accounts/UserAccount.js ***!
-  \*********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./resources/js/components/Accounts/UserAccount/LinkContainer.tsx":
+/*!************************************************************************!*\
+  !*** ./resources/js/components/Accounts/UserAccount/LinkContainer.tsx ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _PersonalInfo_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../PersonalInfo.svg */ "./resources/PersonalInfo.svg");
-/* harmony import */ var _PersonalInfo_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_PersonalInfo_svg__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _Security_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../Security.svg */ "./resources/Security.svg");
-/* harmony import */ var _Security_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Security_svg__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _Payment_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../Payment.svg */ "./resources/Payment.svg");
-/* harmony import */ var _Payment_svg__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_Payment_svg__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _Notifications_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../Notifications.svg */ "./resources/Notifications.svg");
-/* harmony import */ var _Notifications_svg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_Notifications_svg__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _Listings_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../Listings.svg */ "./resources/Listings.svg");
-/* harmony import */ var _Listings_svg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_Listings_svg__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _Trips_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../Trips.svg */ "./resources/Trips.svg");
-/* harmony import */ var _Trips_svg__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_Trips_svg__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _Context_UserInforContext__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../Context/UserInforContext */ "./resources/js/components/Context/UserInforContext.js");
 
-
-
-
-
-
-
-
-
-
-var UserAccount = function UserAccount(_ref) {
-  var handleLogout = _ref.handleLogout;
-
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_Context_UserInforContext__WEBPACK_IMPORTED_MODULE_8__["default"]),
-      userInfo = _useContext.userInfo;
-
-  var userName = "".concat(userInfo.firstname, "  ").concat(userInfo.lastname);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col mx-auto w-full px-6 md:w-5/6 md:px-0 xl:px-6  2xl:w-3/5"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "ml-4 my-16"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "font-bold"
-  }, "Account"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, userName, ", ", userInfo.email, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/account/profile",
-    className: "text-darkaccent"
-  }, "Go to Profile"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: " w-full self-center grid grid-cols-2 lg:grid-cols-3 gap-4 -mx-2 px-2 "
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    className: "flex flex-col items-center p-6 rounded-lg shadow-xl bg-white md:items-start"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "mb-4 w-24 h-24 ",
-    src: _PersonalInfo_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
-    alt: "Payment || Payouts"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-    className: "text-sm text-center md:mb-2 lg:text-lg  "
-  }, "Personal Info", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-    className: "hidden fill-current text-lightaccent w-6 h-6 md:inline",
-    viewBox: "0 0 20 20"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    d: "M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "hidden font-light text-sm md:block "
-  }, "Provide personal details and how we can reach you")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    className: "flex flex-col items-center p-6 rounded-lg shadow-xl bg-white md:items-start"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "mb-4 w-24 h-24 ",
-    src: _Security_svg__WEBPACK_IMPORTED_MODULE_3___default.a,
-    alt: "Payment || Payouts"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-    className: "text-sm text-center md:mb-2 lg:text-lg  "
-  }, "Login & security", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-    className: "hidden fill-current text-lightaccent w-6 h-6 md:inline",
-    viewBox: "0 0 20 20"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    d: "M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "hidden font-light text-sm md:block "
-  }, "Update your password and secure your account")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    className: "flex flex-col items-center p-6 rounded-lg shadow-xl bg-white md:items-start"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "mb-4 w-24 h-24 ",
-    src: _Payment_svg__WEBPACK_IMPORTED_MODULE_4___default.a,
-    alt: "Payment || Payouts"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-    className: "text-sm text-center md:mb-2 lg:text-lg  "
-  }, "Payment & payouts", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-    className: "hidden fill-current text-lightaccent w-6 h-6 md:inline",
-    viewBox: "0 0 20 20"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    d: "M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "hidden font-light text-sm md:block "
-  }, "Update your password and secure your account")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    className: "flex flex-col items-center p-6 rounded-lg shadow-xl bg-white md:items-start"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "mb-4 w-24 h-24 ",
-    src: _Notifications_svg__WEBPACK_IMPORTED_MODULE_5___default.a,
-    alt: ""
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-    className: "text-sm text-center md:mb-2 lg:text-lg  "
-  }, "Notifications", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-    className: "hidden fill-current text-lightaccent w-6 h-6 md:inline",
-    viewBox: "0 0 20 20"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    d: "M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "hidden font-light text-sm md:block "
-  }, "Update your password and secure your account")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    className: "flex flex-col items-center p-6 rounded-lg shadow-xl bg-white md:items-start"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "mb-4 w-24 h-24 ",
-    src: _Listings_svg__WEBPACK_IMPORTED_MODULE_6___default.a,
-    alt: "Payment || Payouts"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-    className: "text-sm text-center md:mb-2 lg:text-lg  "
-  }, "Listings", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-    className: "hidden fill-current text-lightaccent w-6 h-6 md:inline",
-    viewBox: "0 0 20 20"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    d: "M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "hidden font-light text-sm md:block "
-  }, "Update your password and secure your account")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    className: "flex flex-col items-center p-6 rounded-lg shadow-xl bg-white md:items-start"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "mb-4 w-24 h-24 ",
-    src: _Trips_svg__WEBPACK_IMPORTED_MODULE_7___default.a,
-    alt: ""
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-    className: "text-sm  text-center md:mb-2 lg:text-lg  "
-  }, "Notifications", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-    className: "hidden fill-current text-lightaccent w-6 h-6 md:inline",
-    viewBox: "0 0 20 20"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    d: "M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "hidden font-light text-sm md:block "
-  }, "Update your password and secure your account"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    onClick: handleLogout
-  }, "Logout"));
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+const LinkContainer = ({ logo, title, description, }) => {
+    return (react_1.default.createElement(react_1.default.Fragment, null,
+        react_1.default.createElement(react_router_dom_1.Link, { className: "flex flex-col items-center p-6 rounded-lg shadow-xl bg-white md:items-start", to: "#" },
+            logo,
+            react_1.default.createElement("h6", { className: "text-sm text-center md:mb-2 lg:text-lg  " },
+                title,
+                react_1.default.createElement("svg", { className: "hidden fill-current text-lightaccent w-6 h-6 md:inline", viewBox: "0 0 20 20" },
+                    react_1.default.createElement("path", { d: "M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" }))),
+            react_1.default.createElement("p", { className: "hidden font-light text-sm md:block " }, description))));
+};
+exports.default = LinkContainer;
 
-/* harmony default export */ __webpack_exports__["default"] = (UserAccount);
 
 /***/ }),
 
-/***/ "./resources/js/components/Accounts/UserListings.js":
+/***/ "./resources/js/components/Accounts/UserAccount/UserAccount.tsx":
+/*!**********************************************************************!*\
+  !*** ./resources/js/components/Accounts/UserAccount/UserAccount.tsx ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+const LinkContainer_1 = __importDefault(__webpack_require__(/*! ./LinkContainer */ "./resources/js/components/Accounts/UserAccount/LinkContainer.tsx"));
+const PersonalInfoLogo_1 = __importDefault(__webpack_require__(/*! ../svg/PersonalInfoLogo */ "./resources/js/components/Accounts/svg/PersonalInfoLogo.tsx"));
+const SecurityLogo_1 = __importDefault(__webpack_require__(/*! ../svg/SecurityLogo */ "./resources/js/components/Accounts/svg/SecurityLogo.tsx"));
+const PaymentsLogo_1 = __importDefault(__webpack_require__(/*! ../svg/PaymentsLogo */ "./resources/js/components/Accounts/svg/PaymentsLogo.tsx"));
+const NotificationsLogo_1 = __importDefault(__webpack_require__(/*! ../svg/NotificationsLogo */ "./resources/js/components/Accounts/svg/NotificationsLogo.tsx"));
+const Listings_1 = __importDefault(__webpack_require__(/*! ../svg/Listings */ "./resources/js/components/Accounts/svg/Listings.tsx"));
+const TripsLogo_1 = __importDefault(__webpack_require__(/*! ../svg/TripsLogo */ "./resources/js/components/Accounts/svg/TripsLogo.tsx"));
+const UserInforContext_1 = __importDefault(__webpack_require__(/*! ../../Context/UserInforContext */ "./resources/js/components/Context/UserInforContext.js"));
+const UserAccount = ({ handleLogout }) => {
+    const { userInfo } = react_1.useContext(UserInforContext_1.default);
+    const userName = `${userInfo.firstname}  ${userInfo.lastname}`;
+    return (react_1.default.createElement("div", { className: "flex flex-col mx-auto w-full px-6 md:w-5/6 md:px-0 xl:px-6  2xl:w-3/5" },
+        react_1.default.createElement("div", { className: "ml-4 my-16" },
+            react_1.default.createElement("h3", { className: "font-bold" }, "Account"),
+            react_1.default.createElement("p", null,
+                userName,
+                ", ",
+                userInfo.email,
+                " ",
+                react_1.default.createElement(react_router_dom_1.Link, { to: "/account/profile", className: "text-darkaccent" }, "Go to Profile"))),
+        react_1.default.createElement("div", { className: " w-full self-center grid grid-cols-2 lg:grid-cols-3 gap-4 -mx-2 px-2 " },
+            react_1.default.createElement(LinkContainer_1.default, { logo: react_1.default.createElement(PersonalInfoLogo_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Personal Info", description: "Provide personal details and how we can reach you" }),
+            react_1.default.createElement(LinkContainer_1.default, { logo: react_1.default.createElement(SecurityLogo_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Login & security", description: "Update your password and secure your account" }),
+            react_1.default.createElement(LinkContainer_1.default, { logo: react_1.default.createElement(PaymentsLogo_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Payment & payouts", description: "Update your password and secure your account" }),
+            react_1.default.createElement(LinkContainer_1.default, { logo: react_1.default.createElement(NotificationsLogo_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Notifications", description: "asdfs" }),
+            react_1.default.createElement(LinkContainer_1.default, { logo: react_1.default.createElement(Listings_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Listings", description: "asdfs" }),
+            react_1.default.createElement(LinkContainer_1.default, { logo: react_1.default.createElement(TripsLogo_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Trips", description: "asdfs" })),
+        react_1.default.createElement("button", { onClick: handleLogout }, "Logout")));
+};
+exports.default = UserAccount;
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Accounts/UserListings.tsx":
+/*!***********************************************************!*\
+  !*** ./resources/js/components/Accounts/UserListings.tsx ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const UserListings = () => {
+    return (react_1.default.createElement("div", null,
+        react_1.default.createElement("h1", null, "This is the user Listings")));
+};
+exports.default = UserListings;
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Accounts/UserProfile.tsx":
 /*!**********************************************************!*\
-  !*** ./resources/js/components/Accounts/UserListings.js ***!
+  !*** ./resources/js/components/Accounts/UserProfile.tsx ***!
   \**********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
-
-var UserListings = function UserListings() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "This is the user Listings"));
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const UserInforContext_js_1 = __importDefault(__webpack_require__(/*! ../Context/UserInforContext.js */ "./resources/js/components/Context/UserInforContext.js"));
+const UserProfile = () => {
+    const { userInfo } = react_1.useContext(UserInforContext_js_1.default);
+    return (react_1.default.createElement("div", null,
+        react_1.default.createElement("h1", null,
+            "This is the user ",
+            userInfo.firstname)));
+};
+exports.default = UserProfile;
 
-/* harmony default export */ __webpack_exports__["default"] = (UserListings);
 
 /***/ }),
 
-/***/ "./resources/js/components/Accounts/UserProfile.js":
-/*!*********************************************************!*\
-  !*** ./resources/js/components/Accounts/UserProfile.js ***!
-  \*********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./resources/js/components/Accounts/svg/Listings.tsx":
+/*!***********************************************************!*\
+  !*** ./resources/js/components/Accounts/svg/Listings.tsx ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Context_UserInforContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Context/UserInforContext */ "./resources/js/components/Context/UserInforContext.js");
 
-
-
-var UserProfile = function UserProfile() {
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_Context_UserInforContext__WEBPACK_IMPORTED_MODULE_1__["default"]),
-      userInfo = _useContext.userInfo;
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "This is the user ", userInfo.firstname));
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const Listings = ({ cssStyle }) => {
+    return (react_1.default.createElement(react_1.default.Fragment, null,
+        react_1.default.createElement("svg", { className: cssStyle, "data-name": "Layer 1", viewBox: "0 0 964.26 486.72" },
+            react_1.default.createElement("linearGradient", { id: "78f90e6d-b24a-44d2-9f86-3fdf1c79ab28", x1: "1001.2", y1: "623.61", x2: "1001.2", y2: "406.11", gradientUnits: "userSpaceOnUse" },
+                react_1.default.createElement("stop", { offset: "0", stopColor: "gray", stopOpacity: "0.25" }),
+                react_1.default.createElement("stop", { offset: "0.54", stopColor: "gray", stopOpacity: "0.12" }),
+                react_1.default.createElement("stop", { offset: "1", stopColor: "gray", stopOpacity: "0.1" })),
+            " ",
+            react_1.default.createElement("linearGradient", { id: "a2d5f515-de48-4f00-acad-c4726f878aac", x1: "846.11", y1: "465.37", x2: "846.11", y2: "223.13" }),
+            " ",
+            react_1.default.createElement("linearGradient", { id: "70d1009e-dace-48dc-ab15-aedd5e3b03e6", x1: "913.68", y1: "630.19", x2: "913.68", y2: "407.89" }),
+            " ",
+            react_1.default.createElement("linearGradient", { id: "9d354d98-a887-4f91-9102-a75a5431dd3b", x1: "775.55", y1: "469.82", x2: "775.55", y2: "223.04" }),
+            " ",
+            react_1.default.createElement("linearGradient", { id: "ad5409f9-492b-4351-8333-b0e7b9fbef2b", x1: "868.85", y1: "666.48", x2: "868.85", y2: "518.27" }),
+            " ",
+            react_1.default.createElement("linearGradient", { id: "bff858af-3bff-4656-bc49-4e0ce7b6f418", x1: "716.56", y1: "479.18", x2: "716.56", y2: "314.11" }),
+            " ",
+            react_1.default.createElement("linearGradient", { id: "9646795a-0dc7-4a1c-aa48-1a0444241a64", x1: "835.31", y1: "671.87", x2: "835.31", y2: "522.66" }),
+            " ",
+            react_1.default.createElement("linearGradient", { id: "e954bb2d-a63d-48e0-a08e-512ca674347f", x1: "694.5", y1: "482.21", x2: "694.5", y2: "316.57" }),
+            " ",
+            react_1.default.createElement("linearGradient", { id: "d9f3a3cc-a090-4b27-9824-db9019e9fbdf", x1: "546.26", y1: "486.33", x2: "546.26", y2: "235.33" }),
+            " ",
+            react_1.default.createElement("linearGradient", { id: "bebe624b-dd80-4bfd-b5fb-36f1f92addf2", x1: "622.57", y1: "508.79", x2: "622.57", y2: "390.79" }),
+            " ",
+            react_1.default.createElement("linearGradient", { id: "a99917ae-4a89-472a-9152-7d4c890b2f20", x1: "249.26", y1: "486.33", x2: "249.26", y2: "13.33" }),
+            " ",
+            react_1.default.createElement("linearGradient", { id: "3d13e601-7b74-41be-a4f6-2a2c5df3e3e7", x1: "250.26", y1: "175.33", x2: "250.26", y2: "2.37" }),
+            " ",
+            react_1.default.createElement("linearGradient", { id: "1919e53f-dd67-48bc-94b3-535fb113a6c8", x1: "257.43", y1: "684.36", x2: "257.43", y2: "560.8" }),
+            " ",
+            react_1.default.createElement("linearGradient", { id: "595c306e-168d-4085-ab46-670711e52ff5", x1: "106.14", y1: "486.72", x2: "106.14", y2: "349.11" }),
+            " ",
+            react_1.default.createElement("linearGradient", { id: "c7fb197d-4001-483a-882b-f14ca460811a", x1: "208.43", y1: "684.36", x2: "208.43", y2: "560.8" }),
+            " ",
+            react_1.default.createElement("linearGradient", { id: "6a841889-cb28-426a-925d-d1c1f8724da8", x1: "57.14", y1: "486.72", x2: "57.14", y2: "349.11" }),
+            " ",
+            react_1.default.createElement("linearGradient", { id: "5c82545c-e5e3-4953-955f-bf0089f1e97a", x1: "221.48", y1: "685.85", x2: "221.48", y2: "561.46" }),
+            " ",
+            react_1.default.createElement("linearGradient", { id: "53fdcf2b-8327-4d89-b36d-71a6ad642ea4", x1: "79.75", y1: "486.25", x2: "79.75", y2: "348.16" }),
+            " ",
+            react_1.default.createElement("linearGradient", { id: "2fa7ee9e-16f3-4285-a1b9-f91a38b07546", x1: "791.07", y1: "652.6", x2: "791.07", y2: "255.28", gradientUnits: "userSpaceOnUse" },
+                react_1.default.createElement("stop", { offset: "0", stopColor: "#b3b3b3", stopOpacity: "0.25" }),
+                react_1.default.createElement("stop", { offset: "0.54", stopColor: "#b3b3b3", stopOpacity: "0.1" }),
+                react_1.default.createElement("stop", { offset: "1", stopColor: "#b3b3b3", stopOpacity: "0.05" })),
+            react_1.default.createElement("linearGradient", { id: "1d6e68af-1823-4deb-b27c-c7781de2c421", x1: "668.29", y1: "396.98", x2: "668.29", y2: "377.85", gradientUnits: "userSpaceOnUse" },
+                react_1.default.createElement("stop", { offset: "0", stopOpacity: "0.12" }),
+                react_1.default.createElement("stop", { offset: "0.55", stopOpacity: "0.09" }),
+                react_1.default.createElement("stop", { offset: "1", stopOpacity: "0.02" })),
+            react_1.default.createElement("linearGradient", { id: "4b1a7092-3747-45a4-a541-b9b6a299c3dc", x1: "756.12", y1: "375.04", x2: "756.12", y2: "316.56" }),
+            react_1.default.createElement("title", null, "house searching"),
+            react_1.default.createElement("circle", { cx: "215.7", cy: "234.54", r: "182", fill: "none", stroke: "#ff9800", strokeMiterlimit: "10", strokeWidth: "4", strokeDasharray: "12", opacity: "0.3" }),
+            react_1.default.createElement("circle", { cx: "695.7", cy: "198.54", r: "182", fill: "none", stroke: "#ff9800", strokeMiterlimit: "10", strokeWidth: "4", strokeDasharray: "12", opacity: "0.3" }),
+            react_1.default.createElement("g", { id: "ff8ee4b4-5abc-4927-bead-5d69132ee8f9", "data-name": "<Group>" },
+                react_1.default.createElement("path", { d: "M912.36,518.33a45,45,0,0,1-12.22-30.79,45.71,45.71,0,0,1,22.42-39.07,26.53,26.53,0,0,1-4.68-15c0-15.09,12.66-27.32,28.28-27.32a28.15,28.15,0,0,1,27.13,19.67,42.43,42.43,0,0,1,36.08-19.67c23.27,0,42.14,18.23,42.14,40.71a39.4,39.4,0,0,1-2.58,14.05c.85-.06,1.71-.13,2.58-.13,18.68,0,33.82,14.63,33.82,32.68a31.94,31.94,0,0,1-.17,3.3c14.94,6.22,25.4,20.57,25.4,37.28,0,22.41-18.8,40.58-42,40.58a43.65,43.65,0,0,1-7.27-.62c.12,1.35.2,2.72.2,4.1,0,25.15-21.1,45.54-47.13,45.54a48,48,0,0,1-26.84-8.11,35.78,35.78,0,0,1-22.79,8.11c-19.45,0-35.21-15.23-35.21-34,0-.81.07-1.61.13-2.41h-.13c-20.82,0-37.7-16.31-37.7-36.43A36.3,36.3,0,0,1,912.36,518.33Z", transform: "translate(-146.3 -249.46)", fill: "url(#78f90e6d-b24a-44d2-9f86-3fdf1c79ab28)" })),
+            react_1.default.createElement("path", { id: "c200c6c4-addf-434c-9e0f-5ce7230e9a19", "data-name": "<Path>", d: "M916.17,518.18a43.1,43.1,0,0,1-11.69-29.47,43.75,43.75,0,0,1,21.46-37.4,25.39,25.39,0,0,1-4.48-14.39c0-14.44,12.12-26.15,27.07-26.15a27,27,0,0,1,26,18.82A40.62,40.62,0,0,1,1009,410.78c22.28,0,40.33,17.45,40.33,39a37.72,37.72,0,0,1-2.47,13.45c.82-.06,1.64-.12,2.47-.12,17.88,0,32.37,14,32.37,31.28a30.57,30.57,0,0,1-.17,3.16c14.3,6,24.31,19.69,24.31,35.68,0,21.45-18,38.84-40.2,38.84a41.78,41.78,0,0,1-7-.59c.12,1.29.19,2.6.19,3.92,0,24.07-20.2,43.58-45.11,43.58a46,46,0,0,1-25.69-7.76A34.25,34.25,0,0,1,966.3,619c-18.61,0-33.7-14.58-33.7-32.56,0-.78.06-1.54.12-2.31h-.12c-19.93,0-36.09-15.61-36.09-34.87A34.75,34.75,0,0,1,916.17,518.18Z", transform: "translate(-146.3 -249.46)", fill: "#009688" }),
+            react_1.default.createElement("line", { id: "4f2fbb80-d4ec-4696-8eab-975803e285fc", "data-name": "<Path>", x1: "846.33", y1: "223.13", x2: "846.33", y2: "465.37", fill: "#795548" }),
+            react_1.default.createElement("rect", { x: "839.51", y: "223.13", width: "13.19", height: "242.23", fill: "url(#a2d5f515-de48-4f00-acad-c4726f878aac)" }),
+            react_1.default.createElement("rect", { x: "842.68", y: "223.13", width: "7.3", height: "242.23", fill: "#795548" }),
+            react_1.default.createElement("line", { id: "964f69dd-bb5e-4ecb-a4f0-6b0cfaf1e31d", "data-name": "<Path>", x1: "847.07", y1: "295.68", x2: "803.81", y2: "251.56", fill: "#795548" }),
+            react_1.default.createElement("rect", { x: "968.09", y: "492.19", width: "7.3", height: "61.79", transform: "translate(-234.66 580.34) rotate(-44.43)", fill: "#795548" }),
+            react_1.default.createElement("line", { id: "72c4e71e-02d3-4be2-bc6f-3754e61bbdeb", "data-name": "<Path>", x1: "847.07", y1: "333.6", x2: "891.91", y2: "302.14", fill: "#795548" }),
+            react_1.default.createElement("rect", { x: "988.4", y: "563.68", width: "54.78", height: "7.3", transform: "translate(-287.88 436.96) rotate(-35.06)", fill: "#795548" }),
+            react_1.default.createElement("g", { id: "09ddf46a-2bb3-497c-83d6-f7ff730d3d58", "data-name": "<Group>" },
+                react_1.default.createElement("path", { d: "M999.45,522.58a47.74,47.74,0,0,0-9.85-71.4,28.23,28.23,0,0,0,4.52-15.37c0-15.42-12.22-27.92-27.3-27.92a27.39,27.39,0,0,0-26.2,20.1,40.49,40.49,0,0,0-34.83-20.1c-22.47,0-40.69,18.63-40.69,41.61a42.37,42.37,0,0,0,2.49,14.36c-.82-.06-1.65-.13-2.49-.13-18,0-32.66,15-32.66,33.4,0,1.14.06,2.26.17,3.37a41.51,41.51,0,0,0-24.53,38.1c0,22.91,18.16,41.48,40.55,41.48a39.87,39.87,0,0,0,7-.63c-.12,1.38-.19,2.78-.19,4.19,0,25.7,20.37,46.54,45.51,46.54a44.59,44.59,0,0,0,25.91-8.29,33.4,33.4,0,0,0,22,8.29c18.78,0,34-15.57,34-34.77,0-.83-.07-1.65-.12-2.47h.12c20.11,0,36.4-16.67,36.4-37.23A37.32,37.32,0,0,0,999.45,522.58Z", transform: "translate(-146.3 -249.46)", fill: "url(#70d1009e-dace-48dc-ab15-aedd5e3b03e6)" })),
+            react_1.default.createElement("path", { id: "c2060184-c570-49c2-acda-2f80a9472e25", "data-name": "<Path>", d: "M994.19,522.36a44.81,44.81,0,0,0-9.25-67,26.5,26.5,0,0,0,4.24-14.43c0-14.48-11.47-26.21-25.63-26.21A25.71,25.71,0,0,0,939,433.58a38,38,0,0,0-32.7-18.87c-21.09,0-38.19,17.49-38.19,39.06a39.77,39.77,0,0,0,2.34,13.48c-.77-.06-1.55-.12-2.34-.12-16.93,0-30.65,14-30.65,31.35,0,1.07.05,2.12.16,3.16a39,39,0,0,0-23,35.77c0,21.5,17,38.93,38.07,38.93a37.43,37.43,0,0,0,6.59-.59c-.11,1.3-.18,2.61-.18,3.93,0,24.13,19.12,43.68,42.71,43.68a41.85,41.85,0,0,0,24.32-7.78,31.35,31.35,0,0,0,20.65,7.78c17.62,0,31.91-14.61,31.91-32.64,0-.78-.06-1.55-.11-2.32h.11c18.87,0,34.17-15.65,34.17-34.95A35,35,0,0,0,994.19,522.36Z", transform: "translate(-146.3 -249.46)", fill: "#00897b" }),
+            react_1.default.createElement("rect", { x: "770.59", y: "223.04", width: "9.92", height: "246.78", fill: "url(#9d354d98-a887-4f91-9102-a75a5431dd3b)" }),
+            react_1.default.createElement("rect", { x: "773.41", y: "226.51", width: "4.99", height: "243.31", fill: "#795548" }),
+            react_1.default.createElement("rect", { x: "911.43", y: "524.78", width: "60.28", height: "4.99", transform: "translate(-231.37 610.35) rotate(-47.2)", fill: "#795548" }),
+            react_1.default.createElement("rect", { x: "897.36", y: "545.18", width: "4.99", height: "52.89", transform: "translate(-241.86 703.78) rotate(-53.4)", fill: "#795548" }),
+            react_1.default.createElement("g", { id: "db20f295-6229-40c0-b196-6bb997b23afd", "data-name": "<Group>" },
+                react_1.default.createElement("path", { d: "M808.31,594.74a30.69,30.69,0,0,1-8.32-21,31.15,31.15,0,0,1,15.28-26.62,18.08,18.08,0,0,1-3.19-10.25c0-10.28,8.63-18.62,19.27-18.62a19.19,19.19,0,0,1,18.49,13.4,28.92,28.92,0,0,1,24.59-13.4c15.86,0,28.72,12.42,28.72,27.74a26.85,26.85,0,0,1-1.76,9.58c.58,0,1.16-.09,1.76-.09,12.73,0,23,10,23,22.27a21.77,21.77,0,0,1-.12,2.25,27.65,27.65,0,0,1,17.31,25.41c0,15.27-12.81,27.65-28.62,27.65a29.75,29.75,0,0,1-5-.42c.09.92.14,1.85.14,2.79,0,17.14-14.38,31-32.12,31A32.74,32.74,0,0,1,859.53,661,24.38,24.38,0,0,1,844,666.48c-13.25,0-24-10.38-24-23.18,0-.56,0-1.1.09-1.64H820c-14.19,0-25.69-11.11-25.69-24.82A24.74,24.74,0,0,1,808.31,594.74Z", transform: "translate(-146.3 -249.46)", fill: "url(#ad5409f9-492b-4351-8333-b0e7b9fbef2b)" })),
+            react_1.default.createElement("path", { id: "3f6c00ca-74d6-4e4e-a4d6-8f160f37aa24", "data-name": "<Path>", d: "M810.9,594.64a29.37,29.37,0,0,1-8-20.08,29.81,29.81,0,0,1,14.63-25.48,17.3,17.3,0,0,1-3.05-9.81c0-9.84,8.26-17.82,18.44-17.82a18.36,18.36,0,0,1,17.7,12.83,27.68,27.68,0,0,1,23.53-12.83c15.18,0,27.49,11.89,27.49,26.56a25.7,25.7,0,0,1-1.68,9.17c.56,0,1.11-.08,1.68-.08,12.18,0,22.06,9.54,22.06,21.31a20.83,20.83,0,0,1-.11,2.15,26.47,26.47,0,0,1,16.57,24.32c0,14.62-12.27,26.47-27.4,26.47a28.47,28.47,0,0,1-4.74-.4c.08.88.13,1.77.13,2.67,0,16.4-13.76,29.7-30.74,29.7a31.34,31.34,0,0,1-17.5-5.29,23.34,23.34,0,0,1-14.86,5.29c-12.68,0-23-9.93-23-22.19,0-.53,0-1.05.08-1.57h-.08c-13.58,0-24.59-10.64-24.59-23.76A23.68,23.68,0,0,1,810.9,594.64Z", transform: "translate(-146.3 -249.46)", fill: "#009688" }),
+            react_1.default.createElement("line", { id: "8a7e076a-6ecd-440d-86c8-bd2eb9f9fc08", "data-name": "<Path>", x1: "716.71", y1: "314.11", x2: "716.71", y2: "479.18", fill: "#795548" }),
+            react_1.default.createElement("rect", { x: "712.06", y: "314.11", width: "8.99", height: "165.07", fill: "url(#bff858af-3bff-4656-bc49-4e0ce7b6f418)" }),
+            react_1.default.createElement("rect", { x: "714.22", y: "314.11", width: "4.97", height: "165.07", fill: "#795548" }),
+            react_1.default.createElement("line", { id: "cd90862a-73c1-467f-8a8f-23aaf7962413", "data-name": "<Path>", x1: "717.21", y1: "363.55", x2: "687.74", y2: "333.48", fill: "#795548" }),
+            react_1.default.createElement("rect", { x: "846.29", y: "576.92", width: "4.97", height: "42.1", transform: "translate(-322.25 515.67) rotate(-44.43)", fill: "#795548" }),
+            react_1.default.createElement("line", { id: "f406e355-8aa2-4ce0-9f47-8fc27dbb63cd", "data-name": "<Path>", x1: "717.21", y1: "389.39", x2: "747.77", y2: "367.95", fill: "#795548" }),
+            react_1.default.createElement("rect", { x: "860.13", y: "625.64", width: "37.33", height: "4.97", transform: "translate(-347.66 369.3) rotate(-35.06)", fill: "#795548" }),
+            react_1.default.createElement("g", { id: "af04bae7-87e5-447e-b22a-307a28405780", "data-name": "<Group>" },
+                react_1.default.createElement("path", { d: "M892.88,599.64a32,32,0,0,0-6.61-47.92,19,19,0,0,0,3-10.32,18.28,18.28,0,0,0-35.91-5.25A27.18,27.18,0,0,0,830,522.66c-15.08,0-27.31,12.5-27.31,27.93a28.44,28.44,0,0,0,1.67,9.64c-.55,0-1.11-.09-1.67-.09a22.17,22.17,0,0,0-21.92,22.42c0,.76,0,1.52.11,2.26a27.86,27.86,0,0,0-16.46,25.58c0,15.37,12.19,27.84,27.22,27.84a26.76,26.76,0,0,0,4.71-.42c-.08.93-.13,1.86-.13,2.81,0,17.25,13.68,31.24,30.54,31.24a29.93,29.93,0,0,0,17.39-5.56,22.42,22.42,0,0,0,14.77,5.56,23.08,23.08,0,0,0,22.82-23.34c0-.56,0-1.11-.08-1.66h.08c13.5,0,24.44-11.19,24.44-25A25.05,25.05,0,0,0,892.88,599.64Z", transform: "translate(-146.3 -249.46)", fill: "url(#9646795a-0dc7-4a1c-aa48-1a0444241a64)" })),
+            react_1.default.createElement("path", { id: "e5433075-9388-42ed-900f-702a5a1be897", "data-name": "<Path>", d: "M889.35,599.5a30.08,30.08,0,0,0-6.21-45,17.79,17.79,0,0,0,2.85-9.68,17.16,17.16,0,0,0-33.71-4.93,25.51,25.51,0,0,0-21.95-12.66c-14.16,0-25.63,11.74-25.63,26.22a26.69,26.69,0,0,0,1.57,9.05c-.52,0-1-.08-1.57-.08a20.81,20.81,0,0,0-20.57,21c0,.72,0,1.43.1,2.12a26.15,26.15,0,0,0-15.45,24c0,14.43,11.44,26.13,25.55,26.13a25.12,25.12,0,0,0,4.42-.4c-.08.87-.12,1.75-.12,2.64,0,16.19,12.84,29.32,28.67,29.32a28.09,28.09,0,0,0,16.33-5.22,21,21,0,0,0,13.86,5.22,21.67,21.67,0,0,0,21.42-21.9c0-.52,0-1-.08-1.55h.08a23.2,23.2,0,0,0,22.94-23.46A23.51,23.51,0,0,0,889.35,599.5Z", transform: "translate(-146.3 -249.46)", fill: "#00897b" }),
+            react_1.default.createElement("rect", { x: "691.17", y: "316.57", width: "6.66", height: "165.64", fill: "url(#e954bb2d-a63d-48e0-a08e-512ca674347f)" }),
+            react_1.default.createElement("rect", { x: "693.06", y: "318.9", width: "3.35", height: "163.31", fill: "#795548" }),
+            react_1.default.createElement("rect", { x: "833.8", y: "601.12", width: "40.46", height: "3.35", transform: "translate(-314.84 570.34) rotate(-47.2)", fill: "#795548" }),
+            react_1.default.createElement("rect", { x: "824.36", y: "614.81", width: "3.35", height: "35.5", transform: "translate(-320.6 669.12) rotate(-53.4)", fill: "#795548" }),
+            react_1.default.createElement("rect", { x: "405.26", y: "235.33", width: "282", height: "251", fill: "url(#d9f3a3cc-a090-4b27-9824-db9019e9fbdf)" }),
+            react_1.default.createElement("rect", { x: "220.26", y: "235.33", width: "460", height: "243", fill: "#fff" }),
+            react_1.default.createElement("path", { d: "M848.57,508.79h-452v-118h435.5a16.5,16.5,0,0,1,16.5,16.5Z", transform: "translate(-146.3 -249.46)", fill: "url(#bebe624b-dd80-4bfd-b5fb-36f1f92addf2)" }),
+            react_1.default.createElement("path", { d: "M250.26,146H681.88a16.5,16.5,0,0,1,16.5,16.5v93.79a0,0,0,0,1,0,0H250.26a0,0,0,0,1,0,0V146A0,0,0,0,1,250.26,146Z", fill: "#7f9eb2" }),
+            react_1.default.createElement("path", { d: "M250.26,146H681.88a16.5,16.5,0,0,1,16.5,16.5v93.79a0,0,0,0,1,0,0H250.26a0,0,0,0,1,0,0V146A0,0,0,0,1,250.26,146Z", fill: "#fff", opacity: "0.7" }),
+            react_1.default.createElement("polygon", { points: "249.26 13.32 93.26 123.18 93.26 215.75 93.26 486.32 405.26 486.32 405.26 215.75 405.26 123.18 249.26 13.32", fill: "url(#a99917ae-4a89-472a-9152-7d4c890b2f20)" }),
+            react_1.default.createElement("polygon", { points: "398.26 121.33 250.26 13.32 102.26 121.33 102.26 212.32 398.26 212.32 398.26 121.33", fill: "#7f9eb2" }),
+            react_1.default.createElement("polygon", { points: "398.26 121.33 250.26 13.32 102.26 121.33 102.26 212.32 398.26 212.32 398.26 121.33", fill: "#fff", opacity: "0.5" }),
+            react_1.default.createElement("rect", { x: "102.26", y: "212.33", width: "296", height: "266", fill: "#fff" }),
+            react_1.default.createElement("polygon", { points: "417.26 175.32 250.26 56.07 81.26 175.32 70.26 133.38 250.26 2.37 430.26 133.38 417.26 175.32", fill: "url(#3d13e601-7b74-41be-a4f6-2a2c5df3e3e7)" }),
+            react_1.default.createElement("polygon", { points: "415.73 169.18 250.26 48.75 84.8 169.18 77.73 131.47 250.26 5.91 422.8 131.47 415.73 169.18", fill: "#7f9eb2" }),
+            react_1.default.createElement("polygon", { points: "415.73 169.18 250.26 48.75 84.8 169.18 77.73 131.47 250.26 5.91 422.8 131.47 415.73 169.18", opacity: "0.2" }),
+            react_1.default.createElement("rect", { x: "166.26", y: "270.33", width: "168", height: "208", fill: "#f2f2f2" }),
+            react_1.default.createElement("rect", { x: "166.26", y: "270.33", width: "168", height: "36", fill: "#7f9eb2" }),
+            react_1.default.createElement("rect", { x: "166.26", y: "442.33", width: "168", height: "36", fill: "#7f9eb2" }),
+            react_1.default.createElement("path", { d: "M677.9,653a1.5,1.5,0,0,0,0-3,1.5,1.5,0,0,0,0,3Z", transform: "translate(-146.3 -249.46)", fill: "lime" }),
+            react_1.default.createElement("rect", { x: "490.26", y: "326.33", width: "82", height: "152", fill: "#f2f2f2" }),
+            react_1.default.createElement("rect", { x: "593.26", y: "294.33", width: "77", height: "56", fill: "#f2f2f2" }),
+            react_1.default.createElement("rect", { x: "593.26", y: "294.33", width: "77", height: "25", fill: "#7f9eb2", opacity: "0.2" }),
+            react_1.default.createElement("g", { id: "47cb54cf-6c9b-4864-bf0d-76585f8d162f", "data-name": "<Group>" },
+                react_1.default.createElement("path", { d: "M207,624.55A25.58,25.58,0,0,1,200,607.06a26,26,0,0,1,12.74-22.19,15.07,15.07,0,0,1-2.66-8.54,15.8,15.8,0,0,1,16.06-15.52A16,16,0,0,1,241.58,572a24.11,24.11,0,0,1,20.5-11.17c13.22,0,23.94,10.36,23.94,23.13a22.39,22.39,0,0,1-1.47,8c.49,0,1-.07,1.47-.07,10.61,0,19.21,8.31,19.21,18.56a18.15,18.15,0,0,1-.1,1.87,23.05,23.05,0,0,1,14.43,21.18c0,12.73-10.68,23.05-23.86,23.05a24.8,24.8,0,0,1-4.13-.35c.07.77.11,1.54.11,2.33,0,14.29-12,25.87-26.77,25.87a27.29,27.29,0,0,1-15.25-4.61,20.33,20.33,0,0,1-12.95,4.61c-11,0-20-8.65-20-19.33,0-.46,0-.92.07-1.37h-.07c-11.83,0-21.42-9.27-21.42-20.69A20.62,20.62,0,0,1,207,624.55Z", transform: "translate(-146.3 -249.46)", fill: "url(#1919e53f-dd67-48bc-94b3-535fb113a6c8)" })),
+            react_1.default.createElement("path", { id: "3ed80c62-65f0-4ea6-94fa-12b45cf1e111", "data-name": "<Path>", d: "M209.13,624.47a24.49,24.49,0,0,1-6.64-16.74,24.85,24.85,0,0,1,12.19-21.24,14.42,14.42,0,0,1-2.54-8.18,15.12,15.12,0,0,1,15.38-14.86,15.31,15.31,0,0,1,14.75,10.69,23.07,23.07,0,0,1,19.62-10.69c12.65,0,22.91,9.91,22.91,22.14a21.43,21.43,0,0,1-1.4,7.64c.46,0,.93-.07,1.4-.07,10.16,0,18.39,8,18.39,17.77a17.37,17.37,0,0,1-.09,1.79A22.07,22.07,0,0,1,316.9,633c0,12.19-10.22,22.07-22.84,22.07a23.73,23.73,0,0,1-4-.34c.07.73.11,1.48.11,2.23,0,13.67-11.47,24.76-25.63,24.76A26.12,26.12,0,0,1,250,677.3a19.45,19.45,0,0,1-12.39,4.41c-10.57,0-19.14-8.28-19.14-18.5,0-.44,0-.88.07-1.31h-.07c-11.32,0-20.5-8.87-20.5-19.81A19.74,19.74,0,0,1,209.13,624.47Z", transform: "translate(-146.3 -249.46)", fill: "#009688" }),
+            react_1.default.createElement("line", { id: "b49a21fb-81f1-4431-9ecd-ca46c91409d2", "data-name": "<Path>", x1: "106.27", y1: "349.11", x2: "106.27", y2: "486.72", fill: "#795548" }),
+            react_1.default.createElement("rect", { x: "102.39", y: "349.11", width: "7.5", height: "137.61", fill: "url(#595c306e-168d-4085-ab46-670711e52ff5)" }),
+            react_1.default.createElement("rect", { x: "104.19", y: "349.11", width: "4.14", height: "137.61", fill: "#795548" }),
+            react_1.default.createElement("line", { id: "46369620-a42d-4543-9046-c39c6dd80f7a", "data-name": "<Path>", x1: "106.69", y1: "390.32", x2: "82.11", y2: "365.25", fill: "#795548" }),
+            react_1.default.createElement("rect", { x: "238.63", y: "609.7", width: "4.14", height: "35.1", transform: "translate(-516.59 98.36) rotate(-44.43)", fill: "#795548" }),
+            react_1.default.createElement("line", { id: "062fca71-ec11-4619-a966-9015ca52f87c", "data-name": "<Path>", x1: "106.69", y1: "411.86", x2: "132.16", y2: "393.99", fill: "#795548" }),
+            react_1.default.createElement("rect", { x: "250.16", y: "650.31", width: "31.12", height: "4.14", transform: "translate(-472.83 21.54) rotate(-35.06)", fill: "#795548" }),
+            react_1.default.createElement("g", { id: "a27ca12e-65b6-46c0-899b-83e3c1e240bd", "data-name": "<Group>" },
+                react_1.default.createElement("path", { d: "M158,624.55A25.58,25.58,0,0,1,151,607.06a26,26,0,0,1,12.74-22.19,15.07,15.07,0,0,1-2.66-8.54,15.8,15.8,0,0,1,16.06-15.52A16,16,0,0,1,192.58,572a24.11,24.11,0,0,1,20.5-11.17c13.22,0,23.94,10.36,23.94,23.13a22.39,22.39,0,0,1-1.47,8c.49,0,1-.07,1.47-.07,10.61,0,19.21,8.31,19.21,18.56a18.15,18.15,0,0,1-.1,1.87,23.05,23.05,0,0,1,14.43,21.18c0,12.73-10.68,23.05-23.86,23.05a24.8,24.8,0,0,1-4.13-.35c.07.77.11,1.54.11,2.33,0,14.29-12,25.87-26.77,25.87a27.29,27.29,0,0,1-15.25-4.61,20.33,20.33,0,0,1-12.95,4.61c-11,0-20-8.65-20-19.33,0-.46,0-.92.07-1.37h-.07c-11.83,0-21.42-9.27-21.42-20.69A20.62,20.62,0,0,1,158,624.55Z", transform: "translate(-146.3 -249.46)", fill: "url(#c7fb197d-4001-483a-882b-f14ca460811a)" })),
+            react_1.default.createElement("path", { id: "685c56b8-497f-4668-a7ee-09f5fbc3598c", "data-name": "<Path>", d: "M160.13,624.47a24.49,24.49,0,0,1-6.64-16.74,24.85,24.85,0,0,1,12.19-21.24,14.42,14.42,0,0,1-2.54-8.18,15.12,15.12,0,0,1,15.38-14.86,15.31,15.31,0,0,1,14.75,10.69,23.07,23.07,0,0,1,19.62-10.69c12.65,0,22.91,9.91,22.91,22.14a21.43,21.43,0,0,1-1.4,7.64c.46,0,.93-.07,1.4-.07,10.16,0,18.39,8,18.39,17.77a17.37,17.37,0,0,1-.09,1.79A22.07,22.07,0,0,1,267.9,633c0,12.19-10.22,22.07-22.84,22.07a23.73,23.73,0,0,1-4-.34c.07.73.11,1.48.11,2.23,0,13.67-11.47,24.76-25.63,24.76A26.12,26.12,0,0,1,201,677.3a19.45,19.45,0,0,1-12.39,4.41c-10.57,0-19.14-8.28-19.14-18.5,0-.44,0-.88.07-1.31h-.07c-11.32,0-20.5-8.87-20.5-19.81A19.74,19.74,0,0,1,160.13,624.47Z", transform: "translate(-146.3 -249.46)", fill: "#009688" }),
+            react_1.default.createElement("line", { id: "6da80e84-a8c0-407e-a753-005b95fbf056", "data-name": "<Path>", x1: "57.27", y1: "349.11", x2: "57.27", y2: "486.72", fill: "#795548" }),
+            react_1.default.createElement("rect", { x: "53.39", y: "349.11", width: "7.5", height: "137.61", fill: "url(#6a841889-cb28-426a-925d-d1c1f8724da8)" }),
+            react_1.default.createElement("rect", { x: "55.19", y: "349.11", width: "4.14", height: "137.61", fill: "#795548" }),
+            react_1.default.createElement("line", { id: "956986cd-9b04-40a5-a6ac-3e412b0f623a", "data-name": "<Path>", x1: "57.69", y1: "390.32", x2: "33.11", y2: "365.25", fill: "#795548" }),
+            react_1.default.createElement("rect", { x: "189.63", y: "609.7", width: "4.14", height: "35.1", transform: "translate(-530.59 64.06) rotate(-44.43)", fill: "#795548" }),
+            react_1.default.createElement("line", { id: "52f85bb0-cc07-4469-ba3e-635298721117", "data-name": "<Path>", x1: "57.69", y1: "411.86", x2: "83.16", y2: "393.99", fill: "#795548" }),
+            react_1.default.createElement("rect", { x: "201.16", y: "650.31", width: "31.12", height: "4.14", transform: "translate(-481.72 -6.6) rotate(-35.06)", fill: "#795548" }),
+            react_1.default.createElement("g", { id: "2b13a509-cfb1-48b6-9a8a-884e17259990", "data-name": "<Group>" },
+                react_1.default.createElement("path", { d: "M269.47,625.64a26.71,26.71,0,0,0-5.51-40,15.8,15.8,0,0,0,2.53-8.6,15.24,15.24,0,0,0-29.94-4.38,22.66,22.66,0,0,0-19.49-11.25,23,23,0,0,0-22.77,23.28,23.71,23.71,0,0,0,1.39,8c-.46,0-.92-.07-1.39-.07A18.48,18.48,0,0,0,176,611.4c0,.64,0,1.27.09,1.89a23.23,23.23,0,0,0-13.72,21.32,23,23,0,0,0,22.69,23.21,22.31,22.31,0,0,0,3.93-.35c-.07.77-.11,1.55-.11,2.34,0,14.38,11.4,26,25.46,26a25,25,0,0,0,14.5-4.64,18.69,18.69,0,0,0,12.31,4.64,19.24,19.24,0,0,0,19-19.45c0-.47,0-.92-.07-1.38h.07a20.61,20.61,0,0,0,20.37-20.83A20.88,20.88,0,0,0,269.47,625.64Z", transform: "translate(-146.3 -249.46)", fill: "url(#5c82545c-e5e3-4953-955f-bf0089f1e97a)" })),
+            react_1.default.createElement("path", { id: "ffc97756-bf62-44e2-b6c0-20f8128ede8f", "data-name": "<Path>", d: "M266.53,625.52a25.07,25.07,0,0,0-5.18-37.5,14.83,14.83,0,0,0,2.37-8.07,14.3,14.3,0,0,0-28.1-4.11,21.27,21.27,0,0,0-18.3-10.56A21.62,21.62,0,0,0,196,587.14a22.25,22.25,0,0,0,1.31,7.54c-.43,0-.87-.07-1.31-.07a17.35,17.35,0,0,0-17.15,17.54c0,.6,0,1.19.09,1.77a21.8,21.8,0,0,0-12.88,20,21.55,21.55,0,0,0,21.3,21.78,20.94,20.94,0,0,0,3.69-.33c-.06.73-.1,1.46-.1,2.2,0,13.5,10.7,24.44,23.9,24.44a23.42,23.42,0,0,0,13.61-4.35A17.54,17.54,0,0,0,240,682a18.06,18.06,0,0,0,17.86-18.26c0-.44,0-.87-.06-1.3h.06a19.34,19.34,0,0,0,19.12-19.56A19.6,19.6,0,0,0,266.53,625.52Z", transform: "translate(-146.3 -249.46)", fill: "#00897b" }),
+            react_1.default.createElement("rect", { x: "76.97", y: "348.16", width: "5.55", height: "138.09", fill: "url(#53fdcf2b-8327-4d89-b36d-71a6ad642ea4)" }),
+            react_1.default.createElement("rect", { x: "78.55", y: "350.1", width: "2.79", height: "136.15", fill: "#795548" }),
+            react_1.default.createElement("rect", { x: "220.22", y: "626.87", width: "33.73", height: "2.79", transform: "translate(-531.27 125.85) rotate(-47.2)", fill: "#795548" }),
+            react_1.default.createElement("rect", { x: "212.35", y: "638.29", width: "2.79", height: "29.6", transform: "translate(-584.31 185.84) rotate(-53.4)", fill: "#795548" }),
+            react_1.default.createElement("path", { d: "M859.63,302.24a153,153,0,0,0-219-1.65c-57.91,58.38-58.89,153.43-2.25,213A153,153,0,0,0,834.6,535.28l110.6,115a7.44,7.44,0,0,0,10.53.21L983.28,624a7.44,7.44,0,0,0,.21-10.53l-110.6-115A153,153,0,0,0,859.63,302.24ZM825.18,487.16a109.43,109.43,0,1,1,3-154.73A109.43,109.43,0,0,1,825.18,487.16Z", transform: "translate(-146.3 -249.46)", fill: "url(#2fa7ee9e-16f3-4285-a1b9-f91a38b07546)" }),
+            react_1.default.createElement("path", { d: "M668.29,377.85c-12.31,0-12.33,19.12,0,19.12S680.61,377.85,668.29,377.85Z", transform: "translate(-146.3 -249.46)", fill: "url(#1d6e68af-1823-4deb-b27c-c7781de2c421)" }),
+            react_1.default.createElement("path", { d: "M754.07,316.59c-33.12-.75-63.27,15.87-79.29,41-5.23,8.18,9.62,15.41,14.82,7.27,13.27-20.77,38.49-34,65.74-33.27,28.58.72,54.59,17.07,68.36,39.76,5.23,8.61,18.91.78,13.72-7.78C820.71,336,788.29,317.36,754.07,316.59Z", transform: "translate(-146.3 -249.46)", fill: "url(#4b1a7092-3747-45a4-a541-b9b6a299c3dc)" }),
+            react_1.default.createElement("path", { d: "M871.63,296.42a153,153,0,0,0-219-1.65c-57.91,58.38-58.89,153.43-2.25,213A153,153,0,0,0,846.6,529.46l110.6,115a7.44,7.44,0,0,0,10.53.21l27.56-26.5a7.44,7.44,0,0,0,.21-10.53l-110.6-115A153,153,0,0,0,871.63,296.42ZM837.18,481.34a109.43,109.43,0,1,1,3-154.73A109.43,109.43,0,0,1,837.18,481.34Z", transform: "translate(-146.3 -249.46)", fill: "#7f9eb2" }),
+            react_1.default.createElement("path", { d: "M680.29,372c-12.31,0-12.33,19.12,0,19.12S692.61,372,680.29,372Z", transform: "translate(-146.3 -249.46)", fill: "#7f9eb2" }),
+            react_1.default.createElement("path", { d: "M766.07,310.77c-33.12-.75-63.27,15.87-79.29,41-5.23,8.18,9.62,15.41,14.82,7.27,13.27-20.77,38.49-34,65.74-33.27,28.58.72,54.59,17.07,68.36,39.76,5.23,8.61,18.91.78,13.72-7.78C832.71,330.2,800.29,311.55,766.07,310.77Z", transform: "translate(-146.3 -249.46)", fill: "#7f9eb2" }))));
+};
+exports.default = Listings;
 
-/* harmony default export */ __webpack_exports__["default"] = (UserProfile);
+
+/***/ }),
+
+/***/ "./resources/js/components/Accounts/svg/NotificationsLogo.tsx":
+/*!********************************************************************!*\
+  !*** ./resources/js/components/Accounts/svg/NotificationsLogo.tsx ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const NotificationsLogo = ({ cssStyle }) => {
+    return (react_1.default.createElement(react_1.default.Fragment, null,
+        react_1.default.createElement("svg", { className: cssStyle, "data-name": "Layer 1", xmlns: "http://www.w3.org/2000/svg", width: "719.17697", height: "739.77571", viewBox: "0 0 719.17697 739.77571" },
+            react_1.default.createElement("path", { d: "M312.55007,731.36394c12.1034,28.8432-1.6645,87.78855-1.6645,87.78855s-51.70851-31.46966-63.81191-60.31286-7.25774-58.37587,10.82307-65.96308S300.44668,702.52074,312.55007,731.36394Z", transform: "translate(-240.41151 -80.11215)", fill: "#e6e6e6" }),
+            react_1.default.createElement("circle", { cx: "387.57111", cy: "252.79148", r: "16.60586", fill: "#a5454a" }),
+            react_1.default.createElement("circle", { cx: "387.57111", cy: "142.79148", r: "16.60586", fill: "#a5454a" }),
+            react_1.default.createElement("circle", { cx: "387.57111", cy: "32.79148", r: "16.60586", fill: "#a5454a" }),
+            react_1.default.createElement("path", { d: "M688.4586,80.11215a5.00589,5.00589,0,0,0-5,5v55.583a5.00589,5.00589,0,0,0,5,5H954.58849a5.00589,5.00589,0,0,0,5-5v-55.583a5.00589,5.00589,0,0,0-5-5Z", transform: "translate(-240.41151 -80.11215)", fill: "#e6e6e6" }),
+            react_1.default.createElement("path", { d: "M690.25646,84.01107A2.90242,2.90242,0,0,0,687.357,86.91v51.9873a2.90243,2.90243,0,0,0,2.89942,2.89893H952.79063a2.90159,2.90159,0,0,0,2.89844-2.89893V86.91a2.90158,2.90158,0,0,0-2.89844-2.89893Z", transform: "translate(-240.41151 -80.11215)", fill: "#fff" }),
+            react_1.default.createElement("path", { d: "M936.307,127.54052a4.71032,4.71032,0,1,0,0-9.42063H714.24943a4.71032,4.71032,0,0,0,0,9.42063Z", transform: "translate(-240.41151 -80.11215)", fill: "#e6e6e6" }),
+            react_1.default.createElement("path", { d: "M809.80146,107.07669a4.71031,4.71031,0,0,0,0-9.42062h-95.552a4.71031,4.71031,0,1,0,0,9.42062Z", transform: "translate(-240.41151 -80.11215)", fill: "#a5454a" }),
+            react_1.default.createElement("path", { d: "M688.4586,190.11215a5.00589,5.00589,0,0,0-5,5v55.583a5.00589,5.00589,0,0,0,5,5H954.58849a5.00589,5.00589,0,0,0,5-5v-55.583a5.00589,5.00589,0,0,0-5-5Z", transform: "translate(-240.41151 -80.11215)", fill: "#e6e6e6" }),
+            react_1.default.createElement("path", { d: "M690.25646,194.01107A2.90242,2.90242,0,0,0,687.357,196.91v51.9873a2.90243,2.90243,0,0,0,2.89942,2.89893H952.79063a2.90159,2.90159,0,0,0,2.89844-2.89893V196.91a2.90158,2.90158,0,0,0-2.89844-2.89893Z", transform: "translate(-240.41151 -80.11215)", fill: "#fff" }),
+            react_1.default.createElement("path", { d: "M936.307,237.54052a4.71032,4.71032,0,1,0,0-9.42063H714.24943a4.71032,4.71032,0,0,0,0,9.42063Z", transform: "translate(-240.41151 -80.11215)", fill: "#e6e6e6" }),
+            react_1.default.createElement("path", { d: "M809.80146,217.07669a4.71031,4.71031,0,0,0,0-9.42062h-95.552a4.71031,4.71031,0,1,0,0,9.42062Z", transform: "translate(-240.41151 -80.11215)", fill: "#a5454a" }),
+            react_1.default.createElement("path", { d: "M688.4586,300.11215a5.00589,5.00589,0,0,0-5,5v55.583a5.00589,5.00589,0,0,0,5,5H954.58849a5.00589,5.00589,0,0,0,5-5v-55.583a5.00589,5.00589,0,0,0-5-5Z", transform: "translate(-240.41151 -80.11215)", fill: "#e6e6e6" }),
+            react_1.default.createElement("path", { d: "M690.25646,304.01107A2.90242,2.90242,0,0,0,687.357,306.91v51.9873a2.90243,2.90243,0,0,0,2.89942,2.89893H952.79063a2.90159,2.90159,0,0,0,2.89844-2.89893V306.91a2.90158,2.90158,0,0,0-2.89844-2.89893Z", transform: "translate(-240.41151 -80.11215)", fill: "#fff" }),
+            react_1.default.createElement("path", { d: "M936.307,347.54052a4.71032,4.71032,0,1,0,0-9.42063H714.24943a4.71032,4.71032,0,0,0,0,9.42063Z", transform: "translate(-240.41151 -80.11215)", fill: "#e6e6e6" }),
+            react_1.default.createElement("path", { d: "M809.80146,327.07669a4.71031,4.71031,0,0,0,0-9.42062h-95.552a4.71031,4.71031,0,1,0,0,9.42062Z", transform: "translate(-240.41151 -80.11215)", fill: "#a5454a" }),
+            react_1.default.createElement("path", { d: "M392.74205,542.641h0a13.89217,13.89217,0,0,1-11.183-17.64554l10.52951-35.80033,16,3,.68789,36.45817A13.89217,13.89217,0,0,1,392.74205,542.641Z", transform: "translate(-240.41151 -80.11215)", fill: "#9f616a" }),
+            react_1.default.createElement("polygon", { points: "244.677 691.083 224.677 688.083 229.677 493.083 201.677 577.083 186.677 695.083 167.677 690.083 163.677 567.083 185.677 422.083 295.677 447.083 244.677 691.083", fill: "#2f2e41" }),
+            react_1.default.createElement("path", { d: "M475.90628,819.19515h0a14.69968,14.69968,0,0,1-14.62909-16.1386l3.10563-31.57384a4.63448,4.63448,0,0,1,2.41141-3.621c5.89555-3.17977,11.958-2.40866,18.16316,1.7416a4.60629,4.60629,0,0,1,2.00153,3.28362l3.54469,29.8767A14.69968,14.69968,0,0,1,475.90628,819.19515Z", transform: "translate(-240.41151 -80.11215)", fill: "#2f2e41" }),
+            react_1.default.createElement("path", { d: "M394.2699,816.84477h0a13.24081,13.24081,0,0,1-6.428-19.82219l21.334-31.71265c7.69066-5.51912,12.329-2.83082,14.13232,7.48182l4.31313-10.80707,3.24988,3.54532a10.33785,10.33785,0,0,1,.5472,13.32261l-22.12892,33.67726A13.2408,13.2408,0,0,1,394.2699,816.84477Z", transform: "translate(-240.41151 -80.11215)", fill: "#2f2e41" }),
+            react_1.default.createElement("circle", { cx: "288.67697", cy: "204.08301", r: "30", fill: "#9f616a" }),
+            react_1.default.createElement("path", { d: "M548.08849,339.19515l-51-10c6.56909-14.01118,11.82983-18.75161,6-34h41C540.47264,310.98928,543.9669,325.81362,548.08849,339.19515Z", transform: "translate(-240.41151 -80.11215)", fill: "#9f616a" }),
+            react_1.default.createElement("path", { d: "M542.08849,541.19515l-120-34c24.03615-52.90185,29.07072-110.98348,21.94418-172.38016a11.1094,11.1094,0,0,1,10.14924-12.36449c15.65286-1.28925,31.972-2.94405,48.90658-5.25535l19,13,22-5c7.0594,3.42154,14.16992,6.26727,20.58711,9.1045a25.738,25.738,0,0,1,13.99334,31.655C559.11624,425.00339,546.0277,483.49419,542.08849,541.19515Z", transform: "translate(-240.41151 -80.11215)", fill: "#e6e6e6" }),
+            react_1.default.createElement("path", { d: "M411.08849,496.19515l-23-3L442.57542,336.1989c2.77155-7.98582,9.64493-12.3083,18.01307-13.50375l8,1-6,93Z", transform: "translate(-240.41151 -80.11215)", fill: "#e6e6e6" }),
+            react_1.default.createElement("path", { d: "M591.25564,466.1823h0a18.22954,18.22954,0,0,1-18.233-11.18286l-21.93408-52.80429,18-65,4.7582,3.02795q.68762.43758,1.35747.897c13.70447,9.3986,20.37239,26.16665,17.57878,42.54778l-4.69445,27.52725L607.4531,452.772A18.22953,18.22953,0,0,1,591.25564,466.1823Z", transform: "translate(-240.41151 -80.11215)", fill: "#e6e6e6" }),
+            react_1.default.createElement("path", { d: "M531.3959,239.73219h0a31.85787,31.85787,0,0,1,14.55472,4.28527c1.02008.59364.54857,2.7345,1.49136,3.43271,1.18729.87929,3.7652.34532,4.8166,1.37524a31.9265,31.9265,0,0,1,9.49406,25.72273l-1.674,16.64425-3.94905-4.31885a41.16414,41.16414,0,0,0-27.45227-13.47735q-.67177-.04564-1.34595-.07166l3.03816-5.31675-5.28016,5.28016a51.414,51.414,0,0,0-7.19368.58556L521.936,266.803l-7.75225,7.75225-.0006.00033a20.72693,20.72693,0,0,0-14.48278,11.81228l-.86081,1.90841-.96433-15.87882A32.00588,32.00588,0,0,1,531.3959,239.73219Z", transform: "translate(-240.41151 -80.11215)", fill: "#2f2e41" }),
+            react_1.default.createElement("ellipse", { cx: "318.87301", cy: "209.8831", rx: "2.40958", ry: "5.72276", fill: "#9f616a" }),
+            react_1.default.createElement("ellipse", { cx: "258.63339", cy: "208.07591", rx: "2.40958", ry: "5.72276", fill: "#9f616a" }),
+            react_1.default.createElement("path", { d: "M616.27913,364.64286h0A13.89217,13.89217,0,0,1,625.924,383.174l-13.53033,34.77735L596.7061,413.604l2.40926-36.385A13.89217,13.89217,0,0,1,616.27913,364.64286Z", transform: "translate(-240.41151 -80.11215)", fill: "#9f616a" }),
+            react_1.default.createElement("polygon", { points: "357.677 384.083 332.677 368.083 353.677 325.083 379.677 335.083 366.677 373.083 357.677 384.083", fill: "#e6e6e6" }),
+            react_1.default.createElement("polygon", { points: "349.027 739.776 45.288 739.776 45.288 737.67 349.408 737.67 349.027 739.776", fill: "#3f3d56" }))));
+};
+exports.default = NotificationsLogo;
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Accounts/svg/PaymentsLogo.tsx":
+/*!***************************************************************!*\
+  !*** ./resources/js/components/Accounts/svg/PaymentsLogo.tsx ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const PaymentsLogo = ({ cssStyle }) => {
+    return (react_1.default.createElement(react_1.default.Fragment, null,
+        react_1.default.createElement("svg", { className: cssStyle, "data-name": "Layer 1", width: "915.68773", height: "679.27607", viewBox: "0 0 915.68773 679.27607" },
+            react_1.default.createElement("defs", null,
+                react_1.default.createElement("linearGradient", { id: "b5076013-d6c0-4649-8f63-d536232108ef", x1: "549.23403", y1: "734.77229", x2: "549.23403", y2: "126.56914", gradientTransform: "matrix(0.97485, 0.30762, -0.30291, 0.99, 144.20301, -171.28919)", gradientUnits: "userSpaceOnUse" },
+                    react_1.default.createElement("stop", { offset: "0", stopColor: "gray", stopOpacity: "0.25" }),
+                    react_1.default.createElement("stop", { offset: "0.53514", stopColor: "gray", stopOpacity: "0.12" }),
+                    react_1.default.createElement("stop", { offset: "1", stopColor: "gray", stopOpacity: "0.1" })),
+                react_1.default.createElement("linearGradient", { id: "be72c466-93ff-4e9c-a64c-30b94918ee69", x1: "549.32281", y1: "679.27607", x2: "549.32281", y2: "233.83602", gradientTransform: "matrix(1, 0, 0, 1, 0, 0)" })),
+            react_1.default.createElement("title", null, "Credit card"),
+            react_1.default.createElement("rect", { x: "184.85689", y: "201.52958", width: "728.622", height: "445.00176", rx: "27.5", transform: "translate(-243.24579 71.69262) rotate(-17.2615)", fill: "url(#b5076013-d6c0-4649-8f63-d536232108ef)" }),
+            react_1.default.createElement("rect", { x: "193.71997", y: "205.56022", width: "713.75592", height: "429.25181", rx: "27.5", transform: "translate(-242.04064 71.94381) rotate(-17.2615)", fill: "#fff" }),
+            react_1.default.createElement("rect", { x: "155.9523", y: "267.86085", width: "713.75592", height: "61.55937", transform: "translate(-207.67506 55.26252) rotate(-17.2615)", fill: "#7f9eb2" }),
+            react_1.default.createElement("rect", { x: "303.66876", y: "610.48755", width: "181.35057", height: "26.62027", transform: "translate(-309.4966 34.74867) rotate(-17.2615)", fill: "#bdbdbd" }),
+            react_1.default.createElement("rect", { x: "287.34157", y: "547.84131", width: "314.45191", height: "26.62027", transform: "translate(-288.64532 46.83008) rotate(-17.2615)", fill: "#e0e0e0" }),
+            react_1.default.createElement("rect", { x: "182.9579", y: "233.83602", width: "732.72983", height: "445.44005", rx: "27.5", fill: "url(#be72c466-93ff-4e9c-a64c-30b94918ee69)" }),
+            react_1.default.createElement("rect", { x: "191.27673", y: "238.37789", width: "713.75592", height: "429.25181", rx: "27.5", fill: "#fff" }),
+            react_1.default.createElement("rect", { x: "361.01292", y: "446.76044", width: "20.79708", height: "59.06372", fill: "#e0e0e0" }),
+            react_1.default.createElement("rect", { x: "387.63319", y: "446.76044", width: "20.79708", height: "59.06372", fill: "#e0e0e0" }),
+            react_1.default.createElement("rect", { x: "414.25346", y: "446.76044", width: "20.79708", height: "59.06372", fill: "#e0e0e0" }),
+            react_1.default.createElement("rect", { x: "460.83892", y: "446.76044", width: "20.79708", height: "59.06372", fill: "#e0e0e0" }),
+            react_1.default.createElement("rect", { x: "487.45919", y: "446.76044", width: "20.79708", height: "59.06372", fill: "#e0e0e0" }),
+            react_1.default.createElement("rect", { x: "514.07946", y: "446.76044", width: "20.79708", height: "59.06372", fill: "#e0e0e0" }),
+            react_1.default.createElement("rect", { x: "560.66493", y: "446.76044", width: "20.79708", height: "59.06372", fill: "#e0e0e0" }),
+            react_1.default.createElement("rect", { x: "587.28519", y: "446.76044", width: "20.79708", height: "59.06372", fill: "#e0e0e0" }),
+            react_1.default.createElement("rect", { x: "613.90546", y: "446.76044", width: "20.79708", height: "59.06372", fill: "#e0e0e0" }),
+            react_1.default.createElement("rect", { x: "660.49093", y: "446.76044", width: "20.79708", height: "59.06372", fill: "#e0e0e0" }),
+            react_1.default.createElement("rect", { x: "687.1112", y: "446.76044", width: "20.79708", height: "59.06372", fill: "#e0e0e0" }),
+            react_1.default.createElement("rect", { x: "713.73147", y: "446.76044", width: "20.79708", height: "59.06372", fill: "#e0e0e0" }),
+            react_1.default.createElement("rect", { x: "236.68773", y: "350.83602", width: "124", height: "68", fill: "#7f9eb2" }),
+            react_1.default.createElement("rect", { x: "718.68773", y: "573.83602", width: "76", height: "76", fill: "#7f9eb2", opacity: "0.1" }),
+            react_1.default.createElement("rect", { x: "756.68773", y: "573.83602", width: "76", height: "76", fill: "#7f9eb2", opacity: "0.1" }),
+            " ")));
+};
+exports.default = PaymentsLogo;
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Accounts/svg/PersonalInfoLogo.tsx":
+/*!*******************************************************************!*\
+  !*** ./resources/js/components/Accounts/svg/PersonalInfoLogo.tsx ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const PersonalInfoLogo = ({ cssStyle }) => {
+    return (react_1.default.createElement(react_1.default.Fragment, null,
+        react_1.default.createElement("svg", { className: cssStyle, id: "fe80fb2b-bcaf-407e-919b-306adc32f78b", "data-name": "Layer 1", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 1032 741.75278" },
+            react_1.default.createElement("title", null, "profile"),
+            react_1.default.createElement("line", { y1: "741.25278", x2: "166", y2: "741.25278", fill: "none", stroke: "#3f3d56", strokeMiterlimit: "10" }),
+            react_1.default.createElement("rect", { x: "243", y: "127.75278", width: "737", height: "499", rx: "19.39764", fill: "#f2f2f2" }),
+            react_1.default.createElement("rect", { x: "220.5", y: "96.25278", width: "737", height: "499", rx: "19.39764", fill: "none", stroke: "#3f3d56", strokeMiterlimit: "10" }),
+            react_1.default.createElement("line", { x1: "220.5", y1: "144.09298", x2: "957.5", y2: "144.09298", fill: "none", stroke: "#3f3d56", strokeMiterlimit: "10" }),
+            react_1.default.createElement("rect", { x: "661", y: "256.25278", width: "201", height: "31", rx: "7.09252", fill: "#7f9eb2", opacity: "0.3" }),
+            react_1.default.createElement("rect", { x: "622.5", y: "342.25278", width: "278", height: "25", rx: "7.09252", fill: "#7f9eb2", opacity: "0.3" }),
+            react_1.default.createElement("rect", { x: "622.5", y: "410.25278", width: "278", height: "25", rx: "7.09252", fill: "#7f9eb2", opacity: "0.3" }),
+            react_1.default.createElement("rect", { x: "622.5", y: "478.25278", width: "278", height: "25", rx: "7.09252", fill: "#7f9eb2", opacity: "0.3" }),
+            react_1.default.createElement("rect", { x: "671", y: "246.25278", width: "201", height: "31", rx: "7.09252", fill: "none", stroke: "#3f3d56", strokeMiterlimit: "10" }),
+            react_1.default.createElement("rect", { x: "632.5", y: "332.25278", width: "278", height: "25", rx: "7.09252", fill: "none", stroke: "#3f3d56", strokeMiterlimit: "10" }),
+            react_1.default.createElement("rect", { x: "632.5", y: "400.25278", width: "278", height: "25", rx: "7.09252", fill: "none", stroke: "#3f3d56", strokeMiterlimit: "10" }),
+            react_1.default.createElement("rect", { x: "632.5", y: "468.25278", width: "278", height: "25", rx: "7.09252", fill: "none", stroke: "#3f3d56", strokeMiterlimit: "10" }),
+            react_1.default.createElement("circle", { cx: "276.5", cy: "126.25278", r: "15", fill: "#7f9eb2", opacity: "0.3" }),
+            react_1.default.createElement("circle", { cx: "318.5", cy: "126.25278", r: "15", fill: "#7f9eb2", opacity: "0.3" }),
+            react_1.default.createElement("circle", { cx: "360.5", cy: "126.25278", r: "15", fill: "#7f9eb2", opacity: "0.3" }),
+            react_1.default.createElement("circle", { cx: "282.5", cy: "120.25278", r: "15", fill: "none", stroke: "#3f3d56", strokeMiterlimit: "10" }),
+            react_1.default.createElement("circle", { cx: "324.5", cy: "120.25278", r: "15", fill: "none", stroke: "#3f3d56", strokeMiterlimit: "10" }),
+            react_1.default.createElement("circle", { cx: "366.5", cy: "120.25278", r: "15", fill: "none", stroke: "#3f3d56", strokeMiterlimit: "10" }),
+            react_1.default.createElement("path", { d: "M537.854,653.37916c-2.51135-11.56848-3.17724-27.36932-2.33252-38.36047,0,0-12.69836-55.78644-22.68994-60.99133l-.00305.003c-.153.19678-5.00195,6.55383-5.61706,26.22443-.62452,19.98284-7.69971,33.09655-7.69971,33.09655s2.28955,24.90766.98047,40.02777Z", transform: "translate(-84.5 -79.12639)", fill: "#7f9eb2" }),
+            react_1.default.createElement("path", { d: "M630.22827,298.37916H399.77173A23.77169,23.77169,0,0,0,376,322.15083V629.6075a23.77168,23.77168,0,0,0,23.77173,23.77166h80.855c-2.7002-11.19934-6.057-28.69067-2.65735-40.85241l-.00159-.008.0022.00525c.15869-.56757.32727-1.12738.51611-1.67047a63.49747,63.49747,0,0,0,2.29175-24.35407,50.6095,50.6095,0,0,0,0-21.23175c-2.4978-11.65564-4.24634-23.10522-4.24634-23.10522s-1.377-15.40234-.1748-24.84424c.02661-.2074.05762-.404.08667-.60541-.42432-.09655-.66235-.15228-.66235-.15228s3.53881-16.02789,4.78759-26.22748c.29493-2.40783.683-5.46032,1.10315-8.71478a20.93993,20.93993,0,0,1-3.3927-.86035c-11.24035-3.9549-14.779-39.75751-14.779-39.75751V429.656s-3.74683-17.38092,9.36694-25.08258c12.62793-7.41644,17.66968-9.44617,18.02613-9.58643.09619-.06878.19018-.13128.28833-.20727a11.06127,11.06127,0,0,0,3.28967-4.23371q.02619-.42873.01233-.85211c-.21326-4.06665-3.04419-7.76507-5.73047-10.99225q-3.43653-4.12857-6.87341-8.25726a8.07194,8.07194,0,0,1-1.77027-2.86487,6.604,6.604,0,0,1-.187-1.80389q-.00275-.33691.004-.673.056-3.07836.16724-6.15545c.06445-1.79224.51562-4.05353,2.27075-4.42182.91284-.19159,2.12109.14246,2.60364-.65576a1.56534,1.56534,0,0,0,.11682-1.06054c-.00586.02661-.00733.05444-.015.0805-.00586-.03339-.01159-.06695-.01782-.09985a22.43656,22.43656,0,0,1-.65051-4.38636,5.84207,5.84207,0,0,1,.282-1.96984c1.01672-2.97516,4.51782-4.196,7.61133-4.75727,3.09375-.56134,6.56653-1.04425,8.5083-3.51709a26.9506,26.9506,0,0,1,1.68884-2.37384,6.62979,6.62979,0,0,1,3.16589-1.59674,17.49792,17.49792,0,0,1,11.50623,1.02118c1.49646.68286,2.99963,1.60248,4.64124,1.49841,1.70507-.108,3.16162-1.3081,4.84509-1.60009,2.71911-.47156,5.31872,1.56567,6.65869,3.97827a9.85108,9.85108,0,0,1,1.23279,5.02313,6.912,6.912,0,0,1-1.76416,4.74109c-1.17017,1.24145-2.91626,2.09418-3.4021,3.72955-.198.66565-.152,1.38257-.32691,2.05457-.02185.084-.05737.16241-.08606.24365.03211.04169.06714.08112.09888.123a21.231,21.231,0,0,1-10.33215,33.01928c-.00794.21058-.01624.42133-.01514.63306a9.173,9.173,0,0,0,2.8396,7.0647l18.54724,7.606s11.16565-1.3534,15.19495,15.30957a28.82628,28.82628,0,0,1,.68982,8.45746c-.14636,2.51251.19507,6.93573,3.05725,12.66,4.57934,9.15881,3.53857,30.18237-5.82837,32.26392-8.87231,1.97161-12.32361,1.14331-12.66382,1.05023l-.02014.3681c.14612,3.94489,1.55029,37.969,6.64758,42.086,1.40955,1.13849,1.14026,1.90753-.01635,2.42578l.0028.00336s.0094.21856.03113.612c.15308,2.48846.93994,11.96472,4.35254,17.357,3.956,6.24457,3.54077,42.25739,3.54077,42.25739l2.70386,21.23181s-1.66419,13.11371,0,15.4024c.94556,1.29785,2.09057,21.40351,2.905,38.56964h69.53027A23.77168,23.77168,0,0,0,654,629.6075V322.15083A23.77169,23.77169,0,0,0,630.22827,298.37916Z", transform: "translate(-84.5 -79.12639)", fill: "#7f9eb2" }),
+            react_1.default.createElement("rect", { x: "267.5", y: "192.25278", width: "278", height: "355", rx: "23.77165", fill: "none", stroke: "#3f3d56", strokeMiterlimit: "10" }),
+            react_1.default.createElement("path", { d: "M185.32419,400.757S176,398,174,401s2.72669,24.7477,2.72669,24.7477l20.54589,1.24859-7.17022-18.10653Z", transform: "translate(-84.5 -79.12639)", fill: "#2f2e41" }),
+            react_1.default.createElement("path", { d: "M113.44417,579.34709s18.69466,41.04232,4.29762,39.753-19.98395-39.753-19.98395-39.753Z", transform: "translate(-84.5 -79.12639)", fill: "#a0616a" }),
+            react_1.default.createElement("path", { d: "M235.71128,575.07127s-8.20129,44.34751,5.45523,39.61078,9.76437-43.40874,9.76437-43.40874Z", transform: "translate(-84.5 -79.12639)", fill: "#a0616a" }),
+            react_1.default.createElement("path", { d: "M181.34664,390.46647s-.21488,20.6286,7.73573,21.703-4.51251,12.03335-4.51251,12.03335l-14.18216,2.79346L149.974,425.49212l-9.025-11.60359s15.90121-7.52084,9.025-30.9429Z", transform: "translate(-84.5 -79.12639)", fill: "#a0616a" }),
+            react_1.default.createElement("path", { d: "M181.34664,390.46647s-.21488,20.6286,7.73573,21.703-4.51251,12.03335-4.51251,12.03335l-14.18216,2.79346L149.974,425.49212l-9.025-11.60359s15.90121-7.52084,9.025-30.9429Z", transform: "translate(-84.5 -79.12639)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M217.87645,564.95005s10.09942,21.703,2.14881,89.82036c0,0,2.3637,24.0667.42977,28.5792s-17.83515,65.75367-17.83515,65.75367-20.41371,4.5125-23.20717-9.025c0,0,2.79346-19.33931,2.57857-22.34765s4.51251-35.88516,4.51251-35.88516l-9.66966-63.60485-7.306,57.37329s0,16.54586-2.36369,20.19884,0,77.14236,0,77.14236,6.66132,11.17383-3.4381,11.38871-19.12443-.21488-19.984-7.306-1.28929-14.18216-3.4381-18.47979-4.94227-53.50543-4.29762-70.69593-14.18216-105.50669-9.45478-114.74659S217.87645,564.95005,217.87645,564.95005Z", transform: "translate(-84.5 -79.12639)", fill: "#2f2e41" }),
+            react_1.default.createElement("circle", { cx: "85.8877", cy: "293.29006", r: "25.78575", fill: "#a0616a" }),
+            react_1.default.createElement("path", { d: "M144.60195,414.31829s15.68633,11.60359,38.46374,2.3637c0,0,7.52084-3.653,6.8762-9.2399s15.68633,44.91018,15.68633,44.91018l16.54586,87.88643-.85953,35.88517s-7.306-3.653-30.08337,4.51251-59.95187-9.2399-59.95187-9.2399l1.28929-92.18405,1.28928-53.72031,3.4381-11.81847S139.015,410.45043,144.60195,414.31829Z", transform: "translate(-84.5 -79.12639)", fill: "#f2f2f2" }),
+            react_1.default.createElement("path", { d: "M182.06324,399.89323s3.79591-.61662,7.44889,5.18517,12.24823,9.45477,12.24823,9.45477,20.84348,1.28929,23.85182,12.46312,10.52918,26.43039,14.18216,54.57983,10.95894,73.05963,12.03335,76.71261-1.50417,14.8268,1.50417,18.2649-21.27325,3.4381-21.27325,3.4381-2.14881-17.62026-3.653-17.62026-1.0744,11.81847.42977,20.41372-10.95895,0-10.95895,0-9.66965-39.32327-18.90955-74.77867S184.355,452.99692,186.074,445.04631s6.44644-30.728,3.00834-32.87683S182.06324,399.89323,182.06324,399.89323Z", transform: "translate(-84.5 -79.12639)", fill: "#2f2e41" }),
+            react_1.default.createElement("path", { d: "M151.07551,399.87428s-5.614,3.05531-19.7962,13.15473-23.85182,17.83514-23.85182,17.83514-5.58691,4.29762-9.025,29.86849S87.22865,552.48693,90.237,560.8673s4.08275,13.32264,3.00834,18.26491,22.56253,4.72739,22.99229,3.653-.64464-20.6286.42977-21.05836,6.87619,11.60359,7.9506,21.703,13.53752,18.05,16.331,18.05,17.1905-58.23282,17.40538-97.98585-4.72739-73.2745-8.38037-78.00189S151.07551,399.87428,151.07551,399.87428Z", transform: "translate(-84.5 -79.12639)", fill: "#2f2e41" }),
+            react_1.default.createElement("path", { d: "M188.86748,751.03721s1.71905-4.72739,7.73573-3.22322,10.09942-3.86786,10.09942-3.86786,3.22322-.42977,1.0744,3.653-3.86786,6.8762-3.86786,6.8762,12.89288,29.43873,4.51251,36.52981-18.05,2.79346-18.05,2.79346-9.45477-6.66132-9.025-24.28159c0,0-.42976-5.58691-5.58691-14.61192s-9.025-22.77741-2.79346-25.356,7.83546-2.67436,7.83546-2.67436-2.916,13.33721,4.61624,17.99776Z", transform: "translate(-84.5 -79.12639)", fill: "#3f3d56" }),
+            react_1.default.createElement("path", { d: "M148.89957,784.3438s-5.15715-9.66966,3.4381-10.74406,17.83515-1.71905,17.40538,2.79345-1.50417,11.38871-1.50417,11.38871l1.50417,4.94227s.42977,12.24823,1.93393,13.7524,9.66966,14.397-7.73572,14.397-22.56253-1.93393-21.05836-6.01667,1.93393-24.28158,1.93393-24.28158Z", transform: "translate(-84.5 -79.12639)", fill: "#3f3d56" }),
+            react_1.default.createElement("path", { d: "M162.22221,351.78785s12.03335,3.22322,18.26491,4.51251,5.58691-2.3637,5.58691-2.3637,8.16549,1.07441,7.73572.21488,3.4381-5.372-1.0744-10.52918-3.22322-9.025-3.22322-9.025h-3.86786l-1.07441-1.50417h-6.01668s-4.5125-1.71905-16.331,0-27.93456,2.14881-29.22385,9.2399-7.95061,15.90121-5.58691,19.98395,15.90121,20.84348,17.1905,27.93456,7.30933,8.66659,7.09277,4.22585-6.23325-19.91218-1.0761-20.55682S164.5859,360.16822,162.22221,351.78785Z", transform: "translate(-84.5 -79.12639)", fill: "#2f2e41" }),
+            react_1.default.createElement("path", { d: "M1019.38065,86.58377a22.982,22.982,0,0,0-19.80994,13.851c-4.9535,11.97382,1.42449,26.03885,10.999,34.77028s21.87358,13.72225,33.04831,20.28234c15.00952,8.81128,28.4968,21.04282,36.00691,36.74386s8.30888,35.15009-.51891,50.14991c-8.1937,13.9224-23.09255,22.2549-37.30219,29.9397", transform: "translate(-84.5 -79.12639)", fill: "none", stroke: "#3f3d56", strokeMiterlimit: "10" }),
+            react_1.default.createElement("ellipse", { cx: "947.5", cy: "8.5", rx: "17.5", ry: "8.5", fill: "#7f9eb2" }),
+            react_1.default.createElement("ellipse", { cx: "961.5", cy: "64.5", rx: "17.5", ry: "8.5", fill: "#7f9eb2" }),
+            react_1.default.createElement("ellipse", { cx: "929.5", cy: "73.5", rx: "17.5", ry: "8.5", fill: "#7f9eb2" }),
+            react_1.default.createElement("ellipse", { cx: "979.5", cy: "120.5", rx: "17.5", ry: "8.5", fill: "#7f9eb2" }),
+            react_1.default.createElement("ellipse", { cx: "1014.5", cy: "120.5", rx: "17.5", ry: "8.5", fill: "#7f9eb2" }))));
+};
+exports.default = PersonalInfoLogo;
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Accounts/svg/SecurityLogo.tsx":
+/*!***************************************************************!*\
+  !*** ./resources/js/components/Accounts/svg/SecurityLogo.tsx ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const SecurityLogo = ({ cssStyle }) => {
+    return (react_1.default.createElement(react_1.default.Fragment, null,
+        react_1.default.createElement("svg", { className: cssStyle, "data-name": "Layer 1", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 793 551.73152" },
+            react_1.default.createElement("ellipse", { cx: "158", cy: "539.73152", rx: "158", ry: "12", fill: "#e6e6e6" }),
+            react_1.default.createElement("path", { d: "M324.27227,296.55377c27.49676-11.6953,61.74442-4.28528,95.19092.85757.31124-6.228,4.08385-13.80782.132-18.15284-4.80115-5.2788-4.35917-10.82529-1.47008-16.40375,7.38788-14.265-3.1969-29.44375-13.88428-42.0647a23.66937,23.66937,0,0,0-19.75537-8.29179l-19.7975,1.41411A23.70939,23.70939,0,0,0,343.635,230.85851v0c-4.72724,6.42917-7.25736,12.84055-5.66438,19.21854-7.08065,4.83882-8.27029,10.67977-5.08851,17.2644,2.698,4.14592,2.66928,8.18161-.12275,12.1056a55.89079,55.89079,0,0,0-8.31011,16.5061Z", transform: "translate(-203.5 -174.13424)", fill: "#2f2e41" }),
+            react_1.default.createElement("path", { d: "M977.70889,651.09727H417.29111A18.79111,18.79111,0,0,1,398.5,632.30616h0q304.727-35.41512,598,0h0A18.79111,18.79111,0,0,1,977.70889,651.09727Z", transform: "translate(-203.5 -174.13424)", fill: "#2f2e41" }),
+            react_1.default.createElement("path", { d: "M996.5,633.41151l-598-1.10536,69.30611-116.61553.3316-.55268V258.13057a23.7522,23.7522,0,0,1,23.75418-23.75418H899.792a23.7522,23.7522,0,0,1,23.75418,23.75418V516.90649Z", transform: "translate(-203.5 -174.13424)", fill: "#3f3d56" }),
+            react_1.default.createElement("path", { d: "M491.35028,250.95679a7.74623,7.74623,0,0,0-7.73753,7.73753V493.03073a7.74657,7.74657,0,0,0,7.73753,7.73752H903.64972a7.74691,7.74691,0,0,0,7.73753-7.73752V258.69432a7.74657,7.74657,0,0,0-7.73753-7.73753Z", transform: "translate(-203.5 -174.13424)", fill: "#fff" }),
+            react_1.default.createElement("path", { d: "M493.07794,531.71835a3.32522,3.32522,0,0,0-3.01275,1.93006l-21.35537,46.42514a3.31594,3.31594,0,0,0,3.01221,4.7021H920.81411a3.3157,3.3157,0,0,0,2.96526-4.79925L900.5668,533.55126a3.29926,3.29926,0,0,0-2.96526-1.83291Z", transform: "translate(-203.5 -174.13424)", fill: "#2f2e41" }),
+            react_1.default.createElement("circle", { cx: "492.34196", cy: "67.97967", r: "4.97412", fill: "#fff" }),
+            react_1.default.createElement("path", { d: "M651.69986,593.61853a3.32114,3.32114,0,0,0-3.20165,2.4536l-5.35679,19.89649a3.31576,3.31576,0,0,0,3.20166,4.17856h101.874a3.31531,3.31531,0,0,0,3.13257-4.40093l-6.88691-19.89649a3.31784,3.31784,0,0,0-3.13366-2.23123Z", transform: "translate(-203.5 -174.13424)", fill: "#2f2e41" }),
+            react_1.default.createElement("polygon", { points: "720.046 337.135 720.046 341.556 264.306 341.556 264.649 341.004 264.649 337.135 720.046 337.135", fill: "#2f2e41" }),
+            react_1.default.createElement("circle", { cx: "707.33457", cy: "77.37523", r: "77.37523", fill: "#a5454a" }),
+            react_1.default.createElement("path", { d: "M942.89,285.223H878.77911a4.42582,4.42582,0,0,1-4.42144-4.42145V242.11391a4.42616,4.42616,0,0,1,4.42144-4.42144H942.89a4.42616,4.42616,0,0,1,4.42144,4.42144v38.68761A4.42582,4.42582,0,0,1,942.89,285.223Zm-64.11091-43.10906v38.68761h64.11415L942.89,242.11391Z", transform: "translate(-203.5 -174.13424)", fill: "#fff" }),
+            react_1.default.createElement("path", { d: "M930.73105,242.11391h-39.793V224.42814c0-12.80987,8.36792-22.10721,19.89649-22.10721s19.89648,9.29734,19.89648,22.10721Zm-35.37153-4.42144h30.95009V224.42814c0-10.413-6.36338-17.68576-15.475-17.68576s-15.47505,7.27281-15.47505,17.68576Z", transform: "translate(-203.5 -174.13424)", fill: "#fff" }),
+            react_1.default.createElement("circle", { cx: "707.33457", cy: "86.21811", r: "4.42144", fill: "#fff" }),
+            react_1.default.createElement("path", { d: "M856.81994,421.28372H538.18006a5.90767,5.90767,0,0,1-5.90073-5.90073V336.342a5.90767,5.90767,0,0,1,5.90073-5.90072H856.81994a5.90767,5.90767,0,0,1,5.90073,5.90072V415.383A5.90767,5.90767,0,0,1,856.81994,421.28372Zm-318.63988-88.4821a3.5443,3.5443,0,0,0-3.54043,3.54043V415.383a3.54431,3.54431,0,0,0,3.54043,3.54044H856.81994a3.54431,3.54431,0,0,0,3.54043-3.54044V336.342a3.5443,3.5443,0,0,0-3.54043-3.54043Z", transform: "translate(-203.5 -174.13424)", fill: "#e6e6e6" }),
+            react_1.default.createElement("circle", { cx: "384.19021", cy: "198.69546", r: "24.03645", fill: "#e6e6e6" }),
+            react_1.default.createElement("path", { d: "M643.203,356.80541a4.00608,4.00608,0,1,0,0,8.01215H832.06074a4.00607,4.00607,0,0,0,0-8.01215Z", transform: "translate(-203.5 -174.13424)", fill: "#e6e6e6" }),
+            react_1.default.createElement("path", { d: "M643.203,380.84186a4.00607,4.00607,0,1,0,0,8.01214H724.469a4.00607,4.00607,0,1,0,0-8.01214Z", transform: "translate(-203.5 -174.13424)", fill: "#e6e6e6" }),
+            react_1.default.createElement("path", { d: "M467.022,382.46241,408.1189,413.778l-.74561-26.09629c19.22553-3.20948,37.51669-8.7974,54.42941-17.8946l6.1605-15.22008a10.31753,10.31753,0,0,1,17.53643-2.67788l0,0a10.31753,10.31753,0,0,1-.90847,14.06885Z", transform: "translate(-203.5 -174.13424)", fill: "#ffb8b8" }),
+            react_1.default.createElement("path", { d: "M323.09819,563.26707v0a11.57378,11.57378,0,0,1,1.46928-9.36311l12.93931-19.85777a22.61221,22.61221,0,0,1,29.335-7.73927h0c-5.438,9.25647-4.67994,17.37679,1.87806,24.43365a117.63085,117.63085,0,0,0-27.93606,19.04492A11.57386,11.57386,0,0,1,323.09819,563.26707Z", transform: "translate(-203.5 -174.13424)", fill: "#2f2e41" }),
+            react_1.default.createElement("path", { d: "M469.70475,537.30274l0,0a22.20314,22.20314,0,0,1-18.87085,10.77909l-85.96027.65122-3.728-21.62264,38.026-11.18413-32.06116-24.60507L402.154,450.31277l63.65,59.32431A22.20317,22.20317,0,0,1,469.70475,537.30274Z", transform: "translate(-203.5 -174.13424)", fill: "#2f2e41" }),
+            react_1.default.createElement("path", { d: "M351.45266,685.17939H331.32124c-18.07509-123.89772-36.47383-248.14186,17.8946-294.51529l64.12231,10.43852L405.13646,455.532l-35.7892,41.00845Z", transform: "translate(-203.5 -174.13424)", fill: "#2f2e41" }),
+            react_1.default.createElement("path", { d: "M369.14917,713.24594h0a11.57381,11.57381,0,0,1-9.3632-1.46873l-21.85854-2.93814a22.61221,22.61221,0,0,1-7.741-29.33451v0c9.2568,5.43749,17.37707,4.67891,24.43354-1.8795,4.98593,10.06738,13.20093,9.45331,21.04657,17.93494A11.57385,11.57385,0,0,1,369.14917,713.24594Z", transform: "translate(-203.5 -174.13424)", fill: "#2f2e41" }),
+            react_1.default.createElement("path", { d: "M399.1716,307.90158l-37.28042-8.94731c6.19168-12.6739,6.70155-26.77618,3.728-41.75406l25.35068-.74561C391.76421,275.08,394.16732,292.48081,399.1716,307.90158Z", transform: "translate(-203.5 -174.13424)", fill: "#ffb8b8" }),
+            react_1.default.createElement("path", { d: "M409.41752,423.55243c-27.13873,18.49308-46.31418.63272-60.94729-26.92346,2.03338-16.86188-1.259-37.04061-7.35672-58.96635a40.13762,40.13762,0,0,1,24.50567-48.40124h0l32.06116,13.421c27.22362,22.19038,32.582,46.227,22.36825,71.5784Z", transform: "translate(-203.5 -174.13424)", fill: "#a5454a" }),
+            react_1.default.createElement("path", { d: "M331.32124,326.54178,301.4969,342.19956l52.9382,31.31555,7.366,18.16951a9.63673,9.63673,0,0,1-5.78925,12.73088h0a9.63673,9.63673,0,0,1-12.76159-8.54442l-.74489-12.66307-67.2838-22.20366a15.73306,15.73306,0,0,1-9.87265-9.61147v0a15.733,15.733,0,0,1,5.90262-18.30258l54.10485-37.11845Z", transform: "translate(-203.5 -174.13424)", fill: "#ffb8b8" }),
+            react_1.default.createElement("path", { d: "M361.14557,329.52422c-12.43861-5.4511-23.74934.47044-38.026,5.21926l-2.23683-39.51725c14.17612-7.55568,27.69209-9.59281,40.26285-3.728Z", transform: "translate(-203.5 -174.13424)", fill: "#a5454a" }),
+            react_1.default.createElement("circle", { cx: "172.52496", cy: "78.09251", r: "23.80211", fill: "#ffb8b8" }),
+            react_1.default.createElement("path", { d: "M404.5,249.22353c-23.56616,2.30811-41.52338-1.54606-53-12.52007v-8.8377h51Z", transform: "translate(-203.5 -174.13424)", fill: "#2f2e41" }))));
+};
+exports.default = SecurityLogo;
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Accounts/svg/TripsLogo.tsx":
+/*!************************************************************!*\
+  !*** ./resources/js/components/Accounts/svg/TripsLogo.tsx ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const TripsLogo = ({ cssStyle }) => {
+    return (react_1.default.createElement(react_1.default.Fragment, null,
+        react_1.default.createElement("svg", { className: cssStyle, "data-name": "Layer 1", width: "959.16", height: "818.6", viewBox: "0 0 959.16 818.6" },
+            react_1.default.createElement("linearGradient", { id: "3505e4de-4cb3-4002-b88e-01c82e8a7133", x1: "661.53", y1: "801.03", x2: "661.53", y2: "79.98", gradientUnits: "userSpaceOnUse" },
+                react_1.default.createElement("stop", { offset: "0", stopColor: "gray", stopOpacity: "0.25" }),
+                react_1.default.createElement("stop", { offset: "0.54", stopColor: "gray", stopOpacity: "0.12" }),
+                react_1.default.createElement("stop", { offset: "1", stopColor: "gray", stopOpacity: "0.1" })),
+            react_1.default.createElement("title", null, "airport"),
+            react_1.default.createElement("path", { d: "M241.82,690.19s7.14,9.33-3.29,23.42-19,26-15.55,34.76c0,0,15.73-26.16,28.54-26.53S255.91,705.93,241.82,690.19Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a" }),
+            react_1.default.createElement("path", { d: "M241.82,690.19a11.7,11.7,0,0,1,1.46,2.93c12.5,14.68,19.15,28.38,7.14,28.72-11.18.32-24.61,20.33-27.82,25.38a11.9,11.9,0,0,0,.38,1.15s15.73-26.16,28.54-26.53S255.91,705.93,241.82,690.19Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M255.09,702.09c0,3.28-.37,5.94-.82,5.94s-.83-2.66-.83-5.94.46-1.74.92-1.74S255.09,698.8,255.09,702.09Z", transform: "translate(-120.42 -40.7)", fill: "#ffd037" }),
+            react_1.default.createElement("path", { d: "M259.64,706c-2.88,1.57-5.4,2.52-5.61,2.12s1.94-2,4.82-3.57,1.75-.43,2,0S262.52,704.43,259.64,706Z", transform: "translate(-120.42 -40.7)", fill: "#ffd037" }),
+            react_1.default.createElement("path", { d: "M204.14,690.19s-7.14,9.33,3.29,23.42,19,26,15.55,34.76c0,0-15.73-26.16-28.54-26.53S190.05,705.93,204.14,690.19Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a" }),
+            react_1.default.createElement("path", { d: "M204.14,690.19a11.7,11.7,0,0,0-1.46,2.93c-12.5,14.68-19.15,28.38-7.14,28.72,11.19.32,24.61,20.33,27.82,25.38a9.67,9.67,0,0,1-.38,1.15s-15.73-26.16-28.54-26.53S190.05,705.93,204.14,690.19Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M190.87,702.09c0,3.28.37,5.94.83,5.94s.82-2.66.82-5.94-.46-1.74-.92-1.74S190.87,698.8,190.87,702.09Z", transform: "translate(-120.42 -40.7)", fill: "#ffd037" }),
+            react_1.default.createElement("path", { d: "M186.32,706c2.88,1.57,5.4,2.52,5.62,2.12s-1.95-2-4.83-3.57-1.75-.43-2,0S183.44,704.43,186.32,706Z", transform: "translate(-120.42 -40.7)", fill: "#ffd037" }),
+            react_1.default.createElement("path", { d: "M1041.57,609.59c-6.41,15.45-14.82,30.26-26.59,41.62-14.34,13.84-32.15,21.39-51.22,25a154.27,154.27,0,0,1-17,2.2c-15.07,1.16-30.5.39-45.3-1.22a535.59,535.59,0,0,1-106.7-22.83q-8.55-2.76-17-5.81Q765,644,752.49,638.73c-34-14.21-69.15-32.33-105.32-26.71-17.53,2.73-34,11-51.57,13.46a92.21,92.21,0,0,1-36.84-2.62,126.59,126.59,0,0,1-17-5.87,193.44,193.44,0,0,1-35.32-20c-26.5-18.52-50.28-41.48-78.18-57.52-30.76-17.69-64.81-26.1-99.5-32.37q-8.47-1.53-17-2.92c-16.05-2.65-32.14-5.1-48-8-15.28-2.82-30.83-6.27-44.13-14.75-9.49-6.05-17.47-14.43-24.79-23.26A277.49,277.49,0,0,1,160.3,405q-.75-1.5-1.47-3c-14.69-30.14-24.57-63-30.63-97-.18-1-.35-2-.52-3-5.7-33.33-7.78-67.79-7.15-102l.06-3c.39-16.89,1.44-33.71,3-50.29,1.12-11.66,2.62-23.76,8.66-33.56S148.15,97,158,91.78c43.3-23.07,84.81-29.49,131.39-18.31,7.48,1.79,14.93,3.72,22.38,5.72,5.67,1.52,11.34,3.09,17,4.67,39.13,10.91,78.16,22.52,118.61,26q5.86.51,11.73.78,11.61.54,23.22.24a401.19,401.19,0,0,0,59.44-6.12q8.52-1.47,17-3.26c24.4-5.09,48.58-11.88,72.37-19.39q7.29-2.3,14.56-4.68c10.92-3.57,21.84-7.21,32.78-10.75C711.13,56.09,744,46.42,777.76,42.52q4.34-.5,8.68-.87c2.77-.24,5.55-.43,8.32-.57,52.45-2.8,105.5,9.85,152,35.74q8.65,4.82,17,10.24,11.57,7.53,22.43,16.2c14.84,11.85,28.73,25.34,39.31,41.55,10.31,15.79,17,33.52,20.85,52.16.21,1,.41,2,.59,3,5.65,30.09,3.89,62.36-2.45,92.51-.67,3.16-1.38,6.33-2.12,9.49-.23,1-.47,2-.71,3-6.84,28.51-15.58,56.94-13.3,86.09.29,3.67.75,7.31,1.35,10.91.17,1,.34,2,.53,3,4.46,23.78,14.6,46.34,20.68,69.89A215.32,215.32,0,0,1,1041.57,609.59Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" },
+                react_1.default.createElement("path", { d: "M963.76,200h83.18c-.18-1-.38-2-.59-3H963.76V87.06q-8.34-5.41-17-10.24V197h-152V41.08c-2.77.14-5.55.33-8.32.57s-5.79.54-8.68.87V197h-217l-.52-.57L678.47,66.67c-10.94,3.54-21.86,7.18-32.78,10.75l-86.93,95.39V101.49q-8.49,1.79-17,3.26V176.1l-59.44-65.23q-11.61.28-23.22-.24l78.16,85.77-.52.57h-208V83.86c-5.66-1.58-11.33-3.15-17-4.67V197H120.59l-.06,3H311.76V302H127.68c.17,1,.34,2,.52,3H311.76v97H158.83q.72,1.5,1.47,3H311.76v99.26q8.52,1.39,17,2.92V405h213V617a126.59,126.59,0,0,0,17,5.87V405h219V648.54q8.46,3.06,17,5.81V405h152V678.4a154.27,154.27,0,0,0,17-2.2V405h66.48c-.19-1-.36-2-.53-3h-66V305h77.9c.24-1,.48-2,.71-3H963.76Zm-17,0V302h-152V200Zm-169,102h-219V200h219Zm-449-102h210l3,2.73V302h-213Zm0,202V305h213v97Zm230,0V305h219v97Zm388,0h-152V305h152Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M524,228.15a13,13,0,0,0-4.38-2.49,29.36,29.36,0,0,0-11.13-1.21,50.33,50.33,0,0,0-8.18,1.14L374.65,261.14q-3.56,1-7,2.33c-8.1-3.17-31-12.34-33.51-15.63l-9.85,2.88,16.42,24.51h0a2.25,2.25,0,0,0,.17,4.19c18.93,6.5,47.52-2.13,47.52-2.13l109.8-31.37S531.34,234.71,524,228.15Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "378.8", cy: "267.37", rx: "0.96", ry: "1.6", transform: "translate(-185.03 91.15) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "382.62", cy: "266.11", rx: "0.96", ry: "1.6", transform: "translate(-184.44 92.28) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "389.93", cy: "263.7", rx: "0.96", ry: "1.6", transform: "translate(-183.33 94.45) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "410.53", cy: "257.65", rx: "0.96", ry: "1.6", transform: "translate(-180.4 100.59) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "414.16", cy: "256.46", rx: "0.96", ry: "1.6", transform: "matrix(0.95, -0.31, 0.31, 0.95, -179.84, 101.66)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "417.92", cy: "255.58", rx: "0.96", ry: "1.6", transform: "translate(-179.38 102.79) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "421.7", cy: "254.33", rx: "0.96", ry: "1.6", transform: "translate(-178.8 103.91) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "425.41", cy: "253.11", rx: "0.96", ry: "1.6", transform: "translate(-178.23 105.01) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "428.77", cy: "252", rx: "0.96", ry: "1.6", transform: "translate(-177.72 106.01) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "432.38", cy: "250.82", rx: "0.96", ry: "1.6", transform: "translate(-177.17 107.07) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "436.15", cy: "249.57", rx: "0.96", ry: "1.6", transform: "translate(-176.59 108.19) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "439.5", cy: "248.47", rx: "0.96", ry: "1.6", transform: "translate(-176.08 109.18) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "458.26", cy: "243.62", rx: "0.96", ry: "1.6", transform: "translate(-173.62 114.81) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "465.57", cy: "241.22", rx: "0.96", ry: "1.6", transform: "translate(-172.5 116.97) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "469.24", cy: "240.01", rx: "0.96", ry: "1.6", transform: "translate(-171.94 118.06) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "472.8", cy: "238.84", rx: "0.96", ry: "1.6", transform: "translate(-171.39 119.11) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "476.31", cy: "237.68", rx: "0.96", ry: "1.6", transform: "translate(-170.86 120.15) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "480.28", cy: "236.38", rx: "0.96", ry: "1.6", transform: "translate(-170.25 121.33) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "462.03", cy: "242.38", rx: "0.96", ry: "1.6", transform: "translate(-173.04 115.92) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "386.56", cy: "264.81", rx: "0.96", ry: "1.6", transform: "translate(-183.84 93.45) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("rect", { x: "443.59", y: "245.39", width: "3.54", height: "6.17", transform: "translate(-166.99 73.26) rotate(-13.87)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("rect", { x: "484.08", y: "233.79", width: "3.54", height: "6.17", transform: "translate(-163.03 82.63) rotate(-13.87)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("polygon", { points: "383.95 185.21 379.39 186.41 381.67 189.85 388.43 188.17 383.95 185.21", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M519.6,225.66l-9.86,2.57L506,225.91l2.49-1.46A29.36,29.36,0,0,1,519.6,225.66Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M324.3,250.64l16.42,24.59,26.82-11.89s-30.35-11.58-33.39-15.58Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("polygon", { points: "323 213.63 279.67 225.33 277.11 230.45 323 213.63", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M873.68,129.74h-1.32a3.28,3.28,0,0,0,1.61-2.62h0c0-2.07-2.53-3.76-5.63-3.76H828.93c-3.1,0-5.63,1.69-5.63,3.76h0c0,2.06,2.53,3.75,5.63,3.75h1.31a3.27,3.27,0,0,0-1.6,2.62c0,1.77,1.84,3.25,4.3,3.65H821.59c-3.09,0-5.62,1.69-5.62,3.76s2.53,3.75,5.62,3.75H861c3.09,0,5.63-1.69,5.63-3.75,0-1.76-1.85-3.25-4.31-3.65h11.35c3.09,0,5.62-1.69,5.62-3.76S876.77,129.74,873.68,129.74Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M446.52,165.5H445.2a3.27,3.27,0,0,0,1.61-2.62h0c0-2.06-2.53-3.76-5.63-3.76H401.77c-3.1,0-5.63,1.7-5.63,3.76h0c0,2.07,2.53,3.76,5.63,3.76h1.31a3.27,3.27,0,0,0-1.61,2.62c0,1.76,1.85,3.24,4.31,3.64H394.43c-3.09,0-5.62,1.69-5.62,3.76s2.53,3.76,5.62,3.76h39.42c3.09,0,5.62-1.69,5.62-3.76,0-1.76-1.84-3.25-4.3-3.65h11.35c3.09,0,5.62-1.69,5.62-3.75S449.61,165.5,446.52,165.5Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M934.13,318.56h-1.31a3.27,3.27,0,0,0,1.61-2.62h0c0-2.07-2.54-3.76-5.63-3.76H889.38c-3.09,0-5.62,1.69-5.62,3.76h0c0,2.07,2.53,3.76,5.62,3.76h1.32a3.25,3.25,0,0,0-1.61,2.62c0,1.76,1.85,3.24,4.31,3.64H882.05c-3.09,0-5.62,1.69-5.62,3.76s2.53,3.76,5.62,3.76h39.42c3.09,0,5.62-1.69,5.62-3.76,0-1.76-1.84-3.25-4.3-3.65h11.34c3.1,0,5.63-1.69,5.63-3.75S937.23,318.56,934.13,318.56Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "505.99", cy: "742.7", rx: "303.97", ry: "46.65", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "884.56", cy: "789.35", rx: "74.6", ry: "11.45", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "102.56", cy: "767.6", rx: "74.6", ry: "11.45", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("ellipse", { cx: "192.56", cy: "812.24", rx: "41.4", ry: "6.35", fill: "#a5454a", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M261.38,735.8l-.36,2.91-.5,4.11-.21,1.72-.5,4.12-.22,1.71-.5,4.12-5.71,46.79c-.51,4.18-7.33,7.44-15.57,7.44H208.15c-8.24,0-15.05-3.26-15.56-7.44l-5.72-46.79-.5-4.12-.21-1.71-.51-4.12-.21-1.72-.5-4.11-.36-2.91c-.28-2.37,3.41-4.36,8.07-4.36h60.67C258,731.44,261.67,733.43,261.38,735.8Z", transform: "translate(-120.42 -40.7)", fill: "#65617d" }),
+                react_1.default.createElement("polygon", { points: "140.6 698.01 140.1 702.12 65.02 702.12 64.52 698.01 140.6 698.01", fill: "#9d9cb5" }),
+                react_1.default.createElement("polygon", { points: "139.89 703.84 139.39 707.96 65.74 707.96 65.23 703.84 139.89 703.84", fill: "#9d9cb5" }),
+                react_1.default.createElement("polygon", { points: "139.17 709.67 138.67 713.79 66.45 713.79 65.95 709.67 139.17 709.67", fill: "#9d9cb5" }),
+                react_1.default.createElement("path", { d: "M801.8,446.14l-2.33-6.68.87-.92-4.61-22.72a8.52,8.52,0,0,0,.19-2.44,10.42,10.42,0,0,0-2-6.67L793,402.2c0-.36,0-.71.07-1.07,1.89-26.53-9.46-58.61-9.46-58.61V313l-8.76-57.76h0c.17-28.89-11.17-39-11.17-39s-.93-.22-2.44-.68c-3-6.21-8.11-16-16.47-31.73a62.51,62.51,0,0,0-12-16.12,47.49,47.49,0,0,0-23.67-13.11,22,22,0,0,1,2.51-2.41c2-1.61,4.22-2.9,6.09-4.63a22.71,22.71,0,0,0,5.54-8.59,26.47,26.47,0,0,0,1.51-14.86,18.91,18.91,0,0,0-8.34-12.26,20.46,20.46,0,0,1-3.52-2.29c-1.43-1.37-2.1-3.3-2.83-5.11A47.83,47.83,0,0,0,698.94,88c-2-2-4.46-3.85-7.32-4.08s-5.68,1.3-8.38,2.46a35.09,35.09,0,0,1-29.25-1c-4.39-2.25-8.62-5.53-13.58-5.45a11.68,11.68,0,0,0-8.66,4.45c.09-.19.17-.38.27-.57a14.25,14.25,0,0,0-3.43,7.21v.27c0,7.16,1.87,15.29,7.78,20.2-.43.54-.86,1.08-1.26,1.64A40.52,40.52,0,0,0,628.56,147a5.46,5.46,0,0,0-.75.41l-5.64,3.82-12.84,11.1-5.74,3.88c6-4.42,14.6-11.62,12.54-13.27-2.84-2.27-31.54,6-38.12,13.67-2.83,3.31-6.49,9.5-9.73,15.48l-.23-.44c-.27.36-.58.79-.9,1.25l-.13-.24c-1.34,1.8-3.45,4.88-5.79,8.37-.85,1.26-1.73,2.58-2.6,3.91-9.09,10.21-26.56,30.78-29.09,40.66,0,0-17.19,27.87-13.06,41.64s20.8,16.46,32.83,12.26c8.59-3,29.89-13.27,41.36-18.9l-1.14,16.22s-9.38,66.64-16.71,93.68c-1.27,4.67-2.48,8.17-3.57,9.92a6.66,6.66,0,0,0-.39.71c-7.42,14.13-18.69,93.5-18.69,93.5s-10,10.58,9.28,11.93c13.28.92,21.24,12.23,24.9,19.16v.15c-.39,10.61-.56,19.66-.32,25.35.71,17.44-1.29,39.47-2.59,51.37a63.48,63.48,0,0,0,.56,17.89c2.82,16.29,8.92,49.55,13.89,63.74,6.7,19.14,3.61,40.3,3.61,40.3s6.7,20.65,12.89,28.21A5.85,5.85,0,0,0,614,744c-.08.61-.16,1.23-.27,1.86-1,5.89-3.25,12.69-8.19,17.82-7.32,7.61-17.47,18-18.66,25.56-.56,3.64.92,6.62,5.77,8.36,15,5.37,34.38,0,34.38,0s13.06-4.7,13.06-9.4,5.33-4.7,5.33-4.7l8.59-6a65.11,65.11,0,0,0,0-9.33c-.38-6-1.69-13.42-5.53-18.17a19.07,19.07,0,0,1-2.75-4.62,18.56,18.56,0,0,1-.65-1.9c3.58-.6,6.09-1,6.5-.74,1.55,1,6.19-26.7-5.67-41.31s-6.19-27.71-6.19-27.71-1.55-53.4-9.28-57.93c0,0,6.18-16.12,5.67-24.18s-3.09-24.18,0-27.71c1.46-1.67,7.47-13,13.36-24.42.35-.67.7-1.34,1-2,3.63.25,7.63.4,11.8.32.05.66.11,1.32.17,2,.93,10.06,3.18,21.09,8.18,29.16v50.88s3.61,14.61,6.7,20.66-9.62,47.85-9.62,47.85-7.06,51.13,0,57.55a12.41,12.41,0,0,0,5.16,2.4c.11.69.21,1.39.31,2.1,1,6.82,1.67,14.27.88,18.56a49.12,49.12,0,0,0,.08,16.66c.15.84.26,1.3.26,1.3s-3.26,16.29,19.26,13.95,24.92-9.41,24.92-9.41,0-.23-.05-.63a42.72,42.72,0,0,0-.64-4.79,51.91,51.91,0,0,0-8.33-19.75,15.66,15.66,0,0,1-3-8.42c0-2-.13-4.18-.24-6.36,0-.67-.07-1.34-.11-2,1.62-.11,2.59-.2,2.59-.2s7.21-12.59,6.7-36.78,5.67-46.34,5.67-46.34,1.55-36.27,0-41.31-3.27-33.55.69-37.43c2.74-2.69,6.3-35.73,8.23-55.74.07-.68.13-1.34.19-2,5.05-.2,8.25-.23,8.25-.23s.56-14.81,1.05-35l2.19-.83c-.94,1.51.07,5.61,7.37,3.55,9.41-2.64,21.92-4.91,21.92-4.91s6.7-4.79,7-8.19a38.17,38.17,0,0,1,1.16-5.14c14.67-5.85,26.73-10.73,26.73-10.73S810.74,460.41,801.8,446.14Zm-51.39-84.47,1.78,14.22-5,1.54-10.53.72c-2.93-26.61,2-71.39,2-71.39l.89-.58C744,324.15,750.41,361.67,750.41,361.67ZM697.84,176.28c-.22-.51-.43-1-.65-1.6l1,1.54A2.63,2.63,0,0,0,697.84,176.28ZM737,380.6l-.18-1.41,3.45-.73,5.45-.56ZM628.59,184.39c-1.47.35-3,.73-4.45,1.16l.26-.15,4.28-2.55a12.29,12.29,0,0,0-.09,1.49Zm-48.51,37.06c-3.44,1.68-5.16,1.51-5.16,1.51l7.9-15.3a38.8,38.8,0,0,0,2.47-4.32,13.21,13.21,0,0,1,7.12-.71s1.91-.43,4.86-1.15a31.6,31.6,0,0,0-1.9,2.68S583.51,219.77,580.08,221.45ZM743,493.09h0l2.48-.95C744.42,492.91,743.53,493.32,743,493.09Z", transform: "translate(-120.42 -40.7)", fill: "url(#3505e4de-4cb3-4002-b88e-01c82e8a7133)" }),
+                react_1.default.createElement("path", { d: "M659.85,163.43c-3.18,1.87-3.28,9.86-2.79,16.27.35,4.69,1,8.53,1,8.53l-20.69,50.3s-7.67-35.84-7.79-51.84a11.86,11.86,0,0,1,.57-3.72C633.8,171.44,654.08,165,659.85,163.43Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+                react_1.default.createElement("path", { d: "M661.38,163s-.56.13-1.53.4A3,3,0,0,1,661.38,163Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+                react_1.default.createElement("path", { d: "M654.21,775.36l-8.33,6s-5.17,0-5.17,4.67-12.66,9.33-12.66,9.33-18.84,5.33-33.34,0c-4.7-1.73-6.14-4.69-5.59-8.3,1.15-7.53,11-17.82,18.09-25.37,4.79-5.09,7-11.84,7.94-17.68a52.82,52.82,0,0,0,.56-12.65l30.5-2.17a20.14,20.14,0,0,0,0,14.29,18.58,18.58,0,0,0,2.67,4.58c3.72,4.72,5,12.13,5.36,18A65.93,65.93,0,0,1,654.21,775.36Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+                react_1.default.createElement("path", { d: "M716.88,789.19s-2.33,7-24.17,9.34S674,784.69,674,784.69s-.11-.46-.25-1.29a49.76,49.76,0,0,1-.08-16.54c.76-4.26.1-11.65-.85-18.42-1.12-8.06-2.65-15.25-2.65-15.25l33.84,2.5s.59,6.89.93,13.85c.11,2.17.2,4.34.23,6.32a15.78,15.78,0,0,0,2.92,8.35,52.17,52.17,0,0,1,8.08,19.6,44.57,44.57,0,0,1,.62,4.76C716.86,789,716.88,789.19,716.88,789.19Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+                react_1.default.createElement("path", { d: "M654.21,775.36l-8.33,6s-5.17,0-5.17,4.67-12.66,9.33-12.66,9.33-18.84,5.33-33.34,0c-4.7-1.73-6.14-4.69-5.59-8.3.45,0,.88.06,1.24.07,5.94.19,11.72,1.79,17.63,2.32a87.64,87.64,0,0,0,10.12.16,35.3,35.3,0,0,0,5-.39c4-.71,7.71-2.78,11.28-4.81a6.4,6.4,0,0,0,2.25-1.76,8.6,8.6,0,0,0,1-2.68c1.26-4.52,4.78-8.14,8.82-10.52a38.46,38.46,0,0,1,7.77-3.35A65.93,65.93,0,0,1,654.21,775.36Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+                react_1.default.createElement("path", { d: "M716.88,789.19s-2.33,7-24.17,9.34S674,784.69,674,784.69s-.11-.46-.25-1.29c1,.52,1.85,1,2.24,1.22,2,1.17,3.79,2.78,5.87,3.87,5,2.63,11.05,1.85,16.64,1,2.65-.4,5.3-.8,7.94-1.29a20.08,20.08,0,0,0,5.81-1.72,34.62,34.62,0,0,0,3.92-2.66,44.57,44.57,0,0,1,.62,4.76C716.86,789,716.88,789.19,716.88,789.19Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+                react_1.default.createElement("path", { d: "M654.21,775.36l-8.33,6s-5.17,0-5.17,4.67-12.66,9.33-12.66,9.33-18.84,5.33-33.34,0c-4.7-1.73-6.14-4.69-5.59-8.3.45,0,.88.06,1.24.07,5.94.19,11.72,1.79,17.63,2.32a87.64,87.64,0,0,0,10.12.16,35.3,35.3,0,0,0,5-.39c4-.71,7.71-2.78,11.28-4.81a6.4,6.4,0,0,0,2.25-1.76,8.6,8.6,0,0,0,1-2.68c1.26-4.52,4.78-8.14,8.82-10.52a38.46,38.46,0,0,1,7.77-3.35A65.93,65.93,0,0,1,654.21,775.36Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M716.88,789.19s-2.33,7-24.17,9.34S674,784.69,674,784.69s-.11-.46-.25-1.29c1,.52,1.85,1,2.24,1.22,2,1.17,3.79,2.78,5.87,3.87,5,2.63,11.05,1.85,16.64,1,2.65-.4,5.3-.8,7.94-1.29a20.08,20.08,0,0,0,5.81-1.72,34.62,34.62,0,0,0,3.92-2.66,44.57,44.57,0,0,1,.62,4.76C716.86,789,716.88,789.19,716.88,789.19Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M646.21,729.19a20.14,20.14,0,0,0,0,14.29c-8.75,1.49-25.06,4.5-31.06.53a52.82,52.82,0,0,0,.56-12.65Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M705,749.54c-6.18.44-22.81,1.31-32.12-1.1-1.12-8.06-2.65-15.25-2.65-15.25l33.84,2.5S704.64,742.58,705,749.54Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M729.38,516.36s-.52,6.25-1.35,15c-1.87,19.86-5.32,52.65-8,55.32-3.84,3.85-2.17,32.15-.67,37.15s0,41,0,41a183,183,0,0,0-5.5,46c.5,24-6.5,36.5-6.5,36.5s-33,3-39.83-3.38,0-57.12,0-57.12,12.33-41.5,9.33-47.5-6.5-20.5-6.5-20.5v-50.5c-4.85-8-7-19-7.93-28.94a152.17,152.17,0,0,1-.07-25.56s-6.21,12.7-12.54,25.26c-5.72,11.35-11.54,22.58-13,24.24-3,3.5-.5,19.5,0,27.5s-5.5,24-5.5,24c7.5,4.5,9,57.5,9,57.5s-5.5,13,6,27.5,7,42,5.5,41-32,7.5-38,0-12.5-28-12.5-28,3-21-3.5-40c-4.82-14.08-10.73-47.09-13.47-63.26a64.45,64.45,0,0,1-.54-17.76c1.26-11.81,3.2-33.67,2.51-51-.23-5.65-.07-14.63.31-25.16,1.29-36.1,5.19-90.34,5.19-90.34L619,407l17.9-12.14,4.38.67,81.62,12.57,3.17,40.26Z", transform: "translate(-120.42 -40.7)", fill: "#444053" }),
+                react_1.default.createElement("path", { d: "M619,407l-1.43,7.86s-12,57.5-14.5,87-13,21-13,21a46.76,46.76,0,0,0-3.36-7.16c1.29-36.1,5.19-90.34,5.19-90.34Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M704.71,188.86s-56,44.83-45.66,35.83c5.66-4.94,1.81-26-2.83-44-3.82-14.85-8.17-27.63-8.17-27.63s48.88-45.73,45.33-8.34c-1.25,13.18-.21,22.55,1.66,29.17C698.47,186,704.71,188.86,704.71,188.86Z", transform: "translate(-120.42 -40.7)", fill: "#efb7b9" }),
+                react_1.default.createElement("path", { d: "M700.05,176.94l-35.5,27.75-10.34-11.5s-8.83-3.83-9.5.5-3.16,31,2,33.5,11.84,4.17,17.67,3.34,12.33-7.34,16.67-9.84,20.33-15.5,20.33-15.5l8-11.16Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M700.05,177.94l-35.5,27.75-10.34-11.5s-8.83-3.83-9.5.5-3.16,31,2,33.5,11.84,4.17,17.67,3.34,12.33-7.34,16.67-9.84,20.33-15.5,20.33-15.5l8-11.16Z", transform: "translate(-120.42 -40.7)", fill: "#a36468" }),
+                react_1.default.createElement("path", { d: "M729.38,516.36s-.52,6.25-1.35,15c-11,.42-32.34,1.72-47.32,5.64a82.1,82.1,0,0,1-18.26,2.39,152.17,152.17,0,0,1-.07-25.56s-6.21,12.7-12.54,25.26A132.25,132.25,0,0,1,633.71,537l6.67-86.67s-.22-29.09.88-54.83l81.62,12.57,3.17,40.26Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M668.05,202.36s24.25-26.51,30-22.3,9.47,14.47,9.47,14.47L687.8,216.19Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M669.05,201.36s24.25-26.51,30-22.3,9.47,14.47,9.47,14.47L688.8,215.19Z", transform: "translate(-120.42 -40.7)", fill: "#a36468" }),
+                react_1.default.createElement("path", { d: "M648.94,218.35l13.94-17.55s-2.21-16.59-7.32-14.47-6.62,10.61-6.62,10.61Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M647.88,217.19l13.94-17.55s-2.2-16.59-7.32-14.47-6.62,10.61-6.62,10.61Z", transform: "translate(-120.42 -40.7)", fill: "#a36468" }),
+                react_1.default.createElement("path", { d: "M712.05,185.69s-28.71,31-45.85,33.08c-1.56.19-3.1.45-4.64.76-4.47.88-14.23,0-12.68-25.63l-2.17-4.54-13.33,8.17-4.5,36.66-8,94L609.05,432.86s36.33-3.5,46.5,5.67,13-50,13-50l27.83-120,29.67-77.17Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M726.05,195.36l-29.67,77.17-27.83,120s-2.84,59.16-13,50c-3.32-3-9.44-4.64-16.17-5.49a146.63,146.63,0,0,0-24.92-.56c-3.32.18-5.41.38-5.41.38l11.83-104.67,8-94,4.5-36.66,13.33-8.17,2.17,4.54c0,.67-.07,1.33-.1,2-.94,23.68,8.43,24.52,12.78,23.66,1.54-.31,3.08-.57,4.64-.76,12.14-1.49,30.08-17.46,39.51-26.64,3.89-3.8,6.34-6.44,6.34-6.44Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M726.05,192.36l-29.67,77.17-27.83,120s-2.84,59.16-13,50c-3.32-3-9.44-4.64-16.17-5.49a146.63,146.63,0,0,0-24.92-.56c-3.32.18-5.41.38-5.41.38l11.83-104.67,8-94,4.5-36.66,13.33-8.17,2.17,4.54c0,.67-.07,1.33-.1,2-.94,23.68,8.43,24.52,12.78,23.66,1.54-.31,3.08-.57,4.64-.76,12.14-1.49,30.08-17.46,39.51-26.64,3.89-3.8,6.34-6.44,6.34-6.44Z", transform: "translate(-120.42 -40.7)", fill: "#e1e7ef" }),
+                react_1.default.createElement("path", { d: "M648.88,194.9c0,.67-.07,1.33-.1,2l-.23.16c-3.52,2.32-9.17,41.5-9.17,41.5l-7.33,99.83-13.5,74.5s-1.77,8.49-4.09,20.62c-3.32.18-5.41.38-5.41.38l11.83-104.67,8-94,4.5-36.66,13.33-8.17Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M658.07,188.23s-8,6.48-11.52,8.8-9.17,41.5-9.17,41.5l-7.33,99.83-13.5,74.5s-12,57.5-14.5,87-13,21-13,21-7.84-23-26.5-24.33-9-11.84-9-11.84,10.93-78.77,18.12-92.8a6.48,6.48,0,0,1,.38-.7c1.06-1.74,2.23-5.21,3.46-9.85,7.11-26.84,16.2-93,16.2-93l5.67-82c14.5-23.67,59.56-22.85,59.56-22.85Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+                react_1.default.createElement("path", { d: "M726.05,192.36l-29.67,77.17-27.83,120s-2.84,59.16-13,50c-3.32-3-9.44-4.64-16.17-5.49.12-20.34.74-56.84,3.67-72.18a203.82,203.82,0,0,0,3.16-42.5l36.34-79.17s27.33-33.69,27.5-38.51c.06-1.78-1.88-5.08-4.34-8.55,3.89-3.8,6.34-6.44,6.34-6.44Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M634.71,535l6.67-86.67s-.5-64.67,3.67-86.5a203.82,203.82,0,0,0,3.16-42.5l36.34-79.17s27.33-33.69,27.5-38.51-14.32-20.85-14.32-20.85,31.65,3.7,35.82,17.86,27,19.67,27,19.67,11,10,10.83,38.67-35,51.16-35,51.16-5.83,54-.83,78.34.66,142.66.66,142.66-33.5.34-54.5,5.84S634.71,535,634.71,535Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+                react_1.default.createElement("path", { d: "M684.05,397.53l25.66,97.16s3.5,8.67,21.5,2,70.34-28.33,70.34-28.33,4.66-7.67-4-21.83l-26.17-76.67Z", transform: "translate(-120.42 -40.7)", fill: "#b07473" }),
+                react_1.default.createElement("polygon", { points: "596.84 399.79 638.34 354.16 664.84 343.41 675.71 398.28 625.34 453.03 596.84 399.79", fill: "#e1e7ef" }),
+                react_1.default.createElement("path", { d: "M761.6,455.74S749.26,463,746,463.24s-14.73,21.92-9.88,21.75,16.13-6,15-3-8.49,12-10.62,11.14-3.13,6.61,6,4,21.25-4.87,21.25-4.87,6.5-4.75,6.75-8.13S780.38,463,780.38,463Z", transform: "translate(-120.42 -40.7)", fill: "#efb7b9" }),
+                react_1.default.createElement("path", { d: "M563.49,199.74s10.68-23.06,17.06-30.68,34.21-15.82,37-13.57-14,14.88-17,16.5,19.38,16.67,19.84,17,17.5-1.51,8.75,4.24-34.62,11.6-34.62,11.6a13,13,0,0,0-10,2.4C579.51,210.86,563.49,199.74,563.49,199.74Z", transform: "translate(-120.42 -40.7)", fill: "#efb7b9" }),
+                react_1.default.createElement("path", { d: "M785.66,456.89A69.18,69.18,0,0,1,780,470.24c-2.5-2.26-26.37-10.13-26.37-10.13l2.65-4.09,4.32-6.66s21.28-4.62,24.9,0C786.72,450.91,786.5,453.77,785.66,456.89Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M786.66,455.89A69.18,69.18,0,0,1,781,469.24c-2.5-2.26-26.37-10.13-26.37-10.13l2.65-4.09,4.32-6.66s21.28-4.62,24.9,0C787.72,449.91,787.5,452.77,786.66,455.89Z", transform: "translate(-120.42 -40.7)", fill: "#a36468" }),
+                react_1.default.createElement("path", { d: "M587.88,204.94a35.16,35.16,0,0,1-2.7,4.94c-3.85,6.07-9.68,13.23-9.68,13.23s-22.74-10.46-22.74-10.92,6.9-11.33,12.51-19.9c2.27-3.46,4.32-6.52,5.62-8.31,0,0,8.49,17.76,16.87,17.88C590,201.89,588.79,202.77,587.88,204.94Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M586.88,205.94a35.16,35.16,0,0,1-2.7,4.94c-3.85,6.07-9.68,13.23-9.68,13.23s-22.74-10.46-22.74-10.92,6.9-11.33,12.51-19.9c2.27-3.46,4.32-6.52,5.62-8.31,0,0,8.49,17.76,16.87,17.88C589,202.89,587.79,203.77,586.88,205.94Z", transform: "translate(-120.42 -40.7)", fill: "#a36468" }),
+                react_1.default.createElement("polygon", { points: "594.71 348.66 591.79 339.91 632.77 337.03 617.46 338.66 597.96 342.85 599.46 348.66 594.71 348.66", fill: "#b07473" }),
+                react_1.default.createElement("path", { d: "M786.66,455.89c-4.52-2.13-16.58-6.56-29.38-.87l4.32-6.66s21.28-4.62,24.9,0C787.72,449.91,787.5,452.77,786.66,455.89Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M789.05,401.86c-.1,1.45-.19,2.9-.28,4.34-.25,4.41-.42,8.78-.53,13-.5,19.54.31,35.66.31,35.66s-15.5-9.33-32-1.5l-1.64-31.62,0-.55-1.69-13.83-5.48-44.67s-10.33-62-13.5-64.33,23.5-52.5,23.5-52.5L771.38,257l8.5,57.33v29.33S790.88,375.53,789.05,401.86Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+                react_1.default.createElement("path", { d: "M587.38,204.53l-3.2,6.35c-3.85,6.07-9.68,13.23-9.68,13.23s-22.74-10.46-22.74-10.92,6.9-11.33,12.51-19.9c1.73-1.95,2.78-3.1,2.78-3.1C560.38,206.69,587.38,204.53,587.38,204.53Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M606.71,201.68l-9.33,4.68s-11.5,15.5-14.83,17.17-5,1.5-5,1.5l9.83-19.5s-27,2.16-20.33-14.34c0,0-30.17,33-33.5,46.34,0,0-16.67,27.66-12.67,41.33s20.17,16.33,31.83,12.17,47.5-22.5,47.5-22.5Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+                react_1.default.createElement("path", { d: "M573.21,234.19s-25.16,28.17-23.16,32S571.88,239.86,573.21,234.19Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M686.8,158.36s35.41-10.67,55.41,27.83,20.67,41.17,19.67,43-39.83-8.33-42-3.83,22,23,22,23l-93.67,71,39.36-83.64A63,63,0,0,1,698,219.65c6.47-7.24,15.32-18.33,12.18-21.75-2.76-3-7.17-10.83-13.13-19.84C692.71,171.46,685.78,164,686.8,158.36Z", transform: "translate(-120.42 -40.7)", opacity: "0.2" }),
+                react_1.default.createElement("path", { d: "M685.8,157.36s35.41-10.67,55.41,27.83,20.67,41.17,19.67,43-39.83-8.33-42-3.83,22,23,22,23l-92.67,72,38.36-84.64A63,63,0,0,1,697,218.65c6.47-7.24,15.32-18.33,12.18-21.75-2.76-3-7.17-10.83-13.13-19.84C691.71,170.46,684.78,163,685.8,157.36Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+                react_1.default.createElement("path", { d: "M685.8,157.36s35.41-10.67,55.41,27.83,20.67,41.17,19.67,43-39.83-8.33-42-3.83,22,23,22,23l-92.67,72,40.2-88.71a35.15,35.15,0,0,1,6.23-9.39c6.34-6.82,18.12-20.49,14.57-24.36-2.76-3-7.17-10.83-13.13-19.84C691.71,170.46,684.78,163,685.8,157.36Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("circle", { cx: "572.63", cy: "285.83", r: "7.33", fill: "#444053" }),
+                react_1.default.createElement("circle", { cx: "572.63", cy: "331.33", r: "7.33", fill: "#444053" }),
+                react_1.default.createElement("path", { d: "M788.24,419.2c-4.22,1-24.23.55-33.33,2.54l0-.55-1.69-13.83c10.26-1.28,32.56-3.71,35.58-1.16C792.71,409.53,793.27,418.05,788.24,419.2Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+                react_1.default.createElement("path", { d: "M788.24,420.2c-4.22,1-24.23.55-33.33,2.54l0-.55-1.69-13.83c10.26-1.28,32.56-3.71,35.58-1.16C792.71,410.53,793.27,419.05,788.24,420.2Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M788.24,419.2c-4.22,1-24.23.55-33.33,2.54l0-.55-1.69-13.83c10.26-1.28,32.56-3.71,35.58-1.16C792.71,409.53,793.27,418.05,788.24,419.2Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("circle", { cx: "663.46", cy: "371.83", r: "4.42", fill: "#444053" }),
+                react_1.default.createElement("path", { d: "M700.38,430.19l18.67,63.67s5,2.33,5-1.83S700.38,430.19,700.38,430.19Z", transform: "translate(-120.42 -40.7)", fill: "#fff", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M693.21,170.77a39.81,39.81,0,0,1-3.69,2.63c-6.35,4-12,9.43-20.09,9.43a40.93,40.93,0,0,1-13.21-2.17c-3.82-14.85-8.17-27.63-8.17-27.63s48.88-45.73,45.33-8.34C692.13,157.87,691.34,164.15,693.21,170.77Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M710.49,139.77a41.06,41.06,0,1,1-41.06-41.06A40.87,40.87,0,0,1,710.49,139.77Z", transform: "translate(-120.42 -40.7)", fill: "#efb7b9" }),
+                react_1.default.createElement("path", { d: "M646.16,174.13a4.78,4.78,0,0,1-1.92,2.25l-6.52,4-12.19,7.41-19.29,11.72q-.68.4-1.38.75a16.6,16.6,0,0,1-14.63.2,12,12,0,0,1-6.83-8.52,14.23,14.23,0,0,1,5.22-14,.75.75,0,0,1,.36-.18,35.49,35.49,0,0,0,11.4-5.58l12.14-8.4,10.84-9.91,5.48-3.79a5.11,5.11,0,0,1,5.51-.2C640,153.09,651.16,161.5,646.16,174.13Z", transform: "translate(-120.42 -40.7)", fill: "#e1e7ef" }),
+                react_1.default.createElement("path", { d: "M637.72,180.33l-12.19,7.41c-2.54-10.24-9-17.47-14.61-22.93l12.44-11C632.82,158.5,636.58,174.17,637.72,180.33Z", transform: "translate(-120.42 -40.7)", fill: "#a36468" }),
+                react_1.default.createElement("path", { d: "M604.86,200.21a16.6,16.6,0,0,1-14.63.2,12,12,0,0,1-6.83-8.52,14.23,14.23,0,0,1,5.22-14,30.73,30.73,0,0,1,8.3,5.21,23.32,23.32,0,0,1,7.18,11.3A24,24,0,0,1,604.86,200.21Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M710.49,139.77a40.87,40.87,0,0,1-3.82,17.31,23.18,23.18,0,0,0-5.52,8.76c-2.78,3.38-3.88,5.29-7.59,7.63-1.49-1.57-4.84-2.52-5.45-4.55-1.55-5.23-.67-10.82-.59-16.27,0-2.42-.34-5.28-2.47-6.44-1.77-1-4-.28-5.74.7s-3.47,2.25-5.47,2.48c-3,.34-5.74-1.77-7.42-4.25s-2.65-5.38-4.24-7.92c-2.1-3.35-5.2-5.92-8.25-8.42-3.49-2.88-6.88-6.07-10.6-8.65-2.22-1.55-4.88-2.27-7.07-3.83l-.35-.26a41.06,41.06,0,0,1,74.58,23.71Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M629.59,94.39c.87-5.77,5.63-11.18,11.46-11.28,4.81-.08,8.91,3.18,13.17,5.41a33.26,33.26,0,0,0,28.36,1c2.62-1.14,5.27-2.67,8.12-2.44s5.13,2.1,7.1,4a47.51,47.51,0,0,1,10.77,16.3c.71,1.8,1.36,3.72,2.74,5.07a18.47,18.47,0,0,0,3.42,2.27,18.8,18.8,0,0,1,8.08,12.17,26.8,26.8,0,0,1-1.47,14.75A22.43,22.43,0,0,1,716,150.2c-1.82,1.71-4,3-5.91,4.6a23.6,23.6,0,0,0-8,21.88c-5.32,1.23-10.42-3.54-12-8.76s-.67-10.82-.59-16.27c0-2.42-.34-5.28-2.47-6.44-1.77-1-4-.28-5.74.7s-3.47,2.25-5.47,2.48c-3,.34-5.74-1.76-7.42-4.25s-2.64-5.38-4.24-7.92c-2.09-3.35-5.2-5.92-8.25-8.42-3.49-2.87-6.88-6.07-10.59-8.65-2.23-1.55-4.89-2.27-7.08-3.83C631.63,110.58,629.59,101.94,629.59,94.39Z", transform: "translate(-120.42 -40.7)", fill: "#585268" }),
+                react_1.default.createElement("path", { d: "M661.38,163s-.56.13-1.53.4A3,3,0,0,1,661.38,163Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("g", { opacity: "0.1" },
+                    react_1.default.createElement("path", { d: "M692.11,164.65c-1.55-5.23-.67-10.82-.59-16.27,0-2.42-.34-5.28-2.47-6.44-1.77-1-4-.27-5.74.7s-3.47,2.25-5.47,2.48c-3,.34-5.74-1.76-7.42-4.24s-2.64-5.39-4.24-7.93c-2.1-3.34-5.2-5.91-8.25-8.42-3.49-2.87-6.88-6.07-10.59-8.65-2.23-1.55-4.89-2.26-7.08-3.83-6.63-4.74-8.67-13.38-8.67-20.93A14.11,14.11,0,0,1,632.91,87a14.42,14.42,0,0,0-3.32,7.16c0,7.55,2,16.19,8.67,20.93,2.19,1.57,4.85,2.28,7.08,3.83,3.71,2.58,7.1,5.78,10.59,8.65,3.05,2.51,6.15,5.08,8.25,8.42,1.6,2.54,2.55,5.45,4.24,7.93s4.44,4.58,7.42,4.24c2-.23,3.7-1.51,5.47-2.48s4-1.66,5.74-.7c2.13,1.16,2.51,4,2.47,6.44-.08,5.45-1,11,.59,16.27s6.66,10,12,8.76a22.64,22.64,0,0,1-.32-2.84C697.35,173.22,693.44,169.11,692.11,164.65Z", transform: "translate(-120.42 -40.7)" }),
+                    react_1.default.createElement("path", { d: "M718,146.93c-1.82,1.72-4,3-5.91,4.6a22.61,22.61,0,0,0-5.21,6.3,21.32,21.32,0,0,1,3.21-3.3c1.92-1.6,4.09-2.88,5.91-4.6a19.77,19.77,0,0,0,3.64-4.78A17.29,17.29,0,0,1,718,146.93Z", transform: "translate(-120.42 -40.7)" })),
+                react_1.default.createElement("path", { d: "M662.74,503.89c-.73,2.17-1.77,4.29-1.91,6.58-.24,3.9,2.14,7.52,2.31,11.43.2,4.53-2.56,8.6-5.2,12.3,3.13,0,6.55-1.09,8.14-3.78a12.65,12.65,0,0,0,1.17-3.29c2.83-11.29,5.58-23.64.66-34.18a15.38,15.38,0,0,0-3.25-4.88C663.83,493.39,664.53,498.62,662.74,503.89Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M584.52,424.21,576.21,413c-2-2.71-4.07-5.53-4.79-8.82-.78-3.61.13-7.35.25-11,0-.41,0-.83,0-1.25a6.48,6.48,0,0,1,.38-.7c1.06-1.74,2.23-5.21,3.46-9.85a12,12,0,0,1,2.76,4.25c3.87,9.44.29,20.52,3.49,30.2C582.68,418.61,584.18,421.27,584.52,424.21Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M605.67,763.55a35.45,35.45,0,0,0,28.74,5.69", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M674.53,765.2a21.06,21.06,0,0,0,30.67-2", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M630.65,614.45a18.92,18.92,0,0,1-20.77-9.18", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M678.05,639.72a27.61,27.61,0,0,0,17.85-4.9", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M645.7,700.12c-5.33,2.16-10.09,5.54-15.28,8s-11.2,4.07-16.69,2.35", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("rect", { x: "421.95", y: "363.59", width: "6.25", height: "190.8", fill: "#9d9cb5" }),
+                react_1.default.createElement("rect", { x: "441.36", y: "363.59", width: "6.26", height: "190.8", fill: "#9d9cb5" }),
+                react_1.default.createElement("circle", { cx: "408.12", cy: "740.06", r: "10.69", fill: "#535461" }),
+                react_1.default.createElement("path", { d: "M490.71,586.29s10.66-8.67,20-5.67,33.66,6,38,21.33,0,183.67,0,183.67S528,791,522.37,788.29s-5-28-5-28L515.71,611Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a" }),
+                react_1.default.createElement("path", { d: "M490.71,586.29s10.66-8.67,20-5.67,33.66,6,38,21.33,0,183.67,0,183.67S528,791,522.37,788.29s-5-28-5-28L515.71,611Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("path", { d: "M587.71,777l-44.87,10-.47-8-.29-157.07A47.87,47.87,0,0,0,523.3,584h0s23.23-.31,41,7.72c3.8,1.71,7.61,3.39,11.52,4.83,4.85,1.79,11.43,5.6,11.85,13.12.54,9.8,2.42,106.88,3.09,142.22A89.76,89.76,0,0,1,587.71,777Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a" }),
+                react_1.default.createElement("rect", { x: "419.04", y: "349.42", width: "10.42", height: "16.33", fill: "#535461" }),
+                react_1.default.createElement("rect", { x: "419.04", y: "349.42", width: "10.42", height: "16.33", opacity: "0.1" }),
+                react_1.default.createElement("rect", { x: "438.62", y: "352", width: "10.42", height: "16.33", fill: "#535461" }),
+                react_1.default.createElement("path", { d: "M569.45,392.7H559a10.36,10.36,0,0,0-9.17,6.08c-.15.32-.29.65-.42,1l-2.3-2.22-4.78-4.62-2.92-2.82S558.7,380.37,569.45,392.7Z", transform: "translate(-120.42 -40.7)", fill: "#535461" }),
+                react_1.default.createElement("circle", { cx: "453.58", cy: "747.59", r: "10.69", fill: "#535461" }),
+                react_1.default.createElement("circle", { cx: "343.2", cy: "733", r: "10.69", fill: "#535461" }),
+                react_1.default.createElement("path", { d: "M483.71,584s-30.34,8-32,84.34-2,84.33-2,84.33.66,22,45.33,35.67h27.33L526.71,613S521.71,586.29,483.71,584Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a" }),
+                react_1.default.createElement("path", { d: "M481,702.29s-7.77-106.74,34.12-107.2l3.93,3.82S482.37,585.62,481,702.29Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                react_1.default.createElement("circle", { cx: "379.45", cy: "756.91", r: "10.69", fill: "#535461" }),
+                react_1.default.createElement("path", { d: "M559.15,392.64a.14.14,0,0,1,0,.06H559a10.36,10.36,0,0,0-9.17,6.08c-.15.32-.29.65-.42,1l-2.3-2.22a3.88,3.88,0,0,1,0-.59,6,6,0,0,1,2.26-3.93,9,9,0,0,1,8.69-1.57C558.65,391.66,559.26,392.08,559.15,392.64Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+                " "))));
+};
+exports.default = TripsLogo;
+
 
 /***/ }),
 
