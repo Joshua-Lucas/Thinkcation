@@ -69978,9 +69978,42 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+const SearchingLogo_1 = __importDefault(__webpack_require__(/*! ./SearchingLogo */ "./resources/js/components/Accounts/Errors/SearchingLogo.tsx"));
 const NotSignedIn = () => {
     return (react_1.default.createElement("div", { className: "flex flex-col items-center mt-12 lg:mt-20 xl:flex-row xl:justify-center xl:my-20 " },
-        react_1.default.createElement("svg", { className: "w-11/12 xl:w-1/3", id: "b7da5827-4560-4d63-9360-f6e9beb837fe", "data-name": "Layer 1", xmlns: "http://www.w3.org/2000/svg", width: "1104.46862", height: "797.51507", viewBox: "0 0 1104.46862 797.51507" },
+        react_1.default.createElement(SearchingLogo_1.default, { cssStyle: "w-11/12 xl:w-1/3" }),
+        react_1.default.createElement("div", { className: " w-11/12 flex flex-col items-center xl:self-center xl:w-1/3 xl:pl-8" },
+            react_1.default.createElement("h1", { className: "text-4xl text-center 2xl:text-5xl" },
+                react_1.default.createElement("span", { className: "block text-6xl xl:pr-1 " }, "Oops!"),
+                "Looks like you are not logged in.",
+                " "),
+            react_1.default.createElement("p", { className: "pt-4 " }, "try one of these"),
+            react_1.default.createElement("div", { className: " pt-8 space-x-4" },
+                react_1.default.createElement(react_router_dom_1.Link, { className: "py-3 px-4 rounded-full borader-2 bg-brand hover:bg-darkshade hover:text-lightshade ", to: "/signup" }, "Signup"),
+                react_1.default.createElement(react_router_dom_1.Link, { className: "py-3 px-4  rounded-full borader-2 bg-brand hover:bg-darkshade hover:text-lightshade", to: "/login" }, "Login")))));
+};
+exports.default = NotSignedIn;
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Accounts/Errors/SearchingLogo.tsx":
+/*!*******************************************************************!*\
+  !*** ./resources/js/components/Accounts/Errors/SearchingLogo.tsx ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const SearchingLogo = ({ cssStyle }) => {
+    return (react_1.default.createElement(react_1.default.Fragment, null,
+        react_1.default.createElement("svg", { className: cssStyle, id: "b7da5827-4560-4d63-9360-f6e9beb837fe", "data-name": "Layer 1", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 1104.46862 797.51507" },
             react_1.default.createElement("title", null, "searching"),
             react_1.default.createElement("rect", { x: "959.04901", y: "388.46353", width: "9.83152", height: "388.34522", fill: "#3f3d56" }),
             react_1.default.createElement("path", { d: "M1107.38,489.19613c.62586,135.79464-94.91286,246.32062-94.91286,246.32062s-96.55343-109.64065-97.17929-245.4353,94.91286-246.32062,94.91286-246.32062S1106.75418,353.40148,1107.38,489.19613Z", transform: "translate(-47.76569 -51.24247)", fill: "#3f3d56" }),
@@ -70049,18 +70082,9 @@ const NotSignedIn = () => {
             react_1.default.createElement("polygon", { points: "129.754 302.252 128.059 302.252 128.059 300.556 127.728 300.556 127.728 302.252 126.032 302.252 126.032 302.583 127.728 302.583 127.728 304.278 128.059 304.278 128.059 302.583 129.754 302.583 129.754 302.252", fill: "#f2f2f2" }),
             react_1.default.createElement("polygon", { points: "72.417 391.959 70.721 391.959 70.721 390.264 70.39 390.264 70.39 391.959 68.695 391.959 68.695 392.29 70.39 392.29 70.39 393.986 70.721 393.986 70.721 392.29 72.417 392.29 72.417 391.959", fill: "#f2f2f2" }),
             react_1.default.createElement("path", { d: "M279.68428,329.42536a122.81116,122.81116,0,1,1,56.98177,45.75139,39.726,39.726,0,1,1-56.98177-45.75139Z", transform: "translate(-47.76569 -51.24247)", fill: "#3f3d56" }),
-            react_1.default.createElement("path", { d: "M380.89379,190.67942c28.154,0,47.524,15.61609,47.524,38.06422,0,14.86532-7.20743,25.15092-21.09674,33.33435-13.06346,7.58282-17.493,13.13854-17.493,22.74844h0a5.93109,5.93109,0,0,1-5.9311,5.9311H369.504a5.9311,5.9311,0,0,1-5.9275-5.72432l-.02555-.73233c-1.27631-15.466,4.12926-25.07584,17.71827-33.034,12.68807-7.58282,18.01856-12.38777,18.01856-21.69736s-9.00928-16.14163-20.1958-16.14163c-8.50252,0-15.23133,4.13864-18.31771,10.8956a13.25248,13.25248,0,0,1-12.112,7.57343h0c-9.752,0-16.19427-10.37059-11.63357-18.99048C344.24307,199.27078,359.46494,190.67942,380.89379,190.67942ZM361.14844,319.362c0-8.63389,7.20743-15.46594,16.06655-15.46594,8.93421,0,16.14162,6.757,16.14162,15.46594s-7.20743,15.466-16.14163,15.466-16.06655-6.757-16.06655-15.466Z", transform: "translate(-47.76569 -51.24247)", fill: "#f5b725" })),
-        react_1.default.createElement("div", { className: " w-11/12 flex flex-col items-center xl:self-center xl:w-1/3 xl:pl-8" },
-            react_1.default.createElement("h1", { className: "text-4xl text-center 2xl:text-5xl" },
-                react_1.default.createElement("span", { className: "block text-6xl xl:pr-1 " }, "Oops!"),
-                "Looks like you are not logged in.",
-                " "),
-            react_1.default.createElement("p", { className: "pt-4 " }, "try one of these"),
-            react_1.default.createElement("div", { className: " pt-8 space-x-4" },
-                react_1.default.createElement(react_router_dom_1.Link, { className: "py-3 px-4 rounded-full borader-2 bg-brand hover:bg-darkshade hover:text-lightshade ", to: "/signup" }, "Signup"),
-                react_1.default.createElement(react_router_dom_1.Link, { className: "py-3 px-4  rounded-full borader-2 bg-brand hover:bg-darkshade hover:text-lightshade", to: "/login" }, "Login")))));
+            react_1.default.createElement("path", { d: "M380.89379,190.67942c28.154,0,47.524,15.61609,47.524,38.06422,0,14.86532-7.20743,25.15092-21.09674,33.33435-13.06346,7.58282-17.493,13.13854-17.493,22.74844h0a5.93109,5.93109,0,0,1-5.9311,5.9311H369.504a5.9311,5.9311,0,0,1-5.9275-5.72432l-.02555-.73233c-1.27631-15.466,4.12926-25.07584,17.71827-33.034,12.68807-7.58282,18.01856-12.38777,18.01856-21.69736s-9.00928-16.14163-20.1958-16.14163c-8.50252,0-15.23133,4.13864-18.31771,10.8956a13.25248,13.25248,0,0,1-12.112,7.57343h0c-9.752,0-16.19427-10.37059-11.63357-18.99048C344.24307,199.27078,359.46494,190.67942,380.89379,190.67942ZM361.14844,319.362c0-8.63389,7.20743-15.46594,16.06655-15.46594,8.93421,0,16.14162,6.757,16.14162,15.46594s-7.20743,15.466-16.14163,15.466-16.06655-6.757-16.06655-15.466Z", transform: "translate(-47.76569 -51.24247)", fill: "#f5b725" }))));
 };
-exports.default = NotSignedIn;
+exports.default = SearchingLogo;
 
 
 /***/ }),
