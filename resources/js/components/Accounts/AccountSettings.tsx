@@ -1,16 +1,16 @@
 import React, { useContext } from "react";
 import { Switch, Route, useHistory } from "react-router-dom";
 import Axios from "axios";
-import NavBar from "../NavBar.js";
-import UserAccount from "./UserAccount/UserAccount.tsx";
-import UserProfile from "./UserProfile.tsx";
-import UserListings from "./UserListings.tsx";
-import PageNotFound from "../PageNotFound.js";
-import NotSignedIn from "./Errors/NotSignedIn.tsx";
+import NavBar from "../NavBar";
+import UserAccount from "./UserAccount/UserAccount";
+import UserProfile from "./UserProfile";
+import UserListings from "./UserListings";
+import PageNotFound from "../PageNotFound";
+import NotSignedIn from "./Errors/NotSignedIn";
 import UserInfoContext from "../Context/UserInforContext.js";
 
-const AccountSettings = () => {
-    let history = useHistory();
+const AccountSettings: React.FC = () => {
+    const history = useHistory();
     const { userInfo, setUserInfo } = useContext(UserInfoContext);
 
     const handleLogout = () => {
