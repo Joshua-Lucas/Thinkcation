@@ -43,22 +43,22 @@ const UserAccount: React.FC<IProps> = ({ handleLogout }) => {
                 <LinkContianer
                     logo={<Payments cssStyle="mb-4 w-24 h-24 " />}
                     title="Payment &amp; payouts"
-                    description="Update your password and secure your account"
+                    description="Review payments, payouts, coupons, giftcards and taxes"
                 />
                 <LinkContianer
                     logo={<Notifications cssStyle="mb-4 w-24 h-24 " />}
                     title="Notifications"
-                    description="asdfs"
+                    description="Choose notifcation perferences and how you want to be contacted"
                 />
                 <LinkContianer
                     logo={<Listings cssStyle="mb-4 w-24 h-24 " />}
                     title="Listings"
-                    description="asdfs"
+                    description="Manage your listings"
                 />
                 <LinkContianer
                     logo={<Trips cssStyle="mb-4 w-24 h-24 " />}
                     title="Trips"
-                    description="asdfs"
+                    description="View and edit up coming trips"
                 />
             </div>
             <button onClick={handleLogout}>Logout</button>

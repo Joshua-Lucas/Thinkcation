@@ -69738,28 +69738,6 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./resources/Lost.svg":
-/*!****************************!*\
-  !*** ./resources/Lost.svg ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/Lost.svg?ed219fae1dc939622abcab7c6632dde1";
-
-/***/ }),
-
-/***/ "./resources/icon-exclamation.svg":
-/*!****************************************!*\
-  !*** ./resources/icon-exclamation.svg ***!
-  \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/images/icon-exclamation.svg?c146542df6db2532facb3eac1338b751";
-
-/***/ }),
-
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
@@ -69830,73 +69808,70 @@ window.axios.defaults.withCredentials = true;
 
 /***/ }),
 
-/***/ "./resources/js/components/Accounts/AccountSettings.js":
-/*!*************************************************************!*\
-  !*** ./resources/js/components/Accounts/AccountSettings.js ***!
-  \*************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./resources/js/components/Accounts/AccountSettings.tsx":
+/*!**************************************************************!*\
+  !*** ./resources/js/components/Accounts/AccountSettings.tsx ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _NavBar_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../NavBar.js */ "./resources/js/components/NavBar.js");
-/* harmony import */ var _UserAccount_UserAccount_tsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./UserAccount/UserAccount.tsx */ "./resources/js/components/Accounts/UserAccount/UserAccount.tsx");
-/* harmony import */ var _UserAccount_UserAccount_tsx__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_UserAccount_UserAccount_tsx__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _UserProfile_tsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./UserProfile.tsx */ "./resources/js/components/Accounts/UserProfile.tsx");
-/* harmony import */ var _UserProfile_tsx__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_UserProfile_tsx__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _UserListings_tsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./UserListings.tsx */ "./resources/js/components/Accounts/UserListings.tsx");
-/* harmony import */ var _UserListings_tsx__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_UserListings_tsx__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _PageNotFound_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../PageNotFound.js */ "./resources/js/components/PageNotFound.js");
-/* harmony import */ var _Errors_NotSignedIn_tsx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Errors/NotSignedIn.tsx */ "./resources/js/components/Accounts/Errors/NotSignedIn.tsx");
-/* harmony import */ var _Errors_NotSignedIn_tsx__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_Errors_NotSignedIn_tsx__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _Context_UserInforContext_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../Context/UserInforContext.js */ "./resources/js/components/Context/UserInforContext.js");
 
-
-
-
-
-
-
-
-
-
-
-var AccountSettings = function AccountSettings() {
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
-
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_Context_UserInforContext_js__WEBPACK_IMPORTED_MODULE_9__["default"]),
-      userInfo = _useContext.userInfo,
-      setUserInfo = _useContext.setUserInfo;
-
-  var handleLogout = function handleLogout() {
-    axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("/logout").then(function () {
-      setUserInfo("guest");
-      history.push("/login");
-    });
-  };
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NavBar_js__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    exact: true,
-    path: "/account"
-  }, userInfo === "guest" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Errors_NotSignedIn_tsx__WEBPACK_IMPORTED_MODULE_8___default.a, null) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UserAccount_UserAccount_tsx__WEBPACK_IMPORTED_MODULE_4___default.a, {
-    handleLogout: handleLogout
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    exact: true,
-    path: "/account/:profile"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UserProfile_tsx__WEBPACK_IMPORTED_MODULE_5___default.a, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    exact: true,
-    path: "/account/listings"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UserListings_tsx__WEBPACK_IMPORTED_MODULE_6___default.a, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    path: "/account/*"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PageNotFound_js__WEBPACK_IMPORTED_MODULE_7__["default"], null))));
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+const axios_1 = __importDefault(__webpack_require__(/*! axios */ "./node_modules/axios/index.js"));
+const NavBar_1 = __importDefault(__webpack_require__(/*! ../NavBar */ "./resources/js/components/NavBar.tsx"));
+const UserAccount_1 = __importDefault(__webpack_require__(/*! ./UserAccount/UserAccount */ "./resources/js/components/Accounts/UserAccount/UserAccount.tsx"));
+const UserProfile_1 = __importDefault(__webpack_require__(/*! ./UserProfile */ "./resources/js/components/Accounts/UserProfile.tsx"));
+const UserListings_1 = __importDefault(__webpack_require__(/*! ./UserListings */ "./resources/js/components/Accounts/UserListings.tsx"));
+const PageNotFound_1 = __importDefault(__webpack_require__(/*! ../PageNotFound */ "./resources/js/components/PageNotFound.tsx"));
+const NotSignedIn_1 = __importDefault(__webpack_require__(/*! ./Errors/NotSignedIn */ "./resources/js/components/Accounts/Errors/NotSignedIn.tsx"));
+const UserInforContext_js_1 = __importDefault(__webpack_require__(/*! ../Context/UserInforContext.js */ "./resources/js/components/Context/UserInforContext.js"));
+const AccountSettings = () => {
+    const history = react_router_dom_1.useHistory();
+    const { userInfo, setUserInfo } = react_1.useContext(UserInforContext_js_1.default);
+    const handleLogout = () => {
+        axios_1.default.post("/logout").then(() => {
+            setUserInfo("guest");
+            history.push("/login");
+        });
+    };
+    return (react_1.default.createElement("div", null,
+        react_1.default.createElement(NavBar_1.default, null),
+        react_1.default.createElement(react_router_dom_1.Switch, null,
+            react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/account" }, userInfo === "guest" ? (react_1.default.createElement(NotSignedIn_1.default, null)) : (react_1.default.createElement(UserAccount_1.default, { handleLogout: handleLogout }))),
+            react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/account/:profile" },
+                react_1.default.createElement(UserProfile_1.default, null)),
+            react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/account/listings" },
+                react_1.default.createElement(UserListings_1.default, null)),
+            react_1.default.createElement(react_router_dom_1.Route, { path: "/account/*" },
+                react_1.default.createElement(PageNotFound_1.default, null)))));
+};
+exports.default = AccountSettings;
 
-/* harmony default export */ __webpack_exports__["default"] = (AccountSettings);
 
 /***/ }),
 
@@ -70113,10 +70088,10 @@ const UserAccount = ({ handleLogout }) => {
         react_1.default.createElement("div", { className: " w-full self-center grid grid-cols-2 lg:grid-cols-3 gap-4 -mx-2 px-2 " },
             react_1.default.createElement(LinkContainer_1.default, { logo: react_1.default.createElement(PersonalInfoLogo_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Personal Info", description: "Provide personal details and how we can reach you" }),
             react_1.default.createElement(LinkContainer_1.default, { logo: react_1.default.createElement(SecurityLogo_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Login & security", description: "Update your password and secure your account" }),
-            react_1.default.createElement(LinkContainer_1.default, { logo: react_1.default.createElement(PaymentsLogo_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Payment & payouts", description: "Update your password and secure your account" }),
-            react_1.default.createElement(LinkContainer_1.default, { logo: react_1.default.createElement(NotificationsLogo_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Notifications", description: "asdfs" }),
-            react_1.default.createElement(LinkContainer_1.default, { logo: react_1.default.createElement(Listings_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Listings", description: "asdfs" }),
-            react_1.default.createElement(LinkContainer_1.default, { logo: react_1.default.createElement(TripsLogo_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Trips", description: "asdfs" })),
+            react_1.default.createElement(LinkContainer_1.default, { logo: react_1.default.createElement(PaymentsLogo_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Payment & payouts", description: "Review payments, payouts, coupons, giftcards and taxes" }),
+            react_1.default.createElement(LinkContainer_1.default, { logo: react_1.default.createElement(NotificationsLogo_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Notifications", description: "Choose notifcation perferences and how you want to be contacted" }),
+            react_1.default.createElement(LinkContainer_1.default, { logo: react_1.default.createElement(Listings_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Listings", description: "Manage your listings" }),
+            react_1.default.createElement(LinkContainer_1.default, { logo: react_1.default.createElement(TripsLogo_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Trips", description: "View and edit up coming trips" })),
         react_1.default.createElement("button", { onClick: handleLogout }, "Logout")));
 };
 exports.default = UserAccount;
@@ -70300,7 +70275,7 @@ const Listings = ({ cssStyle }) => {
             react_1.default.createElement("path", { d: "M848.57,508.79h-452v-118h435.5a16.5,16.5,0,0,1,16.5,16.5Z", transform: "translate(-146.3 -249.46)", fill: "url(#bebe624b-dd80-4bfd-b5fb-36f1f92addf2)" }),
             react_1.default.createElement("path", { d: "M250.26,146H681.88a16.5,16.5,0,0,1,16.5,16.5v93.79a0,0,0,0,1,0,0H250.26a0,0,0,0,1,0,0V146A0,0,0,0,1,250.26,146Z", fill: "#7f9eb2" }),
             react_1.default.createElement("path", { d: "M250.26,146H681.88a16.5,16.5,0,0,1,16.5,16.5v93.79a0,0,0,0,1,0,0H250.26a0,0,0,0,1,0,0V146A0,0,0,0,1,250.26,146Z", fill: "#fff", opacity: "0.7" }),
-            react_1.default.createElement("polygon", { points: "249.26 13.32 93.26 123.18 93.26 215.75 93.26 486.32 405.26 486.32 405.26 215.75 405.26 123.18 249.26 13.32", fill: "url(#a99917ae-4a89-472a-9152-7d4c890b2f20)" }),
+            react_1.default.createElement("polygon", { points: "249.26 13.32 93.26 123.18 93.26 215.75 93.26 486.32 405.26 486.32 405.26 215.75 405.26 123.18 249.26 13.32", fill: "#e0e0e0" }),
             react_1.default.createElement("polygon", { points: "398.26 121.33 250.26 13.32 102.26 121.33 102.26 212.32 398.26 212.32 398.26 121.33", fill: "#7f9eb2" }),
             react_1.default.createElement("polygon", { points: "398.26 121.33 250.26 13.32 102.26 121.33 102.26 212.32 398.26 212.32 398.26 121.33", fill: "#fff", opacity: "0.5" }),
             react_1.default.createElement("rect", { x: "102.26", y: "212.33", width: "296", height: "266", fill: "#fff" }),
@@ -70423,12 +70398,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 const PaymentsLogo = ({ cssStyle }) => {
     return (react_1.default.createElement(react_1.default.Fragment, null,
-        react_1.default.createElement("svg", { className: cssStyle, "data-name": "Layer 1", width: "915.68773", height: "679.27607", viewBox: "0 0 915.68773 679.27607" },
+        react_1.default.createElement("svg", { className: cssStyle, "data-name": "Layer 1", viewBox: "0 0 915.68773 679.27607" },
             react_1.default.createElement("defs", null,
                 react_1.default.createElement("linearGradient", { id: "b5076013-d6c0-4649-8f63-d536232108ef", x1: "549.23403", y1: "734.77229", x2: "549.23403", y2: "126.56914", gradientTransform: "matrix(0.97485, 0.30762, -0.30291, 0.99, 144.20301, -171.28919)", gradientUnits: "userSpaceOnUse" },
-                    react_1.default.createElement("stop", { offset: "0", stopColor: "gray", stopOpacity: "0.25" }),
-                    react_1.default.createElement("stop", { offset: "0.53514", stopColor: "gray", stopOpacity: "0.12" }),
-                    react_1.default.createElement("stop", { offset: "1", stopColor: "gray", stopOpacity: "0.1" })),
+                    react_1.default.createElement("stop", { offset: "0", stopColor: "gray", stopOpacity: "25%" }),
+                    react_1.default.createElement("stop", { offset: "0.53514", stopColor: "gray", stopOpacity: "12%" }),
+                    react_1.default.createElement("stop", { offset: "1", stopColor: "gray", stopOpacity: "10%" })),
                 react_1.default.createElement("linearGradient", { id: "be72c466-93ff-4e9c-a64c-30b94918ee69", x1: "549.32281", y1: "679.27607", x2: "549.32281", y2: "233.83602", gradientTransform: "matrix(1, 0, 0, 1, 0, 0)" })),
             react_1.default.createElement("title", null, "Credit card"),
             react_1.default.createElement("rect", { x: "184.85689", y: "201.52958", width: "728.622", height: "445.00176", rx: "27.5", transform: "translate(-243.24579 71.69262) rotate(-17.2615)", fill: "url(#b5076013-d6c0-4649-8f63-d536232108ef)" }),
@@ -70436,7 +70411,7 @@ const PaymentsLogo = ({ cssStyle }) => {
             react_1.default.createElement("rect", { x: "155.9523", y: "267.86085", width: "713.75592", height: "61.55937", transform: "translate(-207.67506 55.26252) rotate(-17.2615)", fill: "#7f9eb2" }),
             react_1.default.createElement("rect", { x: "303.66876", y: "610.48755", width: "181.35057", height: "26.62027", transform: "translate(-309.4966 34.74867) rotate(-17.2615)", fill: "#bdbdbd" }),
             react_1.default.createElement("rect", { x: "287.34157", y: "547.84131", width: "314.45191", height: "26.62027", transform: "translate(-288.64532 46.83008) rotate(-17.2615)", fill: "#e0e0e0" }),
-            react_1.default.createElement("rect", { x: "182.9579", y: "233.83602", width: "732.72983", height: "445.44005", rx: "27.5", fill: "url(#be72c466-93ff-4e9c-a64c-30b94918ee69)" }),
+            react_1.default.createElement("rect", { x: "182.9579", y: "233.83602", width: "732.72983", height: "445.44005", rx: "27.5", fill: "#e0e0e0" }),
             react_1.default.createElement("rect", { x: "191.27673", y: "238.37789", width: "713.75592", height: "429.25181", rx: "27.5", fill: "#fff" }),
             react_1.default.createElement("rect", { x: "361.01292", y: "446.76044", width: "20.79708", height: "59.06372", fill: "#e0e0e0" }),
             react_1.default.createElement("rect", { x: "387.63319", y: "446.76044", width: "20.79708", height: "59.06372", fill: "#e0e0e0" }),
@@ -70451,9 +70426,8 @@ const PaymentsLogo = ({ cssStyle }) => {
             react_1.default.createElement("rect", { x: "687.1112", y: "446.76044", width: "20.79708", height: "59.06372", fill: "#e0e0e0" }),
             react_1.default.createElement("rect", { x: "713.73147", y: "446.76044", width: "20.79708", height: "59.06372", fill: "#e0e0e0" }),
             react_1.default.createElement("rect", { x: "236.68773", y: "350.83602", width: "124", height: "68", fill: "#7f9eb2" }),
-            react_1.default.createElement("rect", { x: "718.68773", y: "573.83602", width: "76", height: "76", fill: "#7f9eb2", opacity: "0.1" }),
-            react_1.default.createElement("rect", { x: "756.68773", y: "573.83602", width: "76", height: "76", fill: "#7f9eb2", opacity: "0.1" }),
-            " ")));
+            react_1.default.createElement("rect", { x: "718.68773", y: "573.83602", width: "76", height: "76", fill: "#7f9eb2", opacity: "10%" }),
+            react_1.default.createElement("rect", { x: "756.68773", y: "573.83602", width: "76", height: "76", fill: "#7f9eb2", opacity: "10%" }))));
 };
 exports.default = PaymentsLogo;
 
@@ -70591,11 +70565,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 const TripsLogo = ({ cssStyle }) => {
     return (react_1.default.createElement(react_1.default.Fragment, null,
-        react_1.default.createElement("svg", { className: cssStyle, "data-name": "Layer 1", width: "959.16", height: "818.6", viewBox: "0 0 959.16 818.6" },
-            react_1.default.createElement("linearGradient", { id: "3505e4de-4cb3-4002-b88e-01c82e8a7133", x1: "661.53", y1: "801.03", x2: "661.53", y2: "79.98", gradientUnits: "userSpaceOnUse" },
-                react_1.default.createElement("stop", { offset: "0", stopColor: "gray", stopOpacity: "0.25" }),
-                react_1.default.createElement("stop", { offset: "0.54", stopColor: "gray", stopOpacity: "0.12" }),
-                react_1.default.createElement("stop", { offset: "1", stopColor: "gray", stopOpacity: "0.1" })),
+        react_1.default.createElement("svg", { className: cssStyle, "data-name": "Layer 1", viewBox: "0 0 959.16 818.6" },
+            react_1.default.createElement("defs", null,
+                react_1.default.createElement("linearGradient", { id: "3505e4de-4cb3-4002-b88e-01c82e8a7133", x1: "661.53", y1: "801.03", x2: "661.53", y2: "79.98", gradientUnits: "userSpaceOnUse" },
+                    react_1.default.createElement("stop", { offset: "0", stopColor: "gray", stopOpacity: "0.25" }),
+                    react_1.default.createElement("stop", { offset: "0.54", stopColor: "gray", stopOpacity: "0.12" }),
+                    react_1.default.createElement("stop", { offset: "1", stopColor: "gray", stopOpacity: "0.1" }))),
             react_1.default.createElement("title", null, "airport"),
             react_1.default.createElement("path", { d: "M241.82,690.19s7.14,9.33-3.29,23.42-19,26-15.55,34.76c0,0,15.73-26.16,28.54-26.53S255.91,705.93,241.82,690.19Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a" }),
             react_1.default.createElement("path", { d: "M241.82,690.19a11.7,11.7,0,0,1,1.46,2.93c12.5,14.68,19.15,28.38,7.14,28.72-11.18.32-24.61,20.33-27.82,25.38a11.9,11.9,0,0,0,.38,1.15s15.73-26.16,28.54-26.53S255.91,705.93,241.82,690.19Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
@@ -70605,630 +70580,483 @@ const TripsLogo = ({ cssStyle }) => {
             react_1.default.createElement("path", { d: "M204.14,690.19a11.7,11.7,0,0,0-1.46,2.93c-12.5,14.68-19.15,28.38-7.14,28.72,11.19.32,24.61,20.33,27.82,25.38a9.67,9.67,0,0,1-.38,1.15s-15.73-26.16-28.54-26.53S190.05,705.93,204.14,690.19Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
             react_1.default.createElement("path", { d: "M190.87,702.09c0,3.28.37,5.94.83,5.94s.82-2.66.82-5.94-.46-1.74-.92-1.74S190.87,698.8,190.87,702.09Z", transform: "translate(-120.42 -40.7)", fill: "#ffd037" }),
             react_1.default.createElement("path", { d: "M186.32,706c2.88,1.57,5.4,2.52,5.62,2.12s-1.95-2-4.83-3.57-1.75-.43-2,0S183.44,704.43,186.32,706Z", transform: "translate(-120.42 -40.7)", fill: "#ffd037" }),
-            react_1.default.createElement("path", { d: "M1041.57,609.59c-6.41,15.45-14.82,30.26-26.59,41.62-14.34,13.84-32.15,21.39-51.22,25a154.27,154.27,0,0,1-17,2.2c-15.07,1.16-30.5.39-45.3-1.22a535.59,535.59,0,0,1-106.7-22.83q-8.55-2.76-17-5.81Q765,644,752.49,638.73c-34-14.21-69.15-32.33-105.32-26.71-17.53,2.73-34,11-51.57,13.46a92.21,92.21,0,0,1-36.84-2.62,126.59,126.59,0,0,1-17-5.87,193.44,193.44,0,0,1-35.32-20c-26.5-18.52-50.28-41.48-78.18-57.52-30.76-17.69-64.81-26.1-99.5-32.37q-8.47-1.53-17-2.92c-16.05-2.65-32.14-5.1-48-8-15.28-2.82-30.83-6.27-44.13-14.75-9.49-6.05-17.47-14.43-24.79-23.26A277.49,277.49,0,0,1,160.3,405q-.75-1.5-1.47-3c-14.69-30.14-24.57-63-30.63-97-.18-1-.35-2-.52-3-5.7-33.33-7.78-67.79-7.15-102l.06-3c.39-16.89,1.44-33.71,3-50.29,1.12-11.66,2.62-23.76,8.66-33.56S148.15,97,158,91.78c43.3-23.07,84.81-29.49,131.39-18.31,7.48,1.79,14.93,3.72,22.38,5.72,5.67,1.52,11.34,3.09,17,4.67,39.13,10.91,78.16,22.52,118.61,26q5.86.51,11.73.78,11.61.54,23.22.24a401.19,401.19,0,0,0,59.44-6.12q8.52-1.47,17-3.26c24.4-5.09,48.58-11.88,72.37-19.39q7.29-2.3,14.56-4.68c10.92-3.57,21.84-7.21,32.78-10.75C711.13,56.09,744,46.42,777.76,42.52q4.34-.5,8.68-.87c2.77-.24,5.55-.43,8.32-.57,52.45-2.8,105.5,9.85,152,35.74q8.65,4.82,17,10.24,11.57,7.53,22.43,16.2c14.84,11.85,28.73,25.34,39.31,41.55,10.31,15.79,17,33.52,20.85,52.16.21,1,.41,2,.59,3,5.65,30.09,3.89,62.36-2.45,92.51-.67,3.16-1.38,6.33-2.12,9.49-.23,1-.47,2-.71,3-6.84,28.51-15.58,56.94-13.3,86.09.29,3.67.75,7.31,1.35,10.91.17,1,.34,2,.53,3,4.46,23.78,14.6,46.34,20.68,69.89A215.32,215.32,0,0,1,1041.57,609.59Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" },
-                react_1.default.createElement("path", { d: "M963.76,200h83.18c-.18-1-.38-2-.59-3H963.76V87.06q-8.34-5.41-17-10.24V197h-152V41.08c-2.77.14-5.55.33-8.32.57s-5.79.54-8.68.87V197h-217l-.52-.57L678.47,66.67c-10.94,3.54-21.86,7.18-32.78,10.75l-86.93,95.39V101.49q-8.49,1.79-17,3.26V176.1l-59.44-65.23q-11.61.28-23.22-.24l78.16,85.77-.52.57h-208V83.86c-5.66-1.58-11.33-3.15-17-4.67V197H120.59l-.06,3H311.76V302H127.68c.17,1,.34,2,.52,3H311.76v97H158.83q.72,1.5,1.47,3H311.76v99.26q8.52,1.39,17,2.92V405h213V617a126.59,126.59,0,0,0,17,5.87V405h219V648.54q8.46,3.06,17,5.81V405h152V678.4a154.27,154.27,0,0,0,17-2.2V405h66.48c-.19-1-.36-2-.53-3h-66V305h77.9c.24-1,.48-2,.71-3H963.76Zm-17,0V302h-152V200Zm-169,102h-219V200h219Zm-449-102h210l3,2.73V302h-213Zm0,202V305h213v97Zm230,0V305h219v97Zm388,0h-152V305h152Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M524,228.15a13,13,0,0,0-4.38-2.49,29.36,29.36,0,0,0-11.13-1.21,50.33,50.33,0,0,0-8.18,1.14L374.65,261.14q-3.56,1-7,2.33c-8.1-3.17-31-12.34-33.51-15.63l-9.85,2.88,16.42,24.51h0a2.25,2.25,0,0,0,.17,4.19c18.93,6.5,47.52-2.13,47.52-2.13l109.8-31.37S531.34,234.71,524,228.15Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "378.8", cy: "267.37", rx: "0.96", ry: "1.6", transform: "translate(-185.03 91.15) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "382.62", cy: "266.11", rx: "0.96", ry: "1.6", transform: "translate(-184.44 92.28) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "389.93", cy: "263.7", rx: "0.96", ry: "1.6", transform: "translate(-183.33 94.45) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "410.53", cy: "257.65", rx: "0.96", ry: "1.6", transform: "translate(-180.4 100.59) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "414.16", cy: "256.46", rx: "0.96", ry: "1.6", transform: "matrix(0.95, -0.31, 0.31, 0.95, -179.84, 101.66)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "417.92", cy: "255.58", rx: "0.96", ry: "1.6", transform: "translate(-179.38 102.79) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "421.7", cy: "254.33", rx: "0.96", ry: "1.6", transform: "translate(-178.8 103.91) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "425.41", cy: "253.11", rx: "0.96", ry: "1.6", transform: "translate(-178.23 105.01) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "428.77", cy: "252", rx: "0.96", ry: "1.6", transform: "translate(-177.72 106.01) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "432.38", cy: "250.82", rx: "0.96", ry: "1.6", transform: "translate(-177.17 107.07) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "436.15", cy: "249.57", rx: "0.96", ry: "1.6", transform: "translate(-176.59 108.19) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "439.5", cy: "248.47", rx: "0.96", ry: "1.6", transform: "translate(-176.08 109.18) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "458.26", cy: "243.62", rx: "0.96", ry: "1.6", transform: "translate(-173.62 114.81) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "465.57", cy: "241.22", rx: "0.96", ry: "1.6", transform: "translate(-172.5 116.97) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "469.24", cy: "240.01", rx: "0.96", ry: "1.6", transform: "translate(-171.94 118.06) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "472.8", cy: "238.84", rx: "0.96", ry: "1.6", transform: "translate(-171.39 119.11) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "476.31", cy: "237.68", rx: "0.96", ry: "1.6", transform: "translate(-170.86 120.15) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "480.28", cy: "236.38", rx: "0.96", ry: "1.6", transform: "translate(-170.25 121.33) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "462.03", cy: "242.38", rx: "0.96", ry: "1.6", transform: "translate(-173.04 115.92) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "386.56", cy: "264.81", rx: "0.96", ry: "1.6", transform: "translate(-183.84 93.45) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("rect", { x: "443.59", y: "245.39", width: "3.54", height: "6.17", transform: "translate(-166.99 73.26) rotate(-13.87)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("rect", { x: "484.08", y: "233.79", width: "3.54", height: "6.17", transform: "translate(-163.03 82.63) rotate(-13.87)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("polygon", { points: "383.95 185.21 379.39 186.41 381.67 189.85 388.43 188.17 383.95 185.21", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M519.6,225.66l-9.86,2.57L506,225.91l2.49-1.46A29.36,29.36,0,0,1,519.6,225.66Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M324.3,250.64l16.42,24.59,26.82-11.89s-30.35-11.58-33.39-15.58Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("polygon", { points: "323 213.63 279.67 225.33 277.11 230.45 323 213.63", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M873.68,129.74h-1.32a3.28,3.28,0,0,0,1.61-2.62h0c0-2.07-2.53-3.76-5.63-3.76H828.93c-3.1,0-5.63,1.69-5.63,3.76h0c0,2.06,2.53,3.75,5.63,3.75h1.31a3.27,3.27,0,0,0-1.6,2.62c0,1.77,1.84,3.25,4.3,3.65H821.59c-3.09,0-5.62,1.69-5.62,3.76s2.53,3.75,5.62,3.75H861c3.09,0,5.63-1.69,5.63-3.75,0-1.76-1.85-3.25-4.31-3.65h11.35c3.09,0,5.62-1.69,5.62-3.76S876.77,129.74,873.68,129.74Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M446.52,165.5H445.2a3.27,3.27,0,0,0,1.61-2.62h0c0-2.06-2.53-3.76-5.63-3.76H401.77c-3.1,0-5.63,1.7-5.63,3.76h0c0,2.07,2.53,3.76,5.63,3.76h1.31a3.27,3.27,0,0,0-1.61,2.62c0,1.76,1.85,3.24,4.31,3.64H394.43c-3.09,0-5.62,1.69-5.62,3.76s2.53,3.76,5.62,3.76h39.42c3.09,0,5.62-1.69,5.62-3.76,0-1.76-1.84-3.25-4.3-3.65h11.35c3.09,0,5.62-1.69,5.62-3.75S449.61,165.5,446.52,165.5Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M934.13,318.56h-1.31a3.27,3.27,0,0,0,1.61-2.62h0c0-2.07-2.54-3.76-5.63-3.76H889.38c-3.09,0-5.62,1.69-5.62,3.76h0c0,2.07,2.53,3.76,5.62,3.76h1.32a3.25,3.25,0,0,0-1.61,2.62c0,1.76,1.85,3.24,4.31,3.64H882.05c-3.09,0-5.62,1.69-5.62,3.76s2.53,3.76,5.62,3.76h39.42c3.09,0,5.62-1.69,5.62-3.76,0-1.76-1.84-3.25-4.3-3.65h11.34c3.1,0,5.63-1.69,5.63-3.75S937.23,318.56,934.13,318.56Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "505.99", cy: "742.7", rx: "303.97", ry: "46.65", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "884.56", cy: "789.35", rx: "74.6", ry: "11.45", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "102.56", cy: "767.6", rx: "74.6", ry: "11.45", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("ellipse", { cx: "192.56", cy: "812.24", rx: "41.4", ry: "6.35", fill: "#a5454a", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M261.38,735.8l-.36,2.91-.5,4.11-.21,1.72-.5,4.12-.22,1.71-.5,4.12-5.71,46.79c-.51,4.18-7.33,7.44-15.57,7.44H208.15c-8.24,0-15.05-3.26-15.56-7.44l-5.72-46.79-.5-4.12-.21-1.71-.51-4.12-.21-1.72-.5-4.11-.36-2.91c-.28-2.37,3.41-4.36,8.07-4.36h60.67C258,731.44,261.67,733.43,261.38,735.8Z", transform: "translate(-120.42 -40.7)", fill: "#65617d" }),
-                react_1.default.createElement("polygon", { points: "140.6 698.01 140.1 702.12 65.02 702.12 64.52 698.01 140.6 698.01", fill: "#9d9cb5" }),
-                react_1.default.createElement("polygon", { points: "139.89 703.84 139.39 707.96 65.74 707.96 65.23 703.84 139.89 703.84", fill: "#9d9cb5" }),
-                react_1.default.createElement("polygon", { points: "139.17 709.67 138.67 713.79 66.45 713.79 65.95 709.67 139.17 709.67", fill: "#9d9cb5" }),
-                react_1.default.createElement("path", { d: "M801.8,446.14l-2.33-6.68.87-.92-4.61-22.72a8.52,8.52,0,0,0,.19-2.44,10.42,10.42,0,0,0-2-6.67L793,402.2c0-.36,0-.71.07-1.07,1.89-26.53-9.46-58.61-9.46-58.61V313l-8.76-57.76h0c.17-28.89-11.17-39-11.17-39s-.93-.22-2.44-.68c-3-6.21-8.11-16-16.47-31.73a62.51,62.51,0,0,0-12-16.12,47.49,47.49,0,0,0-23.67-13.11,22,22,0,0,1,2.51-2.41c2-1.61,4.22-2.9,6.09-4.63a22.71,22.71,0,0,0,5.54-8.59,26.47,26.47,0,0,0,1.51-14.86,18.91,18.91,0,0,0-8.34-12.26,20.46,20.46,0,0,1-3.52-2.29c-1.43-1.37-2.1-3.3-2.83-5.11A47.83,47.83,0,0,0,698.94,88c-2-2-4.46-3.85-7.32-4.08s-5.68,1.3-8.38,2.46a35.09,35.09,0,0,1-29.25-1c-4.39-2.25-8.62-5.53-13.58-5.45a11.68,11.68,0,0,0-8.66,4.45c.09-.19.17-.38.27-.57a14.25,14.25,0,0,0-3.43,7.21v.27c0,7.16,1.87,15.29,7.78,20.2-.43.54-.86,1.08-1.26,1.64A40.52,40.52,0,0,0,628.56,147a5.46,5.46,0,0,0-.75.41l-5.64,3.82-12.84,11.1-5.74,3.88c6-4.42,14.6-11.62,12.54-13.27-2.84-2.27-31.54,6-38.12,13.67-2.83,3.31-6.49,9.5-9.73,15.48l-.23-.44c-.27.36-.58.79-.9,1.25l-.13-.24c-1.34,1.8-3.45,4.88-5.79,8.37-.85,1.26-1.73,2.58-2.6,3.91-9.09,10.21-26.56,30.78-29.09,40.66,0,0-17.19,27.87-13.06,41.64s20.8,16.46,32.83,12.26c8.59-3,29.89-13.27,41.36-18.9l-1.14,16.22s-9.38,66.64-16.71,93.68c-1.27,4.67-2.48,8.17-3.57,9.92a6.66,6.66,0,0,0-.39.71c-7.42,14.13-18.69,93.5-18.69,93.5s-10,10.58,9.28,11.93c13.28.92,21.24,12.23,24.9,19.16v.15c-.39,10.61-.56,19.66-.32,25.35.71,17.44-1.29,39.47-2.59,51.37a63.48,63.48,0,0,0,.56,17.89c2.82,16.29,8.92,49.55,13.89,63.74,6.7,19.14,3.61,40.3,3.61,40.3s6.7,20.65,12.89,28.21A5.85,5.85,0,0,0,614,744c-.08.61-.16,1.23-.27,1.86-1,5.89-3.25,12.69-8.19,17.82-7.32,7.61-17.47,18-18.66,25.56-.56,3.64.92,6.62,5.77,8.36,15,5.37,34.38,0,34.38,0s13.06-4.7,13.06-9.4,5.33-4.7,5.33-4.7l8.59-6a65.11,65.11,0,0,0,0-9.33c-.38-6-1.69-13.42-5.53-18.17a19.07,19.07,0,0,1-2.75-4.62,18.56,18.56,0,0,1-.65-1.9c3.58-.6,6.09-1,6.5-.74,1.55,1,6.19-26.7-5.67-41.31s-6.19-27.71-6.19-27.71-1.55-53.4-9.28-57.93c0,0,6.18-16.12,5.67-24.18s-3.09-24.18,0-27.71c1.46-1.67,7.47-13,13.36-24.42.35-.67.7-1.34,1-2,3.63.25,7.63.4,11.8.32.05.66.11,1.32.17,2,.93,10.06,3.18,21.09,8.18,29.16v50.88s3.61,14.61,6.7,20.66-9.62,47.85-9.62,47.85-7.06,51.13,0,57.55a12.41,12.41,0,0,0,5.16,2.4c.11.69.21,1.39.31,2.1,1,6.82,1.67,14.27.88,18.56a49.12,49.12,0,0,0,.08,16.66c.15.84.26,1.3.26,1.3s-3.26,16.29,19.26,13.95,24.92-9.41,24.92-9.41,0-.23-.05-.63a42.72,42.72,0,0,0-.64-4.79,51.91,51.91,0,0,0-8.33-19.75,15.66,15.66,0,0,1-3-8.42c0-2-.13-4.18-.24-6.36,0-.67-.07-1.34-.11-2,1.62-.11,2.59-.2,2.59-.2s7.21-12.59,6.7-36.78,5.67-46.34,5.67-46.34,1.55-36.27,0-41.31-3.27-33.55.69-37.43c2.74-2.69,6.3-35.73,8.23-55.74.07-.68.13-1.34.19-2,5.05-.2,8.25-.23,8.25-.23s.56-14.81,1.05-35l2.19-.83c-.94,1.51.07,5.61,7.37,3.55,9.41-2.64,21.92-4.91,21.92-4.91s6.7-4.79,7-8.19a38.17,38.17,0,0,1,1.16-5.14c14.67-5.85,26.73-10.73,26.73-10.73S810.74,460.41,801.8,446.14Zm-51.39-84.47,1.78,14.22-5,1.54-10.53.72c-2.93-26.61,2-71.39,2-71.39l.89-.58C744,324.15,750.41,361.67,750.41,361.67ZM697.84,176.28c-.22-.51-.43-1-.65-1.6l1,1.54A2.63,2.63,0,0,0,697.84,176.28ZM737,380.6l-.18-1.41,3.45-.73,5.45-.56ZM628.59,184.39c-1.47.35-3,.73-4.45,1.16l.26-.15,4.28-2.55a12.29,12.29,0,0,0-.09,1.49Zm-48.51,37.06c-3.44,1.68-5.16,1.51-5.16,1.51l7.9-15.3a38.8,38.8,0,0,0,2.47-4.32,13.21,13.21,0,0,1,7.12-.71s1.91-.43,4.86-1.15a31.6,31.6,0,0,0-1.9,2.68S583.51,219.77,580.08,221.45ZM743,493.09h0l2.48-.95C744.42,492.91,743.53,493.32,743,493.09Z", transform: "translate(-120.42 -40.7)", fill: "url(#3505e4de-4cb3-4002-b88e-01c82e8a7133)" }),
-                react_1.default.createElement("path", { d: "M659.85,163.43c-3.18,1.87-3.28,9.86-2.79,16.27.35,4.69,1,8.53,1,8.53l-20.69,50.3s-7.67-35.84-7.79-51.84a11.86,11.86,0,0,1,.57-3.72C633.8,171.44,654.08,165,659.85,163.43Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
-                react_1.default.createElement("path", { d: "M661.38,163s-.56.13-1.53.4A3,3,0,0,1,661.38,163Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
-                react_1.default.createElement("path", { d: "M654.21,775.36l-8.33,6s-5.17,0-5.17,4.67-12.66,9.33-12.66,9.33-18.84,5.33-33.34,0c-4.7-1.73-6.14-4.69-5.59-8.3,1.15-7.53,11-17.82,18.09-25.37,4.79-5.09,7-11.84,7.94-17.68a52.82,52.82,0,0,0,.56-12.65l30.5-2.17a20.14,20.14,0,0,0,0,14.29,18.58,18.58,0,0,0,2.67,4.58c3.72,4.72,5,12.13,5.36,18A65.93,65.93,0,0,1,654.21,775.36Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
-                react_1.default.createElement("path", { d: "M716.88,789.19s-2.33,7-24.17,9.34S674,784.69,674,784.69s-.11-.46-.25-1.29a49.76,49.76,0,0,1-.08-16.54c.76-4.26.1-11.65-.85-18.42-1.12-8.06-2.65-15.25-2.65-15.25l33.84,2.5s.59,6.89.93,13.85c.11,2.17.2,4.34.23,6.32a15.78,15.78,0,0,0,2.92,8.35,52.17,52.17,0,0,1,8.08,19.6,44.57,44.57,0,0,1,.62,4.76C716.86,789,716.88,789.19,716.88,789.19Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
-                react_1.default.createElement("path", { d: "M654.21,775.36l-8.33,6s-5.17,0-5.17,4.67-12.66,9.33-12.66,9.33-18.84,5.33-33.34,0c-4.7-1.73-6.14-4.69-5.59-8.3.45,0,.88.06,1.24.07,5.94.19,11.72,1.79,17.63,2.32a87.64,87.64,0,0,0,10.12.16,35.3,35.3,0,0,0,5-.39c4-.71,7.71-2.78,11.28-4.81a6.4,6.4,0,0,0,2.25-1.76,8.6,8.6,0,0,0,1-2.68c1.26-4.52,4.78-8.14,8.82-10.52a38.46,38.46,0,0,1,7.77-3.35A65.93,65.93,0,0,1,654.21,775.36Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
-                react_1.default.createElement("path", { d: "M716.88,789.19s-2.33,7-24.17,9.34S674,784.69,674,784.69s-.11-.46-.25-1.29c1,.52,1.85,1,2.24,1.22,2,1.17,3.79,2.78,5.87,3.87,5,2.63,11.05,1.85,16.64,1,2.65-.4,5.3-.8,7.94-1.29a20.08,20.08,0,0,0,5.81-1.72,34.62,34.62,0,0,0,3.92-2.66,44.57,44.57,0,0,1,.62,4.76C716.86,789,716.88,789.19,716.88,789.19Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
-                react_1.default.createElement("path", { d: "M654.21,775.36l-8.33,6s-5.17,0-5.17,4.67-12.66,9.33-12.66,9.33-18.84,5.33-33.34,0c-4.7-1.73-6.14-4.69-5.59-8.3.45,0,.88.06,1.24.07,5.94.19,11.72,1.79,17.63,2.32a87.64,87.64,0,0,0,10.12.16,35.3,35.3,0,0,0,5-.39c4-.71,7.71-2.78,11.28-4.81a6.4,6.4,0,0,0,2.25-1.76,8.6,8.6,0,0,0,1-2.68c1.26-4.52,4.78-8.14,8.82-10.52a38.46,38.46,0,0,1,7.77-3.35A65.93,65.93,0,0,1,654.21,775.36Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M716.88,789.19s-2.33,7-24.17,9.34S674,784.69,674,784.69s-.11-.46-.25-1.29c1,.52,1.85,1,2.24,1.22,2,1.17,3.79,2.78,5.87,3.87,5,2.63,11.05,1.85,16.64,1,2.65-.4,5.3-.8,7.94-1.29a20.08,20.08,0,0,0,5.81-1.72,34.62,34.62,0,0,0,3.92-2.66,44.57,44.57,0,0,1,.62,4.76C716.86,789,716.88,789.19,716.88,789.19Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M646.21,729.19a20.14,20.14,0,0,0,0,14.29c-8.75,1.49-25.06,4.5-31.06.53a52.82,52.82,0,0,0,.56-12.65Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M705,749.54c-6.18.44-22.81,1.31-32.12-1.1-1.12-8.06-2.65-15.25-2.65-15.25l33.84,2.5S704.64,742.58,705,749.54Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M729.38,516.36s-.52,6.25-1.35,15c-1.87,19.86-5.32,52.65-8,55.32-3.84,3.85-2.17,32.15-.67,37.15s0,41,0,41a183,183,0,0,0-5.5,46c.5,24-6.5,36.5-6.5,36.5s-33,3-39.83-3.38,0-57.12,0-57.12,12.33-41.5,9.33-47.5-6.5-20.5-6.5-20.5v-50.5c-4.85-8-7-19-7.93-28.94a152.17,152.17,0,0,1-.07-25.56s-6.21,12.7-12.54,25.26c-5.72,11.35-11.54,22.58-13,24.24-3,3.5-.5,19.5,0,27.5s-5.5,24-5.5,24c7.5,4.5,9,57.5,9,57.5s-5.5,13,6,27.5,7,42,5.5,41-32,7.5-38,0-12.5-28-12.5-28,3-21-3.5-40c-4.82-14.08-10.73-47.09-13.47-63.26a64.45,64.45,0,0,1-.54-17.76c1.26-11.81,3.2-33.67,2.51-51-.23-5.65-.07-14.63.31-25.16,1.29-36.1,5.19-90.34,5.19-90.34L619,407l17.9-12.14,4.38.67,81.62,12.57,3.17,40.26Z", transform: "translate(-120.42 -40.7)", fill: "#444053" }),
-                react_1.default.createElement("path", { d: "M619,407l-1.43,7.86s-12,57.5-14.5,87-13,21-13,21a46.76,46.76,0,0,0-3.36-7.16c1.29-36.1,5.19-90.34,5.19-90.34Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M704.71,188.86s-56,44.83-45.66,35.83c5.66-4.94,1.81-26-2.83-44-3.82-14.85-8.17-27.63-8.17-27.63s48.88-45.73,45.33-8.34c-1.25,13.18-.21,22.55,1.66,29.17C698.47,186,704.71,188.86,704.71,188.86Z", transform: "translate(-120.42 -40.7)", fill: "#efb7b9" }),
-                react_1.default.createElement("path", { d: "M700.05,176.94l-35.5,27.75-10.34-11.5s-8.83-3.83-9.5.5-3.16,31,2,33.5,11.84,4.17,17.67,3.34,12.33-7.34,16.67-9.84,20.33-15.5,20.33-15.5l8-11.16Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M700.05,177.94l-35.5,27.75-10.34-11.5s-8.83-3.83-9.5.5-3.16,31,2,33.5,11.84,4.17,17.67,3.34,12.33-7.34,16.67-9.84,20.33-15.5,20.33-15.5l8-11.16Z", transform: "translate(-120.42 -40.7)", fill: "#a36468" }),
-                react_1.default.createElement("path", { d: "M729.38,516.36s-.52,6.25-1.35,15c-11,.42-32.34,1.72-47.32,5.64a82.1,82.1,0,0,1-18.26,2.39,152.17,152.17,0,0,1-.07-25.56s-6.21,12.7-12.54,25.26A132.25,132.25,0,0,1,633.71,537l6.67-86.67s-.22-29.09.88-54.83l81.62,12.57,3.17,40.26Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M668.05,202.36s24.25-26.51,30-22.3,9.47,14.47,9.47,14.47L687.8,216.19Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M669.05,201.36s24.25-26.51,30-22.3,9.47,14.47,9.47,14.47L688.8,215.19Z", transform: "translate(-120.42 -40.7)", fill: "#a36468" }),
-                react_1.default.createElement("path", { d: "M648.94,218.35l13.94-17.55s-2.21-16.59-7.32-14.47-6.62,10.61-6.62,10.61Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M647.88,217.19l13.94-17.55s-2.2-16.59-7.32-14.47-6.62,10.61-6.62,10.61Z", transform: "translate(-120.42 -40.7)", fill: "#a36468" }),
-                react_1.default.createElement("path", { d: "M712.05,185.69s-28.71,31-45.85,33.08c-1.56.19-3.1.45-4.64.76-4.47.88-14.23,0-12.68-25.63l-2.17-4.54-13.33,8.17-4.5,36.66-8,94L609.05,432.86s36.33-3.5,46.5,5.67,13-50,13-50l27.83-120,29.67-77.17Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M726.05,195.36l-29.67,77.17-27.83,120s-2.84,59.16-13,50c-3.32-3-9.44-4.64-16.17-5.49a146.63,146.63,0,0,0-24.92-.56c-3.32.18-5.41.38-5.41.38l11.83-104.67,8-94,4.5-36.66,13.33-8.17,2.17,4.54c0,.67-.07,1.33-.1,2-.94,23.68,8.43,24.52,12.78,23.66,1.54-.31,3.08-.57,4.64-.76,12.14-1.49,30.08-17.46,39.51-26.64,3.89-3.8,6.34-6.44,6.34-6.44Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M726.05,192.36l-29.67,77.17-27.83,120s-2.84,59.16-13,50c-3.32-3-9.44-4.64-16.17-5.49a146.63,146.63,0,0,0-24.92-.56c-3.32.18-5.41.38-5.41.38l11.83-104.67,8-94,4.5-36.66,13.33-8.17,2.17,4.54c0,.67-.07,1.33-.1,2-.94,23.68,8.43,24.52,12.78,23.66,1.54-.31,3.08-.57,4.64-.76,12.14-1.49,30.08-17.46,39.51-26.64,3.89-3.8,6.34-6.44,6.34-6.44Z", transform: "translate(-120.42 -40.7)", fill: "#e1e7ef" }),
-                react_1.default.createElement("path", { d: "M648.88,194.9c0,.67-.07,1.33-.1,2l-.23.16c-3.52,2.32-9.17,41.5-9.17,41.5l-7.33,99.83-13.5,74.5s-1.77,8.49-4.09,20.62c-3.32.18-5.41.38-5.41.38l11.83-104.67,8-94,4.5-36.66,13.33-8.17Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M658.07,188.23s-8,6.48-11.52,8.8-9.17,41.5-9.17,41.5l-7.33,99.83-13.5,74.5s-12,57.5-14.5,87-13,21-13,21-7.84-23-26.5-24.33-9-11.84-9-11.84,10.93-78.77,18.12-92.8a6.48,6.48,0,0,1,.38-.7c1.06-1.74,2.23-5.21,3.46-9.85,7.11-26.84,16.2-93,16.2-93l5.67-82c14.5-23.67,59.56-22.85,59.56-22.85Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
-                react_1.default.createElement("path", { d: "M726.05,192.36l-29.67,77.17-27.83,120s-2.84,59.16-13,50c-3.32-3-9.44-4.64-16.17-5.49.12-20.34.74-56.84,3.67-72.18a203.82,203.82,0,0,0,3.16-42.5l36.34-79.17s27.33-33.69,27.5-38.51c.06-1.78-1.88-5.08-4.34-8.55,3.89-3.8,6.34-6.44,6.34-6.44Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M634.71,535l6.67-86.67s-.5-64.67,3.67-86.5a203.82,203.82,0,0,0,3.16-42.5l36.34-79.17s27.33-33.69,27.5-38.51-14.32-20.85-14.32-20.85,31.65,3.7,35.82,17.86,27,19.67,27,19.67,11,10,10.83,38.67-35,51.16-35,51.16-5.83,54-.83,78.34.66,142.66.66,142.66-33.5.34-54.5,5.84S634.71,535,634.71,535Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
-                react_1.default.createElement("path", { d: "M684.05,397.53l25.66,97.16s3.5,8.67,21.5,2,70.34-28.33,70.34-28.33,4.66-7.67-4-21.83l-26.17-76.67Z", transform: "translate(-120.42 -40.7)", fill: "#b07473" }),
-                react_1.default.createElement("polygon", { points: "596.84 399.79 638.34 354.16 664.84 343.41 675.71 398.28 625.34 453.03 596.84 399.79", fill: "#e1e7ef" }),
-                react_1.default.createElement("path", { d: "M761.6,455.74S749.26,463,746,463.24s-14.73,21.92-9.88,21.75,16.13-6,15-3-8.49,12-10.62,11.14-3.13,6.61,6,4,21.25-4.87,21.25-4.87,6.5-4.75,6.75-8.13S780.38,463,780.38,463Z", transform: "translate(-120.42 -40.7)", fill: "#efb7b9" }),
-                react_1.default.createElement("path", { d: "M563.49,199.74s10.68-23.06,17.06-30.68,34.21-15.82,37-13.57-14,14.88-17,16.5,19.38,16.67,19.84,17,17.5-1.51,8.75,4.24-34.62,11.6-34.62,11.6a13,13,0,0,0-10,2.4C579.51,210.86,563.49,199.74,563.49,199.74Z", transform: "translate(-120.42 -40.7)", fill: "#efb7b9" }),
-                react_1.default.createElement("path", { d: "M785.66,456.89A69.18,69.18,0,0,1,780,470.24c-2.5-2.26-26.37-10.13-26.37-10.13l2.65-4.09,4.32-6.66s21.28-4.62,24.9,0C786.72,450.91,786.5,453.77,785.66,456.89Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M786.66,455.89A69.18,69.18,0,0,1,781,469.24c-2.5-2.26-26.37-10.13-26.37-10.13l2.65-4.09,4.32-6.66s21.28-4.62,24.9,0C787.72,449.91,787.5,452.77,786.66,455.89Z", transform: "translate(-120.42 -40.7)", fill: "#a36468" }),
-                react_1.default.createElement("path", { d: "M587.88,204.94a35.16,35.16,0,0,1-2.7,4.94c-3.85,6.07-9.68,13.23-9.68,13.23s-22.74-10.46-22.74-10.92,6.9-11.33,12.51-19.9c2.27-3.46,4.32-6.52,5.62-8.31,0,0,8.49,17.76,16.87,17.88C590,201.89,588.79,202.77,587.88,204.94Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M586.88,205.94a35.16,35.16,0,0,1-2.7,4.94c-3.85,6.07-9.68,13.23-9.68,13.23s-22.74-10.46-22.74-10.92,6.9-11.33,12.51-19.9c2.27-3.46,4.32-6.52,5.62-8.31,0,0,8.49,17.76,16.87,17.88C589,202.89,587.79,203.77,586.88,205.94Z", transform: "translate(-120.42 -40.7)", fill: "#a36468" }),
-                react_1.default.createElement("polygon", { points: "594.71 348.66 591.79 339.91 632.77 337.03 617.46 338.66 597.96 342.85 599.46 348.66 594.71 348.66", fill: "#b07473" }),
-                react_1.default.createElement("path", { d: "M786.66,455.89c-4.52-2.13-16.58-6.56-29.38-.87l4.32-6.66s21.28-4.62,24.9,0C787.72,449.91,787.5,452.77,786.66,455.89Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M789.05,401.86c-.1,1.45-.19,2.9-.28,4.34-.25,4.41-.42,8.78-.53,13-.5,19.54.31,35.66.31,35.66s-15.5-9.33-32-1.5l-1.64-31.62,0-.55-1.69-13.83-5.48-44.67s-10.33-62-13.5-64.33,23.5-52.5,23.5-52.5L771.38,257l8.5,57.33v29.33S790.88,375.53,789.05,401.86Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
-                react_1.default.createElement("path", { d: "M587.38,204.53l-3.2,6.35c-3.85,6.07-9.68,13.23-9.68,13.23s-22.74-10.46-22.74-10.92,6.9-11.33,12.51-19.9c1.73-1.95,2.78-3.1,2.78-3.1C560.38,206.69,587.38,204.53,587.38,204.53Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M606.71,201.68l-9.33,4.68s-11.5,15.5-14.83,17.17-5,1.5-5,1.5l9.83-19.5s-27,2.16-20.33-14.34c0,0-30.17,33-33.5,46.34,0,0-16.67,27.66-12.67,41.33s20.17,16.33,31.83,12.17,47.5-22.5,47.5-22.5Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
-                react_1.default.createElement("path", { d: "M573.21,234.19s-25.16,28.17-23.16,32S571.88,239.86,573.21,234.19Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M686.8,158.36s35.41-10.67,55.41,27.83,20.67,41.17,19.67,43-39.83-8.33-42-3.83,22,23,22,23l-93.67,71,39.36-83.64A63,63,0,0,1,698,219.65c6.47-7.24,15.32-18.33,12.18-21.75-2.76-3-7.17-10.83-13.13-19.84C692.71,171.46,685.78,164,686.8,158.36Z", transform: "translate(-120.42 -40.7)", opacity: "0.2" }),
-                react_1.default.createElement("path", { d: "M685.8,157.36s35.41-10.67,55.41,27.83,20.67,41.17,19.67,43-39.83-8.33-42-3.83,22,23,22,23l-92.67,72,38.36-84.64A63,63,0,0,1,697,218.65c6.47-7.24,15.32-18.33,12.18-21.75-2.76-3-7.17-10.83-13.13-19.84C691.71,170.46,684.78,163,685.8,157.36Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
-                react_1.default.createElement("path", { d: "M685.8,157.36s35.41-10.67,55.41,27.83,20.67,41.17,19.67,43-39.83-8.33-42-3.83,22,23,22,23l-92.67,72,40.2-88.71a35.15,35.15,0,0,1,6.23-9.39c6.34-6.82,18.12-20.49,14.57-24.36-2.76-3-7.17-10.83-13.13-19.84C691.71,170.46,684.78,163,685.8,157.36Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("circle", { cx: "572.63", cy: "285.83", r: "7.33", fill: "#444053" }),
-                react_1.default.createElement("circle", { cx: "572.63", cy: "331.33", r: "7.33", fill: "#444053" }),
-                react_1.default.createElement("path", { d: "M788.24,419.2c-4.22,1-24.23.55-33.33,2.54l0-.55-1.69-13.83c10.26-1.28,32.56-3.71,35.58-1.16C792.71,409.53,793.27,418.05,788.24,419.2Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
-                react_1.default.createElement("path", { d: "M788.24,420.2c-4.22,1-24.23.55-33.33,2.54l0-.55-1.69-13.83c10.26-1.28,32.56-3.71,35.58-1.16C792.71,410.53,793.27,419.05,788.24,420.2Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M788.24,419.2c-4.22,1-24.23.55-33.33,2.54l0-.55-1.69-13.83c10.26-1.28,32.56-3.71,35.58-1.16C792.71,409.53,793.27,418.05,788.24,419.2Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("circle", { cx: "663.46", cy: "371.83", r: "4.42", fill: "#444053" }),
-                react_1.default.createElement("path", { d: "M700.38,430.19l18.67,63.67s5,2.33,5-1.83S700.38,430.19,700.38,430.19Z", transform: "translate(-120.42 -40.7)", fill: "#fff", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M693.21,170.77a39.81,39.81,0,0,1-3.69,2.63c-6.35,4-12,9.43-20.09,9.43a40.93,40.93,0,0,1-13.21-2.17c-3.82-14.85-8.17-27.63-8.17-27.63s48.88-45.73,45.33-8.34C692.13,157.87,691.34,164.15,693.21,170.77Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M710.49,139.77a41.06,41.06,0,1,1-41.06-41.06A40.87,40.87,0,0,1,710.49,139.77Z", transform: "translate(-120.42 -40.7)", fill: "#efb7b9" }),
-                react_1.default.createElement("path", { d: "M646.16,174.13a4.78,4.78,0,0,1-1.92,2.25l-6.52,4-12.19,7.41-19.29,11.72q-.68.4-1.38.75a16.6,16.6,0,0,1-14.63.2,12,12,0,0,1-6.83-8.52,14.23,14.23,0,0,1,5.22-14,.75.75,0,0,1,.36-.18,35.49,35.49,0,0,0,11.4-5.58l12.14-8.4,10.84-9.91,5.48-3.79a5.11,5.11,0,0,1,5.51-.2C640,153.09,651.16,161.5,646.16,174.13Z", transform: "translate(-120.42 -40.7)", fill: "#e1e7ef" }),
-                react_1.default.createElement("path", { d: "M637.72,180.33l-12.19,7.41c-2.54-10.24-9-17.47-14.61-22.93l12.44-11C632.82,158.5,636.58,174.17,637.72,180.33Z", transform: "translate(-120.42 -40.7)", fill: "#a36468" }),
-                react_1.default.createElement("path", { d: "M604.86,200.21a16.6,16.6,0,0,1-14.63.2,12,12,0,0,1-6.83-8.52,14.23,14.23,0,0,1,5.22-14,30.73,30.73,0,0,1,8.3,5.21,23.32,23.32,0,0,1,7.18,11.3A24,24,0,0,1,604.86,200.21Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M710.49,139.77a40.87,40.87,0,0,1-3.82,17.31,23.18,23.18,0,0,0-5.52,8.76c-2.78,3.38-3.88,5.29-7.59,7.63-1.49-1.57-4.84-2.52-5.45-4.55-1.55-5.23-.67-10.82-.59-16.27,0-2.42-.34-5.28-2.47-6.44-1.77-1-4-.28-5.74.7s-3.47,2.25-5.47,2.48c-3,.34-5.74-1.77-7.42-4.25s-2.65-5.38-4.24-7.92c-2.1-3.35-5.2-5.92-8.25-8.42-3.49-2.88-6.88-6.07-10.6-8.65-2.22-1.55-4.88-2.27-7.07-3.83l-.35-.26a41.06,41.06,0,0,1,74.58,23.71Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M629.59,94.39c.87-5.77,5.63-11.18,11.46-11.28,4.81-.08,8.91,3.18,13.17,5.41a33.26,33.26,0,0,0,28.36,1c2.62-1.14,5.27-2.67,8.12-2.44s5.13,2.1,7.1,4a47.51,47.51,0,0,1,10.77,16.3c.71,1.8,1.36,3.72,2.74,5.07a18.47,18.47,0,0,0,3.42,2.27,18.8,18.8,0,0,1,8.08,12.17,26.8,26.8,0,0,1-1.47,14.75A22.43,22.43,0,0,1,716,150.2c-1.82,1.71-4,3-5.91,4.6a23.6,23.6,0,0,0-8,21.88c-5.32,1.23-10.42-3.54-12-8.76s-.67-10.82-.59-16.27c0-2.42-.34-5.28-2.47-6.44-1.77-1-4-.28-5.74.7s-3.47,2.25-5.47,2.48c-3,.34-5.74-1.76-7.42-4.25s-2.64-5.38-4.24-7.92c-2.09-3.35-5.2-5.92-8.25-8.42-3.49-2.87-6.88-6.07-10.59-8.65-2.23-1.55-4.89-2.27-7.08-3.83C631.63,110.58,629.59,101.94,629.59,94.39Z", transform: "translate(-120.42 -40.7)", fill: "#585268" }),
-                react_1.default.createElement("path", { d: "M661.38,163s-.56.13-1.53.4A3,3,0,0,1,661.38,163Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("g", { opacity: "0.1" },
-                    react_1.default.createElement("path", { d: "M692.11,164.65c-1.55-5.23-.67-10.82-.59-16.27,0-2.42-.34-5.28-2.47-6.44-1.77-1-4-.27-5.74.7s-3.47,2.25-5.47,2.48c-3,.34-5.74-1.76-7.42-4.24s-2.64-5.39-4.24-7.93c-2.1-3.34-5.2-5.91-8.25-8.42-3.49-2.87-6.88-6.07-10.59-8.65-2.23-1.55-4.89-2.26-7.08-3.83-6.63-4.74-8.67-13.38-8.67-20.93A14.11,14.11,0,0,1,632.91,87a14.42,14.42,0,0,0-3.32,7.16c0,7.55,2,16.19,8.67,20.93,2.19,1.57,4.85,2.28,7.08,3.83,3.71,2.58,7.1,5.78,10.59,8.65,3.05,2.51,6.15,5.08,8.25,8.42,1.6,2.54,2.55,5.45,4.24,7.93s4.44,4.58,7.42,4.24c2-.23,3.7-1.51,5.47-2.48s4-1.66,5.74-.7c2.13,1.16,2.51,4,2.47,6.44-.08,5.45-1,11,.59,16.27s6.66,10,12,8.76a22.64,22.64,0,0,1-.32-2.84C697.35,173.22,693.44,169.11,692.11,164.65Z", transform: "translate(-120.42 -40.7)" }),
-                    react_1.default.createElement("path", { d: "M718,146.93c-1.82,1.72-4,3-5.91,4.6a22.61,22.61,0,0,0-5.21,6.3,21.32,21.32,0,0,1,3.21-3.3c1.92-1.6,4.09-2.88,5.91-4.6a19.77,19.77,0,0,0,3.64-4.78A17.29,17.29,0,0,1,718,146.93Z", transform: "translate(-120.42 -40.7)" })),
-                react_1.default.createElement("path", { d: "M662.74,503.89c-.73,2.17-1.77,4.29-1.91,6.58-.24,3.9,2.14,7.52,2.31,11.43.2,4.53-2.56,8.6-5.2,12.3,3.13,0,6.55-1.09,8.14-3.78a12.65,12.65,0,0,0,1.17-3.29c2.83-11.29,5.58-23.64.66-34.18a15.38,15.38,0,0,0-3.25-4.88C663.83,493.39,664.53,498.62,662.74,503.89Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M584.52,424.21,576.21,413c-2-2.71-4.07-5.53-4.79-8.82-.78-3.61.13-7.35.25-11,0-.41,0-.83,0-1.25a6.48,6.48,0,0,1,.38-.7c1.06-1.74,2.23-5.21,3.46-9.85a12,12,0,0,1,2.76,4.25c3.87,9.44.29,20.52,3.49,30.2C582.68,418.61,584.18,421.27,584.52,424.21Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M605.67,763.55a35.45,35.45,0,0,0,28.74,5.69", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M674.53,765.2a21.06,21.06,0,0,0,30.67-2", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M630.65,614.45a18.92,18.92,0,0,1-20.77-9.18", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M678.05,639.72a27.61,27.61,0,0,0,17.85-4.9", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M645.7,700.12c-5.33,2.16-10.09,5.54-15.28,8s-11.2,4.07-16.69,2.35", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("rect", { x: "421.95", y: "363.59", width: "6.25", height: "190.8", fill: "#9d9cb5" }),
-                react_1.default.createElement("rect", { x: "441.36", y: "363.59", width: "6.26", height: "190.8", fill: "#9d9cb5" }),
-                react_1.default.createElement("circle", { cx: "408.12", cy: "740.06", r: "10.69", fill: "#535461" }),
-                react_1.default.createElement("path", { d: "M490.71,586.29s10.66-8.67,20-5.67,33.66,6,38,21.33,0,183.67,0,183.67S528,791,522.37,788.29s-5-28-5-28L515.71,611Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a" }),
-                react_1.default.createElement("path", { d: "M490.71,586.29s10.66-8.67,20-5.67,33.66,6,38,21.33,0,183.67,0,183.67S528,791,522.37,788.29s-5-28-5-28L515.71,611Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("path", { d: "M587.71,777l-44.87,10-.47-8-.29-157.07A47.87,47.87,0,0,0,523.3,584h0s23.23-.31,41,7.72c3.8,1.71,7.61,3.39,11.52,4.83,4.85,1.79,11.43,5.6,11.85,13.12.54,9.8,2.42,106.88,3.09,142.22A89.76,89.76,0,0,1,587.71,777Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a" }),
-                react_1.default.createElement("rect", { x: "419.04", y: "349.42", width: "10.42", height: "16.33", fill: "#535461" }),
-                react_1.default.createElement("rect", { x: "419.04", y: "349.42", width: "10.42", height: "16.33", opacity: "0.1" }),
-                react_1.default.createElement("rect", { x: "438.62", y: "352", width: "10.42", height: "16.33", fill: "#535461" }),
-                react_1.default.createElement("path", { d: "M569.45,392.7H559a10.36,10.36,0,0,0-9.17,6.08c-.15.32-.29.65-.42,1l-2.3-2.22-4.78-4.62-2.92-2.82S558.7,380.37,569.45,392.7Z", transform: "translate(-120.42 -40.7)", fill: "#535461" }),
-                react_1.default.createElement("circle", { cx: "453.58", cy: "747.59", r: "10.69", fill: "#535461" }),
-                react_1.default.createElement("circle", { cx: "343.2", cy: "733", r: "10.69", fill: "#535461" }),
-                react_1.default.createElement("path", { d: "M483.71,584s-30.34,8-32,84.34-2,84.33-2,84.33.66,22,45.33,35.67h27.33L526.71,613S521.71,586.29,483.71,584Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a" }),
-                react_1.default.createElement("path", { d: "M481,702.29s-7.77-106.74,34.12-107.2l3.93,3.82S482.37,585.62,481,702.29Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                react_1.default.createElement("circle", { cx: "379.45", cy: "756.91", r: "10.69", fill: "#535461" }),
-                react_1.default.createElement("path", { d: "M559.15,392.64a.14.14,0,0,1,0,.06H559a10.36,10.36,0,0,0-9.17,6.08c-.15.32-.29.65-.42,1l-2.3-2.22a3.88,3.88,0,0,1,0-.59,6,6,0,0,1,2.26-3.93,9,9,0,0,1,8.69-1.57C558.65,391.66,559.26,392.08,559.15,392.64Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
-                " "))));
+            react_1.default.createElement("path", { d: "M1041.57,609.59c-6.41,15.45-14.82,30.26-26.59,41.62-14.34,13.84-32.15,21.39-51.22,25a154.27,154.27,0,0,1-17,2.2c-15.07,1.16-30.5.39-45.3-1.22a535.59,535.59,0,0,1-106.7-22.83q-8.55-2.76-17-5.81Q765,644,752.49,638.73c-34-14.21-69.15-32.33-105.32-26.71-17.53,2.73-34,11-51.57,13.46a92.21,92.21,0,0,1-36.84-2.62,126.59,126.59,0,0,1-17-5.87,193.44,193.44,0,0,1-35.32-20c-26.5-18.52-50.28-41.48-78.18-57.52-30.76-17.69-64.81-26.1-99.5-32.37q-8.47-1.53-17-2.92c-16.05-2.65-32.14-5.1-48-8-15.28-2.82-30.83-6.27-44.13-14.75-9.49-6.05-17.47-14.43-24.79-23.26A277.49,277.49,0,0,1,160.3,405q-.75-1.5-1.47-3c-14.69-30.14-24.57-63-30.63-97-.18-1-.35-2-.52-3-5.7-33.33-7.78-67.79-7.15-102l.06-3c.39-16.89,1.44-33.71,3-50.29,1.12-11.66,2.62-23.76,8.66-33.56S148.15,97,158,91.78c43.3-23.07,84.81-29.49,131.39-18.31,7.48,1.79,14.93,3.72,22.38,5.72,5.67,1.52,11.34,3.09,17,4.67,39.13,10.91,78.16,22.52,118.61,26q5.86.51,11.73.78,11.61.54,23.22.24a401.19,401.19,0,0,0,59.44-6.12q8.52-1.47,17-3.26c24.4-5.09,48.58-11.88,72.37-19.39q7.29-2.3,14.56-4.68c10.92-3.57,21.84-7.21,32.78-10.75C711.13,56.09,744,46.42,777.76,42.52q4.34-.5,8.68-.87c2.77-.24,5.55-.43,8.32-.57,52.45-2.8,105.5,9.85,152,35.74q8.65,4.82,17,10.24,11.57,7.53,22.43,16.2c14.84,11.85,28.73,25.34,39.31,41.55,10.31,15.79,17,33.52,20.85,52.16.21,1,.41,2,.59,3,5.65,30.09,3.89,62.36-2.45,92.51-.67,3.16-1.38,6.33-2.12,9.49-.23,1-.47,2-.71,3-6.84,28.51-15.58,56.94-13.3,86.09.29,3.67.75,7.31,1.35,10.91.17,1,.34,2,.53,3,4.46,23.78,14.6,46.34,20.68,69.89A215.32,215.32,0,0,1,1041.57,609.59Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M963.76,200h83.18c-.18-1-.38-2-.59-3H963.76V87.06q-8.34-5.41-17-10.24V197h-152V41.08c-2.77.14-5.55.33-8.32.57s-5.79.54-8.68.87V197h-217l-.52-.57L678.47,66.67c-10.94,3.54-21.86,7.18-32.78,10.75l-86.93,95.39V101.49q-8.49,1.79-17,3.26V176.1l-59.44-65.23q-11.61.28-23.22-.24l78.16,85.77-.52.57h-208V83.86c-5.66-1.58-11.33-3.15-17-4.67V197H120.59l-.06,3H311.76V302H127.68c.17,1,.34,2,.52,3H311.76v97H158.83q.72,1.5,1.47,3H311.76v99.26q8.52,1.39,17,2.92V405h213V617a126.59,126.59,0,0,0,17,5.87V405h219V648.54q8.46,3.06,17,5.81V405h152V678.4a154.27,154.27,0,0,0,17-2.2V405h66.48c-.19-1-.36-2-.53-3h-66V305h77.9c.24-1,.48-2,.71-3H963.76Zm-17,0V302h-152V200Zm-169,102h-219V200h219Zm-449-102h210l3,2.73V302h-213Zm0,202V305h213v97Zm230,0V305h219v97Zm388,0h-152V305h152Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M524,228.15a13,13,0,0,0-4.38-2.49,29.36,29.36,0,0,0-11.13-1.21,50.33,50.33,0,0,0-8.18,1.14L374.65,261.14q-3.56,1-7,2.33c-8.1-3.17-31-12.34-33.51-15.63l-9.85,2.88,16.42,24.51h0a2.25,2.25,0,0,0,.17,4.19c18.93,6.5,47.52-2.13,47.52-2.13l109.8-31.37S531.34,234.71,524,228.15Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "378.8", cy: "267.37", rx: "0.96", ry: "1.6", transform: "translate(-185.03 91.15) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "382.62", cy: "266.11", rx: "0.96", ry: "1.6", transform: "translate(-184.44 92.28) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "389.93", cy: "263.7", rx: "0.96", ry: "1.6", transform: "translate(-183.33 94.45) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "410.53", cy: "257.65", rx: "0.96", ry: "1.6", transform: "translate(-180.4 100.59) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "414.16", cy: "256.46", rx: "0.96", ry: "1.6", transform: "matrix(0.95, -0.31, 0.31, 0.95, -179.84, 101.66)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "417.92", cy: "255.58", rx: "0.96", ry: "1.6", transform: "translate(-179.38 102.79) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "421.7", cy: "254.33", rx: "0.96", ry: "1.6", transform: "translate(-178.8 103.91) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "425.41", cy: "253.11", rx: "0.96", ry: "1.6", transform: "translate(-178.23 105.01) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "428.77", cy: "252", rx: "0.96", ry: "1.6", transform: "translate(-177.72 106.01) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "432.38", cy: "250.82", rx: "0.96", ry: "1.6", transform: "translate(-177.17 107.07) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "436.15", cy: "249.57", rx: "0.96", ry: "1.6", transform: "translate(-176.59 108.19) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "439.5", cy: "248.47", rx: "0.96", ry: "1.6", transform: "translate(-176.08 109.18) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "458.26", cy: "243.62", rx: "0.96", ry: "1.6", transform: "translate(-173.62 114.81) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "465.57", cy: "241.22", rx: "0.96", ry: "1.6", transform: "translate(-172.5 116.97) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "469.24", cy: "240.01", rx: "0.96", ry: "1.6", transform: "translate(-171.94 118.06) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "472.8", cy: "238.84", rx: "0.96", ry: "1.6", transform: "translate(-171.39 119.11) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "476.31", cy: "237.68", rx: "0.96", ry: "1.6", transform: "translate(-170.86 120.15) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "480.28", cy: "236.38", rx: "0.96", ry: "1.6", transform: "translate(-170.25 121.33) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "462.03", cy: "242.38", rx: "0.96", ry: "1.6", transform: "translate(-173.04 115.92) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "386.56", cy: "264.81", rx: "0.96", ry: "1.6", transform: "translate(-183.84 93.45) rotate(-18.22)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("rect", { x: "443.59", y: "245.39", width: "3.54", height: "6.17", transform: "translate(-166.99 73.26) rotate(-13.87)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("rect", { x: "484.08", y: "233.79", width: "3.54", height: "6.17", transform: "translate(-163.03 82.63) rotate(-13.87)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("polygon", { points: "383.95 185.21 379.39 186.41 381.67 189.85 388.43 188.17 383.95 185.21", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M519.6,225.66l-9.86,2.57L506,225.91l2.49-1.46A29.36,29.36,0,0,1,519.6,225.66Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M324.3,250.64l16.42,24.59,26.82-11.89s-30.35-11.58-33.39-15.58Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("polygon", { points: "323 213.63 279.67 225.33 277.11 230.45 323 213.63", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M873.68,129.74h-1.32a3.28,3.28,0,0,0,1.61-2.62h0c0-2.07-2.53-3.76-5.63-3.76H828.93c-3.1,0-5.63,1.69-5.63,3.76h0c0,2.06,2.53,3.75,5.63,3.75h1.31a3.27,3.27,0,0,0-1.6,2.62c0,1.77,1.84,3.25,4.3,3.65H821.59c-3.09,0-5.62,1.69-5.62,3.76s2.53,3.75,5.62,3.75H861c3.09,0,5.63-1.69,5.63-3.75,0-1.76-1.85-3.25-4.31-3.65h11.35c3.09,0,5.62-1.69,5.62-3.76S876.77,129.74,873.68,129.74Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M446.52,165.5H445.2a3.27,3.27,0,0,0,1.61-2.62h0c0-2.06-2.53-3.76-5.63-3.76H401.77c-3.1,0-5.63,1.7-5.63,3.76h0c0,2.07,2.53,3.76,5.63,3.76h1.31a3.27,3.27,0,0,0-1.61,2.62c0,1.76,1.85,3.24,4.31,3.64H394.43c-3.09,0-5.62,1.69-5.62,3.76s2.53,3.76,5.62,3.76h39.42c3.09,0,5.62-1.69,5.62-3.76,0-1.76-1.84-3.25-4.3-3.65h11.35c3.09,0,5.62-1.69,5.62-3.75S449.61,165.5,446.52,165.5Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M934.13,318.56h-1.31a3.27,3.27,0,0,0,1.61-2.62h0c0-2.07-2.54-3.76-5.63-3.76H889.38c-3.09,0-5.62,1.69-5.62,3.76h0c0,2.07,2.53,3.76,5.62,3.76h1.32a3.25,3.25,0,0,0-1.61,2.62c0,1.76,1.85,3.24,4.31,3.64H882.05c-3.09,0-5.62,1.69-5.62,3.76s2.53,3.76,5.62,3.76h39.42c3.09,0,5.62-1.69,5.62-3.76,0-1.76-1.84-3.25-4.3-3.65h11.34c3.1,0,5.63-1.69,5.63-3.75S937.23,318.56,934.13,318.56Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "505.99", cy: "742.7", rx: "303.97", ry: "46.65", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "884.56", cy: "789.35", rx: "74.6", ry: "11.45", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "102.56", cy: "767.6", rx: "74.6", ry: "11.45", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "192.56", cy: "812.24", rx: "41.4", ry: "6.35", fill: "#a5454a", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M261.38,735.8l-.36,2.91-.5,4.11-.21,1.72-.5,4.12-.22,1.71-.5,4.12-5.71,46.79c-.51,4.18-7.33,7.44-15.57,7.44H208.15c-8.24,0-15.05-3.26-15.56-7.44l-5.72-46.79-.5-4.12-.21-1.71-.51-4.12-.21-1.72-.5-4.11-.36-2.91c-.28-2.37,3.41-4.36,8.07-4.36h60.67C258,731.44,261.67,733.43,261.38,735.8Z", transform: "translate(-120.42 -40.7)", fill: "#65617d" }),
+            react_1.default.createElement("polygon", { points: "140.6 698.01 140.1 702.12 65.02 702.12 64.52 698.01 140.6 698.01", fill: "#9d9cb5" }),
+            react_1.default.createElement("polygon", { points: "139.89 703.84 139.39 707.96 65.74 707.96 65.23 703.84 139.89 703.84", fill: "#9d9cb5" }),
+            react_1.default.createElement("polygon", { points: "139.17 709.67 138.67 713.79 66.45 713.79 65.95 709.67 139.17 709.67", fill: "#9d9cb5" }),
+            react_1.default.createElement("path", { d: "M801.8,446.14l-2.33-6.68.87-.92-4.61-22.72a8.52,8.52,0,0,0,.19-2.44,10.42,10.42,0,0,0-2-6.67L793,402.2c0-.36,0-.71.07-1.07,1.89-26.53-9.46-58.61-9.46-58.61V313l-8.76-57.76h0c.17-28.89-11.17-39-11.17-39s-.93-.22-2.44-.68c-3-6.21-8.11-16-16.47-31.73a62.51,62.51,0,0,0-12-16.12,47.49,47.49,0,0,0-23.67-13.11,22,22,0,0,1,2.51-2.41c2-1.61,4.22-2.9,6.09-4.63a22.71,22.71,0,0,0,5.54-8.59,26.47,26.47,0,0,0,1.51-14.86,18.91,18.91,0,0,0-8.34-12.26,20.46,20.46,0,0,1-3.52-2.29c-1.43-1.37-2.1-3.3-2.83-5.11A47.83,47.83,0,0,0,698.94,88c-2-2-4.46-3.85-7.32-4.08s-5.68,1.3-8.38,2.46a35.09,35.09,0,0,1-29.25-1c-4.39-2.25-8.62-5.53-13.58-5.45a11.68,11.68,0,0,0-8.66,4.45c.09-.19.17-.38.27-.57a14.25,14.25,0,0,0-3.43,7.21v.27c0,7.16,1.87,15.29,7.78,20.2-.43.54-.86,1.08-1.26,1.64A40.52,40.52,0,0,0,628.56,147a5.46,5.46,0,0,0-.75.41l-5.64,3.82-12.84,11.1-5.74,3.88c6-4.42,14.6-11.62,12.54-13.27-2.84-2.27-31.54,6-38.12,13.67-2.83,3.31-6.49,9.5-9.73,15.48l-.23-.44c-.27.36-.58.79-.9,1.25l-.13-.24c-1.34,1.8-3.45,4.88-5.79,8.37-.85,1.26-1.73,2.58-2.6,3.91-9.09,10.21-26.56,30.78-29.09,40.66,0,0-17.19,27.87-13.06,41.64s20.8,16.46,32.83,12.26c8.59-3,29.89-13.27,41.36-18.9l-1.14,16.22s-9.38,66.64-16.71,93.68c-1.27,4.67-2.48,8.17-3.57,9.92a6.66,6.66,0,0,0-.39.71c-7.42,14.13-18.69,93.5-18.69,93.5s-10,10.58,9.28,11.93c13.28.92,21.24,12.23,24.9,19.16v.15c-.39,10.61-.56,19.66-.32,25.35.71,17.44-1.29,39.47-2.59,51.37a63.48,63.48,0,0,0,.56,17.89c2.82,16.29,8.92,49.55,13.89,63.74,6.7,19.14,3.61,40.3,3.61,40.3s6.7,20.65,12.89,28.21A5.85,5.85,0,0,0,614,744c-.08.61-.16,1.23-.27,1.86-1,5.89-3.25,12.69-8.19,17.82-7.32,7.61-17.47,18-18.66,25.56-.56,3.64.92,6.62,5.77,8.36,15,5.37,34.38,0,34.38,0s13.06-4.7,13.06-9.4,5.33-4.7,5.33-4.7l8.59-6a65.11,65.11,0,0,0,0-9.33c-.38-6-1.69-13.42-5.53-18.17a19.07,19.07,0,0,1-2.75-4.62,18.56,18.56,0,0,1-.65-1.9c3.58-.6,6.09-1,6.5-.74,1.55,1,6.19-26.7-5.67-41.31s-6.19-27.71-6.19-27.71-1.55-53.4-9.28-57.93c0,0,6.18-16.12,5.67-24.18s-3.09-24.18,0-27.71c1.46-1.67,7.47-13,13.36-24.42.35-.67.7-1.34,1-2,3.63.25,7.63.4,11.8.32.05.66.11,1.32.17,2,.93,10.06,3.18,21.09,8.18,29.16v50.88s3.61,14.61,6.7,20.66-9.62,47.85-9.62,47.85-7.06,51.13,0,57.55a12.41,12.41,0,0,0,5.16,2.4c.11.69.21,1.39.31,2.1,1,6.82,1.67,14.27.88,18.56a49.12,49.12,0,0,0,.08,16.66c.15.84.26,1.3.26,1.3s-3.26,16.29,19.26,13.95,24.92-9.41,24.92-9.41,0-.23-.05-.63a42.72,42.72,0,0,0-.64-4.79,51.91,51.91,0,0,0-8.33-19.75,15.66,15.66,0,0,1-3-8.42c0-2-.13-4.18-.24-6.36,0-.67-.07-1.34-.11-2,1.62-.11,2.59-.2,2.59-.2s7.21-12.59,6.7-36.78,5.67-46.34,5.67-46.34,1.55-36.27,0-41.31-3.27-33.55.69-37.43c2.74-2.69,6.3-35.73,8.23-55.74.07-.68.13-1.34.19-2,5.05-.2,8.25-.23,8.25-.23s.56-14.81,1.05-35l2.19-.83c-.94,1.51.07,5.61,7.37,3.55,9.41-2.64,21.92-4.91,21.92-4.91s6.7-4.79,7-8.19a38.17,38.17,0,0,1,1.16-5.14c14.67-5.85,26.73-10.73,26.73-10.73S810.74,460.41,801.8,446.14Zm-51.39-84.47,1.78,14.22-5,1.54-10.53.72c-2.93-26.61,2-71.39,2-71.39l.89-.58C744,324.15,750.41,361.67,750.41,361.67ZM697.84,176.28c-.22-.51-.43-1-.65-1.6l1,1.54A2.63,2.63,0,0,0,697.84,176.28ZM737,380.6l-.18-1.41,3.45-.73,5.45-.56ZM628.59,184.39c-1.47.35-3,.73-4.45,1.16l.26-.15,4.28-2.55a12.29,12.29,0,0,0-.09,1.49Zm-48.51,37.06c-3.44,1.68-5.16,1.51-5.16,1.51l7.9-15.3a38.8,38.8,0,0,0,2.47-4.32,13.21,13.21,0,0,1,7.12-.71s1.91-.43,4.86-1.15a31.6,31.6,0,0,0-1.9,2.68S583.51,219.77,580.08,221.45ZM743,493.09h0l2.48-.95C744.42,492.91,743.53,493.32,743,493.09Z", transform: "translate(-120.42 -40.7)", fill: "url(#3505e4de-4cb3-4002-b88e-01c82e8a7133)" }),
+            react_1.default.createElement("path", { d: "M659.85,163.43c-3.18,1.87-3.28,9.86-2.79,16.27.35,4.69,1,8.53,1,8.53l-20.69,50.3s-7.67-35.84-7.79-51.84a11.86,11.86,0,0,1,.57-3.72C633.8,171.44,654.08,165,659.85,163.43Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+            react_1.default.createElement("path", { d: "M661.38,163s-.56.13-1.53.4A3,3,0,0,1,661.38,163Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+            react_1.default.createElement("path", { d: "M654.21,775.36l-8.33,6s-5.17,0-5.17,4.67-12.66,9.33-12.66,9.33-18.84,5.33-33.34,0c-4.7-1.73-6.14-4.69-5.59-8.3,1.15-7.53,11-17.82,18.09-25.37,4.79-5.09,7-11.84,7.94-17.68a52.82,52.82,0,0,0,.56-12.65l30.5-2.17a20.14,20.14,0,0,0,0,14.29,18.58,18.58,0,0,0,2.67,4.58c3.72,4.72,5,12.13,5.36,18A65.93,65.93,0,0,1,654.21,775.36Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+            react_1.default.createElement("path", { d: "M716.88,789.19s-2.33,7-24.17,9.34S674,784.69,674,784.69s-.11-.46-.25-1.29a49.76,49.76,0,0,1-.08-16.54c.76-4.26.1-11.65-.85-18.42-1.12-8.06-2.65-15.25-2.65-15.25l33.84,2.5s.59,6.89.93,13.85c.11,2.17.2,4.34.23,6.32a15.78,15.78,0,0,0,2.92,8.35,52.17,52.17,0,0,1,8.08,19.6,44.57,44.57,0,0,1,.62,4.76C716.86,789,716.88,789.19,716.88,789.19Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+            react_1.default.createElement("path", { d: "M654.21,775.36l-8.33,6s-5.17,0-5.17,4.67-12.66,9.33-12.66,9.33-18.84,5.33-33.34,0c-4.7-1.73-6.14-4.69-5.59-8.3.45,0,.88.06,1.24.07,5.94.19,11.72,1.79,17.63,2.32a87.64,87.64,0,0,0,10.12.16,35.3,35.3,0,0,0,5-.39c4-.71,7.71-2.78,11.28-4.81a6.4,6.4,0,0,0,2.25-1.76,8.6,8.6,0,0,0,1-2.68c1.26-4.52,4.78-8.14,8.82-10.52a38.46,38.46,0,0,1,7.77-3.35A65.93,65.93,0,0,1,654.21,775.36Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+            react_1.default.createElement("path", { d: "M716.88,789.19s-2.33,7-24.17,9.34S674,784.69,674,784.69s-.11-.46-.25-1.29c1,.52,1.85,1,2.24,1.22,2,1.17,3.79,2.78,5.87,3.87,5,2.63,11.05,1.85,16.64,1,2.65-.4,5.3-.8,7.94-1.29a20.08,20.08,0,0,0,5.81-1.72,34.62,34.62,0,0,0,3.92-2.66,44.57,44.57,0,0,1,.62,4.76C716.86,789,716.88,789.19,716.88,789.19Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+            react_1.default.createElement("path", { d: "M654.21,775.36l-8.33,6s-5.17,0-5.17,4.67-12.66,9.33-12.66,9.33-18.84,5.33-33.34,0c-4.7-1.73-6.14-4.69-5.59-8.3.45,0,.88.06,1.24.07,5.94.19,11.72,1.79,17.63,2.32a87.64,87.64,0,0,0,10.12.16,35.3,35.3,0,0,0,5-.39c4-.71,7.71-2.78,11.28-4.81a6.4,6.4,0,0,0,2.25-1.76,8.6,8.6,0,0,0,1-2.68c1.26-4.52,4.78-8.14,8.82-10.52a38.46,38.46,0,0,1,7.77-3.35A65.93,65.93,0,0,1,654.21,775.36Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M716.88,789.19s-2.33,7-24.17,9.34S674,784.69,674,784.69s-.11-.46-.25-1.29c1,.52,1.85,1,2.24,1.22,2,1.17,3.79,2.78,5.87,3.87,5,2.63,11.05,1.85,16.64,1,2.65-.4,5.3-.8,7.94-1.29a20.08,20.08,0,0,0,5.81-1.72,34.62,34.62,0,0,0,3.92-2.66,44.57,44.57,0,0,1,.62,4.76C716.86,789,716.88,789.19,716.88,789.19Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M646.21,729.19a20.14,20.14,0,0,0,0,14.29c-8.75,1.49-25.06,4.5-31.06.53a52.82,52.82,0,0,0,.56-12.65Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M705,749.54c-6.18.44-22.81,1.31-32.12-1.1-1.12-8.06-2.65-15.25-2.65-15.25l33.84,2.5S704.64,742.58,705,749.54Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M729.38,516.36s-.52,6.25-1.35,15c-1.87,19.86-5.32,52.65-8,55.32-3.84,3.85-2.17,32.15-.67,37.15s0,41,0,41a183,183,0,0,0-5.5,46c.5,24-6.5,36.5-6.5,36.5s-33,3-39.83-3.38,0-57.12,0-57.12,12.33-41.5,9.33-47.5-6.5-20.5-6.5-20.5v-50.5c-4.85-8-7-19-7.93-28.94a152.17,152.17,0,0,1-.07-25.56s-6.21,12.7-12.54,25.26c-5.72,11.35-11.54,22.58-13,24.24-3,3.5-.5,19.5,0,27.5s-5.5,24-5.5,24c7.5,4.5,9,57.5,9,57.5s-5.5,13,6,27.5,7,42,5.5,41-32,7.5-38,0-12.5-28-12.5-28,3-21-3.5-40c-4.82-14.08-10.73-47.09-13.47-63.26a64.45,64.45,0,0,1-.54-17.76c1.26-11.81,3.2-33.67,2.51-51-.23-5.65-.07-14.63.31-25.16,1.29-36.1,5.19-90.34,5.19-90.34L619,407l17.9-12.14,4.38.67,81.62,12.57,3.17,40.26Z", transform: "translate(-120.42 -40.7)", fill: "#444053" }),
+            react_1.default.createElement("path", { d: "M619,407l-1.43,7.86s-12,57.5-14.5,87-13,21-13,21a46.76,46.76,0,0,0-3.36-7.16c1.29-36.1,5.19-90.34,5.19-90.34Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M704.71,188.86s-56,44.83-45.66,35.83c5.66-4.94,1.81-26-2.83-44-3.82-14.85-8.17-27.63-8.17-27.63s48.88-45.73,45.33-8.34c-1.25,13.18-.21,22.55,1.66,29.17C698.47,186,704.71,188.86,704.71,188.86Z", transform: "translate(-120.42 -40.7)", fill: "#efb7b9" }),
+            react_1.default.createElement("path", { d: "M700.05,176.94l-35.5,27.75-10.34-11.5s-8.83-3.83-9.5.5-3.16,31,2,33.5,11.84,4.17,17.67,3.34,12.33-7.34,16.67-9.84,20.33-15.5,20.33-15.5l8-11.16Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M700.05,177.94l-35.5,27.75-10.34-11.5s-8.83-3.83-9.5.5-3.16,31,2,33.5,11.84,4.17,17.67,3.34,12.33-7.34,16.67-9.84,20.33-15.5,20.33-15.5l8-11.16Z", transform: "translate(-120.42 -40.7)", fill: "#a36468" }),
+            react_1.default.createElement("path", { d: "M729.38,516.36s-.52,6.25-1.35,15c-11,.42-32.34,1.72-47.32,5.64a82.1,82.1,0,0,1-18.26,2.39,152.17,152.17,0,0,1-.07-25.56s-6.21,12.7-12.54,25.26A132.25,132.25,0,0,1,633.71,537l6.67-86.67s-.22-29.09.88-54.83l81.62,12.57,3.17,40.26Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M668.05,202.36s24.25-26.51,30-22.3,9.47,14.47,9.47,14.47L687.8,216.19Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M669.05,201.36s24.25-26.51,30-22.3,9.47,14.47,9.47,14.47L688.8,215.19Z", transform: "translate(-120.42 -40.7)", fill: "#a36468" }),
+            react_1.default.createElement("path", { d: "M648.94,218.35l13.94-17.55s-2.21-16.59-7.32-14.47-6.62,10.61-6.62,10.61Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M647.88,217.19l13.94-17.55s-2.2-16.59-7.32-14.47-6.62,10.61-6.62,10.61Z", transform: "translate(-120.42 -40.7)", fill: "#a36468" }),
+            react_1.default.createElement("path", { d: "M712.05,185.69s-28.71,31-45.85,33.08c-1.56.19-3.1.45-4.64.76-4.47.88-14.23,0-12.68-25.63l-2.17-4.54-13.33,8.17-4.5,36.66-8,94L609.05,432.86s36.33-3.5,46.5,5.67,13-50,13-50l27.83-120,29.67-77.17Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M726.05,195.36l-29.67,77.17-27.83,120s-2.84,59.16-13,50c-3.32-3-9.44-4.64-16.17-5.49a146.63,146.63,0,0,0-24.92-.56c-3.32.18-5.41.38-5.41.38l11.83-104.67,8-94,4.5-36.66,13.33-8.17,2.17,4.54c0,.67-.07,1.33-.1,2-.94,23.68,8.43,24.52,12.78,23.66,1.54-.31,3.08-.57,4.64-.76,12.14-1.49,30.08-17.46,39.51-26.64,3.89-3.8,6.34-6.44,6.34-6.44Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M726.05,192.36l-29.67,77.17-27.83,120s-2.84,59.16-13,50c-3.32-3-9.44-4.64-16.17-5.49a146.63,146.63,0,0,0-24.92-.56c-3.32.18-5.41.38-5.41.38l11.83-104.67,8-94,4.5-36.66,13.33-8.17,2.17,4.54c0,.67-.07,1.33-.1,2-.94,23.68,8.43,24.52,12.78,23.66,1.54-.31,3.08-.57,4.64-.76,12.14-1.49,30.08-17.46,39.51-26.64,3.89-3.8,6.34-6.44,6.34-6.44Z", transform: "translate(-120.42 -40.7)", fill: "#e1e7ef" }),
+            react_1.default.createElement("path", { d: "M648.88,194.9c0,.67-.07,1.33-.1,2l-.23.16c-3.52,2.32-9.17,41.5-9.17,41.5l-7.33,99.83-13.5,74.5s-1.77,8.49-4.09,20.62c-3.32.18-5.41.38-5.41.38l11.83-104.67,8-94,4.5-36.66,13.33-8.17Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M658.07,188.23s-8,6.48-11.52,8.8-9.17,41.5-9.17,41.5l-7.33,99.83-13.5,74.5s-12,57.5-14.5,87-13,21-13,21-7.84-23-26.5-24.33-9-11.84-9-11.84,10.93-78.77,18.12-92.8a6.48,6.48,0,0,1,.38-.7c1.06-1.74,2.23-5.21,3.46-9.85,7.11-26.84,16.2-93,16.2-93l5.67-82c14.5-23.67,59.56-22.85,59.56-22.85Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+            react_1.default.createElement("path", { d: "M726.05,192.36l-29.67,77.17-27.83,120s-2.84,59.16-13,50c-3.32-3-9.44-4.64-16.17-5.49.12-20.34.74-56.84,3.67-72.18a203.82,203.82,0,0,0,3.16-42.5l36.34-79.17s27.33-33.69,27.5-38.51c.06-1.78-1.88-5.08-4.34-8.55,3.89-3.8,6.34-6.44,6.34-6.44Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M634.71,535l6.67-86.67s-.5-64.67,3.67-86.5a203.82,203.82,0,0,0,3.16-42.5l36.34-79.17s27.33-33.69,27.5-38.51-14.32-20.85-14.32-20.85,31.65,3.7,35.82,17.86,27,19.67,27,19.67,11,10,10.83,38.67-35,51.16-35,51.16-5.83,54-.83,78.34.66,142.66.66,142.66-33.5.34-54.5,5.84S634.71,535,634.71,535Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+            react_1.default.createElement("path", { d: "M684.05,397.53l25.66,97.16s3.5,8.67,21.5,2,70.34-28.33,70.34-28.33,4.66-7.67-4-21.83l-26.17-76.67Z", transform: "translate(-120.42 -40.7)", fill: "#b07473" }),
+            react_1.default.createElement("polygon", { points: "596.84 399.79 638.34 354.16 664.84 343.41 675.71 398.28 625.34 453.03 596.84 399.79", fill: "#e1e7ef" }),
+            react_1.default.createElement("path", { d: "M761.6,455.74S749.26,463,746,463.24s-14.73,21.92-9.88,21.75,16.13-6,15-3-8.49,12-10.62,11.14-3.13,6.61,6,4,21.25-4.87,21.25-4.87,6.5-4.75,6.75-8.13S780.38,463,780.38,463Z", transform: "translate(-120.42 -40.7)", fill: "#efb7b9" }),
+            react_1.default.createElement("path", { d: "M563.49,199.74s10.68-23.06,17.06-30.68,34.21-15.82,37-13.57-14,14.88-17,16.5,19.38,16.67,19.84,17,17.5-1.51,8.75,4.24-34.62,11.6-34.62,11.6a13,13,0,0,0-10,2.4C579.51,210.86,563.49,199.74,563.49,199.74Z", transform: "translate(-120.42 -40.7)", fill: "#efb7b9" }),
+            react_1.default.createElement("path", { d: "M785.66,456.89A69.18,69.18,0,0,1,780,470.24c-2.5-2.26-26.37-10.13-26.37-10.13l2.65-4.09,4.32-6.66s21.28-4.62,24.9,0C786.72,450.91,786.5,453.77,785.66,456.89Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M786.66,455.89A69.18,69.18,0,0,1,781,469.24c-2.5-2.26-26.37-10.13-26.37-10.13l2.65-4.09,4.32-6.66s21.28-4.62,24.9,0C787.72,449.91,787.5,452.77,786.66,455.89Z", transform: "translate(-120.42 -40.7)", fill: "#a36468" }),
+            react_1.default.createElement("path", { d: "M587.88,204.94a35.16,35.16,0,0,1-2.7,4.94c-3.85,6.07-9.68,13.23-9.68,13.23s-22.74-10.46-22.74-10.92,6.9-11.33,12.51-19.9c2.27-3.46,4.32-6.52,5.62-8.31,0,0,8.49,17.76,16.87,17.88C590,201.89,588.79,202.77,587.88,204.94Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M586.88,205.94a35.16,35.16,0,0,1-2.7,4.94c-3.85,6.07-9.68,13.23-9.68,13.23s-22.74-10.46-22.74-10.92,6.9-11.33,12.51-19.9c2.27-3.46,4.32-6.52,5.62-8.31,0,0,8.49,17.76,16.87,17.88C589,202.89,587.79,203.77,586.88,205.94Z", transform: "translate(-120.42 -40.7)", fill: "#a36468" }),
+            react_1.default.createElement("polygon", { points: "594.71 348.66 591.79 339.91 632.77 337.03 617.46 338.66 597.96 342.85 599.46 348.66 594.71 348.66", fill: "#b07473" }),
+            react_1.default.createElement("path", { d: "M786.66,455.89c-4.52-2.13-16.58-6.56-29.38-.87l4.32-6.66s21.28-4.62,24.9,0C787.72,449.91,787.5,452.77,786.66,455.89Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M789.05,401.86c-.1,1.45-.19,2.9-.28,4.34-.25,4.41-.42,8.78-.53,13-.5,19.54.31,35.66.31,35.66s-15.5-9.33-32-1.5l-1.64-31.62,0-.55-1.69-13.83-5.48-44.67s-10.33-62-13.5-64.33,23.5-52.5,23.5-52.5L771.38,257l8.5,57.33v29.33S790.88,375.53,789.05,401.86Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+            react_1.default.createElement("path", { d: "M587.38,204.53l-3.2,6.35c-3.85,6.07-9.68,13.23-9.68,13.23s-22.74-10.46-22.74-10.92,6.9-11.33,12.51-19.9c1.73-1.95,2.78-3.1,2.78-3.1C560.38,206.69,587.38,204.53,587.38,204.53Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M606.71,201.68l-9.33,4.68s-11.5,15.5-14.83,17.17-5,1.5-5,1.5l9.83-19.5s-27,2.16-20.33-14.34c0,0-30.17,33-33.5,46.34,0,0-16.67,27.66-12.67,41.33s20.17,16.33,31.83,12.17,47.5-22.5,47.5-22.5Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+            react_1.default.createElement("path", { d: "M573.21,234.19s-25.16,28.17-23.16,32S571.88,239.86,573.21,234.19Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M686.8,158.36s35.41-10.67,55.41,27.83,20.67,41.17,19.67,43-39.83-8.33-42-3.83,22,23,22,23l-93.67,71,39.36-83.64A63,63,0,0,1,698,219.65c6.47-7.24,15.32-18.33,12.18-21.75-2.76-3-7.17-10.83-13.13-19.84C692.71,171.46,685.78,164,686.8,158.36Z", transform: "translate(-120.42 -40.7)", opacity: "0.2" }),
+            react_1.default.createElement("path", { d: "M685.8,157.36s35.41-10.67,55.41,27.83,20.67,41.17,19.67,43-39.83-8.33-42-3.83,22,23,22,23l-92.67,72,38.36-84.64A63,63,0,0,1,697,218.65c6.47-7.24,15.32-18.33,12.18-21.75-2.76-3-7.17-10.83-13.13-19.84C691.71,170.46,684.78,163,685.8,157.36Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+            react_1.default.createElement("path", { d: "M685.8,157.36s35.41-10.67,55.41,27.83,20.67,41.17,19.67,43-39.83-8.33-42-3.83,22,23,22,23l-92.67,72,40.2-88.71a35.15,35.15,0,0,1,6.23-9.39c6.34-6.82,18.12-20.49,14.57-24.36-2.76-3-7.17-10.83-13.13-19.84C691.71,170.46,684.78,163,685.8,157.36Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("circle", { cx: "572.63", cy: "285.83", r: "7.33", fill: "#444053" }),
+            react_1.default.createElement("circle", { cx: "572.63", cy: "331.33", r: "7.33", fill: "#444053" }),
+            react_1.default.createElement("path", { d: "M788.24,419.2c-4.22,1-24.23.55-33.33,2.54l0-.55-1.69-13.83c10.26-1.28,32.56-3.71,35.58-1.16C792.71,409.53,793.27,418.05,788.24,419.2Z", transform: "translate(-120.42 -40.7)", fill: "#67647e" }),
+            react_1.default.createElement("path", { d: "M788.24,420.2c-4.22,1-24.23.55-33.33,2.54l0-.55-1.69-13.83c10.26-1.28,32.56-3.71,35.58-1.16C792.71,410.53,793.27,419.05,788.24,420.2Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M788.24,419.2c-4.22,1-24.23.55-33.33,2.54l0-.55-1.69-13.83c10.26-1.28,32.56-3.71,35.58-1.16C792.71,409.53,793.27,418.05,788.24,419.2Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("circle", { cx: "663.46", cy: "371.83", r: "4.42", fill: "#444053" }),
+            react_1.default.createElement("path", { d: "M700.38,430.19l18.67,63.67s5,2.33,5-1.83S700.38,430.19,700.38,430.19Z", transform: "translate(-120.42 -40.7)", fill: "#fff", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M693.21,170.77a39.81,39.81,0,0,1-3.69,2.63c-6.35,4-12,9.43-20.09,9.43a40.93,40.93,0,0,1-13.21-2.17c-3.82-14.85-8.17-27.63-8.17-27.63s48.88-45.73,45.33-8.34C692.13,157.87,691.34,164.15,693.21,170.77Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M710.49,139.77a41.06,41.06,0,1,1-41.06-41.06A40.87,40.87,0,0,1,710.49,139.77Z", transform: "translate(-120.42 -40.7)", fill: "#efb7b9" }),
+            react_1.default.createElement("path", { d: "M646.16,174.13a4.78,4.78,0,0,1-1.92,2.25l-6.52,4-12.19,7.41-19.29,11.72q-.68.4-1.38.75a16.6,16.6,0,0,1-14.63.2,12,12,0,0,1-6.83-8.52,14.23,14.23,0,0,1,5.22-14,.75.75,0,0,1,.36-.18,35.49,35.49,0,0,0,11.4-5.58l12.14-8.4,10.84-9.91,5.48-3.79a5.11,5.11,0,0,1,5.51-.2C640,153.09,651.16,161.5,646.16,174.13Z", transform: "translate(-120.42 -40.7)", fill: "#e1e7ef" }),
+            react_1.default.createElement("path", { d: "M637.72,180.33l-12.19,7.41c-2.54-10.24-9-17.47-14.61-22.93l12.44-11C632.82,158.5,636.58,174.17,637.72,180.33Z", transform: "translate(-120.42 -40.7)", fill: "#a36468" }),
+            react_1.default.createElement("path", { d: "M604.86,200.21a16.6,16.6,0,0,1-14.63.2,12,12,0,0,1-6.83-8.52,14.23,14.23,0,0,1,5.22-14,30.73,30.73,0,0,1,8.3,5.21,23.32,23.32,0,0,1,7.18,11.3A24,24,0,0,1,604.86,200.21Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M710.49,139.77a40.87,40.87,0,0,1-3.82,17.31,23.18,23.18,0,0,0-5.52,8.76c-2.78,3.38-3.88,5.29-7.59,7.63-1.49-1.57-4.84-2.52-5.45-4.55-1.55-5.23-.67-10.82-.59-16.27,0-2.42-.34-5.28-2.47-6.44-1.77-1-4-.28-5.74.7s-3.47,2.25-5.47,2.48c-3,.34-5.74-1.77-7.42-4.25s-2.65-5.38-4.24-7.92c-2.1-3.35-5.2-5.92-8.25-8.42-3.49-2.88-6.88-6.07-10.6-8.65-2.22-1.55-4.88-2.27-7.07-3.83l-.35-.26a41.06,41.06,0,0,1,74.58,23.71Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M629.59,94.39c.87-5.77,5.63-11.18,11.46-11.28,4.81-.08,8.91,3.18,13.17,5.41a33.26,33.26,0,0,0,28.36,1c2.62-1.14,5.27-2.67,8.12-2.44s5.13,2.1,7.1,4a47.51,47.51,0,0,1,10.77,16.3c.71,1.8,1.36,3.72,2.74,5.07a18.47,18.47,0,0,0,3.42,2.27,18.8,18.8,0,0,1,8.08,12.17,26.8,26.8,0,0,1-1.47,14.75A22.43,22.43,0,0,1,716,150.2c-1.82,1.71-4,3-5.91,4.6a23.6,23.6,0,0,0-8,21.88c-5.32,1.23-10.42-3.54-12-8.76s-.67-10.82-.59-16.27c0-2.42-.34-5.28-2.47-6.44-1.77-1-4-.28-5.74.7s-3.47,2.25-5.47,2.48c-3,.34-5.74-1.76-7.42-4.25s-2.64-5.38-4.24-7.92c-2.09-3.35-5.2-5.92-8.25-8.42-3.49-2.87-6.88-6.07-10.59-8.65-2.23-1.55-4.89-2.27-7.08-3.83C631.63,110.58,629.59,101.94,629.59,94.39Z", transform: "translate(-120.42 -40.7)", fill: "#585268" }),
+            react_1.default.createElement("path", { d: "M661.38,163s-.56.13-1.53.4A3,3,0,0,1,661.38,163Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("g", { opacity: "0.1" },
+                react_1.default.createElement("path", { d: "M692.11,164.65c-1.55-5.23-.67-10.82-.59-16.27,0-2.42-.34-5.28-2.47-6.44-1.77-1-4-.27-5.74.7s-3.47,2.25-5.47,2.48c-3,.34-5.74-1.76-7.42-4.24s-2.64-5.39-4.24-7.93c-2.1-3.34-5.2-5.91-8.25-8.42-3.49-2.87-6.88-6.07-10.59-8.65-2.23-1.55-4.89-2.26-7.08-3.83-6.63-4.74-8.67-13.38-8.67-20.93A14.11,14.11,0,0,1,632.91,87a14.42,14.42,0,0,0-3.32,7.16c0,7.55,2,16.19,8.67,20.93,2.19,1.57,4.85,2.28,7.08,3.83,3.71,2.58,7.1,5.78,10.59,8.65,3.05,2.51,6.15,5.08,8.25,8.42,1.6,2.54,2.55,5.45,4.24,7.93s4.44,4.58,7.42,4.24c2-.23,3.7-1.51,5.47-2.48s4-1.66,5.74-.7c2.13,1.16,2.51,4,2.47,6.44-.08,5.45-1,11,.59,16.27s6.66,10,12,8.76a22.64,22.64,0,0,1-.32-2.84C697.35,173.22,693.44,169.11,692.11,164.65Z", transform: "translate(-120.42 -40.7)" }),
+                react_1.default.createElement("path", { d: "M718,146.93c-1.82,1.72-4,3-5.91,4.6a22.61,22.61,0,0,0-5.21,6.3,21.32,21.32,0,0,1,3.21-3.3c1.92-1.6,4.09-2.88,5.91-4.6a19.77,19.77,0,0,0,3.64-4.78A17.29,17.29,0,0,1,718,146.93Z", transform: "translate(-120.42 -40.7)" })),
+            react_1.default.createElement("path", { d: "M662.74,503.89c-.73,2.17-1.77,4.29-1.91,6.58-.24,3.9,2.14,7.52,2.31,11.43.2,4.53-2.56,8.6-5.2,12.3,3.13,0,6.55-1.09,8.14-3.78a12.65,12.65,0,0,0,1.17-3.29c2.83-11.29,5.58-23.64.66-34.18a15.38,15.38,0,0,0-3.25-4.88C663.83,493.39,664.53,498.62,662.74,503.89Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M584.52,424.21,576.21,413c-2-2.71-4.07-5.53-4.79-8.82-.78-3.61.13-7.35.25-11,0-.41,0-.83,0-1.25a6.48,6.48,0,0,1,.38-.7c1.06-1.74,2.23-5.21,3.46-9.85a12,12,0,0,1,2.76,4.25c3.87,9.44.29,20.52,3.49,30.2C582.68,418.61,584.18,421.27,584.52,424.21Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M605.67,763.55a35.45,35.45,0,0,0,28.74,5.69", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M674.53,765.2a21.06,21.06,0,0,0,30.67-2", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M630.65,614.45a18.92,18.92,0,0,1-20.77-9.18", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M678.05,639.72a27.61,27.61,0,0,0,17.85-4.9", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M645.7,700.12c-5.33,2.16-10.09,5.54-15.28,8s-11.2,4.07-16.69,2.35", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("rect", { x: "421.95", y: "363.59", width: "6.25", height: "190.8", fill: "#9d9cb5" }),
+            react_1.default.createElement("rect", { x: "441.36", y: "363.59", width: "6.26", height: "190.8", fill: "#9d9cb5" }),
+            react_1.default.createElement("circle", { cx: "408.12", cy: "740.06", r: "10.69", fill: "#535461" }),
+            react_1.default.createElement("path", { d: "M490.71,586.29s10.66-8.67,20-5.67,33.66,6,38,21.33,0,183.67,0,183.67S528,791,522.37,788.29s-5-28-5-28L515.71,611Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a" }),
+            react_1.default.createElement("path", { d: "M490.71,586.29s10.66-8.67,20-5.67,33.66,6,38,21.33,0,183.67,0,183.67S528,791,522.37,788.29s-5-28-5-28L515.71,611Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M587.71,777l-44.87,10-.47-8-.29-157.07A47.87,47.87,0,0,0,523.3,584h0s23.23-.31,41,7.72c3.8,1.71,7.61,3.39,11.52,4.83,4.85,1.79,11.43,5.6,11.85,13.12.54,9.8,2.42,106.88,3.09,142.22A89.76,89.76,0,0,1,587.71,777Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a" }),
+            react_1.default.createElement("rect", { x: "419.04", y: "349.42", width: "10.42", height: "16.33", fill: "#535461" }),
+            react_1.default.createElement("rect", { x: "419.04", y: "349.42", width: "10.42", height: "16.33", opacity: "0.1" }),
+            react_1.default.createElement("rect", { x: "438.62", y: "352", width: "10.42", height: "16.33", fill: "#535461" }),
+            react_1.default.createElement("path", { d: "M569.45,392.7H559a10.36,10.36,0,0,0-9.17,6.08c-.15.32-.29.65-.42,1l-2.3-2.22-4.78-4.62-2.92-2.82S558.7,380.37,569.45,392.7Z", transform: "translate(-120.42 -40.7)", fill: "#535461" }),
+            react_1.default.createElement("circle", { cx: "453.58", cy: "747.59", r: "10.69", fill: "#535461" }),
+            react_1.default.createElement("circle", { cx: "343.2", cy: "733", r: "10.69", fill: "#535461" }),
+            react_1.default.createElement("path", { d: "M483.71,584s-30.34,8-32,84.34-2,84.33-2,84.33.66,22,45.33,35.67h27.33L526.71,613S521.71,586.29,483.71,584Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a" }),
+            react_1.default.createElement("path", { d: "M481,702.29s-7.77-106.74,34.12-107.2l3.93,3.82S482.37,585.62,481,702.29Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("circle", { cx: "379.45", cy: "756.91", r: "10.69", fill: "#535461" }),
+            react_1.default.createElement("path", { d: "M559.15,392.64a.14.14,0,0,1,0,.06H559a10.36,10.36,0,0,0-9.17,6.08c-.15.32-.29.65-.42,1l-2.3-2.22a3.88,3.88,0,0,1,0-.59,6,6,0,0,1,2.26-3.93,9,9,0,0,1,8.69-1.57C558.65,391.66,559.26,392.08,559.15,392.64Z", transform: "translate(-120.42 -40.7)", opacity: "0.1" }),
+            react_1.default.createElement("path", { xmlns: "http://www.w3.org/2000/svg", d: "M524,228.15a13,13,0,0,0-4.38-2.49,29.36,29.36,0,0,0-11.13-1.21,50.33,50.33,0,0,0-8.18,1.14L374.65,261.14q-3.56,1-7,2.33c-8.1-3.17-31-12.34-33.51-15.63l-9.85,2.88,16.42,24.51h0a2.25,2.25,0,0,0,.17,4.19c18.93,6.5,47.52-2.13,47.52-2.13l109.8-31.37S531.34,234.71,524,228.15Z", transform: "translate(-120.42 -40.7)", fill: "#a5454a", opacity: "0.1" }))));
 };
 exports.default = TripsLogo;
 
 
 /***/ }),
 
-/***/ "./resources/js/components/App.js":
-/*!****************************************!*\
-  !*** ./resources/js/components/App.js ***!
-  \****************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./resources/js/components/App.tsx":
+/*!*****************************************!*\
+  !*** ./resources/js/components/App.tsx ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _Inns_DisplayInns_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Inns/DisplayInns.js */ "./resources/js/components/Inns/DisplayInns.js");
-/* harmony import */ var _PageNotFound_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./PageNotFound.js */ "./resources/js/components/PageNotFound.js");
-/* harmony import */ var _Auth_Login_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Auth/Login.js */ "./resources/js/components/Auth/Login.js");
-/* harmony import */ var _Auth_Register_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Auth/Register.js */ "./resources/js/components/Auth/Register.js");
-/* harmony import */ var _NavBar_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./NavBar.js */ "./resources/js/components/NavBar.js");
-/* harmony import */ var _Accounts_AccountSettings_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Accounts/AccountSettings.js */ "./resources/js/components/Accounts/AccountSettings.js");
-/* harmony import */ var _Context_UserInforContext_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Context/UserInforContext.js */ "./resources/js/components/Context/UserInforContext.js");
 
-
-
-
-
-
-
-
-
-
-var App = function App() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Context_UserInforContext_js__WEBPACK_IMPORTED_MODULE_8__["UserInfoProvider"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: ""
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    exact: true,
-    path: "/"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NavBar_js__WEBPACK_IMPORTED_MODULE_6__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    exact: true,
-    path: "/login"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Auth_Login_js__WEBPACK_IMPORTED_MODULE_4__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    exact: true,
-    path: "/signup"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Auth_Register_js__WEBPACK_IMPORTED_MODULE_5__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    path: "/account"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Accounts_AccountSettings_js__WEBPACK_IMPORTED_MODULE_7__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    path: "/inns"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Inns_DisplayInns_js__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    path: "/*"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PageNotFound_js__WEBPACK_IMPORTED_MODULE_3__["default"], null))))));
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+const DisplayInns_1 = __importDefault(__webpack_require__(/*! ./Inns/DisplayInns */ "./resources/js/components/Inns/DisplayInns.tsx"));
+const PageNotFound_1 = __importDefault(__webpack_require__(/*! ./PageNotFound */ "./resources/js/components/PageNotFound.tsx"));
+const Login_1 = __importDefault(__webpack_require__(/*! ./Auth/Login */ "./resources/js/components/Auth/Login.tsx"));
+const Register_1 = __importDefault(__webpack_require__(/*! ./Auth/Register */ "./resources/js/components/Auth/Register.tsx"));
+const NavBar_1 = __importDefault(__webpack_require__(/*! ./NavBar */ "./resources/js/components/NavBar.tsx"));
+const AccountSettings_1 = __importDefault(__webpack_require__(/*! ./Accounts/AccountSettings */ "./resources/js/components/Accounts/AccountSettings.tsx"));
+const UserInforContext_js_1 = __webpack_require__(/*! ./Context/UserInforContext.js */ "./resources/js/components/Context/UserInforContext.js");
+const App = () => {
+    return (react_1.default.createElement(react_router_dom_1.BrowserRouter, null,
+        react_1.default.createElement(UserInforContext_js_1.UserInfoProvider, null,
+            react_1.default.createElement("div", { className: "" },
+                react_1.default.createElement(react_router_dom_1.Switch, null,
+                    react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/" },
+                        react_1.default.createElement(NavBar_1.default, null)),
+                    react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/login" },
+                        react_1.default.createElement(Login_1.default, null)),
+                    react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/signup" },
+                        react_1.default.createElement(Register_1.default, null)),
+                    react_1.default.createElement(react_router_dom_1.Route, { path: "/account" },
+                        react_1.default.createElement(AccountSettings_1.default, null)),
+                    react_1.default.createElement(react_router_dom_1.Route, { path: "/inns" },
+                        react_1.default.createElement(DisplayInns_1.default, null)),
+                    react_1.default.createElement(react_router_dom_1.Route, { path: "/*" },
+                        react_1.default.createElement(PageNotFound_1.default, null)))))));
+};
+exports.default = App;
 
-/* harmony default export */ __webpack_exports__["default"] = (App);
 
 /***/ }),
 
-/***/ "./resources/js/components/Auth/Login.js":
-/*!***********************************************!*\
-  !*** ./resources/js/components/Auth/Login.js ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./resources/js/components/Auth/ExclamationLogo.tsx":
+/*!**********************************************************!*\
+  !*** ./resources/js/components/Auth/ExclamationLogo.tsx ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _errors_NoAccountError__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./errors/NoAccountError */ "./resources/js/components/Auth/errors/NoAccountError.js");
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-
-var Login = function Login() {
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
-
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-      _useState2 = _slicedToArray(_useState, 2),
-      error = _useState2[0],
-      setError = _useState2[1]; // Form entry data
-
-
-  var initialState = {
-    email: "",
-    password: ""
-  };
-
-  var reducer = function reducer(state, _ref) {
-    var field = _ref.field,
-        value = _ref.value;
-    return _objectSpread(_objectSpread({}, state), {}, _defineProperty({}, field, value));
-  };
-
-  var _useReducer = Object(react__WEBPACK_IMPORTED_MODULE_0__["useReducer"])(reducer, initialState),
-      _useReducer2 = _slicedToArray(_useReducer, 2),
-      state = _useReducer2[0],
-      dispatch = _useReducer2[1];
-
-  var handleChange = function handleChange(e) {
-    dispatch({
-      field: e.target.name,
-      value: e.target.value
-    });
-  };
-
-  var email = state.email,
-      password = state.password;
-
-  var handleLogin = function handleLogin(e) {
-    e.preventDefault();
-    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get("/sanctum/csrf-cookie").then(function () {
-      axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("/login", state).then(function () {
-        history.push("/account");
-      })["catch"](handleErrors);
-    });
-  };
-
-  var handleErrors = function handleErrors(err) {
-    if (err.response) {
-      console.log(err.response);
-      setError(true);
-    }
-  };
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col justify-center items-center m-auto my-20 rounded-lg shadow-xl w-11/12 bg-white md:w-3/4 lg:w-2/4 xl:w-2/6 2xl:w-1/5"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: "pt-8 pb-4"
-  }, "Login"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: !error ? "hidden" : "block w-5/6 "
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_errors_NoAccountError__WEBPACK_IMPORTED_MODULE_3__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    className: "flex flex-col justify-center items-center w-full pb-8",
-    onSubmit: handleLogin
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "auth-input auth-input:focus",
-    type: "email",
-    placeholder: "email",
-    name: "email",
-    value: email,
-    onChange: handleChange,
-    required: true
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "auth-input auth-input:focus",
-    type: "password",
-    placeholder: "password",
-    name: "password",
-    value: password,
-    onChange: handleChange,
-    required: true
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    className: "w-2/3 p-2 mt-4 rounded borader-2 bg-brand hover:bg-darkshade hover:text-lightshade lg:w-5/6 ",
-    type: "submit"
-  }, "Login"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "text-sm pt-4 font-thin w-5/6 "
-  }, "Don't have an account?", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    className: "font-medium text-brand underline pl-1",
-    to: "/signup"
-  }, "Sign Up"))));
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const ExclamationLogo = ({ cssStyle }) => {
+    return (react_1.default.createElement(react_1.default.Fragment, null,
+        react_1.default.createElement("svg", { className: cssStyle, fill: "#a5454a", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" },
+            react_1.default.createElement("path", { d: "M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 9a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm0 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" }))));
+};
+exports.default = ExclamationLogo;
 
-/* harmony default export */ __webpack_exports__["default"] = (Login);
 
 /***/ }),
 
-/***/ "./resources/js/components/Auth/Register.js":
-/*!**************************************************!*\
-  !*** ./resources/js/components/Auth/Register.js ***!
-  \**************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./resources/js/components/Auth/Login.tsx":
+/*!************************************************!*\
+  !*** ./resources/js/components/Auth/Login.tsx ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _icon_exclamation_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../icon-exclamation.svg */ "./resources/icon-exclamation.svg");
-/* harmony import */ var _icon_exclamation_svg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_icon_exclamation_svg__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _errors_RegistrationErrors_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./errors/RegistrationErrors.js */ "./resources/js/components/Auth/errors/RegistrationErrors.js");
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-
-
-
-
-
-
-var Register = function Register() {
-  var history = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useHistory"])();
-
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true),
-      _useState2 = _slicedToArray(_useState, 2),
-      ofAge = _useState2[0],
-      setOfAge = _useState2[1];
-
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false),
-      _useState4 = _slicedToArray(_useState3, 2),
-      error = _useState4[0],
-      setError = _useState4[1];
-
-  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
-      _useState6 = _slicedToArray(_useState5, 2),
-      errorEmail = _useState6[0],
-      setErrorEmail = _useState6[1];
-
-  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
-      _useState8 = _slicedToArray(_useState7, 2),
-      errorPassword = _useState8[0],
-      setErrorPassword = _useState8[1]; // Form entry data
-
-
-  var initialState = {
-    firstname: "",
-    lastname: "",
-    birthday: "",
-    email: "",
-    password: "",
-    password_confirmation: "",
-    rating: 0
-  };
-
-  var reducer = function reducer(state, _ref) {
-    var field = _ref.field,
-        value = _ref.value;
-    return _objectSpread(_objectSpread({}, state), {}, _defineProperty({}, field, value));
-  };
-
-  var _useReducer = Object(react__WEBPACK_IMPORTED_MODULE_0__["useReducer"])(reducer, initialState),
-      _useReducer2 = _slicedToArray(_useReducer, 2),
-      state = _useReducer2[0],
-      dispatch = _useReducer2[1];
-
-  var handleChange = function handleChange(e) {
-    dispatch({
-      field: e.target.name,
-      value: e.target.value
-    });
-  };
-
-  var firstname = state.firstname,
-      lastname = state.lastname,
-      birthday = state.birthday,
-      email = state.email,
-      password = state.password,
-      password_confirmation = state.password_confirmation,
-      rating = state.rating; // Event Handlers
-
-  var handleRegister = function handleRegister(e) {
-    e.preventDefault();
-    axios__WEBPACK_IMPORTED_MODULE_2___default.a.get("/sanctum/csrf-cookie").then(function (response) {
-      axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("/register", state).then(function () {
-        history.push("/login");
-      })["catch"](handleErrors);
-    });
-  };
-
-  var handleBdayValdidation = function handleBdayValdidation() {
-    var ageRestriction = 18; // convert Bday to Date object
-
-    var year = parseInt(birthday.slice(0, 4));
-    var month = parseInt(birthday.slice(6, 8)) - 1;
-    var day = parseInt(birthday.slice(8, 10));
-    var birthDate = new Date(year, month, day);
-    var currentDate = new Date();
-    currentDate.setFullYear(currentDate.getFullYear() - ageRestriction);
-
-    if (currentDate - birthDate < 0) {
-      return setOfAge(false);
-    }
-
-    return setOfAge(true);
-  };
-
-  var handleErrors = function handleErrors(err) {
-    if (err.response) {
-      // check for email error
-      if (err.response.data.errors.email !== undefined) {
-        setErrorEmail(err.response.data.errors.email[0]);
-      } else {
-        setErrorEmail("");
-      } // check for password error
-
-
-      if (err.response.data.errors.password !== undefined) {
-        setErrorPassword(err.response.data.errors.password[0]);
-      } else {
-        setErrorPassword("");
-      }
-
-      setError(true);
-    }
-  };
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col justify-center items-center m-auto my-20 rounded-lg shadow-xl w-11/12 bg-white md:w-3/4 lg:w-2/4 xl:w-2/6 2xl:w-1/5"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: "pt-8 pb-4 "
-  }, "Signup"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: !error ? "hidden" : "block w-5/6 "
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_errors_RegistrationErrors_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    emailError: errorEmail,
-    passwordError: errorPassword
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    className: "flex flex-col justify-center items-center w-full pb-8",
-    onSubmit: handleRegister
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "auth-input auth-input:focus",
-    type: "text",
-    placeholder: "First Name",
-    name: "firstname",
-    value: firstname,
-    onChange: handleChange,
-    required: true
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "auth-input auth-input:focus",
-    type: "text",
-    placeholder: "Last Name",
-    name: "lastname",
-    value: lastname,
-    onChange: handleChange,
-    required: true
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "text-xs pt-1 w-5/6 font-thin text-lightaccent"
-  }, "Make sure it matches your goverment ID"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "auth-input auth-input:focus mt-6 ",
-    type: "date",
-    placeholder: "Birthday",
-    name: "birthday",
-    value: birthday,
-    onChange: handleChange,
-    onBlur: handleBdayValdidation,
-    required: true
-  }), ofAge ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "text-xs pt-1 w-5/6 mb-8 font-thin text-lightaccent"
-  }, "To sign up, you need to be at least 18. Your birthday won\u2019t be shared with other people who use Thinkcation.") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex pt-1 w-5/6 mb-8"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    className: "w-8 h-8 self-center",
-    src: _icon_exclamation_svg__WEBPACK_IMPORTED_MODULE_3___default.a,
-    alt: "exclamation"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "text-xs pl-1 font-thin text-darkaccent"
-  }, "You must be 18 or older to use Thinkcation. Other people won\u2019t see your birthday.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "auth-input auth-input:focus ",
-    type: "email",
-    placeholder: "email",
-    name: "email",
-    value: email,
-    onChange: handleChange,
-    required: true
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "text-xs pt-1 w-5/6 mb-8 font-thin text-lightaccent"
-  }, "Make sure it matches your goverment ID"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "auth-input auth-input:focus ",
-    type: "password",
-    placeholder: "password",
-    name: "password",
-    value: password,
-    onChange: handleChange,
-    required: true,
-    minLength: "8"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "auth-input auth-input:focus ",
-    type: "password",
-    placeholder: "confirm password",
-    name: "password_confirmation",
-    value: password_confirmation,
-    onChange: handleChange,
-    required: true
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    className: "w-2/3 p-2 mt-8 rounded borader-2 bg-brand hover:bg-darkshade hover:text-lightshade lg:w-5/6",
-    type: "submit"
-  }, "Signup")));
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+const axios_1 = __importDefault(__webpack_require__(/*! axios */ "./node_modules/axios/index.js"));
+const NoAccountError_tsx_1 = __importDefault(__webpack_require__(/*! ./errors/NoAccountError.tsx */ "./resources/js/components/Auth/errors/NoAccountError.tsx"));
+const Login = () => {
+    const history = react_router_dom_1.useHistory();
+    const [error, setError] = react_1.useState(false);
+    const initialState = {
+        email: "",
+        password: "",
+    };
+    const reducer = (state, { field, value }) => {
+        return {
+            ...state,
+            [field]: value,
+        };
+    };
+    const [state, dispatch] = react_1.useReducer(reducer, initialState);
+    const handleChange = (e) => {
+        dispatch({ field: e.target.name, value: e.target.value });
+    };
+    const { email, password } = state;
+    const handleLogin = (e) => {
+        e.preventDefault();
+        axios_1.default.get("/sanctum/csrf-cookie").then(() => {
+            axios_1.default
+                .post("/login", state)
+                .then(() => {
+                history.push("/account");
+            })
+                .catch(handleErrors);
+        });
+    };
+    const handleErrors = (err) => {
+        if (err.response) {
+            console.log(err.response);
+            setError(true);
+        }
+    };
+    return (react_1.default.createElement("div", { className: "flex flex-col justify-center items-center m-auto my-20 rounded-lg shadow-xl w-11/12 bg-white md:w-3/4 lg:w-2/4 xl:w-2/6 2xl:w-1/5" },
+        react_1.default.createElement("h1", { className: "pt-8 pb-4" }, "Login"),
+        react_1.default.createElement("div", { className: !error ? "hidden" : "block w-5/6 " },
+            react_1.default.createElement(NoAccountError_tsx_1.default, null)),
+        react_1.default.createElement("form", { className: "flex flex-col justify-center items-center w-full pb-8", onSubmit: handleLogin },
+            react_1.default.createElement("input", { className: "auth-input auth-input:focus", type: "email", placeholder: "email", name: "email", value: email, onChange: handleChange, required: true }),
+            react_1.default.createElement("input", { className: "auth-input auth-input:focus", type: "password", placeholder: "password", name: "password", value: password, onChange: handleChange, required: true }),
+            react_1.default.createElement("button", { className: "w-2/3 p-2 mt-4 rounded borader-2 bg-brand hover:bg-darkshade hover:text-lightshade lg:w-5/6 ", type: "submit" }, "Login"),
+            react_1.default.createElement("p", { className: "text-sm pt-4 font-thin w-5/6 " },
+                "Don't have an account?",
+                react_1.default.createElement(react_router_dom_1.Link, { className: "font-medium text-brand underline pl-1", to: "/signup" }, "Sign Up")))));
+};
+exports.default = Login;
 
-/* harmony default export */ __webpack_exports__["default"] = (Register);
 
 /***/ }),
 
-/***/ "./resources/js/components/Auth/errors/NoAccountError.js":
-/*!***************************************************************!*\
-  !*** ./resources/js/components/Auth/errors/NoAccountError.js ***!
-  \***************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./resources/js/components/Auth/Register.tsx":
+/*!***************************************************!*\
+  !*** ./resources/js/components/Auth/Register.tsx ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
-
-var NoAccountError = function NoAccountError() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: " flex items-center my-4 py-4 px-2 bg-red-100 border-t-4 border-darkaccent rounded-md w-full"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: " text-darkaccent items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-    className: " fill-current w-10 h-10 ",
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 24 24"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    d: "M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 9a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm0 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col pl-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-    className: "text-darkaccent"
-  }, " Let's try that again"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "text-xs font-light"
-  }, "Incorrect email or password")));
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+const axios_1 = __importDefault(__webpack_require__(/*! axios */ "./node_modules/axios/index.js"));
+const ExclamationLogo_1 = __importDefault(__webpack_require__(/*! ./ExclamationLogo */ "./resources/js/components/Auth/ExclamationLogo.tsx"));
+const RegistrationErrors_1 = __importDefault(__webpack_require__(/*! ./errors/RegistrationErrors */ "./resources/js/components/Auth/errors/RegistrationErrors.tsx"));
+const Register = () => {
+    const history = react_router_dom_1.useHistory();
+    const [ofAge, setOfAge] = react_1.useState(true);
+    const [error, setError] = react_1.useState(false);
+    const [errorEmail, setErrorEmail] = react_1.useState("");
+    const [errorPassword, setErrorPassword] = react_1.useState("");
+    const initialState = {
+        firstname: "",
+        lastname: "",
+        birthday: "",
+        email: "",
+        password: "",
+        password_confirmation: "",
+        rating: 0,
+    };
+    const reducer = (state, { field, value }) => {
+        return {
+            ...state,
+            [field]: value,
+        };
+    };
+    const [state, dispatch] = react_1.useReducer(reducer, initialState);
+    const handleChange = (e) => {
+        dispatch({ field: e.target.name, value: e.target.value });
+    };
+    const { firstname, lastname, birthday, email, password, password_confirmation, } = state;
+    const handleRegister = (e) => {
+        e.preventDefault();
+        axios_1.default.get("/sanctum/csrf-cookie").then(() => {
+            axios_1.default
+                .post("/register", state)
+                .then(() => {
+                history.push("/login");
+            })
+                .catch(handleErrors);
+        });
+    };
+    const handleBdayValdidation = () => {
+        const ageRestriction = 18;
+        const year = parseInt(birthday.slice(0, 4));
+        const month = parseInt(birthday.slice(6, 8)) - 1;
+        const day = parseInt(birthday.slice(8, 10));
+        const birthDate = new Date(year, month, day);
+        const currentDate = new Date();
+        currentDate.setFullYear(currentDate.getFullYear() - ageRestriction);
+        const age = currentDate.valueOf() - birthDate.valueOf();
+        console.log(age);
+        if (age < 0) {
+            return setOfAge(false);
+        }
+        return setOfAge(true);
+    };
+    const handleErrors = (err) => {
+        if (err.response) {
+            if (err.response.data.errors.email !== undefined) {
+                setErrorEmail(err.response.data.errors.email[0]);
+            }
+            else {
+                setErrorEmail("");
+            }
+            if (err.response.data.errors.password !== undefined) {
+                setErrorPassword(err.response.data.errors.password[0]);
+            }
+            else {
+                setErrorPassword("");
+            }
+            setError(true);
+        }
+    };
+    return (react_1.default.createElement("div", { className: "flex flex-col justify-center items-center m-auto my-20 rounded-lg shadow-xl w-11/12 bg-white md:w-3/4 lg:w-2/4 xl:w-2/6 2xl:w-1/5" },
+        react_1.default.createElement("h1", { className: "pt-8 pb-4 " }, "Signup"),
+        react_1.default.createElement("div", { className: !error ? "hidden" : "block w-5/6 " },
+            react_1.default.createElement(RegistrationErrors_1.default, { emailError: errorEmail, passwordError: errorPassword })),
+        react_1.default.createElement("form", { className: "flex flex-col justify-center items-center w-full pb-8", onSubmit: handleRegister },
+            react_1.default.createElement("input", { className: "auth-input auth-input:focus", type: "text", placeholder: "First Name", name: "firstname", value: firstname, onChange: handleChange, required: true }),
+            react_1.default.createElement("input", { className: "auth-input auth-input:focus", type: "text", placeholder: "Last Name", name: "lastname", value: lastname, onChange: handleChange, required: true }),
+            react_1.default.createElement("p", { className: "text-xs pt-1 w-5/6 font-thin text-lightaccent" }, "Make sure it matches your goverment ID"),
+            react_1.default.createElement("input", { className: "auth-input auth-input:focus mt-6 ", type: "date", placeholder: "Birthday", name: "birthday", value: birthday, onChange: handleChange, onBlur: handleBdayValdidation, required: true }),
+            ofAge ? (react_1.default.createElement("p", { className: "text-xs pt-1 w-5/6 mb-8 font-thin text-lightaccent" }, "To sign up, you need to be at least 18. Your birthday won\u2019t be shared with other people who use Thinkcation.")) : (react_1.default.createElement("div", { className: "flex pt-1 w-5/6 mb-8" },
+                react_1.default.createElement(ExclamationLogo_1.default, { cssStyle: "w-8 h-8 self-center" }),
+                react_1.default.createElement("p", { className: "text-xs pl-1 font-thin text-darkaccent" }, "You must be 18 or older to use Thinkcation. Other people won\u2019t see your birthday."))),
+            react_1.default.createElement("input", { className: "auth-input auth-input:focus ", type: "email", placeholder: "email", name: "email", value: email, onChange: handleChange, required: true }),
+            react_1.default.createElement("p", { className: "text-xs pt-1 w-5/6 mb-8 font-thin text-lightaccent" }, "Make sure it matches your goverment ID"),
+            react_1.default.createElement("input", { className: "auth-input auth-input:focus ", type: "password", placeholder: "password", name: "password", value: password, onChange: handleChange, required: true, minLength: 8 }),
+            react_1.default.createElement("input", { className: "auth-input auth-input:focus ", type: "password", placeholder: "confirm password", name: "password_confirmation", value: password_confirmation, onChange: handleChange, required: true }),
+            react_1.default.createElement("button", { className: "w-2/3 p-2 mt-8 rounded borader-2 bg-brand hover:bg-darkshade hover:text-lightshade lg:w-5/6", type: "submit" }, "Signup"))));
+};
+exports.default = Register;
 
-/* harmony default export */ __webpack_exports__["default"] = (NoAccountError);
 
 /***/ }),
 
-/***/ "./resources/js/components/Auth/errors/RegistrationErrors.js":
-/*!*******************************************************************!*\
-  !*** ./resources/js/components/Auth/errors/RegistrationErrors.js ***!
-  \*******************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./resources/js/components/Auth/errors/NoAccountError.tsx":
+/*!****************************************************************!*\
+  !*** ./resources/js/components/Auth/errors/NoAccountError.tsx ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
-
-var RegistrationErros = function RegistrationErros(_ref) {
-  var emailError = _ref.emailError,
-      passwordError = _ref.passwordError;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: " flex items-center my-4 py-4 px-2 bg-red-100 border-t-4 border-darkaccent rounded-md w-full"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: " text-darkaccent items-center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("svg", {
-    className: " fill-current w-10 h-10 ",
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 0 24 24"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("path", {
-    d: "M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 9a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm0 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col pl-3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
-    className: "text-darkaccent"
-  }, " Let's try that again"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: emailError === "" || emailError === null ? "hidden" : "text-xs font-light pb-1"
-  }, emailError), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: passwordError === "" || passwordError === null ? "hidden" : "text-xs font-light"
-  }, passwordError)));
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const NoAccountError = () => {
+    return (react_1.default.createElement("div", { className: " flex items-center my-4 py-4 px-2 bg-red-100 border-t-4 border-darkaccent rounded-md w-full" },
+        react_1.default.createElement("div", { className: " text-darkaccent items-center" },
+            react_1.default.createElement("svg", { className: " fill-current w-10 h-10 ", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" },
+                react_1.default.createElement("path", { d: "M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 9a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm0 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" }))),
+        react_1.default.createElement("div", { className: "flex flex-col pl-3" },
+            react_1.default.createElement("h6", { className: "text-darkaccent" }, " Let's try that again"),
+            react_1.default.createElement("p", { className: "text-xs font-light" }, "Incorrect email or password"))));
+};
+exports.default = NoAccountError;
 
-/* harmony default export */ __webpack_exports__["default"] = (RegistrationErros);
+
+/***/ }),
+
+/***/ "./resources/js/components/Auth/errors/RegistrationErrors.tsx":
+/*!********************************************************************!*\
+  !*** ./resources/js/components/Auth/errors/RegistrationErrors.tsx ***!
+  \********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const RegistrationErros = ({ emailError, passwordError, }) => {
+    return (react_1.default.createElement("div", { className: " flex items-center my-4 py-4 px-2 bg-red-100 border-t-4 border-darkaccent rounded-md w-full" },
+        react_1.default.createElement("div", { className: " text-darkaccent items-center" },
+            react_1.default.createElement("svg", { className: " fill-current w-10 h-10 ", xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" },
+                react_1.default.createElement("path", { d: "M12 2a10 10 0 1 1 0 20 10 10 0 0 1 0-20zm0 2a8 8 0 1 0 0 16 8 8 0 0 0 0-16zm0 9a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v4a1 1 0 0 1-1 1zm0 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" }))),
+        react_1.default.createElement("div", { className: "flex flex-col pl-3" },
+            react_1.default.createElement("h6", { className: "text-darkaccent" }, " Let' s try that again"),
+            react_1.default.createElement("p", { className: emailError === "" || emailError === null
+                    ? "hidden"
+                    : "text-xs font-light pb-1" }, emailError),
+            react_1.default.createElement("p", { className: passwordError === "" || passwordError === null
+                    ? "hidden"
+                    : "text-xs font-light" }, passwordError))));
+};
+exports.default = RegistrationErros;
+
 
 /***/ }),
 
@@ -71349,38 +71177,32 @@ exports.default = BrowseInns;
 
 /***/ }),
 
-/***/ "./resources/js/components/Inns/DisplayInns.js":
-/*!*****************************************************!*\
-  !*** ./resources/js/components/Inns/DisplayInns.js ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./resources/js/components/Inns/DisplayInns.tsx":
+/*!******************************************************!*\
+  !*** ./resources/js/components/Inns/DisplayInns.tsx ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _BrowseInns_tsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./BrowseInns.tsx */ "./resources/js/components/Inns/BrowseInns.tsx");
-/* harmony import */ var _BrowseInns_tsx__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_BrowseInns_tsx__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _ShowInn_tsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ShowInn.tsx */ "./resources/js/components/Inns/ShowInn.tsx");
-/* harmony import */ var _ShowInn_tsx__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_ShowInn_tsx__WEBPACK_IMPORTED_MODULE_3__);
 
-
-
-
-
-var DisplayInns = function DisplayInns() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    exact: true,
-    path: "/inns"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_BrowseInns_tsx__WEBPACK_IMPORTED_MODULE_2___default.a, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    exact: true,
-    path: "/inns/:id"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ShowInn_tsx__WEBPACK_IMPORTED_MODULE_3___default.a, null)));
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+const BrowseInns_1 = __importDefault(__webpack_require__(/*! ./BrowseInns */ "./resources/js/components/Inns/BrowseInns.tsx"));
+const ShowInn_1 = __importDefault(__webpack_require__(/*! ./ShowInn */ "./resources/js/components/Inns/ShowInn.tsx"));
+const DisplayInns = () => {
+    return (react_1.default.createElement(react_router_dom_1.Switch, null,
+        react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/inns" },
+            react_1.default.createElement(BrowseInns_1.default, null)),
+        react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/inns/:id" },
+            react_1.default.createElement(ShowInn_1.default, null))));
+};
+exports.default = DisplayInns;
 
-/* harmony default export */ __webpack_exports__["default"] = (DisplayInns);
 
 /***/ }),
 
@@ -71434,94 +71256,191 @@ exports.default = ShowInn;
 
 /***/ }),
 
-/***/ "./resources/js/components/NavBar.js":
-/*!*******************************************!*\
-  !*** ./resources/js/components/NavBar.js ***!
-  \*******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./resources/js/components/LostLogo.tsx":
+/*!**********************************************!*\
+  !*** ./resources/js/components/LostLogo.tsx ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _components_Context_UserInforContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Context/UserInforContext */ "./resources/js/components/Context/UserInforContext.js");
 
-
-
-
-var NavBar = function NavBar() {
-  var _useContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_components_Context_UserInforContext__WEBPACK_IMPORTED_MODULE_2__["default"]),
-      userInfo = _useContext.userInfo;
-
-  console.log(userInfo);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex justify-around py-6 shadow-md "
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "#",
-    alt: "thinkcation|Logo"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex justify-center px-8 space-x-4"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/HostHome"
-  }, "Host your home"), userInfo === "guest" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/login"
-  }, "Login") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/account"
-  }, userInfo.firstname)));
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const LostLogo = ({ cssStyle }) => {
+    return (react_1.default.createElement(react_1.default.Fragment, null,
+        react_1.default.createElement("svg", { className: cssStyle, viewBox: "0 0 1097.33 810.62" },
+            react_1.default.createElement("defs", null,
+                react_1.default.createElement("linearGradient", { id: "18f7bdf6-b159-4951-801a-ccf90bc3291f", x1: "588.67", y1: "838.15", x2: "588.67", y2: "115.47", gradientUnits: "userSpaceOnUse" },
+                    react_1.default.createElement("stop", { offset: "0", stopColor: "gray", stopOpacity: "0.25" }),
+                    react_1.default.createElement("stop", { offset: "0.54", stopColor: "gray", stopOpacity: "0.12" }),
+                    react_1.default.createElement("stop", { offset: "1", stopColor: "gray", stopOpacity: "0.1" }))),
+            react_1.default.createElement("title", null, "lost"),
+            react_1.default.createElement("path", { d: "M63.41,474.66C80.77,548.86,117.52,613,175.6,644.09c120.7,64.61,392.91,31.29,596.07-7A465.21,465.21,0,0,0,1036.21,485.9Z", transform: "translate(-51.34 -44.69)", fill: "#f5b725", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M850.65,694.41S783,735.21,907.68,798c0,0,27.46-51-2.9-92.57a40.94,40.94,0,0,0-53.12-11.64Z", transform: "translate(-51.34 -44.69)", fill: "#f5b725" }),
+            react_1.default.createElement("path", { d: "M851.43,693.55S909.31,737.83,907.68,798", transform: "translate(-51.34 -44.69)", fill: "none", stroke: "#535461", strokeMiterlimit: "10" }),
+            react_1.default.createElement("path", { d: "M69.65,706.41S2,747.21,126.68,810c0,0,27.46-51-2.9-92.57a40.94,40.94,0,0,0-53.12-11.64Z", transform: "translate(-51.34 -44.69)", fill: "#f5b725" }),
+            react_1.default.createElement("path", { d: "M70.43,705.55S128.31,749.83,126.68,810", transform: "translate(-51.34 -44.69)", fill: "none", stroke: "#535461", strokeMiterlimit: "10" }),
+            react_1.default.createElement("path", { d: "M911,803.77s-21.19-72,4-124.91a113.65,113.65,0,0,0,9.19-71.3A191.13,191.13,0,0,0,914,574.1", transform: "translate(-51.34 -44.69)", fill: "none", stroke: "#535461", strokeMiterlimit: "10", strokeWidth: "2" }),
+            react_1.default.createElement("path", { d: "M929.69,540.64c0,8.82-16,34.39-16,34.39s-16-25.57-16-34.39a16,16,0,0,1,31.93,0Z", transform: "translate(-51.34 -44.69)", fill: "#f5b725" }),
+            react_1.default.createElement("path", { d: "M956.08,589.48c-4.79,7.4-32.09,20.19-32.09,20.19s.5-30.14,5.29-37.54a16,16,0,0,1,26.8,17.36Z", transform: "translate(-51.34 -44.69)", fill: "#f5b725" }),
+            react_1.default.createElement("path", { d: "M954.93,672.95c-7.87,4-37.89,1.23-37.89,1.23s15.64-25.77,23.52-29.74a16,16,0,0,1,14.38,28.51Z", transform: "translate(-51.34 -44.69)", fill: "#f5b725" }),
+            react_1.default.createElement("path", { d: "M939.83,735.91c-7.09,5.24-37.14,7.61-37.14,7.61s11.06-28,18.15-33.29a16,16,0,0,1,19,25.67Z", transform: "translate(-51.34 -44.69)", fill: "#f5b725" }),
+            react_1.default.createElement("path", { d: "M890.46,611.38c6.32,6.14,35.79,12.51,35.79,12.51s-7.22-29.27-13.54-35.41a16,16,0,0,0-22.25,22.9Z", transform: "translate(-51.34 -44.69)", fill: "#f5b725" }),
+            react_1.default.createElement("path", { d: "M873.75,685.23c7.87,4,37.89,1.23,37.89,1.23S896,660.69,888.12,656.72a16,16,0,1,0-14.38,28.51Z", transform: "translate(-51.34 -44.69)", fill: "#f5b725" }),
+            react_1.default.createElement("path", { d: "M867.35,759.24c7.09,5.24,37.14,7.61,37.14,7.61s-11.06-28-18.15-33.29a16,16,0,1,0-19,25.67Z", transform: "translate(-51.34 -44.69)", fill: "#f5b725" }),
+            react_1.default.createElement("path", { d: "M929.69,540.64c0,8.82-16,34.39-16,34.39s-16-25.57-16-34.39a16,16,0,0,1,31.93,0Z", transform: "translate(-51.34 -44.69)", opacity: "0.25" }),
+            react_1.default.createElement("path", { d: "M956.08,589.48c-4.79,7.4-32.09,20.19-32.09,20.19s.5-30.14,5.29-37.54a16,16,0,0,1,26.8,17.36Z", transform: "translate(-51.34 -44.69)", opacity: "0.25" }),
+            react_1.default.createElement("path", { d: "M954.93,672.95c-7.87,4-37.89,1.23-37.89,1.23s15.64-25.77,23.52-29.74a16,16,0,0,1,14.38,28.51Z", transform: "translate(-51.34 -44.69)", opacity: "0.25" }),
+            react_1.default.createElement("path", { d: "M939.83,735.91c-7.09,5.24-37.14,7.61-37.14,7.61s11.06-28,18.15-33.29a16,16,0,0,1,19,25.67Z", transform: "translate(-51.34 -44.69)", opacity: "0.25" }),
+            react_1.default.createElement("path", { d: "M890.46,611.38c6.32,6.14,35.79,12.51,35.79,12.51s-7.22-29.27-13.54-35.41a16,16,0,0,0-22.25,22.9Z", transform: "translate(-51.34 -44.69)", opacity: "0.25" }),
+            react_1.default.createElement("path", { d: "M873.75,685.23c7.87,4,37.89,1.23,37.89,1.23S896,660.69,888.12,656.72a16,16,0,1,0-14.38,28.51Z", transform: "translate(-51.34 -44.69)", opacity: "0.25" }),
+            react_1.default.createElement("path", { d: "M867.35,759.24c7.09,5.24,37.14,7.61,37.14,7.61s-11.06-28-18.15-33.29a16,16,0,1,0-19,25.67Z", transform: "translate(-51.34 -44.69)", opacity: "0.25" }),
+            react_1.default.createElement("path", { d: "M960,805.14s-21.19-72,4-124.91a113.65,113.65,0,0,0,9.19-71.3,191.13,191.13,0,0,0-10.09-33.46", transform: "translate(-51.34 -44.69)", fill: "none", stroke: "#535461", strokeMiterlimit: "10", strokeWidth: "2" }),
+            react_1.default.createElement("path", { d: "M978.73,542c0,8.82-16,34.39-16,34.39s-16-25.57-16-34.39a16,16,0,0,1,31.93,0Z", transform: "translate(-51.34 -44.69)", fill: "#f5b725" }),
+            react_1.default.createElement("path", { d: "M1005.12,590.85C1000.33,598.25,973,611,973,611s.5-30.14,5.29-37.54a16,16,0,0,1,26.8,17.36Z", transform: "translate(-51.34 -44.69)", fill: "#f5b725" }),
+            react_1.default.createElement("path", { d: "M1004,674.32c-7.87,4-37.89,1.23-37.89,1.23s15.64-25.77,23.52-29.74A16,16,0,0,1,1004,674.32Z", transform: "translate(-51.34 -44.69)", fill: "#f5b725" }),
+            react_1.default.createElement("path", { d: "M988.87,737.28c-7.09,5.24-37.14,7.61-37.14,7.61s11.06-28,18.15-33.29a16,16,0,0,1,19,25.67Z", transform: "translate(-51.34 -44.69)", fill: "#f5b725" }),
+            react_1.default.createElement("path", { d: "M939.5,612.75c6.32,6.14,35.79,12.51,35.79,12.51s-7.22-29.27-13.54-35.41a16,16,0,0,0-22.25,22.9Z", transform: "translate(-51.34 -44.69)", fill: "#f5b725" }),
+            react_1.default.createElement("path", { d: "M922.78,686.6c7.87,4,37.89,1.23,37.89,1.23S945,662.06,937.16,658.09a16,16,0,0,0-14.38,28.51Z", transform: "translate(-51.34 -44.69)", fill: "#f5b725" }),
+            react_1.default.createElement("path", { d: "M916.38,760.61c7.09,5.24,37.14,7.61,37.14,7.61s-11.06-28-18.15-33.29a16,16,0,1,0-19,25.67Z", transform: "translate(-51.34 -44.69)", fill: "#f5b725" }),
+            react_1.default.createElement("path", { d: "M1128.77,125.41H1017.3a9.63,9.63,0,1,1,0-19.27h19.27a9.63,9.63,0,0,1,0-19.27H1022.8a9.63,9.63,0,0,1,0-19.27H1081c-12.91-6-28-10.27-45.38-12.51-158.64-20.38-215.28-6.9-235.26,7-24.65,17.1-52.15,29.68-81.54,35.74C620.92,118,437.87,142.29,272,90c-82.46-26-143.75,17.92-180.48,91.28H1148.13c-1.38-21.32-5.51-41-13.09-58.24A9.58,9.58,0,0,1,1128.77,125.41Z", transform: "translate(-51.34 -44.69)", fill: "#f5b725", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M54,319.79a491.06,491.06,0,0,0,4.33,129.46L1037,485a460,460,0,0,0,68-103.7ZM441,412.14H421.77a9.63,9.63,0,0,1,0,19.27H310.3a9.63,9.63,0,1,1,0-19.27h19.27a9.63,9.63,0,0,1,0-19.27H315.8a9.63,9.63,0,0,1,0-19.27H427.27a9.63,9.63,0,1,1,0,19.27H441a9.63,9.63,0,0,1,0,19.27Z", transform: "translate(-51.34 -44.69)", fill: "#f5b725", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M1148.17,182,79.68,208c-13,33.41-21.61,71.19-25.59,110.34H1129.45A456.46,456.46,0,0,0,1145,248C1148.17,225,1149.46,202.71,1148.17,182ZM271,267.14H251.77a9.63,9.63,0,0,1,0,19.27H140.3a9.63,9.63,0,1,1,0-19.27h19.27a9.63,9.63,0,0,1,0-19.27H145.8a9.63,9.63,0,0,1,0-19.27H257.27a9.63,9.63,0,1,1,0,19.27H271a9.63,9.63,0,0,1,0,19.27Z", transform: "translate(-51.34 -44.69)", fill: "#f5b725", opacity: "0.1" }),
+            react_1.default.createElement("ellipse", { cx: "550.33", cy: "777.62", rx: "533", ry: "33", fill: "#f5b725" }),
+            react_1.default.createElement("path", { d: "M774.44,313.8s-61.81-58.17-70.74-66.87c-3.11-3-6.05-6-8.56-8.53a33.57,33.57,0,0,0-17.73-9.29c-23.16-4.39-46.85-18.63-46.85-18.63h0c-.13-.17-.26-.32-.38-.5a28.17,28.17,0,0,1-4.35-9.3c-.13-.49-.26-1-.37-1.52q.56-.72,1.09-1.47a7.16,7.16,0,0,0,1.17-.53c2.93-1.67,4.58-4.76,5.69-7.8,1-2.69,1.8-5.66,4.18-7.41a8.74,8.74,0,0,0,2.27-1.81,5.33,5.33,0,0,0,.53-3.09c0-6.83-1.09-12.07.5-18.73,2.54-10.66,4.87-24-3.18-31.91a28.11,28.11,0,0,0-15.16-7.55c-5.17-.82-12.82,6.22-18.06,6-13.35-.51-24.6-12.55-37.29-8.66a26.22,26.22,0,0,0-13.7,9.82c-6.26,8.92-5.66,20.46-4.76,31.1a3.87,3.87,0,0,0,.69,2.27c.47.55,1.22.84,1.68,1.39a3.37,3.37,0,0,1,.52,2.49,16.34,16.34,0,0,1-1.24,5,2,2,0,0,0-.19,1.81,1.89,1.89,0,0,0,1,.68,9.09,9.09,0,0,0,1.65.39c-.09.88-.17,1.76-.2,2.65,0,.5,0,1,0,1.51a39.14,39.14,0,0,0,17.82,32.68c.11.72.23,1.46.34,2.23.34,2.37.65,5,.88,7.86,0,.52.08,1,.12,1.57l-.27-.55-43,21.08a21.31,21.31,0,0,0-8.67,4.25l-.85.42v.25q-.53.44-1.08.94L480.63,203.9l-87,75.52,47.84,51.51,53.76-4.48c-2.65,18.2-4.46,32.15-4.46,32.15s-9.83,42.13,37.79,34.07c-.31,26.57-11.69,70.91-11.69,70.91a23.42,23.42,0,0,0,4.63,4.57l-.27,1.81-3,20.37s-17.86,49.48-20.6,93.61-6.18,68.87-6.18,68.87l-6.18,88.27-8.69,40.36a204.06,204.06,0,0,1-49.4,39.5,6.92,6.92,0,0,0-2.8,9.48c3.52,6.06,14.35,12.35,47.15,2.27,52.2-16,47.39-15.38,47.39-15.38s.77-21.42-1.45-34.12c-.07-.38-.14-.75-.21-1.12,12.5-14.09,6.46-37,6.46-37s24.72-48.14,13-79.57c0,0-2.75-26.75,11.68-39.45.2-.18.41-.38.62-.59l.19-.2.47-.5.21-.23.55-.64.12-.14c.22-.27.45-.56.68-.86l.18-.24L552,622l.22-.32.54-.79.18-.26.73-1.11.14-.22.61-1,.23-.38.56-.94.21-.36.77-1.34v0l.77-1.38.22-.41.59-1.09.23-.44.71-1.35.09-.17.82-1.6.2-.39.64-1.27.24-.48.67-1.36.17-.34.84-1.75.14-.29.7-1.49.24-.51.65-1.39.21-.45.86-1.87,0,0,.83-1.85.23-.51.65-1.47.22-.51L568,591l0-.08.87-2,.19-.43.68-1.58.23-.53.71-1.69.14-.32.86-2,.14-.33.71-1.7.23-.55.65-1.59.19-.46.83-2,.07-.17.75-1.85.23-.57.61-1.52.22-.55.72-1.82.07-.19.78-2,.23-.58.56-1.43.24-.63.59-1.52.17-.45.73-1.89.2-.52.53-1.38.27-.7.47-1.22.25-.66.66-1.75.19-.51.48-1.28.27-.71.4-1.07.27-.73.45-1.21.29-.78.45-1.22.29-.78.31-.84.29-.8.25-.69.67-1.82.11-.31.31-.86.21-.57.32-.87.15-.41c2.87-7.91,4.63-13,4.63-13s13,45.47,11,59.51,12.36,66.2,12.36,66.2-8.24,52.16-3.43,64.86-6.87,60.18-6.87,60.18.89.49,2.4,1.24l-.09,1.29c-.75,10.44-2.38,30.5-4.37,38.26-2.75,10.7-1.37,22.07,20.6,20.73s22.66-14.71,22.66-14.71-7.25-23.38-8.14-37.17c0-.45,0-.89-.06-1.32l0,0,.62-.23.18-.07c.25-.11.49-.22.72-.34l0,0c.22-.12.42-.24.63-.37l.18-.12q.26-.18.51-.38l.12-.1q.3-.25.57-.52l.13-.13q.21-.23.41-.47l.14-.18c.16-.21.32-.43.47-.67,7.55-12,8.24-37.45,8.24-37.45s15.11-85.59,9.62-97-2.75-38.11-2.75-38.11-6.18-40.12.69-59.51c5.14-14.52,8.36-64.66,8.21-88.65q0-.75,0-1.47c0-.17,0-.34,0-.51,5.12-6.36,9-17.52,6.24-37.08-.16-1.11-.28-2.23-.4-3.37,7.8-5.83,15.5-12.68,15.5-12.68l2.66-2.74.85-.88c.74.31,1.52.59,2.33.84,3,1.36,5.14,2.12,5.14,2.12s39.15-32.1,68.68-47.48S774.44,313.8,774.44,313.8Zm-46.7,28.08S686.53,368,679,381.34a10,10,0,0,0-1,2.38l-1,.42h0l-1.26.48c6.31-36,23.2-71.49,23.2-71.49s13,11.37,22,16S727.74,341.89,727.74,341.89Z", transform: "translate(-51.34 -44.69)", fill: "url(#18f7bdf6-b159-4951-801a-ccf90bc3291f)" }),
+            react_1.default.createElement("path", { d: "M475.73,828.55c-31.64,10-42.09,3.76-45.48-2.25a7,7,0,0,1,2.7-9.39,198.05,198.05,0,0,0,48-39.54c3.52-4,5.37-6.45,5.37-6.45s24.51-4.64,30.47,0c1.49,1.16,2.53,4.4,3.24,8.6,2.14,12.58,1.4,33.8,1.4,33.8S526.07,812.65,475.73,828.55Z", transform: "translate(-51.34 -44.69)", fill: "#5b5877" }),
+            react_1.default.createElement("path", { d: "M645.3,819.27s-.66,13.25-21.86,14.57-22.52-9.94-19.87-20.53c1.92-7.68,3.49-27.55,4.21-37.9.27-3.93.42-6.48.42-6.48s33.12-3.31,29.81,6a20.65,20.65,0,0,0-.56,7.56C638.31,796.12,645.3,819.27,645.3,819.27Z", transform: "translate(-51.34 -44.69)", fill: "#5b5877" }),
+            react_1.default.createElement("path", { d: "M520,779.52l-.59.68c-12.59,13.91-39.08,0-39.08,0l.59-2.82c3.52-4,5.37-6.45,5.37-6.45s24.51-4.64,30.47,0C518.29,772.08,519.33,775.32,520,779.52Z", transform: "translate(-51.34 -44.69)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M638,774.89a20.65,20.65,0,0,0-.56,7.56c-8.66,3-24-4.1-29.67-7,.27-3.93.42-6.48.42-6.48S641.33,765.62,638,774.89Z", transform: "translate(-51.34 -44.69)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M659.21,644.4c5.3,11.26-9.27,96-9.27,96s-.66,25.17-7.95,37.09-36.43-4.64-36.43-4.64,11.26-47,6.62-59.62S615.49,649,615.49,649s-13.91-51.67-11.92-65.58-10.6-59-10.6-59-29.15,86.78-43.06,99.36-11.26,39.08-11.26,39.08c11.26,31.13-12.59,78.83-12.59,78.83s6,23.18-6.62,37.09-39.08,0-39.08,0L489,737.8l6-87.44s3.31-24.51,6-68.23,19.87-92.74,19.87-92.74l2.88-20.18,2.42-16.92s134.47-4.64,137.78-5.3c.83-.17,1.25,4.89,1.29,12.86.15,23.77-3,73.43-7.92,87.82-6.62,19.21-.66,59-.66,59S653.91,633.14,659.21,644.4Z", transform: "translate(-51.34 -44.69)", fill: "#5f5d7e" }),
+            react_1.default.createElement("g", { opacity: "0.05" },
+                react_1.default.createElement("path", { d: "M585.69,524.5s-29.15,86.78-43.06,99.36-11.26,39.08-11.26,39.08c11.26,31.13-12.59,78.83-12.59,78.83s6,23.18-6.62,37.09a19,19,0,0,1-12.22,6c7,.73,14.39-.33,19.5-6,12.59-13.91,6.62-37.09,6.62-37.09s23.85-47.69,12.59-78.83c0,0-2.65-26.5,11.26-39.08,10.69-9.67,30.36-63.11,38.91-87.37C587.06,529.41,585.69,524.5,585.69,524.5Z", transform: "translate(-51.34 -44.69)" }),
+                react_1.default.createElement("path", { d: "M656.56,606.64s-6-39.74.66-59c5-14.39,8.06-64.05,7.92-87.82,0-8-.46-13-1.29-12.86-.41.08-2.88.23-6.87.42.56,1.36.84,5.92.88,12.45.15,23.77-3,73.43-7.92,87.82-6.62,19.21-.66,59-.66,59s-2.65,26.5,2.65,37.76-9.27,96-9.27,96-.66,25.17-7.95,37.09a8.84,8.84,0,0,1-6.08,4c5.67.84,10.83.14,13.36-4,7.29-11.92,7.95-37.09,7.95-37.09s14.57-84.79,9.27-96S656.56,606.64,656.56,606.64Z", transform: "translate(-51.34 -44.69)" })),
+            react_1.default.createElement("path", { d: "M639.34,219.8,634.7,265.5s-73.53,15.9-65.58-9.94c3.76-12.23,4-25.36,3.13-35.79-.23-2.82-.52-5.44-.85-7.79a111.52,111.52,0,0,0-2.28-12.06s57-43.06,54.32-13.91a47.46,47.46,0,0,0,1.05,16.47,28.24,28.24,0,0,0,4.2,9.21C633.38,218.31,639.34,219.8,639.34,219.8Z", transform: "translate(-51.34 -44.69)", fill: "#fdc2cc" }),
+            react_1.default.createElement("path", { d: "M624.5,202.49c-.53.72-1.09,1.43-1.66,2.11A39.09,39.09,0,0,1,571.4,212a111.52,111.52,0,0,0-2.28-12.06s57-43.06,54.32-13.91A47.46,47.46,0,0,0,624.5,202.49Z", transform: "translate(-51.34 -44.69)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M632.05,177.4a39.08,39.08,0,0,1-78.16,0c0-.5,0-1,0-1.5a39.08,39.08,0,0,1,78.13,1.5Z", transform: "translate(-51.34 -44.69)", fill: "#fdc2cc" }),
+            react_1.default.createElement("path", { d: "M665.14,459.87a21.3,21.3,0,0,1-13.88,8.33l-30.44,10.65-.07,0-9.23,3.23-3.87-9.52-4.74-11.68v21.2s-58.16,4-79.26-12.89l2.42-16.92s134.47-4.64,137.78-5.3C664.68,446.84,665.1,451.89,665.14,459.87Z", transform: "translate(-51.34 -44.69)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M639.34,219.8,634.7,265.5s-73.53,15.9-65.58-9.94c3.76-12.23,4-25.36,3.13-35.79,1.27,2.66,10.62,21.48,22.71,24.75h0a13.11,13.11,0,0,0,4.63.44,15.37,15.37,0,0,0,7.13-2.76c10.88-7.23,20-26.26,22-30.5C633.38,218.31,639.34,219.8,639.34,219.8Z", transform: "translate(-51.34 -44.69)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M762.55,357.58c-28.48,15.24-66.24,47-66.24,47s-27.82-9.94-20.53-23.18,47-39.08,47-39.08,2-7.95-6.62-12.59-21.2-15.9-21.2-15.9-29.81,64.25-23.85,107.31-19.87,45-19.87,45l-30.44,10.65-.07,0-9.23,3.23-3.87-9.52-4.74-11.68v21.2s-67.57,4.64-83.46-17.22c0,0,14.57-58.29,10.6-80.81s-8.61-135.79-8.61-135.79l50.67-25.5S582,242.33,595,245.86h0a13.11,13.11,0,0,0,4.63.44,15.37,15.37,0,0,0,7.13-2.76c12.27-8.15,22.35-31.35,22.35-31.35s22.85,14.1,45.19,18.45a32.1,32.1,0,0,1,17.1,9.2c2.42,2.53,5.26,5.44,8.26,8.45,8.61,8.61,68.23,66.24,68.23,66.24S791,342.34,762.55,357.58Z", transform: "translate(-51.34 -44.69)", fill: "#d39999" }),
+            react_1.default.createElement("path", { d: "M697,393.35l-8.7,9.21-2.56,2.72s-23.18,21.2-29.15,20.53-15.9-41.07-4-38.42c7.24,1.61,15.71-.93,21.23-3.18h0a56.17,56.17,0,0,0,5.92-2.78Z", transform: "translate(-51.34 -44.69)", fill: "#fdc2cc" }),
+            react_1.default.createElement("path", { d: "M632.05,177.4a38.9,38.9,0,0,1-9.22,25.21,5.64,5.64,0,0,1-5.25-2.51c-1.1-1.93-.64-4.35-1.37-6.43s-2.39-3.51-3.44-5.36c-2.66-4.66-1.54-11.72-6.41-14.22-2.24-1.14-4.95-.76-7.45-.34-4.91.81-9.85,2.42-14.69,3.09-5.52.78-10.49-2.81-15.94-2.89-4.86-.08-9.74,2.77-14.35,1.95a39.08,39.08,0,0,1,78.13,1.5Z", transform: "translate(-51.34 -44.69)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M598.91,171.1c2.5-.41,5.21-.8,7.45.35,4.87,2.49,3.75,9.55,6.41,14.21,1.05,1.85,2.75,3.36,3.45,5.36s.27,4.5,1.37,6.43c1.59,2.79,5.9,3.2,8.73,1.54s4.41-4.71,5.48-7.73c.94-2.66,1.73-5.6,4-7.34a8.48,8.48,0,0,0,2.19-1.79,5.4,5.4,0,0,0,.52-3.06c0-6.76-1.05-12,.48-18.55,2.45-10.56,4.69-23.78-3.07-31.61a26.85,26.85,0,0,0-14.62-7.48c-5-.82-12.36,6.16-17.42,6-12.87-.51-23.73-12.43-36-8.58a25.32,25.32,0,0,0-13.22,9.73c-6,8.84-5.46,20.26-4.59,30.81a3.9,3.9,0,0,0,.67,2.25c.45.54,1.18.83,1.62,1.38a3.41,3.41,0,0,1,.5,2.46,16.55,16.55,0,0,1-1.19,5,2.06,2.06,0,0,0-.18,1.8,1.82,1.82,0,0,0,1,.68c5,1.8,10.4-1.67,15.75-1.58s10.43,3.67,15.95,2.89C589.06,173.52,594,171.91,598.91,171.1Z", transform: "translate(-51.34 -44.69)", fill: "#865a61" }),
+            react_1.default.createElement("path", { d: "M620.83,476.86l-.07,0-9.57,3.56-3.54-9.85-15-41.82L595,245.86h0a13.11,13.11,0,0,0,4.63.44,15.37,15.37,0,0,0,7.13-2.76h0l-2.84,180Z", transform: "translate(-51.34 -44.69)", opacity: "0.05" }),
+            react_1.default.createElement("circle", { cx: "550.91", cy: "208.23", r: "1.99", fill: "#fff" }),
+            react_1.default.createElement("circle", { cx: "546.93", cy: "275.79", r: "1.99", fill: "#fff" }),
+            react_1.default.createElement("circle", { cx: "543.62", cy: "346.01", r: "1.99", fill: "#fff" }),
+            react_1.default.createElement("circle", { cx: "547.6", cy: "381.11", r: "1.99", fill: "#fff" }),
+            react_1.default.createElement("polygon", { points: "615.83 283.74 573.43 283.74 573.43 241.35 594.63 235.38 615.83 241.35 615.83 283.74", opacity: "0.05" }),
+            react_1.default.createElement("circle", { cx: "548.92", cy: "239.36", r: "1.99", fill: "#fff" }),
+            react_1.default.createElement("circle", { cx: "595.95", cy: "241.35", r: "1.99", fill: "#fff" }),
+            react_1.default.createElement("circle", { cx: "544.95", cy: "312.22", r: "1.99", fill: "#fff" }),
+            react_1.default.createElement("path", { d: "M530.71,241.66s-18.55,2.65-24.51,36.43-11.92,80.81-11.92,80.81S484.34,402.62,534,392l2.65-15.24s-5,17.55-3.64-17.55,1.66-58,1.66-58Z", transform: "translate(-51.34 -44.69)", fill: "#d39999" }),
+            react_1.default.createElement("path", { d: "M530.71,241.66s-18.55,2.65-24.51,36.43-11.92,80.81-11.92,80.81S484.34,402.62,534,392l2.65-15.24s-7.62,16.89-6.29-18.22,4.31-57.3,4.31-57.3Z", transform: "translate(-51.34 -44.69)", opacity: "0.05" }),
+            react_1.default.createElement("path", { d: "M697,393.35l-8.7,9.21c-12.37-5-14.77-18.11-14.77-18.11l.32-.24h0a56.17,56.17,0,0,0,5.92-2.78Z", transform: "translate(-51.34 -44.69)", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M684.72,376.46l-9.89,7.33s3.27,17.84,21.81,19.83l7.95-13.91Z", transform: "translate(-51.34 -44.69)", fill: "#d39999" }),
+            react_1.default.createElement("polygon", { points: "349.25 235.77 433.13 160.96 471.52 205.63 537.4 202.23 557.37 243.53 494.65 325.45 465.27 280.82 395.39 286.8 349.25 235.77", fill: "#f2f5fb" }),
+            react_1.default.createElement("polygon", { points: "550.42 243.63 528.35 272.3 504.8 302.9 493.92 317.05 468.75 277.89 442.35 280.21 399.37 283.98 367.35 248.57 356.34 236.4 401.01 196.56 434.57 166.64 451.86 186.76 470.36 208.29 488.84 207.34 531.8 205.12 548.57 239.8 550.42 243.63", fill: "#dde0ed" }),
+            react_1.default.createElement("polygon", { points: "411.67 213.48 367.35 248.57 356.34 236.4 401.01 196.56 411.67 213.48", fill: "#abb1d1" }),
+            react_1.default.createElement("polygon", { points: "462.23 239.33 458.74 217.34 435.42 189.97 451.86 186.76 470.36 208.29 488.84 207.34 495.62 233.53 462.69 242.2 462.23 239.33", fill: "#abb1d1" }),
+            react_1.default.createElement("polygon", { points: "550.42 243.63 528.35 272.3 516.89 255.02 548.57 239.8 550.42 243.63", fill: "#abb1d1" }),
+            react_1.default.createElement("polygon", { points: "504.8 302.9 493.92 317.05 468.75 277.89 442.35 280.21 437.56 247.1 462.23 239.33 465.19 261.95 481.88 264.54 504.8 302.9", fill: "#abb1d1" }),
+            react_1.default.createElement("path", { d: "M508.88,293a.66.66,0,0,1-.64-.23,38.34,38.34,0,0,0-11.07-9.27.66.66,0,1,1,.64-1.16,39.67,39.67,0,0,1,11.45,9.59.66.66,0,0,1-.39,1.07Z", transform: "translate(-51.34 -44.69)", fill: "#d7666f" }),
+            react_1.default.createElement("path", { d: "M501,294.84a.66.66,0,0,1-.69-1l8.58-14.17a.66.66,0,0,1,1.13.69l-8.58,14.17A.66.66,0,0,1,501,294.84Z", transform: "translate(-51.34 -44.69)", fill: "#d7666f" }),
+            react_1.default.createElement("polygon", { points: "399.39 283.1 470.21 208.14 531.67 205.15 468.92 277.63 399.39 283.1", fill: "#fff", opacity: "0.1" }),
+            react_1.default.createElement("path", { d: "M512.16,364.16s16.56-40.63,24.51-36.41,31.13,29.55,15.24,40.63-27.16,16.36-27.16,16.36l-12.59-1.58Z", transform: "translate(-51.34 -44.69)", fill: "#fdc2cc" }),
+            react_1.default.createElement("path", { d: "M503.22,364.53s15.19-11.92,27.46,24.18l-11.57,1.66-13.25-7.95Z", transform: "translate(-51.34 -44.69)", fill: "#d39999" }),
+            react_1.default.createElement("path", { d: "M503.22,364.53s15.19-11.92,27.46,24.18l-11.57,1.66-13.25-7.95Z", transform: "translate(-51.34 -44.69)", opacity: "0.05" }))));
+};
+exports.default = LostLogo;
 
-/* harmony default export */ __webpack_exports__["default"] = (NavBar);
 
 /***/ }),
 
-/***/ "./resources/js/components/PageNotFound.js":
-/*!*************************************************!*\
-  !*** ./resources/js/components/PageNotFound.js ***!
-  \*************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./resources/js/components/NavBar.tsx":
+/*!********************************************!*\
+  !*** ./resources/js/components/NavBar.tsx ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _Lost_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Lost.svg */ "./resources/Lost.svg");
-/* harmony import */ var _Lost_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Lost_svg__WEBPACK_IMPORTED_MODULE_2__);
 
-
-
-
-var PageNotFound = function PageNotFound() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "flex flex-col-reverse items-center mt-12 lg:mt-20 xl:flex-row xl:justify-center xl:my-20"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "w-11/12 flex flex-col  xl:w-1/3 xl:pl-8"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
-    className: "text-6xl font-bold"
-  }, "Oops!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-    className: "text-2xl pt-4"
-  }, "We can't seem to find the page you are looking for."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "pt-8 flex flex-col space-y-1"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
-    className: "text-lg font-semibold pb-2"
-  }, "Here are some hepful links"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/"
-  }, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/inns"
-  }, "Serach For ThinkInn"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "w-11/12 xl:w-1/3"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: _Lost_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
-    alt: "404 Not Found"
-  })));
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+const UserInforContext_1 = __importDefault(__webpack_require__(/*! ./Context/UserInforContext */ "./resources/js/components/Context/UserInforContext.js"));
+const NavBar = () => {
+    const { userInfo } = react_1.useContext(UserInforContext_1.default);
+    console.log(userInfo);
+    return (react_1.default.createElement("div", { className: "flex justify-around py-6 shadow-md " },
+        react_1.default.createElement("div", null,
+            react_1.default.createElement(react_router_dom_1.Link, { to: "/" },
+                react_1.default.createElement("img", { src: "#", alt: "thinkcation|Logo" }))),
+        react_1.default.createElement("div", { className: "flex justify-center px-8 space-x-4" },
+            react_1.default.createElement(react_router_dom_1.Link, { to: "/HostHome" }, "Host your home"),
+            userInfo === "guest" ? (react_1.default.createElement(react_router_dom_1.Link, { to: "/login" }, "Login")) : (react_1.default.createElement(react_router_dom_1.Link, { to: "/account" }, userInfo.firstname)))));
+};
+exports.default = NavBar;
 
-/* harmony default export */ __webpack_exports__["default"] = (PageNotFound);
+
+/***/ }),
+
+/***/ "./resources/js/components/PageNotFound.tsx":
+/*!**************************************************!*\
+  !*** ./resources/js/components/PageNotFound.tsx ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+const LostLogo_1 = __importDefault(__webpack_require__(/*! ./LostLogo */ "./resources/js/components/LostLogo.tsx"));
+const PageNotFound = () => {
+    return (react_1.default.createElement("div", { className: "flex flex-col-reverse items-center mt-12 lg:mt-20 xl:flex-row xl:justify-center xl:my-20" },
+        react_1.default.createElement("div", { className: "w-11/12 flex flex-col  xl:w-1/3 xl:pl-8" },
+            react_1.default.createElement("h1", { className: "text-6xl font-bold" }, "Oops!"),
+            react_1.default.createElement("h2", { className: "text-2xl pt-4" }, "We cannot seem to find the page you are looking for."),
+            react_1.default.createElement("div", { className: "pt-8 flex flex-col space-y-1" },
+                react_1.default.createElement("h3", { className: "text-lg font-semibold pb-2" }, "Here are some hepful links"),
+                react_1.default.createElement(react_router_dom_1.Link, { to: "/" }, "Home"),
+                react_1.default.createElement(react_router_dom_1.Link, { to: "/inns" }, "Serach For ThinkInn"))),
+        react_1.default.createElement("div", { className: "w-11/12 xl:w-1/3" },
+            react_1.default.createElement(LostLogo_1.default, { cssStyle: "xl:px-4" }))));
+};
+exports.default = PageNotFound;
+
 
 /***/ }),
 
@@ -71538,13 +71457,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/App */ "./resources/js/components/App.js");
+/* harmony import */ var _components_App_tsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/App.tsx */ "./resources/js/components/App.tsx");
+/* harmony import */ var _components_App_tsx__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_App_tsx__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
 
 if (document.getElementById("root")) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App__WEBPACK_IMPORTED_MODULE_2__["default"], null), document.getElementById("root"));
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_App_tsx__WEBPACK_IMPORTED_MODULE_2___default.a, null), document.getElementById("root"));
 }
 
 /***/ }),
