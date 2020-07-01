@@ -1,6 +1,6 @@
 import React from "react";
 
-const NoAccountError = () => {
+const NoAccountError: React.FC = () => {
     return (
         <div className=" flex items-center my-4 py-4 px-2 bg-red-100 border-t-4 border-darkaccent rounded-md w-full">
             <div className=" text-darkaccent items-center">
@@ -13,7 +13,7 @@ const NoAccountError = () => {
                 </svg>
             </div>
             <div className="flex flex-col pl-3">
-                <h6 className="text-darkaccent"> Let's try that again</h6>
+                <h6 className="text-darkaccent"> Let&#39;s try that again</h6>
                 <p className="text-xs font-light">
                     Incorrect email or password
                 </p>
