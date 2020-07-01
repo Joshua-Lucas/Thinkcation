@@ -1,11 +1,12 @@
 import React, { useState, useReducer } from "react";
 import { useHistory, Link } from "react-router-dom";
 import axios from "axios";
-import NoAccountError from "./errors/NoAccountError";
+import NoAccountError from "./errors/NoAccountError.tsx";
 
-const Login = () => {
-    let history = useHistory();
+const Login: React.FC = () => {
+    const history = useHistory();
     const [error, setError] = useState(false);
+
     // Form entry data
     const initialState = {
         email: "",
@@ -21,13 +22,13 @@ const Login = () => {
 
     const [state, dispatch] = useReducer(reducer, initialState);
 
-    const handleChange = (e) => {
+    const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
         dispatch({ field: e.target.name, value: e.target.value });
     };
 
     const { email, password } = state;
 
-    const handleLogin = (e) => {
+    const handleLogin = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         axios.get("/sanctum/csrf-cookie").then(() => {
             axios
@@ -39,7 +40,7 @@ const Login = () => {
         });
     };
 
-    const handleErrors = (err) => {
+    const handleErrors = (err: XMLHttpRequest) => {
         if (err.response) {
             console.log(err.response);
             setError(true);
