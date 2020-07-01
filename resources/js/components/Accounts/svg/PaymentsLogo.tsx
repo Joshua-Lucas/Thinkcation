@@ -10,8 +10,6 @@ const PaymentsLogo: React.FC<IPaymentsLogoProps> = ({ cssStyle }) => {
             <svg
                 className={cssStyle}
                 data-name="Layer 1"
-                width="915.68773"
-                height="679.27607"
                 viewBox="0 0 915.68773 679.27607"
             >
                 <defs>
@@ -24,13 +22,13 @@ const PaymentsLogo: React.FC<IPaymentsLogoProps> = ({ cssStyle }) => {
                         gradientTransform="matrix(0.97485, 0.30762, -0.30291, 0.99, 144.20301, -171.28919)"
                         gradientUnits="userSpaceOnUse"
                     >
-                        <stop offset="0" stopColor="gray" stopOpacity="0.25" />
+                        <stop offset="0" stopColor="gray" stopOpacity="25%" />
                         <stop
                             offset="0.53514"
                             stopColor="gray"
-                            stopOpacity="0.12"
+                            stopOpacity="12%"
                         />
-                        <stop offset="1" stopColor="gray" stopOpacity="0.1" />
+                        <stop offset="1" stopColor="gray" stopOpacity="10%" />
                     </linearGradient>
                     <linearGradient
                         id="be72c466-93ff-4e9c-a64c-30b94918ee69"
@@ -90,7 +88,7 @@ const PaymentsLogo: React.FC<IPaymentsLogoProps> = ({ cssStyle }) => {
                     width="732.72983"
                     height="445.44005"
                     rx="27.5"
-                    fill="url(#be72c466-93ff-4e9c-a64c-30b94918ee69)"
+                    fill="#e0e0e0"
                 />
                 <rect
                     x="191.27673"
@@ -197,7 +195,7 @@ const PaymentsLogo: React.FC<IPaymentsLogoProps> = ({ cssStyle }) => {
                     width="76"
                     height="76"
                     fill="#7f9eb2"
-                    opacity="0.1"
+                    opacity="10%"
                 />
                 <rect
                     x="756.68773"
@@ -205,8 +203,8 @@ const PaymentsLogo: React.FC<IPaymentsLogoProps> = ({ cssStyle }) => {
                     width="76"
                     height="76"
                     fill="#7f9eb2"
-                    opacity="0.1"
-                />{" "}
+                    opacity="10%"
+                />
             </svg>
         </React.Fragment>
     );
