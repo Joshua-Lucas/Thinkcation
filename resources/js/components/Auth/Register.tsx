@@ -1,11 +1,11 @@
 import React, { useState, useReducer } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
-import Error from "../../../icon-exclamation.svg";
-import RegistrationErrors from "./errors/RegistrationErrors.js";
+import Error from "./ExclamationLogo";
+import RegistrationErrors from "./errors/RegistrationErrors";
 
-const Register = () => {
-    let history = useHistory();
+const Register: React.FC = () => {
+    const history = useHistory();
     const [ofAge, setOfAge] = useState(true);
     const [error, setError] = useState(false);
     const [errorEmail, setErrorEmail] = useState("");
@@ -31,7 +31,7 @@ const Register = () => {
 
     const [state, dispatch] = useReducer(reducer, initialState);
 
-    const handleChange = (e) => {
+    const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
         dispatch({ field: e.target.name, value: e.target.value });
     };
 
@@ -42,13 +42,12 @@ const Register = () => {
         email,
         password,
         password_confirmation,
-        rating,
     } = state;
 
     // Event Handlers
-    const handleRegister = (e) => {
+    const handleRegister = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        axios.get("/sanctum/csrf-cookie").then((response) => {
+        axios.get("/sanctum/csrf-cookie").then(() => {
             axios
                 .post("/register", state)
                 .then(() => {
@@ -58,22 +57,24 @@ const Register = () => {
         });
     };
     const handleBdayValdidation = () => {
-        let ageRestriction = 18;
+        const ageRestriction = 18;
         // convert Bday to Date object
-        let year = parseInt(birthday.slice(0, 4));
-        let month = parseInt(birthday.slice(6, 8)) - 1;
-        let day = parseInt(birthday.slice(8, 10));
-        let birthDate = new Date(year, month, day);
+        const year = parseInt(birthday.slice(0, 4));
+        const month = parseInt(birthday.slice(6, 8)) - 1;
+        const day = parseInt(birthday.slice(8, 10));
+        const birthDate = new Date(year, month, day);
 
-        let currentDate = new Date();
+        const currentDate = new Date();
         currentDate.setFullYear(currentDate.getFullYear() - ageRestriction);
-
-        if (currentDate - birthDate < 0) {
+        const age = currentDate.valueOf() - birthDate.valueOf();
+        console.log(age);
+        if (age < 0) {
             return setOfAge(false);
         }
+
         return setOfAge(true);
     };
-    const handleErrors = (err) => {
+    const handleErrors = (err: XMLHttpRequest) => {
         if (err.response) {
             // check for email error
             if (err.response.data.errors.email !== undefined) {
@@ -142,11 +143,7 @@ const Register = () => {
                     </p>
                 ) : (
                     <div className="flex pt-1 w-5/6 mb-8">
-                        <img
-                            className="w-8 h-8 self-center"
-                            src={Error}
-                            alt="exclamation"
-                        ></img>
+                        <Error cssStyle={"w-8 h-8 self-center"} />
                         <p className="text-xs pl-1 font-thin text-darkaccent">
                             You must be 18 or older to use Thinkcation. Other
                             people won’t see your birthday.
@@ -174,7 +171,7 @@ const Register = () => {
                     value={password}
                     onChange={handleChange}
                     required
-                    minLength="8"
+                    minLength={8}
                 />
 
                 <input
