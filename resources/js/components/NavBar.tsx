@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import UserInfoContext from "../components/Context/UserInforContext";
+import UserInfoContext from "./Context/UserInforContext";
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
     const { userInfo } = useContext(UserInfoContext);
 
     console.log(userInfo);
