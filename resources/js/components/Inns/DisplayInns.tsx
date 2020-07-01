@@ -1,9 +1,9 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import BrowseInns from "./BrowseInns.tsx";
-import ShowInn from "./ShowInn.tsx";
+import BrowseInns from "./BrowseInns";
+import ShowInn from "./ShowInn";
 
-const DisplayInns = () => {
+const DisplayInns: React.FC = () => {
     return (
         <Switch>
             <Route exact path="/inns">
