@@ -1,15 +1,14 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-
-import DisplayInns from "./Inns/DisplayInns.js";
-import PageNotFound from "./PageNotFound.js";
-import Login from "./Auth/Login.js";
-import Register from "./Auth/Register.js";
-import NavBar from "./NavBar.js";
-import AccountSettings from "./Accounts/AccountSettings.js";
+import DisplayInns from "./Inns/DisplayInns";
+import PageNotFound from "./PageNotFound";
+import Login from "./Auth/Login";
+import Register from "./Auth/Register";
+import NavBar from "./NavBar";
+import AccountSettings from "./Accounts/AccountSettings";
 import { UserInfoProvider } from "./Context/UserInforContext.js";
 
-const App = () => {
+const App: React.FC = () => {
     return (
         <BrowserRouter>
             <UserInfoProvider>
