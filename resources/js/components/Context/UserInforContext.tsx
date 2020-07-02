@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, createContext, Context } from "react";
 import Axios from "axios";
-import { createContext } from "react";
 
 const UserInfoContext = createContext();
 
-export const UserInfoProvider = ({ children }) => {
-    const [userInfo, setUserInfo] = useState([]);
+export const UserInfoProvider: React.FC = ({ children }) => {
+    const [userInfo, setUserInfo] = useState<string | string[] | number[]>([]);
 
     // retriving user info
     useEffect(() => {
@@ -14,7 +13,7 @@ export const UserInfoProvider = ({ children }) => {
             .catch(handleErrors);
     }, []);
 
-    const handleErrors = (err) => {
+    const handleErrors = (err: XMLHttpRequest) => {
         if (err.response) {
             setUserInfo("guest");
         }

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import UserInfoContext from "../Context/UserInforContext.js";
+import UserInfoContext from "../Context/UserInforContext";
 
 const UserProfile: React.FC = () => {
     const { userInfo } = useContext(UserInfoContext);
