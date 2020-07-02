@@ -1,11 +1,9 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import UserInfoContext from "./Context/UserInforContext";
+import UserInfoContext from "../Context/UserInforContext";
 
 const NavBar: React.FC = () => {
     const { userInfo } = useContext(UserInfoContext);
-
-    console.log(userInfo);
 
     return (
         <div className="flex justify-around py-6 shadow-md ">

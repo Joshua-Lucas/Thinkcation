@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 import { Switch, Route, useHistory } from "react-router-dom";
 import Axios from "axios";
-import NavBar from "../NavBar";
+import NavBar from "../Header/NavBar";
 import UserAccount from "./UserAccount/UserAccount";
 import UserProfile from "./UserProfile";
 import UserListings from "./UserListings";
-import PageNotFound from "../PageNotFound";
+import PageNotFound from "../404/PageNotFound";
 import NotSignedIn from "./Errors/NotSignedIn";
-import UserInfoContext from "../Context/UserInforContext.js";
+import UserInfoContext from "../Context/UserInforContext";
 
 const AccountSettings: React.FC = () => {
     const history = useHistory();

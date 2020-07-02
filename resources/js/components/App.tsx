@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import DisplayInns from "./Inns/DisplayInns";
-import PageNotFound from "./PageNotFound";
+import PageNotFound from "./404/PageNotFound";
 import Login from "./Auth/Login";
 import Register from "./Auth/Register";
-import NavBar from "./NavBar";
+import NavBar from "./Header/NavBar";
 import AccountSettings from "./Accounts/AccountSettings";
-import { UserInfoProvider } from "./Context/UserInforContext.js";
+import { UserInfoProvider } from "./Context/UserInforContext";
 
 const App: React.FC = () => {
     return (
