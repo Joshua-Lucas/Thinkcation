@@ -1,6 +1,6 @@
 import React, { useState, useReducer, useContext } from "react";
 import { useHistory, Link } from "react-router-dom";
-import axios from "axios";
+import axios, { AxiosError } from "axios";
 import UserInfoContext from "../Context/UserInforContext";
 import NoAccountError from "./errors/NoAccountError";
 
@@ -47,7 +47,7 @@ const Login: React.FC = () => {
         });
     };
 
-    const handleErrors = (err: XMLHttpRequest) => {
+    const handleErrors = (err: AxiosError) => {
         if (err.response) {
             console.log(err.response);
             setError(true);
