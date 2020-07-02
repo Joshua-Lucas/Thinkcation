@@ -1,11 +1,13 @@
-import React, { useState, useReducer } from "react";
+import React, { useState, useReducer, useContext } from "react";
 import { useHistory, Link } from "react-router-dom";
 import axios from "axios";
-import NoAccountError from "./errors/NoAccountError.tsx";
+import UserInfoContext from "../Context/UserInforContext";
+import NoAccountError from "./errors/NoAccountError";
 
 const Login: React.FC = () => {
     const history = useHistory();
     const [error, setError] = useState(false);
+    const { userInfo, setUserInfo } = useContext(UserInfoContext);
 
     // Form entry data
     const initialState = {
@@ -33,9 +35,14 @@ const Login: React.FC = () => {
         axios.get("/sanctum/csrf-cookie").then(() => {
             axios
                 .post("/login", state)
-                .then(() => {
-                    history.push("/account");
-                })
+                .then(() =>
+                    axios
+                        .get("/api/user")
+                        .then((res) => setUserInfo(res.data))
+                        .then(() => {
+                            history.push("/account");
+                        })
+                )
                 .catch(handleErrors);
         });
     };
