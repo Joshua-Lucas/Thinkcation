@@ -1,3 +1,4 @@
 module.exports = {
-    testRegex: 'resources/js/tests/.*.test.js$'
-  }
+    preset: "ts-jest/presets/js-with-babel",
+    testRegex: "resources/js/__tests__/.*.test.js$",
+};
