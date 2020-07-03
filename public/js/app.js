@@ -69978,6 +69978,7 @@ const UserListings_1 = __importDefault(__webpack_require__(/*! ./UserListings */
 const PageNotFound_1 = __importDefault(__webpack_require__(/*! ../404/PageNotFound */ "./resources/js/components/404/PageNotFound.tsx"));
 const NotSignedIn_1 = __importDefault(__webpack_require__(/*! ./Errors/NotSignedIn */ "./resources/js/components/Accounts/Errors/NotSignedIn.tsx"));
 const UserInforContext_1 = __importDefault(__webpack_require__(/*! ../Context/UserInforContext */ "./resources/js/components/Context/UserInforContext.tsx"));
+const PersonalInfo_1 = __importDefault(__webpack_require__(/*! ./PersonalInfo/PersonalInfo */ "./resources/js/components/Accounts/PersonalInfo/PersonalInfo.tsx"));
 const AccountSettings = () => {
     const history = react_router_dom_1.useHistory();
     const { userInfo, setUserInfo } = react_1.useContext(UserInforContext_1.default);
@@ -69989,14 +69990,17 @@ const AccountSettings = () => {
     };
     return (react_1.default.createElement("div", null,
         react_1.default.createElement(NavBar_1.default, null),
-        react_1.default.createElement(react_router_dom_1.Switch, null,
-            react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/account" }, userInfo === "guest" ? (react_1.default.createElement(NotSignedIn_1.default, null)) : (react_1.default.createElement(UserAccount_1.default, { handleLogout: handleLogout }))),
-            react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/account/:profile" },
+        userInfo === "guest" ? (react_1.default.createElement(NotSignedIn_1.default, null)) : (react_1.default.createElement(react_router_dom_1.Switch, null,
+            react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/account" },
+                react_1.default.createElement(UserAccount_1.default, { handleLogout: handleLogout })),
+            react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/account/profile" },
                 react_1.default.createElement(UserProfile_1.default, null)),
+            react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/account/personalinfo" },
+                react_1.default.createElement(PersonalInfo_1.default, null)),
             react_1.default.createElement(react_router_dom_1.Route, { exact: true, path: "/account/listings" },
                 react_1.default.createElement(UserListings_1.default, null)),
             react_1.default.createElement(react_router_dom_1.Route, { path: "/account/*" },
-                react_1.default.createElement(PageNotFound_1.default, null)))));
+                react_1.default.createElement(PageNotFound_1.default, null))))));
 };
 exports.default = AccountSettings;
 
@@ -70129,6 +70133,119 @@ exports.default = SearchingLogo;
 
 /***/ }),
 
+/***/ "./resources/js/components/Accounts/PersonalInfo/InfoContainer.tsx":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/Accounts/PersonalInfo/InfoContainer.tsx ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const InfoContainer = ({ inputType, title, details, submitEdit, }) => {
+    const [editing, setEditing] = react_1.useState(false);
+    const toggleEditing = () => {
+        setEditing(!editing);
+    };
+    return (react_1.default.createElement("div", null,
+        react_1.default.createElement("h5", null, title),
+        react_1.default.createElement("p", null, details),
+        react_1.default.createElement("form", { className: editing === true ? "block" : "hidden", onSubmit: submitEdit },
+            react_1.default.createElement("label", { htmlFor: title }, "name"),
+            react_1.default.createElement("input", { id: title, type: inputType, placeholder: details }),
+            react_1.default.createElement("button", { type: "submit" }, "Save")),
+        react_1.default.createElement("div", null,
+            react_1.default.createElement("button", { className: editing === false ? "block" : "hidden", onClick: toggleEditing }, "Edit"),
+            react_1.default.createElement("button", { className: editing === true ? "block" : "hidden", onClick: toggleEditing }, "Cancel"))));
+};
+exports.default = InfoContainer;
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Accounts/PersonalInfo/PersonalInfo.tsx":
+/*!************************************************************************!*\
+  !*** ./resources/js/components/Accounts/PersonalInfo/PersonalInfo.tsx ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+const UserInforContext_1 = __importDefault(__webpack_require__(/*! ../../Context/UserInforContext */ "./resources/js/components/Context/UserInforContext.tsx"));
+const InfoContainer_1 = __importDefault(__webpack_require__(/*! ./InfoContainer */ "./resources/js/components/Accounts/PersonalInfo/InfoContainer.tsx"));
+const PersonalInfo = () => {
+    const { userInfo } = react_1.useContext(UserInforContext_1.default);
+    const handleEditSubmit = (e) => {
+        e.preventDefault();
+        console.log("submit processed");
+    };
+    return (react_1.default.createElement("div", null,
+        react_1.default.createElement("p", null,
+            react_1.default.createElement(react_router_dom_1.Link, { to: "/account" }, "Account"),
+            ">PersonalInfo"),
+        react_1.default.createElement("h1", null, "Your Personal Info"),
+        react_1.default.createElement(InfoContainer_1.default, { inputType: "text", "data-testid": "name", title: "Name", details: `${userInfo.firstname}  ${userInfo.lastname} `, submitEdit: handleEditSubmit }),
+        react_1.default.createElement(InfoContainer_1.default, { inputType: "select", "data-testid": "gender", title: "Gender", details: userInfo.gender === null
+                ? "Not specified"
+                : `${userInfo.gender}`, submitEdit: handleEditSubmit }),
+        react_1.default.createElement(InfoContainer_1.default, { inputType: "date", "data-testid": "birthday", title: "Date of Birth", details: userInfo.birthday, submitEdit: handleEditSubmit }),
+        react_1.default.createElement(InfoContainer_1.default, { inputType: "text", "data-testid": "email", title: "Email", details: userInfo.email, submitEdit: handleEditSubmit }),
+        react_1.default.createElement(InfoContainer_1.default, { inputType: "text", "data-testid": "phoneNumber", title: "Phone Number", details: userInfo.phone === null ? "Not provided" : userInfo.phone, submitEdit: handleEditSubmit }),
+        react_1.default.createElement(InfoContainer_1.default, { inputType: "text", "data-testid": "govId", title: "Government Id", details: userInfo.govementId ? "Verified" : "Not provided", submitEdit: handleEditSubmit }),
+        react_1.default.createElement("p", null)));
+};
+exports.default = PersonalInfo;
+
+
+/***/ }),
+
 /***/ "./resources/js/components/Accounts/UserAccount/LinkContainer.tsx":
 /*!************************************************************************!*\
   !*** ./resources/js/components/Accounts/UserAccount/LinkContainer.tsx ***!
@@ -70144,9 +70261,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 const react_router_dom_1 = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-const LinkContainer = ({ logo, title, description, }) => {
+const LinkContainer = ({ to, logo, title, description, }) => {
     return (react_1.default.createElement(react_1.default.Fragment, null,
-        react_1.default.createElement(react_router_dom_1.Link, { className: "flex flex-col items-center p-6 rounded-lg shadow-xl bg-white md:items-start", to: "#" },
+        react_1.default.createElement(react_router_dom_1.Link, { className: "flex flex-col items-center p-6 rounded-lg shadow-xl bg-white md:items-start", to: to },
             logo,
             react_1.default.createElement("h6", { className: "text-sm text-center md:mb-2 lg:text-lg  " },
                 title,
@@ -70214,12 +70331,12 @@ const UserAccount = ({ handleLogout }) => {
                 " ",
                 react_1.default.createElement(react_router_dom_1.Link, { to: "/account/profile", className: "text-darkaccent" }, "Go to Profile"))),
         react_1.default.createElement("div", { className: " w-full self-center grid grid-cols-2 lg:grid-cols-3 gap-4 -mx-2 px-2 " },
-            react_1.default.createElement(LinkContainer_1.default, { logo: react_1.default.createElement(PersonalInfoLogo_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Personal Info", description: "Provide personal details and how we can reach you" }),
-            react_1.default.createElement(LinkContainer_1.default, { logo: react_1.default.createElement(SecurityLogo_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Login & security", description: "Update your password and secure your account" }),
-            react_1.default.createElement(LinkContainer_1.default, { logo: react_1.default.createElement(PaymentsLogo_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Payment & payouts", description: "Review payments, payouts, coupons, giftcards and taxes" }),
-            react_1.default.createElement(LinkContainer_1.default, { logo: react_1.default.createElement(NotificationsLogo_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Notifications", description: "Choose notifcation perferences and how you want to be contacted" }),
-            react_1.default.createElement(LinkContainer_1.default, { logo: react_1.default.createElement(Listings_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Listings", description: "Manage your listings" }),
-            react_1.default.createElement(LinkContainer_1.default, { logo: react_1.default.createElement(TripsLogo_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Trips", description: "View and edit up coming trips" })),
+            react_1.default.createElement(LinkContainer_1.default, { to: "/account/personalinfo", logo: react_1.default.createElement(PersonalInfoLogo_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Personal Info", description: "Provide personal details and how we can reach you" }),
+            react_1.default.createElement(LinkContainer_1.default, { to: "#", logo: react_1.default.createElement(SecurityLogo_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Login & security", description: "Update your password and secure your account" }),
+            react_1.default.createElement(LinkContainer_1.default, { to: "#", logo: react_1.default.createElement(PaymentsLogo_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Payment & payouts", description: "Review payments, payouts, coupons, giftcards and taxes" }),
+            react_1.default.createElement(LinkContainer_1.default, { to: "#", logo: react_1.default.createElement(NotificationsLogo_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Notifications", description: "Choose notifcation perferences and how you want to be contacted" }),
+            react_1.default.createElement(LinkContainer_1.default, { to: "#", logo: react_1.default.createElement(Listings_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Listings", description: "Manage your listings" }),
+            react_1.default.createElement(LinkContainer_1.default, { to: "#", logo: react_1.default.createElement(TripsLogo_1.default, { cssStyle: "mb-4 w-24 h-24 " }), title: "Trips", description: "View and edit up coming trips" })),
         react_1.default.createElement("button", { onClick: handleLogout }, "Logout")));
 };
 exports.default = UserAccount;
@@ -71230,7 +71347,7 @@ const react_1 = __importStar(__webpack_require__(/*! react */ "./node_modules/re
 const axios_1 = __importDefault(__webpack_require__(/*! axios */ "./node_modules/axios/index.js"));
 const UserInfoContext = react_1.createContext();
 exports.UserInfoProvider = ({ children }) => {
-    const [userInfo, setUserInfo] = react_1.useState([]);
+    const [userInfo, setUserInfo] = react_1.useState("");
     react_1.useEffect(() => {
         axios_1.default.get("/api/user")
             .then((res) => setUserInfo(res.data))

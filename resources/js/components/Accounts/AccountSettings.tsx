@@ -8,6 +8,7 @@ import UserListings from "./UserListings";
 import PageNotFound from "../404/PageNotFound";
 import NotSignedIn from "./Errors/NotSignedIn";
 import UserInfoContext from "../Context/UserInforContext";
+import PersonalInfo from "./PersonalInfo/PersonalInfo";
 
 const AccountSettings: React.FC = () => {
     const history = useHistory();
@@ -23,24 +24,27 @@ const AccountSettings: React.FC = () => {
     return (
         <div>
             <NavBar />
-            <Switch>
-                <Route exact path="/account">
-                    {userInfo === "guest" ? (
-                        <NotSignedIn />
-                    ) : (
+            {userInfo === "guest" ? (
+                <NotSignedIn />
+            ) : (
+                <Switch>
+                    <Route exact path="/account">
                         <UserAccount handleLogout={handleLogout} />
-                    )}
-                </Route>
-                <Route exact path="/account/:profile">
-                    <UserProfile />
-                </Route>
-                <Route exact path="/account/listings">
-                    <UserListings />
-                </Route>
-                <Route path="/account/*">
-                    <PageNotFound />
-                </Route>
-            </Switch>
+                    </Route>
+                    <Route exact path="/account/profile">
+                        <UserProfile />
+                    </Route>
+                    <Route exact path="/account/personalinfo">
+                        <PersonalInfo />
+                    </Route>
+                    <Route exact path="/account/listings">
+                        <UserListings />
+                    </Route>
+                    <Route path="/account/*">
+                        <PageNotFound />
+                    </Route>
+                </Switch>
+            )}
         </div>
     );
 };
