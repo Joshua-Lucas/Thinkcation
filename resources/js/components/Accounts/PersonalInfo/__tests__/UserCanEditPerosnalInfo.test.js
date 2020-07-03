@@ -1,6 +1,6 @@
 import React from "react";
-import ReactTestUtils from "react-dom/test-utils";
-import { Simulate, render } from "@testing-library/react";
+import { Simulate } from "react-dom/test-utils";
+import { render, getByLabelText } from "@testing-library/react";
 // import PersonalInfo from "../PersonalInfo";
 import { generateUser } from "../../../../__tests__/utils";
 import InfoContainer from "../InfoContainer";
@@ -38,7 +38,47 @@ test("User can toggle edit mode", () => {
 
     //Act
 
-    ReactTestUtils.Simulate.click(editButtonNode);
+    Simulate.click(editButtonNode);
     //Assert
     expect(handleEdit).toBeCalledTimes(1);
+});
+
+test("User can edit their name(text input)", () => {
+    //Arrange
+    let editing = true;
+    const newName = "Bennet";
+    const toggleEditing = jest.fn(() => (editing = false));
+    const handleEditSubmit = jest.fn();
+    const title = "name";
+    const details = "Jane";
+
+    const { container, getByText, getByLabelText } = render(
+        <InfoContainer
+            inputType="text"
+            toggle={editing}
+            data-testid="name"
+            title={title}
+            details={details}
+            edit={toggleEditing}
+            submitEdit={handleEditSubmit}
+        />
+    );
+
+    const formNode = container.querySelector("form");
+    const inputNode = getByLabelText(title);
+    const submitButton = getByText("Save");
+    const editToggleButton = getByText("Cancel");
+
+    //Act
+
+    inputNode.value = newName;
+    Simulate.submit(formNode);
+    Simulate.click(editToggleButton);
+
+    //Assert
+    expect(toggleEditing).toHaveBeenCalledTimes(1);
+    expect(editing).toEqual(false);
+    expect(handleEditSubmit).toHaveBeenCalledTimes(1);
+    // expect(handleEditSubmit).toHaveBeenCalledWith(newName);
+    expect(submitButton.type).toBe("submit");
 });
