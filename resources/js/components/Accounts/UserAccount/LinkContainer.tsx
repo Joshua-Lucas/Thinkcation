@@ -2,12 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 interface ILinkContainerProps {
+    to: string;
     logo: React.ReactElement;
     title: string;
     description: string;
 }
 
 const LinkContainer: React.FC<ILinkContainerProps> = ({
+    to,
     logo,
     title,
     description,
@@ -16,7 +18,7 @@ const LinkContainer: React.FC<ILinkContainerProps> = ({
         <React.Fragment>
             <Link
                 className="flex flex-col items-center p-6 rounded-lg shadow-xl bg-white md:items-start"
-                to="#"
+                to={to}
             >
                 {logo}
 
