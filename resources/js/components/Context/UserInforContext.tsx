@@ -1,10 +1,24 @@
 import React, { useState, useEffect, createContext } from "react";
 import Axios, { AxiosError } from "axios";
 
-const UserInfoContext = createContext<any>();
+export interface IUserInfo {
+    birthday?: string;
+    email?: string;
+    email_verified_at?: boolean | null;
+    firstname?: string;
+    id?: number;
+    lastname?: string;
+    rating?: number | null;
+    govid?: boolean | null;
+    created_at?: string;
+    updated_at?: string;
+    setUserInfo: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const UserInfoContext = createContext<IUserInfo>();
 
 export const UserInfoProvider: React.FC = ({ children }) => {
-    const [userInfo, setUserInfo] = useState<string | string[] | number[]>([]);
+    const [userInfo, setUserInfo] = useState("");
 
     // retriving user info
     useEffect(() => {
